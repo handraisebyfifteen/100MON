@@ -1,0 +1,145 @@
+{
+  "_about": "検証モデルのテスト用。20問のうち10問は正しい問題、10問はわざと欠陥を入れた問題。検証モデルが欠陥入りだけを不合格にできるかを測る。本番の出題には使わない。",
+  "checks": {
+    "answer_correct": "問題文の内容が事実として正しく、正解とされる選択肢が本当に正解か",
+    "single_answer": "正解以外の3つが確実に不正解か（正解が2つ以上ないか）",
+    "unambiguous": "複数の解釈ができる書き方になっていないか",
+    "not_time_sensitive": "時期によって答えが変わる問題でないか",
+    "locale_match": "日本語版と英語版で、問題の意味と正解が一致しているか",
+    "not_trick": "引っかけ・言葉遊び・紛らわしい書き方で難しくしていないか",
+    "fair": "特定の国・地域・人を不当に扱う内容でないか"
+  },
+  "questions": [
+    {
+      "id": "ok_01", "expect": "pass", "expectedFailures": [], "difficulty": "beginner0",
+      "answerIndex": 1,
+      "ja": { "text": "日本で一番高い山", "choices": ["北岳", "富士山", "槍ヶ岳", "奥穂高岳"] },
+      "en": { "text": "Japan's tallest mountain", "choices": ["Mount Kita", "Mount Fuji", "Mount Yari", "Mount Okuhotaka"] }
+    },
+    {
+      "id": "ok_02", "expect": "pass", "expectedFailures": [], "difficulty": "beginner",
+      "answerIndex": 1,
+      "ja": { "text": "水の化学式", "choices": ["CO2", "H2O", "O2", "NaCl"] },
+      "en": { "text": "The chemical formula for water", "choices": ["CO2", "H2O", "O2", "NaCl"] }
+    },
+    {
+      "id": "ok_03", "expect": "pass", "expectedFailures": [], "difficulty": "beginner",
+      "answerIndex": 3,
+      "ja": { "text": "オーストラリアの首都", "choices": ["シドニー", "メルボルン", "パース", "キャンベラ"] },
+      "en": { "text": "The capital of Australia", "choices": ["Sydney", "Melbourne", "Perth", "Canberra"] }
+    },
+    {
+      "id": "ok_04", "expect": "pass", "expectedFailures": [], "difficulty": "beginner",
+      "answerIndex": 2,
+      "ja": { "text": "『源氏物語』の作者", "choices": ["清少納言", "和泉式部", "紫式部", "小野小町"] },
+      "en": { "text": "The author of The Tale of Genji", "choices": ["Sei Shonagon", "Izumi Shikibu", "Murasaki Shikibu", "Ono no Komachi"] }
+    },
+    {
+      "id": "ok_05", "expect": "pass", "expectedFailures": [], "difficulty": "intermediate",
+      "answerIndex": 1,
+      "ja": { "text": "日本で一番長い川", "choices": ["利根川", "信濃川", "石狩川", "北上川"] },
+      "en": { "text": "Japan's longest river", "choices": ["Tone River", "Shinano River", "Ishikari River", "Kitakami River"] }
+    },
+    {
+      "id": "ok_06", "expect": "pass", "expectedFailures": [], "difficulty": "advanced",
+      "answerIndex": 3,
+      "ja": { "text": "原子番号79の元素", "choices": ["銀", "白金", "水銀", "金"] },
+      "en": { "text": "The element with atomic number 79", "choices": ["Silver", "Platinum", "Mercury", "Gold"] }
+    },
+    {
+      "id": "ok_07", "expect": "pass", "expectedFailures": [], "difficulty": "advanced",
+      "answerIndex": 2,
+      "ja": { "text": "世界で一番深い湖", "choices": ["タンガニーカ湖", "カスピ海", "バイカル湖", "スペリオル湖"] },
+      "en": { "text": "The world's deepest lake", "choices": ["Lake Tanganyika", "Caspian Sea", "Lake Baikal", "Lake Superior"] }
+    },
+    {
+      "id": "ok_08", "expect": "pass", "expectedFailures": [], "difficulty": "hell",
+      "answerIndex": 1,
+      "ja": { "text": "6の次に小さい完全数", "choices": ["12", "28", "36", "496"] },
+      "en": { "text": "The smallest perfect number after 6", "choices": ["12", "28", "36", "496"] }
+    },
+    {
+      "id": "ok_09", "expect": "pass", "expectedFailures": [], "difficulty": "hell",
+      "answerIndex": 2,
+      "ja": { "text": "『日本書紀』が完成した年", "choices": ["701年", "712年", "720年", "794年"] },
+      "en": { "text": "The year the Nihon Shoki was completed", "choices": ["701", "712", "720", "794"] }
+    },
+    {
+      "id": "ok_10", "expect": "pass", "expectedFailures": [], "difficulty": "expert",
+      "answerIndex": 1,
+      "ja": { "text": "乾燥した空気で3番目に多い気体", "choices": ["二酸化炭素", "アルゴン", "ネオン", "ヘリウム"] },
+      "en": { "text": "The third most abundant gas in dry air", "choices": ["Carbon dioxide", "Argon", "Neon", "Helium"] }
+    },
+
+    {
+      "id": "ng_01_wrong_answer", "expect": "fail", "expectedFailures": ["answer_correct"], "difficulty": "beginner",
+      "_note": "正解は二酸化炭素（index 1）なのに、酸素を正解にしている",
+      "answerIndex": 0,
+      "ja": { "text": "光合成で植物が取り込む気体", "choices": ["酸素", "二酸化炭素", "窒素", "水素"] },
+      "en": { "text": "The gas plants take in for photosynthesis", "choices": ["Oxygen", "Carbon dioxide", "Nitrogen", "Hydrogen"] }
+    },
+    {
+      "id": "ng_02_wrong_answer", "expect": "fail", "expectedFailures": ["answer_correct"], "difficulty": "advanced",
+      "_note": "正解は桓武天皇（index 3）なのに、聖武天皇を正解にしている",
+      "answerIndex": 0,
+      "ja": { "text": "平安京に都を移した天皇", "choices": ["聖武天皇", "天武天皇", "嵯峨天皇", "桓武天皇"] },
+      "en": { "text": "The emperor who moved the capital to Heian-kyo", "choices": ["Emperor Shomu", "Emperor Tenmu", "Emperor Saga", "Emperor Kanmu"] }
+    },
+    {
+      "id": "ng_03_multiple", "expect": "fail", "expectedFailures": ["single_answer"], "difficulty": "beginner",
+      "_note": "札幌も横浜も政令指定都市。正解が2つある",
+      "answerIndex": 0,
+      "ja": { "text": "政令指定都市", "choices": ["札幌市", "横浜市", "つくば市", "前橋市"] },
+      "en": { "text": "A designated city of Japan", "choices": ["Sapporo", "Yokohama", "Tsukuba", "Maebashi"] }
+    },
+    {
+      "id": "ng_04_multiple", "expect": "fail", "expectedFailures": ["single_answer"], "difficulty": "beginner",
+      "_note": "日本もチリも太平洋に面している。正解が2つある",
+      "answerIndex": 0,
+      "ja": { "text": "太平洋に面している国", "choices": ["日本", "チリ", "モンゴル", "スイス"] },
+      "en": { "text": "A country on the Pacific Ocean", "choices": ["Japan", "Chile", "Mongolia", "Switzerland"] }
+    },
+    {
+      "id": "ng_05_time", "expect": "fail", "expectedFailures": ["not_time_sensitive"], "difficulty": "beginner",
+      "_note": "2023年ごろに中国とインドが入れ替わった。時期で答えが変わる",
+      "answerIndex": 1,
+      "ja": { "text": "世界で一番人口が多い国", "choices": ["中国", "インド", "アメリカ", "インドネシア"] },
+      "en": { "text": "The world's most populous country", "choices": ["China", "India", "United States", "Indonesia"] }
+    },
+    {
+      "id": "ng_06_time", "expect": "fail", "expectedFailures": ["not_time_sensitive"], "difficulty": "intermediate",
+      "_note": "現職の人物は任期で変わる",
+      "answerIndex": 0,
+      "ja": { "text": "現在の国連事務総長", "choices": ["アントニオ・グテーレス", "潘基文", "コフィー・アナン", "ブトロス・ブトロス＝ガーリ"] },
+      "en": { "text": "The current UN Secretary-General", "choices": ["António Guterres", "Ban Ki-moon", "Kofi Annan", "Boutros Boutros-Ghali"] }
+    },
+    {
+      "id": "ng_07_locale", "expect": "fail", "expectedFailures": ["locale_match"], "difficulty": "intermediate",
+      "_note": "日本語は『一番長い川』、英語は『一番大きい湖』。意味が一致していない",
+      "answerIndex": 1,
+      "ja": { "text": "日本で一番長い川", "choices": ["利根川", "信濃川", "石狩川", "北上川"] },
+      "en": { "text": "Japan's largest lake", "choices": ["Tone River", "Shinano River", "Ishikari River", "Kitakami River"] }
+    },
+    {
+      "id": "ng_08_ambiguous", "expect": "fail", "expectedFailures": ["unambiguous"], "difficulty": "intermediate",
+      "_note": "『大きい』が面積なら岩手県、人口なら神奈川県。解釈が2つある",
+      "answerIndex": 0,
+      "ja": { "text": "日本で一番大きい県", "choices": ["岩手県", "神奈川県", "長野県", "福島県"] },
+      "en": { "text": "Japan's biggest prefecture (ken)", "choices": ["Iwate", "Kanagawa", "Nagano", "Fukushima"] }
+    },
+    {
+      "id": "ng_09_trick", "expect": "fail", "expectedFailures": ["not_trick"], "difficulty": "beginner",
+      "_note": "知識ではなく引っかけで難しくしている",
+      "answerIndex": 2,
+      "ja": { "text": "1kgの鉄と1kgの綿で重いほう", "choices": ["鉄", "綿", "同じ", "場所による"] },
+      "en": { "text": "Heavier: 1 kg of iron or 1 kg of cotton", "choices": ["Iron", "Cotton", "Same", "Depends on location"] }
+    },
+    {
+      "id": "ng_10_unfair", "expect": "fail", "expectedFailures": ["fair", "answer_correct"], "difficulty": "intermediate",
+      "_note": "主観的で、特定の国を不当に扱う。事実として確かめられない",
+      "answerIndex": 0,
+      "ja": { "text": "一番治安が悪い国", "choices": ["ブラジル", "日本", "スイス", "カナダ"] },
+      "en": { "text": "The most dangerous country", "choices": ["Brazil", "Japan", "Switzerland", "Canada"] }
+    }
+  ]
+}
