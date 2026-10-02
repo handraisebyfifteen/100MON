@@ -1,0 +1,14 @@
+# Python 依存（bundled pip wheel で .pythonlibs にインストールしている）
+.pythonlibs/
+__pycache__/
+*.pyc
+
+# 環境・秘密情報（作らない方針だが、事故防止のため）
+.env
+.env.*
+
+# Replit のローカル状態
+.cache/
+.local/
+.config/
+.agents/

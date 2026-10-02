@@ -1,0 +1,2134 @@
+{
+ "generated_at": "2026-09-29T07:49:09+00:00",
+ "generator": "us.amazon.nova-2-lite-v1:0",
+ "verifier1": "us.anthropic.claude-opus-4-6-v1",
+ "verifier2": "mistral.mistral-large-3-675b-instruct",
+ "questions": [
+  {
+   "id": "nova-2-lite_beginner0_01",
+   "difficulty": "beginner0",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で最初の天皇",
+    "choices": [
+     "神武天皇",
+     "景行天皇",
+     "継体天皇",
+     "安徳天皇"
+    ]
+   },
+   "en": {
+    "text": "The first emperor of Japan",
+    "choices": [
+     "Emperor Jinmu",
+     "Emperor Keikō",
+     "Emperor Keitai",
+     "Emperor Antoku"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.51,
+     "input_tokens": 3424,
+     "output_tokens": 255,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「最初の天皇」が伝説上（神武天皇）か実在が確認できる最初の天皇かで解釈が分かれる可能性がある"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.44,
+     "input_tokens": 1291,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner0_02",
+   "difficulty": "beginner0",
+   "category": "物理",
+   "answerIndex": 2,
+   "ja": {
+    "text": "無気球の最も大きい元素",
+    "choices": [
+     "水素",
+     "結気",
+     "金",
+     "索気"
+    ]
+   },
+   "en": {
+    "text": "The largest atom in a noble gas",
+    "choices": [
+     "Hydrogen",
+     "Neon",
+     "Gold",
+     "Argon"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 9.69,
+     "input_tokens": 3405,
+     "output_tokens": 522,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "希ガス(noble gas)で最も大きい原子はオガネソン(Og, 原子番号118)であり、金(Au)は希ガスではない。また日本語の「無気球」は「希ガス」の誤表記と思われる。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解とされる金は希ガスではなく、選択肢のうちアルゴン(索気)の方が希ガスとして該当し得るが、それも最大の希ガスではない。正解が成立しない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の「無気球」は意味不明で、「希ガス」の意図か判断できない。また選択肢の「結気」「索気」も現代日本語として通じない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の選択肢「結気」「索気」が英語版のNeon・Argonに対応する古い訳語だが一般的でなく、また日本語の「無気球」と英語の「noble gas」が正確に対応していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語版で「無気球」「結気」「索気」など難解・非標準的な用語を使っており、紛らわしい。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.2,
+     "input_tokens": 1276,
+     "output_tokens": 397,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "問題文の「無気球」は「希ガス（noble gas）」を指すと思われるが、選択肢の中で最大の原子は「金（Gold）」ではなく「ラドン（Radon）」であるべき。また、選択肢にラドンが含まれていないため、事実として不正確。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢の中で「金（Gold）」が最大の原子とされるが、そもそも「金」は希ガスではないため、正解が成立しない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「無気球」という言葉の定義が不明確で、複数の解釈が可能。また、選択肢に存在しない「希ガス」の元素が正解とされるべき問題である。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「無気球」や「noble gas」（希ガス）の定義や最大の元素は、科学的な知見の更新によって変わる可能性があるため。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語の問題文と英語の問題文で意味が一致していない。「無気球」と「noble gas」は同義ではなく、正解も一致していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「無気球」という言葉は一般的ではなく、また「noble gas」の直訳としても不適切で、解答者を混乱させる恐れがある。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner0_03",
+   "difficulty": "beginner0",
+   "category": "口語",
+   "answerIndex": 1,
+   "ja": {
+    "text": "しがけの名前",
+    "choices": [
+     "心元",
+     "しがけ",
+     "心、元",
+     "心、元、井"
+    ]
+   },
+   "en": {
+    "text": "The name of Shigae",
+    "choices": [
+     "Shingai",
+     "Shigae",
+     "Shingai, Kai",
+     "Shingai, Kai, Sho"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 6.05,
+     "input_tokens": 3424,
+     "output_tokens": 394,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「しがけ」が何を指すのか不明で、問題文の意味や正解の根拠が確認できない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "問題の意図が不明確なため、他の選択肢が確実に不正解とは判断できない"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「しがけの名前」が何を問うているのか全く不明で、複数の解釈が可能"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の選択肢（心元、しがけ等）と英語版の選択肢（Shingai、Shigae等）が対応しておらず、翻訳として一致していない"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "問題文自体が意味不明で、引っかけかどうか以前に出題として成立していない"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.77,
+     "input_tokens": 1286,
+     "output_tokens": 345,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「しがけ」や「Shigae」という名称の定義や正解が事実として確認できないため、正解として設定されている選択肢が本当に正しいか判断できない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「しがけ」や「Shigae」の定義が不明確であるため、正解以外の選択肢が確実に不正解と言えない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「しがけの名前」が何を指しているのかが不明確で、複数の解釈ができる。例えば、人物名、地名、あるいは造語なのかが判然としない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で「しがけ」や「Shigae」の名称が何を指すのかが一致しておらず、問題の意味や正解が異なる解釈を招く可能性がある。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「しがけ」や「Shigae」という名称は一般的ではなく、問題文や選択肢が何を指しているのかが不明瞭で、言葉遊びや引っかけのように感じられる。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner0_04",
+   "difficulty": "beginner0",
+   "category": "空達",
+   "answerIndex": 0,
+   "ja": {
+    "text": "無気の最も大きい空達",
+    "choices": [
+     "無気",
+     "東京",
+     "高港",
+     "オーストラリア"
+    ]
+   },
+   "en": {
+    "text": "The largest desert in the world",
+    "choices": [
+     "Sahara",
+     "Tokyo",
+     "Hong Kong",
+     "Australia"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 6.93,
+     "input_tokens": 3406,
+     "output_tokens": 434,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文「無気の最も大きい空達」は意味不明で、正解選択肢「無気」も意味不明。英語版では「世界最大の砂漠」でサハラが正解だが、実際には南極砂漠が最大とする見解もあり、また日本語版の問題文・選択肢が正しい日本語になっていない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文「無気の最も大きい空達」は意味が通じず、何を問うているか解釈不能。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文・選択肢が英語版と全く対応していない。英語版は「世界最大の砂漠→サハラ」だが、日本語版は「無気の最も大きい空達→無気」で意味不明。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.01,
+     "input_tokens": 1273,
+     "output_tokens": 397,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文『無気の最も大きい空達』は意味不明で、事実として正しい内容を問う問題になっていない。また、英語版の問題文は『The largest desert in the world』だが、選択肢の『Australia』は砂漠ではなく大陸であり、正解の『Sahara』が砂漠としては最大だが、事実として完全に正しいとはいえない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本語版の選択肢が意味不明で、正解以外の選択肢が確実に不正解か判断できない。また、英語版の選択肢『Australia』は砂漠ではないが、他の選択肢との関係で曖昧さがある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文『無気の最も大きい空達』は意味が不明確で、複数の解釈が可能。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味や正解が一致していない。日本語版は意味不明で、英語版とは全く異なる内容である。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "問題文の『無気の最も大きい空達』は、日本語として不自然で意味が伝わりにくく、引っかけや言葉遊びのような表現になっている。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_01",
+   "difficulty": "beginner",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で最初に作られた硬貨",
+    "choices": [
+     "和同開珰",
+     "平安通",
+     "大正通宝",
+     "江戸通貨"
+    ]
+   },
+   "en": {
+    "text": "The first coin minted in Japan",
+    "choices": [
+     "Wado Kaichin",
+     "Heian Tsūhō",
+     "Taishō Tsūhō",
+     "Edo Currency"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.93,
+     "input_tokens": 3437,
+     "output_tokens": 345,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "正解とされる「和同開珰」は「和同開珎（わどうかいちん）」の誤表記。また、日本最古の硬貨は富本銭（ふほんせん、683年頃）とする説が有力であり、和同開珎（708年）が最初とは断定できない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「日本で最初に作られた硬貨」が富本銭か和同開珎かで学術的に議論があり、解釈が分かれる。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.96,
+     "input_tokens": 1298,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_02",
+   "difficulty": "beginner",
+   "category": "科学",
+   "answerIndex": 3,
+   "ja": {
+    "text": "水の沸点は通常いく度",
+    "choices": [
+     "0度",
+     "50度",
+     "100度",
+     "200度"
+    ]
+   },
+   "en": {
+    "text": "The normal boiling point of water is how many degrees",
+    "choices": [
+     "0 degrees",
+     "50 degrees",
+     "100 degrees",
+     "200 degrees"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.99,
+     "input_tokens": 3413,
+     "output_tokens": 298,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "水の沸点は通常100度（摂氏）であり、正解はインデックス2の「100度」であるべきだが、answerIndexは3（200度）に設定されている"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「いく度」が温度の単位（摂氏・華氏・ケルビン）を明示しておらず曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.39,
+     "input_tokens": 1289,
+     "output_tokens": 168,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "水の沸点は標準大気圧下で100度ですが、「通常」という表現が曖昧で、圧力や環境によって沸点は変化するため、厳密な事実確認が難しいです。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_03",
+   "difficulty": "beginner",
+   "category": "文化",
+   "answerIndex": 2,
+   "ja": {
+    "text": "日本の伝統的な仮面舞踊",
+    "choices": [
+     "歌舞伎",
+     "文楽",
+     "能",
+     "茶道"
+    ]
+   },
+   "en": {
+    "text": "Traditional Japanese masked dance",
+    "choices": [
+     "Kabuki",
+     "Bunraku",
+     "Noh",
+     "Tea Ceremony"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.85,
+     "input_tokens": 3416,
+     "output_tokens": 435,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "能は仮面を用いるが「舞踊」とだけ言い切るのは不正確。能は歌・舞・演劇を含む総合芸術（仮面劇）であり、単なる舞踊ではない。また歌舞伎も舞踊的要素を含み、一部の演目では隈取や面を用いるため、正解の妥当性に疑問が残る。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "歌舞伎も舞踊的要素を持ち、隈取を仮面的表現と解釈しうるため、完全に不正解とは言い切れない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「仮面舞踊」の定義が曖昧で、能を舞踊と呼ぶか仮面劇と呼ぶかで解釈が分かれる。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.94,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_04",
+   "difficulty": "beginner",
+   "category": "スポーツ",
+   "answerIndex": 1,
+   "ja": {
+    "text": "オリンピックで最も種目の多い競技",
+    "choices": [
+     "陸上",
+     "水泳",
+     "体操",
+     "アーチェリー"
+    ]
+   },
+   "en": {
+    "text": "The Olympic sport with the most events",
+    "choices": [
+     "Track and field",
+     "Swimming",
+     "Gymnastics",
+     "Archery"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.6,
+     "input_tokens": 3417,
+     "output_tokens": 352,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "オリンピックで最も種目数が多い競技は水泳ではなく陸上競技（Athletics/Track and Field）です。例えばパリ2024では陸上が48種目、水泳が35種目です。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解とされる水泳より陸上の方が種目数が多いため、陸上も正解（むしろ陸上が正解）となり、正解が一意でない。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "大会ごとに種目数が変動するため、時期によって答えが変わりうる。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.12,
+     "input_tokens": 1284,
+     "output_tokens": 259,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "現行のオリンピックでは、水泳（特に競泳や飛込、水球などを含む）が最も種目の多い競技とされているが、大会ごとに種目数が変動するため、必ずしも常に水泳が最多とは限らない。また、陸上競技も非常に多くの種目があるため、確実に正解と言い切れない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "種目数は大会ごとに変動するため、状況によっては正解が複数存在する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "オリンピックの種目数は大会ごとに変更される可能性があり、時期によって答えが変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_05",
+   "difficulty": "beginner",
+   "category": "ことば",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本語で「ありがとう」の丁寧な形",
+    "choices": [
+     "ありがとうございます",
+     "どうもありがとう",
+     "ありがとうございました",
+     "ありがとうね"
+    ]
+   },
+   "en": {
+    "text": "The polite form of thank you in Japanese",
+    "choices": [
+     "Arigatou gozaimasu",
+     "Dōmo arigatou",
+     "Arigatou gozaimashita",
+     "Arigatou ne"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.83,
+     "input_tokens": 3454,
+     "output_tokens": 355,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「ありがとうございます」は丁寧な形として正しいが、「ありがとうございました」も丁寧な形であり、唯一の正解とは言えない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「ありがとうございました」（選択肢2）も「ありがとう」の丁寧な形であり、正解が複数存在する"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「丁寧な形」の定義が曖昧で、現在形・過去形の区別や「どうも」を付けた形も丁寧とみなせる余地がある"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.85,
+     "input_tokens": 1299,
+     "output_tokens": 235,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「ありがとうございます」が最も一般的な丁寧な形だが、「ありがとうございました」も特定の状況では丁寧な表現として使われるため、正解が一意に定まらない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「ありがとうございます」と「ありがとうございました」の両方が状況によっては丁寧な表現として成り立つため、正解が複数存在する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「丁寧な形」の解釈が曖昧で、文脈や状況によって複数の選択肢が該当する可能性がある。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_beginner_06",
+   "difficulty": "beginner",
+   "category": "広動理",
+   "answerIndex": 1,
+   "ja": {
+    "text": "水の水点は常解いくら度",
+    "choices": [
+     "0度",
+     "100度",
+     "200度",
+     "50度"
+    ]
+   },
+   "en": {
+    "text": "What is the boiling point of water at normal pressure",
+    "choices": [
+     "0 degrees",
+     "100 degrees",
+     "200 degrees",
+     "50 degrees"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 12.32,
+     "input_tokens": 3413,
+     "output_tokens": 378,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文が「水の水点は常解いくら度」と意味不明な文になっており、正しくは「水の沸点は常圧でいくらか」等とすべき。ただし正解の100度（選択肢インデックス1）は沸点として正しい。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が破損しており「水点」「常解」など意味不明な語が含まれ、何を問うているか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版は「boiling point of water at normal pressure」と明確だが、日本語版は文が破損しており意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.67,
+     "input_tokens": 1290,
+     "output_tokens": 335,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版の問題文が「水点（凝固点）」を問うているのか「沸点」を問うているのか不明確。英語版は「沸点」を問うているが、正解として設定されている選択肢「100度」は沸点として正しいが、日本語版との整合性がない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版の問題文「水の水点は常解いくら度」は意味が不明瞭で、複数の解釈が可能。また、英語版とは内容が一致していない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味が完全に一致しておらず、正解の根拠も異なる。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "問題文の「水点」という言葉が「凝固点」を指すのか「沸点」を指すのか紛らわしい。また、英語版の問題文は「boiling point（沸点）」となっているが、日本語版と一致していない。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_intermediate_01",
+   "difficulty": "intermediate",
+   "category": "気経",
+   "answerIndex": 1,
+   "ja": {
+    "text": "無突の無無突的の素球が最も大きいのは",
+    "choices": [
+     "特大大山",
+     "大大山",
+     "大山",
+     "小山"
+    ]
+   },
+   "en": {
+    "text": "The largest mountain without snow in the world is",
+    "choices": [
+     "Mount Everest",
+     "Mount Kilimanjaro",
+     "Mount Fuji",
+     "Mount Nanda Devi"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 11.54,
+     "input_tokens": 3430,
+     "output_tokens": 443,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明（「無突の無無突的の素球」など）であり、事実確認ができない。英語版も「最大の雪のない山」という問題としてキリマンジャロが正解かどうか疑わしい。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "問題文が意味不明なため、正解が一意に定まるか判断できない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が文字化けまたは意味不明で、何を問うているか全く分からない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文・選択肢と英語版の問題文・選択肢が全く対応していない（日本語は意味不明な文と「大山・小山」等、英語はエベレスト・キリマンジャロ等）。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明であり、出題として成立していない。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.05,
+     "input_tokens": 1294,
+     "output_tokens": 397,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "1. 日本語の問題文が意味不明であり、正解の根拠を判断できない。2. 英語の問題文では「雪のない山」という条件に該当する山が複数存在する可能性がある（例：季節や標高による違い）。また、キリマンジャロは完全に雪がないわけではない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明であり、正解の選択肢が複数存在する可能性を否定できない。また、英語の問題文でも「雪のない山」の定義が曖昧なため、正解が複数になり得る。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明であり、複数の解釈が成り立つ余地がある。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「雪のない山」の状態は季節や気候変動によって変わる可能性があるため、時期によって答えが変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味が完全に一致しておらず、正解の選択肢も対応していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語の問題文が「無突の無無突的の素球が最も大きいのは」という意味不明な表現であり、引っかけや言葉遊びと受け取られる。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_intermediate_02",
+   "difficulty": "intermediate",
+   "category": "気経",
+   "answerIndex": 0,
+   "ja": {
+    "text": "東洲大海の最も大きい海水海平は",
+    "choices": [
+     "マリアナ海泶",
+     "大海水海水",
+     "アンターデス海水",
+     "エジパト海水"
+    ]
+   },
+   "en": {
+    "text": "The largest ocean depth in the Pacific Ocean is",
+    "choices": [
+     "Mariana Trench",
+     "Great Ocean Trench",
+     "Antarctic Trench",
+     "Epator Trench"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 14.61,
+     "input_tokens": 3443,
+     "output_tokens": 542,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文「東洲大海の最も大きい海水海平は」は意味不明であり、選択肢も「マリアナ海泶」など誤字・造語が多く、事実確認以前に問題として成立していない。英語版の意図（太平洋で最も深い海溝）に基づけばマリアナ海溝が正解だが、日本語版の記述が正確でない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "不正解選択肢「大海水海水」「アンターデス海水」「エジパト海水」は実在しない名称であり架空だが、日本語版の選択肢が全て意味不明な造語のため正解の一意性以前に問題が破綻している。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が「東洲大海の最も大きい海水海平」と意味不明で、何を問うているのか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版は「Pacific Oceanで最も深い海溝」を問うているが、日本語版は「東洲大海の最も大きい海水海平」となっており、太平洋・海溝という意味が全く伝わらず日英の内容が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.19,
+     "input_tokens": 1306,
+     "output_tokens": 415,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "正解として設定されている「マリアナ海泶（マリアナ海溝）」は事実として正しいが、日本語版の選択肢表記が不正確で、特に「大海水海水」や「エジパト海水」は架空の名称であり、問題として成立していない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢に架空の名称が含まれており、正解以外の選択肢が確実に不正解であるかどうかの判断ができない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版の問題文「東洲大海の最も大きい海水海平は」の表現が不明瞭で、「太平洋の最も深い海溝は」という意図かどうかがわかりづらい。また、選択肢の表記も不正確で解釈が難しい。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題文や選択肢の意味が一致していない。日本語版の表現が不正確で、英語版の「Pacific Ocean」に対応する「太平洋」という言葉もない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "選択肢の表記が紛らわしく、特に「大海水海水」や「エジパト海水」は存在しない架空の名称で、言葉遊びや引っかけの要素が強い。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_intermediate_03",
+   "difficulty": "intermediate",
+   "category": "気経",
+   "answerIndex": 2,
+   "ja": {
+    "text": "終度の最も大きい地域は",
+    "choices": [
+     "サハラ",
+     "プランド",
+     "アリジアン",
+     "ステャーム"
+    ]
+   },
+   "en": {
+    "text": "The largest desert on Earth is",
+    "choices": [
+     "Sahara",
+     "Prand",
+     "Arabian",
+     "Steam"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 10.67,
+     "input_tokens": 3413,
+     "output_tokens": 546,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "英語版の正解は「Arabian」(アラビア砂漠)だが、地球最大の砂漠はサハラ砂漠(または南極大陸)であり、アラビア砂漠ではない。また日本語版の問題文「終度の最も大きい地域は」は意味不明で、英語版「The largest desert on Earth is」と対応していない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "英語版では正解がSahara(選択肢0)であるべきなのにanswerIndex=2(Arabian)が正解に設定されており、正解設定が誤っている。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版の問題文「終度の最も大きい地域は」は意味が不明瞭で、何を問うているか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文「終度の最も大きい地域は」と英語版「The largest desert on Earth is」は意味が一致せず、選択肢も「アリジアン」=「Arabian」「プランド」=「Prand」など対応が不自然・不整合。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語版の選択肢が意味不明な造語(プランド、アリジアン、ステャーム)で構成されており、まともな出題になっていない。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.69,
+     "input_tokens": 1280,
+     "output_tokens": 319,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「アリジアン（Arabian）」は砂漠ではあるが、地球上で最も大きい砂漠は「サハラ（Sahara）」であり、正解が誤っている。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「サハラ」が実際に最大の砂漠であるため、正解が2つ以上存在する状態になっている。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「終度の最も大きい地域」という表現が意味不明で、何を指しているかが不明確。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「最大の砂漠」の定義や面積は、気候変動や測量技術の進展により将来的に変わる可能性があるため。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明で、英語の問題文と内容が一致していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "選択肢に「プランド」「ステャーム」などの架空の名称や紛らわしい表記が含まれており、引っかけの要素がある。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_intermediate_04",
+   "difficulty": "intermediate",
+   "category": "気経",
+   "answerIndex": 3,
+   "ja": {
+    "text": "無気的の海水の最も大きい平面積は",
+    "choices": [
+     "シプルフィャー",
+     "シラムメダバイェランド",
+     "アンタレットラ",
+     "ダイクオンドランド"
+    ]
+   },
+   "en": {
+    "text": "The largest desert without ice on Earth is",
+    "choices": [
+     "Sibulia",
+     "Shurameda Bayland",
+     "Antarctica",
+     "Diacond Land"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 9.74,
+     "input_tokens": 3446,
+     "output_tokens": 466,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "地球上で最大の氷を除いた砂漠はサハラ砂漠であり、選択肢にサハラ砂漠が存在しない。また「ダイクオンドランド」は実在しない地名であり正解として不適切。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢がすべて架空の地名であり、正解も不正解も判断できない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文「無気的の海水の最も大きい平面積は」は意味不明で、何を問うているか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「無気的の海水の最も大きい平面積」、英語版は「最大の氷のない砂漠」で問題の意味が一致していない。また選択肢の対応も不明瞭。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "選択肢がほぼすべて架空の名称で構成されており、知識で解答できない紛らわしい構成になっている。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.98,
+     "input_tokens": 1307,
+     "output_tokens": 376,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「ダイクオンドランド」という名称は一般的な地理学的名称ではなく、実際の最大の氷のない砂漠は「南極大陸以外の最大の砂漠」として「北極地方」や「サハラ砂漠」が該当する。また、選択肢の名称も事実と異なる。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢の名称が事実と異なるため、正解が複数存在する可能性や、正解自体が不明確になっている。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「無気的の海水」という表現が不明確で、問題文の意図が正確に伝わらない。また、選択肢の名称も実際の地名と異なるため、解釈が難しい。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文や選択肢が英語版と意味が一致しておらず、特に「無気的の海水」という表現は英語の「largest desert without ice」とは対応していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "選択肢の名称が実際の地名や学術的に認められた名称と大きく異なり、誤解を招く表現となっている。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_intermediate_05",
+   "difficulty": "intermediate",
+   "category": "史史",
+   "answerIndex": 1,
+   "ja": {
+    "text": "一元代系の最も大きい地争は",
+    "choices": [
+     "平水気",
+     "乱気",
+     "沙気",
+     "沙気水気"
+    ]
+   },
+   "en": {
+    "text": "The largest settlement of the first generation is",
+    "choices": [
+     "Plain",
+     "Mountain",
+     "River",
+     "River Plain"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 16.08,
+     "input_tokens": 3411,
+     "output_tokens": 393,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「一元代系の最も大きい地争」という問題文が意味不明であり、既知の事実や学術用語と一致しない。正解の検証ができない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "問題文自体が意味不明なため、選択肢の正誤を判断できない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "問題文が意味不明で、何を問うているのか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の選択肢（平水気・乱気・沙気・沙気水気）と英語版の選択肢（Plain・Mountain・River・River Plain）が全く対応していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "問題文や選択肢が意味不明であり、まともな出題として成立していない。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.63,
+     "input_tokens": 1281,
+     "output_tokens": 347,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「一元代系」や「地争」という用語が歴史的・学術的に確立されたものではなく、事実としての正確性が担保できない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢の内容が不明確であり、複数の選択肢が正解となり得る可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「一元代系」や「地争」の定義が不明確で、問題文や選択肢の解釈が複数存在する可能性がある。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「一元代系」や「地争」のような歴史的・文脈的な用語が不明確で、時代や解釈によって答えが変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で用語や概念が一致しておらず、特に選択肢の対応関係が不適切である。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「一元代系」や「地争」、「平水気」「乱気」「沙門」「沙門水気」といった用語が一般的でなく、言葉遊びや誤解を招く表現である。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_advanced_01",
+   "difficulty": "advanced",
+   "category": "海洋",
+   "answerIndex": 1,
+   "ja": {
+    "text": "海洋で、世界の最大な水源の種らき",
+    "choices": [
+     "平洋",
+     "大海",
+     "川海",
+     "水湖"
+    ]
+   },
+   "en": {
+    "text": "In the ocean, the largest body of water by area",
+    "choices": [
+     "Arctic Ocean",
+     "Pacific Ocean",
+     "Indian Ocean",
+     "Mediterranean Sea"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.34,
+     "input_tokens": 3417,
+     "output_tokens": 336,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明（「世界の最大な水源の種らき」）で、何を問うているか解釈できない"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語の選択肢（平洋・大海・川海・水湖）が英語版（Arctic Ocean・Pacific Ocean・Indian Ocean・Mediterranean Sea）と全く対応しておらず、正解も一致しない"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語版の問題文・選択肢が破綻しており、正常な出題として成立していない"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.46,
+     "input_tokens": 1289,
+     "output_tokens": 450,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明であり、正解とされる選択肢「大海」も「Pacific Ocean（太平洋）」と一致していない。また、「大海」という言葉は一般的に「海洋」や「大洋」を指すことが多く、特定の海洋を指す言葉としては不適切。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本語の選択肢が不適切で意味不明であり、正解以外の選択肢も明確に不正解とは言えない。また、英語の選択肢「Pacific Ocean」は正解だが、日本語の選択肢との対応関係が成立していない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が「海洋で、世界の最大な水源の種らき」と意味不明で、複数の解釈ができてしまう。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「最大な水源の種らき」という表現が不明瞭で、問題文の意味が正確に伝わらない。また、海洋の面積は基本的に変わらないが、問題文の日本語が不適切なため、時期によって解釈が変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文と選択肢が意味不明で、英語版との一致が完全に欠如している。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語の問題文が「最大な水源の種らき」と意味不明な表現になっており、引っかけや言葉遊びと受け取られる可能性がある。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_advanced_02",
+   "difficulty": "advanced",
+   "category": "年史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "東族の最初の経文文書は",
+    "choices": [
+     "北法書",
+     "東族書章",
+     "南法書",
+     "南海書"
+    ]
+   },
+   "en": {
+    "text": "The earliest historical text of Japan",
+    "choices": [
+     "Kojiki",
+     "Nihon Shoki",
+     "Shoku Nihongi",
+     "Fudoki"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 14.09,
+     "input_tokens": 3421,
+     "output_tokens": 496,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版の「東族の最初の経文文書」「北法書」は実在しない概念・文書であり、事実として正しくない。英語版の「日本最古の歴史書=古事記」は正しいが、日本語版が全く別の架空の内容になっている。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "英語版では古事記(Kojiki)が正解とされているが、「最古の歴史書」という問いに対して日本書紀や風土記も解釈次第で候補になり得る曖昧さがある。また日本語版は架空の内容のため判定不能。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "英語版の「earliest historical text」が「最古の歴史書」か「最古の歴史的文献」かで解釈が分かれ得る。日本語版は意味自体が不明瞭。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「東族の最初の経文文書」「北法書」等の架空の内容で、英語版の「日本最古の歴史書=古事記」と全く一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.67,
+     "input_tokens": 1290,
+     "output_tokens": 345,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「東族の最初の経文文書」という表現は歴史的な文書を指すものとして認識されておらず、事実に基づいた正解が存在しない。また、日本語と英語の問題文と選択肢が一致していない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "問題文と選択肢が事実と一致せず、正解が複数存在する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「東族の最初の経文文書」という言葉の定義が不明確で、複数の解釈が可能である。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「東族の最初の経文文書」という記述が不明確であり、歴史的な文脈や用語の定義によっては時期によって解釈が変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版の問題文と選択肢が全く一致しておらず、意味も異なる。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「東族の最初の経文文書」という表現は一般的な歴史用語ではなく、受験者を混乱させる可能性がある。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_advanced_03",
+   "difficulty": "advanced",
+   "category": "科学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "無業の重金元は",
+    "choices": [
+     "元素紀",
+     "紀素",
+     "紀金",
+     "金素"
+    ]
+   },
+   "en": {
+    "text": "The chemical symbol for mercury is",
+    "choices": [
+     "Au",
+     "Ag",
+     "Hg",
+     "Cu"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 10.9,
+     "input_tokens": 3403,
+     "output_tokens": 408,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版の問題文「無業の重金元は」は意味不明であり、水銀の化学記号を問う正しい問題文になっていない。また選択肢も「紀金」など実在しない記号で、正解である「Hg」に対応していない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版の問題文が意味不明で、何を問うているか解釈できない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版は水銀の化学記号を問う問題だが、日本語版は問題文も選択肢も英語版と全く対応しておらず、意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語版の問題文・選択肢が意味不明な文字列で構成されており、まともに解答できない。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.48,
+     "input_tokens": 1270,
+     "output_tokens": 311,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文が意味をなさず、正解の選択肢「紀金」も化学記号としての事実と一致しない。英語版は正しいが、日本語版との整合性がないため不合格。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本語の問題文が意味をなさないため、正解が成立せず、他の選択肢も不正解とは言い切れない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が「無業の重金元」という意味不明な表現であり、複数の解釈を招くため。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味と正解が一致していない。日本語版は意味不明であり、英語版とは完全に乖離している。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語の問題文が「無業の重金元」という意味不明な表現であり、言葉遊びや引っかけに該当するため。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_advanced_04",
+   "difficulty": "advanced",
+   "category": "スポーツ",
+   "answerIndex": 0,
+   "ja": {
+    "text": "プロデストスカールの最高種すびは",
+    "choices": [
+     "スカール",
+     "テニス",
+     "プロマチニウム",
+     "プロマイディア"
+    ]
+   },
+   "en": {
+    "text": "The highest-scoring point in professional basketball is",
+    "choices": [
+     "Three-point shot",
+     "Two-point field goal",
+     "Free throw",
+     "Three-point field goal"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 12.23,
+     "input_tokens": 3429,
+     "output_tokens": 461,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の問題文が意味不明（「プロデストスカールの最高種すびは」）で、英語版はプロバスケットボールの最高得点についての問題だが、英語版でも正解が「Three-point shot」とされている一方、選択肢に「Three-point field goal」もあり、両者は同義であるため正解の設定が不適切"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "選択肢0「Three-point shot」と選択肢3「Three-point field goal」は実質同じ意味であり、正解が複数存在する"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が文字化けまたは誤記で意味が全く通じず、何を問うているか解釈不能"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文・選択肢が英語版と全く対応しておらず、意味も正解も一致していない"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "日本語版が意味不明な文字列であり、出題として成立していない"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.91,
+     "input_tokens": 1291,
+     "output_tokens": 386,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語の選択肢「スカール」は「スリーポイントショット」を指すと思われるが、表記が不正確であり、英語版の選択肢と一致していない。また、正解とされる選択肢の内容が事実として正しいかどうかも不明。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "英語版の選択肢に「Three-point shot」と「Three-point field goal」が重複しており、正解が2つ存在する形になっている。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文「プロデストスカールの最高種すびは」は意味が不明瞭で、複数の解釈を生む可能性がある。英語版も「highest-scoring point」の定義が曖昧。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味や選択肢が一致していない。特に日本語の選択肢は英語の選択肢と対応しておらず、問題文の趣旨も異なる。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「最高種すび」という言葉は一般的でなく、紛らわしい表現である。また英語版でも「highest-scoring point」が曖昧で、直感的に理解しづらい。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "nova-2-lite_advanced_05",
+   "difficulty": "advanced",
+   "category": "物理",
+   "answerIndex": 2,
+   "ja": {
+    "text": "物理にごとで有無の物は",
+    "choices": [
+     "鱼素",
+     "水毒",
+     "野素",
+     "光素"
+    ]
+   },
+   "en": {
+    "text": "Which element is found in nature but not artificial",
+    "choices": [
+     "Gold",
+     "Water",
+     "Uranium",
+     "Light"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 10.58,
+     "input_tokens": 3407,
+     "output_tokens": 436,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "問題文の日本語が意味不明（「物理にごとで有無の物は」）であり、選択肢も実在しない用語（鱼素、水毒、野素、光素）で構成されており、事実に基づく正解が存在しない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "問題文・選択肢が意味不明なため、正解・不正解の判別が不可能"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が文法的に破綻しており、何を問うているか解釈できない"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の選択肢（鱼素・水毒・野素・光素）と英語版の選択肢（Gold・Water・Uranium・Light）が全く対応しておらず、問題文の意味も一致していない"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "問題文・選択肢が意味不明で、まともな知識問題として成立していない"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.98,
+     "input_tokens": 1281,
+     "output_tokens": 377,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "ウラン（Uranium）は自然界に存在するが、人工的に濃縮や加工が行われるため「人工的に作られていない」とは言い切れない。また、問題文や選択肢の事実関係が曖昧。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "ウランのほか、ゴールド（金）も自然界に存在し人工的に「作られていない」ため、正解が複数存在する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文「物理にごとで有無の物は」が意味不明で、複数の解釈ができてしまう。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「自然界に存在するが人工的に作られていないもの」は、科学技術の進展によって変わる可能性がある（例：ウランの濃縮技術や新たな元素の合成など）。"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題文の意味が大きく異なり、正解の選択肢も一致していない。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "選択肢の漢字表記（例：「鱼素」「野素」）が紛らわしく、言葉遊びや誤解を招く書き方となっている。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  }
+ ],
+ "gen_log": [
+  {
+   "difficulty": "beginner0",
+   "n": 4,
+   "attempts": [
+    {
+     "latency_s": 2.67,
+     "input_tokens": 1748,
+     "output_tokens": 377,
+     "returned": 4,
+     "accepted": 1,
+     "error": "1問目: ja の選択肢に重複がある / 3問目: ja の選択肢に重複がある / 4問目: ja の選択肢に重複がある"
+    },
+    {
+     "latency_s": 3.04,
+     "input_tokens": 1806,
+     "output_tokens": 446,
+     "returned": 3,
+     "accepted": 3,
+     "error": null
+    }
+   ],
+   "got": 4
+  },
+  {
+   "difficulty": "beginner",
+   "n": 6,
+   "attempts": [
+    {
+     "latency_s": 3.1,
+     "input_tokens": 1748,
+     "output_tokens": 569,
+     "returned": 6,
+     "accepted": 5,
+     "error": "1問目: ja の選択肢に重複がある"
+    },
+    {
+     "latency_s": 1.48,
+     "input_tokens": 1844,
+     "output_tokens": 162,
+     "returned": 1,
+     "accepted": 1,
+     "error": null
+    }
+   ],
+   "got": 6
+  },
+  {
+   "difficulty": "intermediate",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 6.38,
+     "input_tokens": 1747,
+     "output_tokens": 1043,
+     "returned": 5,
+     "accepted": 5,
+     "error": null
+    }
+   ],
+   "got": 5
+  },
+  {
+   "difficulty": "advanced",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 5.53,
+     "input_tokens": 1750,
+     "output_tokens": 954,
+     "returned": 5,
+     "accepted": 4,
+     "error": "4問目: ja の選択肢に重複がある"
+    },
+    {
+     "latency_s": 1.53,
+     "input_tokens": 1843,
+     "output_tokens": 160,
+     "returned": 1,
+     "accepted": 1,
+     "error": null
+    }
+   ],
+   "got": 5
+  }
+ ]
+}

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import boto3; print\\('boto3', boto3.__version__\\)\")",
+      "Bash(python3 -m pip --version)",
+      "Bash(python3 -m ensurepip --user)",
+      "Bash(PYTHONPATH=/repl/tools/gxzhl7aaiid7zp3y47jqqiq7zg5mqpwp-python3-3.14.6/lib/python3.14/ensurepip/_bundled/pip-26.1.2-py3-none-any.whl python3 -m pip install --quiet --target /home/runner/workspace/.pythonlibs boto3)",
+      "Bash(PYTHONPATH=/home/runner/workspace/.pythonlibs python3 -c \"import boto3; print\\('boto3', boto3.__version__\\)\")",
+      "Bash(python3 pipeline/check_models.py)",
+      "Bash(awk -F'|' '{print $4, $6, $7, $8}')",
+      "Bash(python3 pipeline/test_verifiers.py --limit 2)",
+      "Bash(python3 pipeline/test_verifiers.py)",
+      "Bash(awk '{print $6, $7, $8, $9}')",
+      "Bash(python3 *)",
+      "Bash(pkill -f test_generators)"
+    ]
+  }
+}

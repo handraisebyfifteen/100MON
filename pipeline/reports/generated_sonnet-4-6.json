@@ -1,0 +1,2110 @@
+{
+ "generated_at": "2026-09-29T07:49:09+00:00",
+ "generator": "us.anthropic.claude-sonnet-4-6",
+ "verifier1": "us.anthropic.claude-opus-4-6-v1",
+ "verifier2": "mistral.mistral-large-3-675b-instruct",
+ "questions": [
+  {
+   "id": "sonnet-4-6_beginner0_01",
+   "difficulty": "beginner0",
+   "category": "地理",
+   "answerIndex": 2,
+   "ja": {
+    "text": "世界で一番長い川",
+    "choices": [
+     "アマゾン川",
+     "ミシシッピ川",
+     "ナイル川",
+     "長江"
+    ]
+   },
+   "en": {
+    "text": "The longest river in the world",
+    "choices": [
+     "Amazon",
+     "Mississippi",
+     "Nile",
+     "Yangtze"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 6.41,
+     "input_tokens": 3415,
+     "output_tokens": 326,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "近年の測量ではアマゾン川がナイル川より長いとする研究もあり、世界一長い川がナイル川であると断定することには議論がある"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "アマゾン川も測定方法によってはナイル川より長いとされ、正解が複数存在しうる"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「長い」の定義（本流の長さ・支流を含むかなど）により答えが変わりうる"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.27,
+     "input_tokens": 1283,
+     "output_tokens": 215,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "一般的に「世界で一番長い川」はナイル川とされていますが、近年の測量技術の進歩により、アマゾン川が最長である可能性も指摘されています。そのため、現時点で確実に正解と言い切れない状況です。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "ナイル川とアマゾン川のどちらが最長かは議論があるため、確実に正解が1つに絞れません。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner0_02",
+   "difficulty": "beginner0",
+   "category": "科学",
+   "answerIndex": 0,
+   "ja": {
+    "text": "水の化学式",
+    "choices": [
+     "H₂O",
+     "CO₂",
+     "NaCl",
+     "O₂"
+    ]
+   },
+   "en": {
+    "text": "The chemical formula for water",
+    "choices": [
+     "H₂O",
+     "CO₂",
+     "NaCl",
+     "O₂"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.61,
+     "input_tokens": 3407,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.86,
+     "input_tokens": 1272,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner0_03",
+   "difficulty": "beginner0",
+   "category": "歴史",
+   "answerIndex": 3,
+   "ja": {
+    "text": "アメリカ独立宣言が出された年",
+    "choices": [
+     "1689年",
+     "1748年",
+     "1789年",
+     "1776年"
+    ]
+   },
+   "en": {
+    "text": "The year the American Declaration of Independence was signed",
+    "choices": [
+     "1689",
+     "1748",
+     "1789",
+     "1776"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.08,
+     "input_tokens": 3414,
+     "output_tokens": 296,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「出された年」、英語版は「signed（署名された年）」と表現が異なる。独立宣言の採択(adopted)は1776年7月4日だが、実際の署名(signed)は主に1776年8月2日以降であり、厳密には異なる行為を指している。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1296,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner0_04",
+   "difficulty": "beginner0",
+   "category": "文化",
+   "answerIndex": 1,
+   "ja": {
+    "text": "ピアノの鍵盤の総数",
+    "choices": [
+     "76鍵",
+     "88鍵",
+     "92鍵",
+     "100鍵"
+    ]
+   },
+   "en": {
+    "text": "The total number of keys on a standard piano",
+    "choices": [
+     "76",
+     "88",
+     "92",
+     "100"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 6.23,
+     "input_tokens": 3413,
+     "output_tokens": 339,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版では「ピアノの鍵盤の総数」とだけあり「標準的な」の限定がないため、76鍵や他の鍵盤数のピアノも存在し得る点で曖昧。英語版には standard とあるが日本語版にはない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版には 'standard piano' と限定があるが、日本語版には『標準的な』に相当する語がなく、問題の意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.87,
+     "input_tokens": 1294,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_01",
+   "difficulty": "beginner",
+   "category": "地理",
+   "answerIndex": 2,
+   "ja": {
+    "text": "世界で一番長い川",
+    "choices": [
+     "アマゾン川",
+     "ミシシッピ川",
+     "ナイル川",
+     "長江"
+    ]
+   },
+   "en": {
+    "text": "The longest river in the world",
+    "choices": [
+     "Amazon",
+     "Mississippi",
+     "Nile",
+     "Yangtze"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 9.34,
+     "input_tokens": 3415,
+     "output_tokens": 334,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "近年の測量ではアマゾン川がナイル川より長いとする研究もあり、世界一長い川がナイル川であると断定することには議論がある"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "アマゾン川も測定方法によってはナイル川より長いとされ、正解が複数存在しうる"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「一番長い川」の定義（支流の扱い・河口の測定方法等）が曖昧で解釈が分かれる"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.34,
+     "input_tokens": 1283,
+     "output_tokens": 163,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "一般的にはナイル川が世界一長い川とされていますが、アマゾン川が最長とする研究や測定方法によっては結果が変わる場合があり、厳密な事実として確定していないため。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_02",
+   "difficulty": "beginner",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "江戸幕府を開いた人物",
+    "choices": [
+     "徳川家康",
+     "徳川秀忠",
+     "豊臣秀吉",
+     "織田信長"
+    ]
+   },
+   "en": {
+    "text": "The person who established the Edo Shogunate",
+    "choices": [
+     "Tokugawa Ieyasu",
+     "Tokugawa Hidetada",
+     "Toyotomi Hideyoshi",
+     "Oda Nobunaga"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 8.75,
+     "input_tokens": 3449,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.88,
+     "input_tokens": 1300,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_03",
+   "difficulty": "beginner",
+   "category": "科学",
+   "answerIndex": 3,
+   "ja": {
+    "text": "水の化学式",
+    "choices": [
+     "CO₂",
+     "NaCl",
+     "H₂O₂",
+     "H₂O"
+    ]
+   },
+   "en": {
+    "text": "The chemical formula for water",
+    "choices": [
+     "CO₂",
+     "NaCl",
+     "H₂O₂",
+     "H₂O"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.12,
+     "input_tokens": 3413,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.86,
+     "input_tokens": 1276,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_04",
+   "difficulty": "beginner",
+   "category": "文化",
+   "answerIndex": 1,
+   "ja": {
+    "text": "俳句の季節を表す言葉",
+    "choices": [
+     "枕詞",
+     "季語",
+     "序詞",
+     "掛詞"
+    ]
+   },
+   "en": {
+    "text": "The term for a seasonal word used in haiku",
+    "choices": [
+     "Makurakotoba",
+     "Kigo",
+     "Jokotoba",
+     "Kakekotoba"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 9.55,
+     "input_tokens": 3425,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.88,
+     "input_tokens": 1290,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_05",
+   "difficulty": "beginner",
+   "category": "スポーツ",
+   "answerIndex": 2,
+   "ja": {
+    "text": "サッカーの試合の前半の時間",
+    "choices": [
+     "30分",
+     "40分",
+     "45分",
+     "50分"
+    ]
+   },
+   "en": {
+    "text": "The length of one half in a standard soccer match",
+    "choices": [
+     "30 minutes",
+     "40 minutes",
+     "45 minutes",
+     "50 minutes"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 11.27,
+     "input_tokens": 3414,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.9,
+     "input_tokens": 1287,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_beginner_06",
+   "difficulty": "beginner",
+   "category": "ことば",
+   "answerIndex": 0,
+   "ja": {
+    "text": "「喜怒哀楽」に含まれない感情",
+    "choices": [
+     "恐れ",
+     "喜び",
+     "悲しみ",
+     "怒り"
+    ]
+   },
+   "en": {
+    "text": "The emotion NOT included in the Japanese phrase 'Kido-Airaku' (joy, anger, sorrow, pleasure)",
+    "choices": [
+     "Fear",
+     "Joy",
+     "Sorrow",
+     "Anger"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.18,
+     "input_tokens": 3437,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.92,
+     "input_tokens": 1296,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_intermediate_01",
+   "difficulty": "intermediate",
+   "category": "地理",
+   "answerIndex": 2,
+   "ja": {
+    "text": "アフリカ大陸で最も高い山",
+    "choices": [
+     "ケニア山",
+     "ルウェンゾリ山",
+     "キリマンジャロ",
+     "カメルーン山"
+    ]
+   },
+   "en": {
+    "text": "The highest mountain in Africa",
+    "choices": [
+     "Mount Kenya",
+     "Mount Rwenzori",
+     "Mount Kilimanjaro",
+     "Mount Cameroon"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.74,
+     "input_tokens": 3436,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.93,
+     "input_tokens": 1293,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_intermediate_02",
+   "difficulty": "intermediate",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "世界最古の現存する紙の本が作られた国",
+    "choices": [
+     "中国",
+     "エジプト",
+     "イラク",
+     "インド"
+    ]
+   },
+   "en": {
+    "text": "The country where the world's oldest surviving printed book was made",
+    "choices": [
+     "China",
+     "Egypt",
+     "Iraq",
+     "India"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.03,
+     "input_tokens": 3415,
+     "output_tokens": 388,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版は「紙の本」、英語版は「printed book（印刷された本）」となっており、いずれの解釈でも中国（金剛般若経、868年）が正解とされるが、日本語の「紙の本」は「印刷された本」とは異なる概念であり、問題文の正確性に疑問がある"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の「紙の本」は手書きの書物も含む広い意味に解釈でき、印刷本に限定されるか不明確"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「紙の本」、英語版は「printed book（印刷された本）」で意味が異なる"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.91,
+     "input_tokens": 1286,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_intermediate_03",
+   "difficulty": "intermediate",
+   "category": "科学",
+   "answerIndex": 3,
+   "ja": {
+    "text": "人体で最も大きい臓器",
+    "choices": [
+     "肝臓",
+     "肺",
+     "小腸",
+     "皮膚"
+    ]
+   },
+   "en": {
+    "text": "The largest organ in the human body",
+    "choices": [
+     "Liver",
+     "Lungs",
+     "Small intestine",
+     "Skin"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.86,
+     "input_tokens": 3412,
+     "output_tokens": 318,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「臓器」の定義によっては皮膚を臓器に含めない解釈もあり、内臓に限定すると肝臓が正解になるため曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "皮膚を「臓器」に含めるかどうかで意見が分かれる点が引っかけ的であり、一般的な感覚では内臓を想起させる問い方になっている"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.01,
+     "input_tokens": 1280,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_intermediate_04",
+   "difficulty": "intermediate",
+   "category": "文化",
+   "answerIndex": 1,
+   "ja": {
+    "text": "ユネスコ無形文化遺産に登録された日本の伝統芸能",
+    "choices": [
+     "歌舞伎",
+     "能楽",
+     "落語",
+     "浄瑠璃"
+    ]
+   },
+   "en": {
+    "text": "Which Japanese performing art was inscribed on UNESCO's Intangible Cultural Heritage list first?",
+    "choices": [
+     "Kabuki",
+     "Noh theatre",
+     "Rakugo",
+     "Joruri"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 14.91,
+     "input_tokens": 3448,
+     "output_tokens": 561,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "歌舞伎も2008年にユネスコ無形文化遺産に登録されており、能楽だけが正解とは言えない。また日本語版の問題文は「登録された日本の伝統芸能」としか書かれておらず、歌舞伎も該当するため正解が一意に定まらない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "歌舞伎（2008年登録）も能楽（2008年登録）もユネスコ無形文化遺産に登録されており、日本語版の問題文では正解が複数存在する。英語版の「first」についても能楽は2008年、歌舞伎も2008年で同年登録のため一意に絞れない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版は「登録された伝統芸能はどれか」と読め、歌舞伎・能楽の両方が該当し曖昧。英語版は「first」と限定しているが日本語版にその条件がなく、問題の意図が不明確。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「登録された日本の伝統芸能」、英語版は「最初に登録された日本の伝統芸能」で、'first'の条件が日本語版に欠けており問題の意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.91,
+     "input_tokens": 1306,
+     "output_tokens": 385,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「ユネスコ無形文化遺産に登録された日本の伝統芸能」として、能楽は2008年に登録されていますが、人類の無形文化遺産の代表的な一覧表（代表リスト）には2001年に「能」が最初に登録されています。しかし、問題文の日本語版は「最初に登録されたもの」とは明確に記載されておらず、英語版では「first」と明確に問われているため、事実と齟齬が生じています。また、選択肢に含まれる「歌舞伎」も2008年に登録されており、日本語版の問題文からは正解が一意に定まらないため不合格です。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本語版の問題文では「ユネスコ無形文化遺産に登録された日本の伝統芸能」とのみ記載されており、複数の伝統芸能が登録されているため、正解が一意に定まりません。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文は「最初に登録されたもの」を問うていないため、英語版と意味が一致していません。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_intermediate_05",
+   "difficulty": "intermediate",
+   "category": "スポーツ",
+   "answerIndex": 2,
+   "ja": {
+    "text": "オリンピック発祥の地であるギリシャの都市",
+    "choices": [
+     "アテネ",
+     "スパルタ",
+     "オリンピア",
+     "コリントス"
+    ]
+   },
+   "en": {
+    "text": "The Greek city where the ancient Olympic Games originated",
+    "choices": [
+     "Athens",
+     "Sparta",
+     "Olympia",
+     "Corinth"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.07,
+     "input_tokens": 3426,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.27,
+     "input_tokens": 1292,
+     "output_tokens": 167,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_advanced_01",
+   "difficulty": "advanced",
+   "category": "科学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "光合成で酸素を発生させる反応",
+    "choices": [
+     "カルビン回路",
+     "クレブス回路",
+     "明反応",
+     "暗反応"
+    ]
+   },
+   "en": {
+    "text": "The stage of photosynthesis that produces oxygen",
+    "choices": [
+     "Calvin cycle",
+     "Krebs cycle",
+     "Light reactions",
+     "Dark reactions"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.88,
+     "input_tokens": 3424,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.92,
+     "input_tokens": 1294,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_advanced_02",
+   "difficulty": "advanced",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "ナポレオンが流刑になった最後の島",
+    "choices": [
+     "セントヘレナ島",
+     "エルバ島",
+     "コルシカ島",
+     "マルタ島"
+    ]
+   },
+   "en": {
+    "text": "The island where Napoleon spent his final exile",
+    "choices": [
+     "Saint Helena",
+     "Elba",
+     "Corsica",
+     "Malta"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.23,
+     "input_tokens": 3428,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.93,
+     "input_tokens": 1288,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_advanced_03",
+   "difficulty": "advanced",
+   "category": "地理",
+   "answerIndex": 3,
+   "ja": {
+    "text": "世界で最も深い湖",
+    "choices": [
+     "カスピ海",
+     "タンガニーカ湖",
+     "スペリオル湖",
+     "バイカル湖"
+    ]
+   },
+   "en": {
+    "text": "The deepest lake in the world",
+    "choices": [
+     "Caspian Sea",
+     "Lake Tanganyika",
+     "Lake Superior",
+     "Lake Baikal"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.15,
+     "input_tokens": 3431,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1289,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_advanced_04",
+   "difficulty": "advanced",
+   "category": "文化",
+   "answerIndex": 1,
+   "ja": {
+    "text": "ダンテ『神曲』の第一部の名前",
+    "choices": [
+     "天国篇",
+     "地獄篇",
+     "煉獄篇",
+     "辺獄篇"
+    ]
+   },
+   "en": {
+    "text": "The title of the first part of Dante's Divine Comedy",
+    "choices": [
+     "Paradiso",
+     "Inferno",
+     "Purgatorio",
+     "Limbo"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 8.12,
+     "input_tokens": 3434,
+     "output_tokens": 283,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版の選択肢「Limbo」は辺獄を指すが、イタリア語原題ではなく英語名であり、他の3つの選択肢（Paradiso, Inferno, Purgatorio）がイタリア語原題である点と不統一"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.88,
+     "input_tokens": 1295,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "sonnet-4-6_advanced_05",
+   "difficulty": "advanced",
+   "category": "スポーツ",
+   "answerIndex": 2,
+   "ja": {
+    "text": "オリンピック発祥の地・古代ギリシャの都市",
+    "choices": [
+     "アテネ",
+     "スパルタ",
+     "オリンピア",
+     "デルフォイ"
+    ]
+   },
+   "en": {
+    "text": "The ancient Greek city where the Olympic Games originated",
+    "choices": [
+     "Athens",
+     "Sparta",
+     "Olympia",
+     "Delphi"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 10.83,
+     "input_tokens": 3431,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.91,
+     "input_tokens": 1293,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  }
+ ],
+ "gen_log": [
+  {
+   "difficulty": "beginner0",
+   "n": 4,
+   "attempts": [
+    {
+     "latency_s": 4.92,
+     "input_tokens": 1805,
+     "output_tokens": 533,
+     "returned": 4,
+     "accepted": 4,
+     "error": null
+    }
+   ],
+   "got": 4
+  },
+  {
+   "difficulty": "beginner",
+   "n": 6,
+   "attempts": [
+    {
+     "latency_s": 7.89,
+     "input_tokens": 1801,
+     "output_tokens": 865,
+     "returned": 6,
+     "accepted": 6,
+     "error": null
+    }
+   ],
+   "got": 6
+  },
+  {
+   "difficulty": "intermediate",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 7.46,
+     "input_tokens": 1799,
+     "output_tokens": 736,
+     "returned": 5,
+     "accepted": 5,
+     "error": null
+    }
+   ],
+   "got": 5
+  },
+  {
+   "difficulty": "advanced",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 7.6,
+     "input_tokens": 1805,
+     "output_tokens": 747,
+     "returned": 5,
+     "accepted": 5,
+     "error": null
+    }
+   ],
+   "got": 5
+  }
+ ]
+}

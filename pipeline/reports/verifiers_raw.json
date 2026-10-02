@@ -1,0 +1,5944 @@
+{
+ "generated_at": "2026-09-29T07:37:19+00:00",
+ "region": "us-east-2",
+ "checks": {
+  "answer_correct": "問題文の内容が事実として正しく、正解とされる選択肢が本当に正解か",
+  "single_answer": "正解以外の3つが確実に不正解か（正解が2つ以上ないか）",
+  "unambiguous": "複数の解釈ができる書き方になっていないか",
+  "not_time_sensitive": "時期によって答えが変わる問題でないか",
+  "locale_match": "日本語版と英語版で、問題の意味と正解が一致しているか",
+  "not_trick": "引っかけ・言葉遊び・紛らわしい書き方で難しくしていないか",
+  "fair": "特定の国・地域・人を不当に扱う内容でないか"
+ },
+ "candidates": {
+  "claude-opus-4-6": {
+   "model_id": "us.anthropic.claude-opus-4-6-v1",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.54,
+     "input_tokens": 3423,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.08,
+     "input_tokens": 3401,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.93,
+     "input_tokens": 3408,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 4.96,
+     "input_tokens": 3435,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.04,
+     "input_tokens": 3414,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.18,
+     "input_tokens": 3399,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.15,
+     "input_tokens": 3430,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 11.35,
+     "input_tokens": 3396,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.24,
+     "input_tokens": 3406,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.11,
+     "input_tokens": 3428,
+     "output_tokens": 205,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 6.12,
+     "input_tokens": 3417,
+     "output_tokens": 268,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "光合成で植物が取り込む気体は二酸化炭素（CO₂）であり、正解はanswerIndex=1であるべきだが、answerIndex=0（酸素）が正解に設定されている"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 10.59,
+     "input_tokens": 3435,
+     "output_tokens": 255,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "平安京に都を移したのは桓武天皇（選択肢index 3）であり、正解とされているindex 0の聖武天皇は不正解です。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 5.15,
+     "input_tokens": 3414,
+     "output_tokens": 309,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "札幌市も横浜市も両方とも政令指定都市であり、正解が一つに定まらない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "札幌市と横浜市の両方が政令指定都市であるため、正解が2つ存在する"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「政令指定都市」はどれかを問う問題だが、該当する選択肢が複数あり曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.37,
+     "input_tokens": 3402,
+     "output_tokens": 257,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "チリも太平洋に面しており、正解が2つ存在する"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「太平洋に面している国」は複数存在するため、唯一の正解を特定できない"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.51,
+     "input_tokens": 3407,
+     "output_tokens": 255,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "2023年にインドが中国を抜いて世界最多となったが、将来再び逆転する可能性もあり、時期によって正解が変わりうる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.73,
+     "input_tokens": 3453,
+     "output_tokens": 240,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「現在の」国連事務総長は時期によって変わるため、将来正解が変わる可能性がある"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.33,
+     "input_tokens": 3414,
+     "output_tokens": 248,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「一番長い川」、英語版は「largest lake（最大の湖）」となっており、問題の意味が一致していない"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 15.51,
+     "input_tokens": 3415,
+     "output_tokens": 412,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本で面積が一番大きい「県」は岩手県で正しいが、「都道府県」では北海道が最大。問題文の「県」が都道府県全体を指すのか県のみを指すのかで解釈が分かれるため、事実としての正確性に懸念がある"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「一番大きい」が面積なのか人口なのか曖昧であり、また「県」が47都道府県全体を指すのか県(ken)のみを指すのかも曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版は'biggest prefecture (ken)'と書いており県に限定する意図が明示されているが、日本語版は単に「県」としか書かれておらず限定の度合いが異なる"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 10.87,
+     "input_tokens": 3425,
+     "output_tokens": 356,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「重いほう」という問いに対し「同じ」は厳密には選択肢として問いの形式と噛み合わず、また質量と重量の解釈次第で答えが変わりうる（浮力を考慮すると体積の大きい綿の方が見かけの重さは軽い）"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "典型的な引っかけ問題（1kgの鉄と1kgの綿はどちらが重い）であり、直感的に間違えさせることを意図した構造になっている"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 11.59,
+     "input_tokens": 3402,
+     "output_tokens": 450,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「一番治安が悪い国」としてブラジルが正解とされているが、世界平和度指数等の客観的指標ではアフガニスタン、イエメン、ソマリアなど他に治安が悪い国が多数あり、ブラジルが「一番」とは言えない。選択肢4つの中でも基準が曖昧で正解の根拠が不十分。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「治安が悪い」の定義が曖昧で、殺人率・犯罪発生率・世界平和度指数など指標によって順位が変わる。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "治安状況は年々変化するため、時期によって答えが変わりうる。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": false,
+       "reason": "ブラジルを「一番治安が悪い国」と断定しており、特定の国に対する不当なレッテル貼りにあたる。"
+      }
+     },
+     "verdict": false
+    }
+   ]
+  },
+  "gpt-oss-120b": {
+   "model_id": "openai.gpt-oss-120b-1:0",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.57,
+     "input_tokens": 1150,
+     "output_tokens": 384,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.57,
+     "input_tokens": 1142,
+     "output_tokens": 343,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.76,
+     "input_tokens": 1146,
+     "output_tokens": 383,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.15,
+     "input_tokens": 1166,
+     "output_tokens": 417,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.98,
+     "input_tokens": 1153,
+     "output_tokens": 437,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.21,
+     "input_tokens": 1139,
+     "output_tokens": 470,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 4.66,
+     "input_tokens": 1155,
+     "output_tokens": 615,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.17,
+     "input_tokens": 1137,
+     "output_tokens": 462,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.04,
+     "input_tokens": 1144,
+     "output_tokens": 425,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.43,
+     "input_tokens": 1160,
+     "output_tokens": 453,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.69,
+     "input_tokens": 1154,
+     "output_tokens": 638,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "植物が光合成で取り込むのは二酸化炭素であり、正解は選択肢1です。選択肢0の酸素は誤りです。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.1,
+     "input_tokens": 1171,
+     "output_tokens": 572,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "正しい皇帝は桓武天皇であるが、answerIndex が誤って設定されている"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.21,
+     "input_tokens": 1150,
+     "output_tokens": 745,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "札幌市と横浜市の両方が政令指定都市であり、正解が複数あります"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.2,
+     "input_tokens": 1144,
+     "output_tokens": 661,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "チリも太平洋に面しているため、正解が複数あります。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.38,
+     "input_tokens": 1144,
+     "output_tokens": 588,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "人口ランキングは時期により変わり得るため、答えが変わる可能性があります。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.47,
+     "input_tokens": 1179,
+     "output_tokens": 605,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "時期により答えが変わる可能性があるため"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 5.62,
+     "input_tokens": 1153,
+     "output_tokens": 809,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は川の最長を問うのに対し、英語版は湖の最大を問う内容になっている"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "英語版の質問文が「largest lake」となっており、選択肢は川なので紛らわしい"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 9.22,
+     "input_tokens": 1150,
+     "output_tokens": 695,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.71,
+     "input_tokens": 1158,
+     "output_tokens": 395,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.29,
+     "input_tokens": 1140,
+     "output_tokens": 602,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "ブラジルが『最も危険な国』であるという主張は客観的に裏付けられず、他にも危険度が高いとされる国が多数あるため事実として正しくない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": false,
+       "reason": "特定の国（ブラジル）を危険性で決定的に評価することは、ステレオタイプ的で不公平な扱いとみなされる可能性がある。"
+      }
+     },
+     "verdict": false
+    }
+   ]
+  },
+  "gpt-oss-20b": {
+   "model_id": "openai.gpt-oss-20b-1:0",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 3.57,
+     "input_tokens": 1150,
+     "output_tokens": 823,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.55,
+     "input_tokens": 1142,
+     "output_tokens": 379,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.41,
+     "input_tokens": 1146,
+     "output_tokens": 423,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.18,
+     "input_tokens": 1166,
+     "output_tokens": 237,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.58,
+     "input_tokens": 1153,
+     "output_tokens": 375,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.43,
+     "input_tokens": 1139,
+     "output_tokens": 322,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.59,
+     "input_tokens": 1155,
+     "output_tokens": 346,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.07,
+     "input_tokens": 1137,
+     "output_tokens": 601,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.43,
+     "input_tokens": 1144,
+     "output_tokens": 315,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.06,
+     "input_tokens": 1160,
+     "output_tokens": 597,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.35,
+     "input_tokens": 1154,
+     "output_tokens": 1077,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "答えが誤っている"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.73,
+     "input_tokens": 1171,
+     "output_tokens": 652,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "与えられた正解インデックス（0）が聖武天皇を指し、実際には桓武天皇が正解です。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 5.01,
+     "input_tokens": 1150,
+     "output_tokens": 1318,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.23,
+     "input_tokens": 1144,
+     "output_tokens": 850,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "複数の正解があり、質問に一意の正解がない。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.38,
+     "input_tokens": 1144,
+     "output_tokens": 638,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "時期によって答えが変わる可能性があります。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.38,
+     "input_tokens": 1179,
+     "output_tokens": 617,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "時期によって答えが変わるため"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.42,
+     "input_tokens": 1153,
+     "output_tokens": 613,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版は長さで正解だが、英語版は題名と選択肢が不一致で正確性が欠けている"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語版は明確だが英語版が誤った題名（「湖」）で曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語と英語で問題内容・正解が一致していない"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "英語版が内容を誤って記載しているため、混乱を招く表現"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.27,
+     "input_tokens": 1150,
+     "output_tokens": 289,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.62,
+     "input_tokens": 1158,
+     "output_tokens": 416,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.15,
+     "input_tokens": 1140,
+     "output_tokens": 776,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   ]
+  },
+  "qwen3-235b": {
+   "model_id": "qwen.qwen3-235b-a22b-2507-v1:0",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.77,
+     "input_tokens": 1275,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.19,
+     "input_tokens": 1267,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.21,
+     "input_tokens": 1271,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.28,
+     "input_tokens": 1293,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.83,
+     "input_tokens": 1277,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.05,
+     "input_tokens": 1267,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.15,
+     "input_tokens": 1280,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 4.56,
+     "input_tokens": 1272,
+     "output_tokens": 245,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「次に小さい」は通常「小さい順で次に来る」と解釈され、6より大きい完全数の中で最小のものを意味しない可能性があるため、曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語の「6の次に小さい完全数」は曖昧だが、英語の「The smallest perfect number after 6」は明確に6より大きい中で最小のものを指すため、意味と正解の解釈が一致していない可能性がある"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「6の次に小さい」という表現は「6より大きい中で最小の」と解釈すべきだが、紛らわしく感じられる可能性がある"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.71,
+     "input_tokens": 1287,
+     "output_tokens": 145,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "『日本書紀』の成立年は学説によって若干の議論があるため、時期や解釈により答えが変わる可能性がある"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.22,
+     "input_tokens": 1282,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.58,
+     "input_tokens": 1277,
+     "output_tokens": 228,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "光合成で植物が取り込む気体は二酸化炭素であり、正解は『二酸化炭素』（選択肢1）なので、設定されている正解（選択肢0の『酸素』）は誤り"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解が『酸素』と設定されているが、実際には『二酸化炭素』が正しい。これにより、複数の選択肢が誤って正解に見える可能性があるため、確実に不正解と断定できない構造になっている"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.14,
+     "input_tokens": 1293,
+     "output_tokens": 177,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "平安京に都を移したのは桓武天皇であるが、正解として設定されているのは聖武天皇（0番目）であり誤り"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解が桓武天皇であるべきところを聖武天皇としており、選択肢の正誤が逆転している"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.27,
+     "input_tokens": 1274,
+     "output_tokens": 169,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "政令指定都市は複数存在するため、単に「政令指定都市」という問題文では不適切"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "札幌市と横浜市は両方とも政令指定都市であるため、正解が一つに絞られていない"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.87,
+     "input_tokens": 1267,
+     "output_tokens": 229,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本とチリの両方が太平洋に面しており、正解が一つに絞られないため、設定された正解（日本）が事実上不正確"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "日本とチリの両方が太平洋に面しているため、正解が2つ存在し、単一の正解が保証されていない"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「太平洋に面している国」は複数存在し、選択肢内の複数の国（日本、チリ）が該当するため、意図した唯一の正解が不明確"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.92,
+     "input_tokens": 1264,
+     "output_tokens": 197,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "最新のデータではインドの人口が中国を上回っており、正解はインドである"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "現在のデータではインドが最も多いが、中国との順位が逆転しているため明確な単一の正解が存在しない"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "2024年現在、インドの人口が中国を上回ったと国連が発表しているため、時期によって答えが変わる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.36,
+     "input_tokens": 1307,
+     "output_tokens": 132,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "国連事務総長は定期的に変わるので時代によって正解が変わる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.66,
+     "input_tokens": 1277,
+     "output_tokens": 206,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本で一番長い川は信濃川で正しいが、英語版の問題文が『最大の湖』となっており事実確認不能"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "英語版の選択肢がすべて川の名前であるため、問題文『最大の湖』と矛盾し正解が存在しない"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は『一番長い川』だが英語版は『最大の湖』となっており、意味と正解が一致していない"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.32,
+     "input_tokens": 1278,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "岩手県は面積でも人口でも日本一ではない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解が存在しない"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「大きい」が面積か人口か明確でない"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.89,
+     "input_tokens": 1285,
+     "output_tokens": 223,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「同じ」が正解だが、「場所による」が重力差などを連想させ、完全に不正解とは言い切れない文脈が生まれる可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「重いほう」という表現が日常語的に「密度が高い」や「ずっしりしている」意味に解釈される恐れがあり、明確でない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「どっちが重い？」という表現が引っかけに当たる可能性がある。重量は同じであるため、問題として紛らわしい。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 4.79,
+     "input_tokens": 1263,
+     "output_tokens": 287,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "ブラジルが「一番」治安が悪いとは言えず、ベネズエラやスーダンなどのほうが深刻な統計もある"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "複数の国が同様に高い犯罪率を持つため、ブラジルが唯一の正解とは言えない"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「治安が悪い」の定義が明確でなく、犯罪率・凶悪犯罪・国民の安全感など複数の解釈が可能"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "治安の良さは年ごとの統計に依存し、時期によって答えが変わる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「一番治安が悪い国」という表現は主観的で紛らわしく、複数の指標によって答えが異なるため引っかけに近い"
+      },
+      "fair": {
+       "pass": false,
+       "reason": "特定の国を「最も危険」と断定することは不当なレッテル貼りであり、公平性に欠ける"
+      }
+     },
+     "verdict": false
+    }
+   ]
+  },
+  "mistral-large-3": {
+   "model_id": "mistral.mistral-large-3-675b-instruct",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.36,
+     "input_tokens": 1285,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.92,
+     "input_tokens": 1272,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.92,
+     "input_tokens": 1274,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1296,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1284,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.88,
+     "input_tokens": 1272,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.6,
+     "input_tokens": 1288,
+     "output_tokens": 198,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.71,
+     "input_tokens": 1277,
+     "output_tokens": 212,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「6の次に小さい完全数」という表現は、「6の次に小さい」とも「完全数の中で6の次に小さい」とも解釈できる曖昧さがある。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版の「The smallest perfect number after 6」は「6の次に小さい完全数」という意味だが、日本語版の「6の次に小さい完全数」は曖昧で、英語版と完全に一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.9,
+     "input_tokens": 1291,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 0.91,
+     "input_tokens": 1292,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.9,
+     "input_tokens": 1289,
+     "output_tokens": 250,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "光合成で植物が取り込む気体は二酸化炭素であり、酸素は光合成の過程で放出される気体であるため、正解として設定されている「酸素」は誤りです。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解として設定されている「酸素」が誤りであり、実際の正解は「二酸化炭素」であるため、正解が2つ存在することになります。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で正解とされる選択肢が一致しておらず、問題の意味も正解も食い違っています。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.89,
+     "input_tokens": 1301,
+     "output_tokens": 245,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "平安京に都を移した天皇は桓武天皇であり、正解として設定されている選択肢「聖武天皇」は誤りです。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解は桓武天皇（Emperor Kanmu）であるため、現在の設定では正解が含まれておらず、他の選択肢も確実に不正解とは言えません。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で正解が一致していません。日本語版の正解は「桓武天皇」、英語版の正解は「Emperor Kanmu」であるべきです。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.14,
+     "input_tokens": 1277,
+     "output_tokens": 147,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「政令指定都市」は2024年10月時点で札幌市と横浜市の両方が該当するため、正解が2つ存在します。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.16,
+     "input_tokens": 1273,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「太平洋に面している国」は日本とチリの両方が該当するため、正解が2つ存在します。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.27,
+     "input_tokens": 1274,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "人口の多い国は時期によって変動する可能性があり、現在（2023年時点）ではインドが世界で最も人口が多い国となっているが、今後変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.1,
+     "input_tokens": 1308,
+     "output_tokens": 132,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「現在の」という表現は時期によって答えが変わるため、不合格です。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.38,
+     "input_tokens": 1284,
+     "output_tokens": 324,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本語版の問題文は「日本で一番長い川」だが、正解とされている「信濃川」は確かに日本で一番長い川だが、英語版の問題文が「Japan's largest lake（日本で一番大きい湖）」となっており、質問が一致していない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "英語版の問題文が「日本で一番大きい湖」となっているため、選択肢の河川は全て不正解となり、正解が存在しない。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "問題文が「日本で一番長い川」であるのに対し、選択肢は全て川であるため一見問題ないが、英語版の問題文が「Japan's largest lake（日本で一番大きい湖）」となっており、完全に異なる質問になっている。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題文の意味が完全に異なる（「日本で一番長い川」と「日本で一番大きい湖」）。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.32,
+     "input_tokens": 1282,
+     "output_tokens": 284,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本で一番大きい「県」は面積では岩手県だが、北海道（道）や東京都（都）を含めると正解が変わる。また、問題文では「県」に限定しているため、事実として正確ではない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「一番大きい県」が面積を指すのか人口を指すのかが明確でなく、複数の解釈が可能。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で「県」の定義や範囲が一致しておらず、英語版では「prefecture (ken)」と曖昧な表現になっている。"
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「県」という言葉の定義が曖昧で、北海道や都・府との比較がされていないため、引っかけの要素がある。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 2.27,
+     "input_tokens": 1287,
+     "output_tokens": 273,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「場所による」という選択肢が事実上不正解であるにもかかわらず、問題の本質（重さが同じ）を曖昧にする余地を与えているため。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「同じ」が正解だが、「場所による」という選択肢が事実上不正解であるにもかかわらず、誤解を招くため。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「場所による」という選択肢が、重力の影響や計測方法の違いを連想させ、問題の意図が曖昧になっているため。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「場所による」という選択肢が紛らわしく、重力の影響を考慮した誤解を招く可能性があるため。"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 3.03,
+     "input_tokens": 1268,
+     "output_tokens": 381,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「治安が悪い国」のランキングは統計データに基づくが、選択肢に含まれるブラジルが常に「一番」であるとは限らない。また、統計データの出典や年次によって結果が異なる。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「治安が悪い」の基準が明確でないため、選択肢の中に複数の国が該当する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「治安が悪い」の定義が不明確で、複数の解釈が可能。例えば、暴力犯罪の発生率、政治的不安定さ、貧困率など、基準が異なれば答えも変わる。"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "治安の悪さは時期や統計データの更新によって変動するため、答えが固定されない。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「一番治安が悪い国」という問い方が曖昧で、何を基準に「治安が悪い」を判断するかが不明確。"
+      },
+      "fair": {
+       "pass": false,
+       "reason": "特定の国（ブラジル）を「一番治安が悪い」と断定的に扱うことは、その国に対する不当な印象を与える可能性がある。"
+      }
+     },
+     "verdict": false
+    }
+   ]
+  },
+  "nova-2-lite": {
+   "model_id": "us.amazon.nova-2-lite-v1:0",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.54,
+     "input_tokens": 1958,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.15,
+     "input_tokens": 1951,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.17,
+     "input_tokens": 1953,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.12,
+     "input_tokens": 1972,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.14,
+     "input_tokens": 1956,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.26,
+     "input_tokens": 1947,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.18,
+     "input_tokens": 1961,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.68,
+     "input_tokens": 1946,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.41,
+     "input_tokens": 1954,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.13,
+     "input_tokens": 1961,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.24,
+     "input_tokens": 1957,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.09,
+     "input_tokens": 1970,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.2,
+     "input_tokens": 1955,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.25,
+     "input_tokens": 1949,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.39,
+     "input_tokens": 1946,
+     "output_tokens": 175,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "2023年以降、インドの人口が中国を上回っているため、最も人口が多い国はインドである"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.48,
+     "input_tokens": 1980,
+     "output_tokens": 172,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "国連事務総長の任期は時間的に変化するため、時期によって答えが変わる問題である"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.39,
+     "input_tokens": 1956,
+     "output_tokens": 215,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "英語版では「湖」について尋ねているが、日本語版では「川」について尋ねている。内容が一致していない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「日本で一番長い川」を問うているが、英語版は「日本で一番大きい湖」を問っている。問題の意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.42,
+     "input_tokens": 1954,
+     "output_tokens": 207,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本で一番大きい県は「北海道」である。問題の選択肢に北海道が含まれていないため、正解が不正解となっている。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "正解が不正解であるため、正解以外の選択肢が不正解であるかどうかを判断できない。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.25,
+     "input_tokens": 1963,
+     "output_tokens": 152,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.94,
+     "input_tokens": 1946,
+     "output_tokens": 270,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "「治安が悪い国」という表現は主観的で、ブラジルが必ず最も治安が悪いとは言えない。犯罪率や安全指標は地域や時期によって変動し、複数の要因で評価されるため、客観的に「一番治安が悪い」と断定できない。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「治安が悪い国」という表現は主観的であり、ブラジル以外にも治安が悪いとされる国が存在するため、正解が唯一的にブラジルであるとは言えない。選択肢の評価は個人やデータによって異なる可能性がある。"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   ]
+  },
+  "nova-pro": {
+   "model_id": "us.amazon.nova-pro-v1:0",
+   "mechanism": "tool_forced",
+   "results": [
+    {
+     "qid": "ok_01",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.87,
+     "input_tokens": 1555,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_02",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.07,
+     "input_tokens": 1548,
+     "output_tokens": 67,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_03",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.33,
+     "input_tokens": 1548,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_04",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.29,
+     "input_tokens": 1571,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_05",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.14,
+     "input_tokens": 1556,
+     "output_tokens": 67,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_06",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.1,
+     "input_tokens": 1548,
+     "output_tokens": 67,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_07",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.06,
+     "input_tokens": 1559,
+     "output_tokens": 67,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_08",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.52,
+     "input_tokens": 1553,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_09",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 2.24,
+     "input_tokens": 1565,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ok_10",
+     "expect": "pass",
+     "expectedFailures": [],
+     "mechanism": "tool_forced",
+     "latency_s": 1.31,
+     "input_tokens": 1560,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_01_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.72,
+     "input_tokens": 1561,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_02_wrong_answer",
+     "expect": "fail",
+     "expectedFailures": [
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.39,
+     "input_tokens": 1582,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_03_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.64,
+     "input_tokens": 1552,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_04_multiple",
+     "expect": "fail",
+     "expectedFailures": [
+      "single_answer"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.31,
+     "input_tokens": 1546,
+     "output_tokens": 67,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_05_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.38,
+     "input_tokens": 1545,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_06_time",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_time_sensitive"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.3,
+     "input_tokens": 1580,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_07_locale",
+     "expect": "fail",
+     "expectedFailures": [
+      "locale_match"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.89,
+     "input_tokens": 1556,
+     "output_tokens": 163,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "問題文が誤っている。日本で一番長い川は信濃川であるが、問題文は「日本で一番長い川」とあり、これは正しくない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "問題文の日本語と英語が一致していない。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版と英語版で問題の意味が異なる。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    {
+     "qid": "ng_08_ambiguous",
+     "expect": "fail",
+     "expectedFailures": [
+      "unambiguous"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.96,
+     "input_tokens": 1551,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_09_trick",
+     "expect": "fail",
+     "expectedFailures": [
+      "not_trick"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.31,
+     "input_tokens": 1565,
+     "output_tokens": 102,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    {
+     "qid": "ng_10_unfair",
+     "expect": "fail",
+     "expectedFailures": [
+      "fair",
+      "answer_correct"
+     ],
+     "mechanism": "tool_forced",
+     "latency_s": 1.68,
+     "input_tokens": 1544,
+     "output_tokens": 155,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "治安が悪い国を具体的に挙げるのは難しく、客観的なデータに基づかないと不正確である可能性がある。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "治安状況は時間とともに変化する可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": false,
+       "reason": "特定の国を不当に扱う可能性がある。"
+      }
+     },
+     "verdict": false
+    }
+   ]
+  }
+ }
+}
