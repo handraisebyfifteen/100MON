@@ -1,6 +1,22 @@
+run = "npm run dev"
 modules = ["nodejs-20"]
+
 [nix]
 channel = "stable-25_05"
+packages = ["awscli2"]
 
 [agent]
 expertMode = true
+
+[[ports]]
+localPort = 5000
+externalPort = 80
+
+[[ports]]
+localPort = 5173
+externalPort = 5173
+
+[deployment]
+deploymentTarget = "static"
+build = ["sh", "-c", "npm ci && npm run build"]
+publicDir = "web/dist"

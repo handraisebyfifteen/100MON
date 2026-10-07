@@ -12,3 +12,7 @@ __pycache__/
 .local/
 .config/
 .agents/
+
+# Node（ブラウザ版）
+node_modules/
+web/dist/

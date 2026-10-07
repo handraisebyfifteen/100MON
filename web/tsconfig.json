@@ -1,0 +1,13 @@
+{
+  "extends": "../tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "jsx": "react-jsx",
+    "resolveJsonModule": true,
+    "types": ["vite/client"],
+    "paths": {
+      "@core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src"]
+}
