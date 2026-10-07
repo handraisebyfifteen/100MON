@@ -1,0 +1,2802 @@
+[
+  {
+    "id": "tmp_0001",
+    "answerIndex": 2,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "1年の月の数",
+        "choices": [
+          "13",
+          "11",
+          "12",
+          "10"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The number of months in a year",
+        "choices": [
+          "13",
+          "11",
+          "12",
+          "10"
+        ],
+        "decisionPoint": 20
+      }
+    }
+  },
+  {
+    "id": "tmp_0002",
+    "answerIndex": 2,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "1日の時間数",
+        "choices": [
+          "48",
+          "60",
+          "24",
+          "12"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The number of hours in a day",
+        "choices": [
+          "48",
+          "60",
+          "24",
+          "12"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "tmp_0003",
+    "answerIndex": 3,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "信号機で「止まれ」を表す色",
+        "choices": [
+          "黒",
+          "緑",
+          "白",
+          "赤"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The traffic light color that means stop",
+        "choices": [
+          "Black",
+          "Green",
+          "White",
+          "Red"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "tmp_0004",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "3に4を足した数",
+        "choices": [
+          "34",
+          "7",
+          "1",
+          "12"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "Three plus four",
+        "choices": [
+          "34",
+          "7",
+          "1",
+          "12"
+        ],
+        "decisionPoint": 15
+      }
+    }
+  },
+  {
+    "id": "tmp_0005",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "「ワンワン」と鳴く動物",
+        "choices": [
+          "犬",
+          "羊",
+          "牛",
+          "猫"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The animal that says woof",
+        "choices": [
+          "Dog",
+          "Sheep",
+          "Cow",
+          "Cat"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "tmp_0006",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "地球がまわりを回っている星",
+        "choices": [
+          "北極星",
+          "火星",
+          "太陽",
+          "月"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The star that the Earth orbits",
+        "choices": [
+          "Polaris",
+          "Mars",
+          "The Sun",
+          "The Moon"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "tmp_0007",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "物を見るために使う体の器官",
+        "choices": [
+          "目",
+          "舌",
+          "鼻",
+          "耳"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The organ people use to see",
+        "choices": [
+          "Eyes",
+          "Tongue",
+          "Nose",
+          "Ears"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "tmp_0008",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "フランスの首都",
+        "choices": [
+          "パリ",
+          "ローマ",
+          "ロンドン",
+          "ベルリン"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The capital of France",
+        "choices": [
+          "Paris",
+          "Rome",
+          "London",
+          "Berlin"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "tmp_0009",
+    "answerIndex": 0,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "1時間を分で表した数",
+        "choices": [
+          "60",
+          "30",
+          "100",
+          "24"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The number of minutes in an hour",
+        "choices": [
+          "60",
+          "30",
+          "100",
+          "24"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "tmp_0010",
+    "answerIndex": 3,
+    "category": "nature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "雨上がりの空にかかる色の帯",
+        "choices": [
+          "霧",
+          "雷",
+          "雲",
+          "虹"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The band of colors seen in the sky after rain",
+        "choices": [
+          "Fog",
+          "Lightning",
+          "Cloud",
+          "Rainbow"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "tmp_0011",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "四角形の頂点の数",
+        "choices": [
+          "6",
+          "3",
+          "5",
+          "4"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The number of corners on a square",
+        "choices": [
+          "6",
+          "3",
+          "5",
+          "4"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "tmp_0012",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "長い鼻と大きな耳を持つ陸の動物",
+        "choices": [
+          "カバ",
+          "ゾウ",
+          "キリン",
+          "サイ"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The large land animal with a long trunk",
+        "choices": [
+          "Hippo",
+          "Elephant",
+          "Giraffe",
+          "Rhino"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "tmp_0013",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "牛からしぼる白い飲み物",
+        "choices": [
+          "お茶",
+          "ジュース",
+          "コーヒー",
+          "牛乳"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The white drink that comes from cows",
+        "choices": [
+          "Tea",
+          "Juice",
+          "Coffee",
+          "Milk"
+        ],
+        "decisionPoint": 9
+      }
+    }
+  },
+  {
+    "id": "tmp_0014",
+    "answerIndex": 3,
+    "category": "nature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "冬の次に来る季節",
+        "choices": [
+          "夏",
+          "秋",
+          "冬",
+          "春"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The season that comes after winter",
+        "choices": [
+          "Summer",
+          "Autumn",
+          "Winter",
+          "Spring"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "tmp_0015",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "世界で一番広い海洋",
+        "choices": [
+          "大西洋",
+          "太平洋",
+          "インド洋",
+          "北極海"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The world's largest ocean",
+        "choices": [
+          "Atlantic Ocean",
+          "Pacific Ocean",
+          "Indian Ocean",
+          "Arctic Ocean"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "tmp_0016",
+    "answerIndex": 0,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "1ダースの数",
+        "choices": [
+          "12",
+          "24",
+          "10",
+          "6"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The number of items in a dozen",
+        "choices": [
+          "12",
+          "24",
+          "10",
+          "6"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "tmp_0017",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "1気圧で水が沸騰する温度",
+        "choices": [
+          "100℃",
+          "200℃",
+          "0℃",
+          "50℃"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The temperature at which water boils at sea level",
+        "choices": [
+          "100°C",
+          "200°C",
+          "0°C",
+          "50°C"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "tmp_0018",
+    "answerIndex": 3,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "時計の短い針が示すもの",
+        "choices": [
+          "日付",
+          "秒",
+          "分",
+          "時"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "What the short hand of a clock shows",
+        "choices": [
+          "The date",
+          "Seconds",
+          "Minutes",
+          "Hours"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "tmp_0019",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "ミツバチが花の蜜から作る甘い食べ物",
+        "choices": [
+          "はちみつ",
+          "バター",
+          "ジャム",
+          "砂糖"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The sweet food that bees make",
+        "choices": [
+          "Honey",
+          "Butter",
+          "Jam",
+          "Sugar"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "tmp_0020",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "サッカーボールのような丸い立体",
+        "choices": [
+          "立方体",
+          "球",
+          "円すい",
+          "円柱"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The ball-shaped solid, like a soccer ball",
+        "choices": [
+          "Cube",
+          "Sphere",
+          "Cone",
+          "Cylinder"
+        ],
+        "decisionPoint": 15
+      }
+    }
+  },
+  {
+    "id": "tmp_0021",
+    "answerIndex": 3,
+    "category": "arts",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "赤と白を混ぜてできる色",
+        "choices": [
+          "オレンジ",
+          "緑",
+          "紫",
+          "ピンク"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The color made by mixing red and white",
+        "choices": [
+          "Orange",
+          "Green",
+          "Purple",
+          "Pink"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "tmp_0022",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "太陽が昇る方角",
+        "choices": [
+          "北",
+          "西",
+          "東",
+          "南"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The direction in which the Sun rises",
+        "choices": [
+          "North",
+          "West",
+          "East",
+          "South"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "tmp_0023",
+    "answerIndex": 0,
+    "category": "language",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "英語のアルファベットの最初の文字",
+        "choices": [
+          "A",
+          "E",
+          "B",
+          "Z"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The first letter of the English alphabet",
+        "choices": [
+          "A",
+          "E",
+          "B",
+          "Z"
+        ],
+        "decisionPoint": 9
+      }
+    }
+  },
+  {
+    "id": "tmp_0024",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "ニワトリが産むもの",
+        "choices": [
+          "羊毛",
+          "牛乳",
+          "卵",
+          "はちみつ"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "What a hen lays",
+        "choices": [
+          "Wool",
+          "Milk",
+          "Eggs",
+          "Honey"
+        ],
+        "decisionPoint": 10
+      }
+    }
+  },
+  {
+    "id": "tmp_0025",
+    "answerIndex": 3,
+    "category": "daily",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "うるう年でない1年の日数",
+        "choices": [
+          "364",
+          "360",
+          "366",
+          "365"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The number of days in a non-leap year",
+        "choices": [
+          "364",
+          "360",
+          "366",
+          "365"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "tmp_0026",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "イタリアの首都",
+        "choices": [
+          "ベネチア",
+          "ローマ",
+          "ミラノ",
+          "ナポリ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The capital of Italy",
+        "choices": [
+          "Venice",
+          "Rome",
+          "Milan",
+          "Naples"
+        ],
+        "decisionPoint": 20
+      }
+    }
+  },
+  {
+    "id": "tmp_0027",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "植物が光合成で放出する気体",
+        "choices": [
+          "酸素",
+          "二酸化炭素",
+          "窒素",
+          "水素"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The gas plants release during photosynthesis",
+        "choices": [
+          "Oxygen",
+          "Carbon dioxide",
+          "Nitrogen",
+          "Hydrogen"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "tmp_0028",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "アメリカ合衆国の初代大統領",
+        "choices": [
+          "ワシントン",
+          "リンカーン",
+          "フランクリン",
+          "ジェファーソン"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The first president of the United States",
+        "choices": [
+          "George Washington",
+          "Abraham Lincoln",
+          "Benjamin Franklin",
+          "Thomas Jefferson"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "tmp_0029",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "太陽系で一番大きい惑星",
+        "choices": [
+          "地球",
+          "木星",
+          "土星",
+          "火星"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The largest planet in the solar system",
+        "choices": [
+          "Earth",
+          "Jupiter",
+          "Saturn",
+          "Mars"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "tmp_0030",
+    "answerIndex": 0,
+    "category": "arts",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『ロミオとジュリエット』の作者",
+        "choices": [
+          "シェイクスピア",
+          "ゲーテ",
+          "ディケンズ",
+          "トルストイ"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The author of Romeo and Juliet",
+        "choices": [
+          "William Shakespeare",
+          "Johann Wolfgang von Goethe",
+          "Charles Dickens",
+          "Leo Tolstoy"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "tmp_0031",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "円周率のおよその値",
+        "choices": [
+          "1.62",
+          "2.72",
+          "3.14",
+          "1.41"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The approximate value of pi",
+        "choices": [
+          "1.62",
+          "2.72",
+          "3.14",
+          "1.41"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "tmp_0032",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "エジプトを流れる大河",
+        "choices": [
+          "ナイル川",
+          "ドナウ川",
+          "アマゾン川",
+          "ガンジス川"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The great river that flows through Egypt",
+        "choices": [
+          "Nile",
+          "Danube",
+          "Amazon",
+          "Ganges"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "tmp_0033",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "血液を全身に送り出す臓器",
+        "choices": [
+          "肺",
+          "肝臓",
+          "心臓",
+          "胃"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The organ that pumps blood around the body",
+        "choices": [
+          "Lungs",
+          "Liver",
+          "Heart",
+          "Stomach"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "tmp_0034",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "磁石に引きつけられる金属",
+        "choices": [
+          "鉄",
+          "金",
+          "アルミニウム",
+          "銅"
+        ],
+        "decisionPoint": 2
+      },
+      "en": {
+        "text": "The metal that is attracted to a magnet",
+        "choices": [
+          "Iron",
+          "Gold",
+          "Aluminum",
+          "Copper"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "tmp_0035",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ギザの大ピラミッドを築いた古代文明",
+        "choices": [
+          "メソポタミア文明",
+          "エジプト文明",
+          "黄河文明",
+          "インダス文明"
+        ],
+        "decisionPoint": 2
+      },
+      "en": {
+        "text": "The ancient civilization that built the pyramids of Giza",
+        "choices": [
+          "Mesopotamia",
+          "Ancient Egypt",
+          "Yellow River civilization",
+          "Indus Valley civilization"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "tmp_0036",
+    "answerIndex": 3,
+    "category": "music",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "指揮棒でオーケストラをまとめる人",
+        "choices": [
+          "ピアニスト",
+          "作曲家",
+          "歌手",
+          "指揮者"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The person who directs an orchestra with a baton",
+        "choices": [
+          "Pianist",
+          "Composer",
+          "Singer",
+          "Conductor"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "tmp_0037",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "サッカーで1チームがピッチに立つ人数",
+        "choices": [
+          "7人",
+          "11人",
+          "9人",
+          "15人"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The number of players per team on the field in soccer",
+        "choices": [
+          "7",
+          "11",
+          "9",
+          "15"
+        ],
+        "decisionPoint": 53
+      }
+    }
+  },
+  {
+    "id": "tmp_0038",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "世界で一番面積が大きい国",
+        "choices": [
+          "ロシア",
+          "中国",
+          "カナダ",
+          "アメリカ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The largest country in the world by area",
+        "choices": [
+          "Russia",
+          "China",
+          "Canada",
+          "United States"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "tmp_0039",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "空気中に最も多く含まれる気体",
+        "choices": [
+          "アルゴン",
+          "酸素",
+          "窒素",
+          "二酸化炭素"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The most abundant gas in Earth's atmosphere",
+        "choices": [
+          "Argon",
+          "Oxygen",
+          "Nitrogen",
+          "Carbon dioxide"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "tmp_0040",
+    "answerIndex": 2,
+    "category": "arts",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『モナ・リザ』を描いた画家",
+        "choices": [
+          "ピカソ",
+          "ラファエロ",
+          "レオナルド・ダ・ヴィンチ",
+          "ミケランジェロ"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The painter of the Mona Lisa",
+        "choices": [
+          "Pablo Picasso",
+          "Raphael",
+          "Leonardo da Vinci",
+          "Michelangelo"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "tmp_0041",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "空を飛ぶことができる哺乳類",
+        "choices": [
+          "ウサギ",
+          "コウモリ",
+          "イルカ",
+          "カンガルー"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The mammal that can truly fly",
+        "choices": [
+          "Rabbit",
+          "Bat",
+          "Dolphin",
+          "Kangaroo"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0042",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "日本で一番大きい湖",
+        "choices": [
+          "霞ヶ浦",
+          "サロマ湖",
+          "琵琶湖",
+          "猪苗代湖"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "Japan's largest lake",
+        "choices": [
+          "Lake Kasumigaura",
+          "Lake Saroma",
+          "Lake Biwa",
+          "Lake Inawashiro"
+        ],
+        "decisionPoint": 15
+      }
+    }
+  },
+  {
+    "id": "tmp_0043",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "第二次世界大戦が終わった年",
+        "choices": [
+          "1950年",
+          "1945年",
+          "1918年",
+          "1939年"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The year World War II ended",
+        "choices": [
+          "1950",
+          "1945",
+          "1918",
+          "1939"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "tmp_0044",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "物体を地球の中心へ引っぱる力",
+        "choices": [
+          "浮力",
+          "重力",
+          "磁力",
+          "摩擦力"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The force that pulls objects toward the center of the Earth",
+        "choices": [
+          "Buoyancy",
+          "Gravity",
+          "Magnetism",
+          "Friction"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "tmp_0045",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "寿司に添える緑色の辛い薬味",
+        "choices": [
+          "しょうが",
+          "からし",
+          "大根おろし",
+          "わさび"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The spicy green paste served with sushi",
+        "choices": [
+          "Ginger",
+          "Mustard",
+          "Grated daikon",
+          "Wasabi"
+        ],
+        "decisionPoint": 15
+      }
+    }
+  },
+  {
+    "id": "tmp_0046",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "三角形の内角の和",
+        "choices": [
+          "270度",
+          "360度",
+          "90度",
+          "180度"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The sum of the interior angles of a triangle",
+        "choices": [
+          "270°",
+          "360°",
+          "90°",
+          "180°"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "tmp_0047",
+    "answerIndex": 0,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "太陽に一番近い惑星",
+        "choices": [
+          "水星",
+          "火星",
+          "地球",
+          "金星"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The planet closest to the Sun",
+        "choices": [
+          "Mercury",
+          "Mars",
+          "Earth",
+          "Venus"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0048",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "自由の女神像がある都市",
+        "choices": [
+          "ワシントンD.C.",
+          "ロサンゼルス",
+          "ニューヨーク",
+          "シカゴ"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The city that is home to the Statue of Liberty",
+        "choices": [
+          "Washington, D.C.",
+          "Los Angeles",
+          "New York",
+          "Chicago"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "tmp_0049",
+    "answerIndex": 3,
+    "category": "music",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ピアノ曲『エリーゼのために』の作曲者",
+        "choices": [
+          "バッハ",
+          "ショパン",
+          "モーツァルト",
+          "ベートーヴェン"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The composer of Für Elise",
+        "choices": [
+          "Johann Sebastian Bach",
+          "Frédéric Chopin",
+          "Wolfgang Amadeus Mozart",
+          "Ludwig van Beethoven"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "tmp_0050",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "音が伝わらない空間",
+        "choices": [
+          "水の中",
+          "真空",
+          "空気の中",
+          "鉄の中"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "What sound cannot travel through",
+        "choices": [
+          "Water",
+          "A vacuum",
+          "Air",
+          "Iron"
+        ],
+        "decisionPoint": 17
+      }
+    }
+  },
+  {
+    "id": "tmp_0051",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "江戸幕府を開いた人物",
+        "choices": [
+          "源頼朝",
+          "織田信長",
+          "徳川家康",
+          "豊臣秀吉"
+        ],
+        "decisionPoint": 2
+      },
+      "en": {
+        "text": "The founder of the Edo shogunate",
+        "choices": [
+          "Minamoto no Yoritomo",
+          "Oda Nobunaga",
+          "Tokugawa Ieyasu",
+          "Toyotomi Hideyoshi"
+        ],
+        "decisionPoint": 22
+      }
+    }
+  },
+  {
+    "id": "tmp_0052",
+    "answerIndex": 1,
+    "category": "tech",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ウェブページを見るためのソフト",
+        "choices": [
+          "表計算ソフト",
+          "ブラウザ",
+          "ワープロソフト",
+          "メールソフト"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The kind of software used to view web pages",
+        "choices": [
+          "Spreadsheet",
+          "Browser",
+          "Word processor",
+          "Email client"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "tmp_0053",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "世界で一番背が高い動物",
+        "choices": [
+          "ダチョウ",
+          "ゾウ",
+          "キリン",
+          "ラクダ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The tallest animal in the world",
+        "choices": [
+          "Ostrich",
+          "Elephant",
+          "Giraffe",
+          "Camel"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "tmp_0054",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ロンドンを流れる川",
+        "choices": [
+          "セーヌ川",
+          "ドナウ川",
+          "テムズ川",
+          "ライン川"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The river that flows through London",
+        "choices": [
+          "Seine",
+          "Danube",
+          "Thames",
+          "Rhine"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "tmp_0055",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "息を吸うと空気が入る臓器",
+        "choices": [
+          "腎臓",
+          "心臓",
+          "肺",
+          "胃"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The organs that fill with air when you breathe in",
+        "choices": [
+          "Kidneys",
+          "Heart",
+          "Lungs",
+          "Stomach"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0056",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号 Na の元素",
+        "choices": [
+          "ネオン",
+          "窒素",
+          "ニッケル",
+          "ナトリウム"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The element with the symbol Na",
+        "choices": [
+          "Neon",
+          "Nitrogen",
+          "Nickel",
+          "Sodium"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "tmp_0057",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "アフリカ大陸で一番高い山",
+        "choices": [
+          "キリマンジャロ",
+          "デナリ",
+          "ケニア山",
+          "モンブラン"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The highest mountain in Africa",
+        "choices": [
+          "Kilimanjaro",
+          "Denali",
+          "Mount Kenya",
+          "Mont Blanc"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "tmp_0058",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ベルリンの壁が崩壊した年",
+        "choices": [
+          "1961年",
+          "1991年",
+          "1989年",
+          "1979年"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The year the Berlin Wall fell",
+        "choices": [
+          "1961",
+          "1991",
+          "1989",
+          "1979"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0059",
+    "answerIndex": 2,
+    "category": "arts",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『ひまわり』の連作で知られるオランダ出身の画家",
+        "choices": [
+          "フェルメール",
+          "モンドリアン",
+          "ゴッホ",
+          "レンブラント"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The Dutch painter known for his Sunflowers series",
+        "choices": [
+          "Johannes Vermeer",
+          "Piet Mondrian",
+          "Vincent van Gogh",
+          "Rembrandt"
+        ],
+        "decisionPoint": 42
+      }
+    }
+  },
+  {
+    "id": "tmp_0060",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "最小の素数",
+        "choices": [
+          "1",
+          "0",
+          "3",
+          "2"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The smallest prime number",
+        "choices": [
+          "1",
+          "0",
+          "3",
+          "2"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "tmp_0061",
+    "answerIndex": 1,
+    "category": "body",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "成人の体にある骨のおよその数",
+        "choices": [
+          "186",
+          "206",
+          "306",
+          "106"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The approximate number of bones in the adult human body",
+        "choices": [
+          "186",
+          "206",
+          "306",
+          "106"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "tmp_0062",
+    "answerIndex": 3,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "太陽の光が地球に届くまでのおよその時間",
+        "choices": [
+          "8時間",
+          "8日",
+          "8秒",
+          "8分"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The approximate time sunlight takes to reach Earth",
+        "choices": [
+          "8 hours",
+          "8 days",
+          "8 seconds",
+          "8 minutes"
+        ],
+        "decisionPoint": 50
+      }
+    }
+  },
+  {
+    "id": "tmp_0063",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "南アメリカ大陸で面積が最大の国",
+        "choices": [
+          "アルゼンチン",
+          "ブラジル",
+          "コロンビア",
+          "ペルー"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The largest country in South America",
+        "choices": [
+          "Argentina",
+          "Brazil",
+          "Colombia",
+          "Peru"
+        ],
+        "decisionPoint": 11
+      }
+    }
+  },
+  {
+    "id": "tmp_0064",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "アメリカ独立宣言が採択された年",
+        "choices": [
+          "1776年",
+          "1492年",
+          "1865年",
+          "1789年"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The year the U.S. Declaration of Independence was adopted",
+        "choices": [
+          "1776",
+          "1492",
+          "1865",
+          "1789"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "tmp_0065",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "植物の細胞にあって動物の細胞にないつくり",
+        "choices": [
+          "細胞膜",
+          "核",
+          "ミトコンドリア",
+          "細胞壁"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The structure found in plant cells but not in animal cells",
+        "choices": [
+          "Cell membrane",
+          "Nucleus",
+          "Mitochondria",
+          "Cell wall"
+        ],
+        "decisionPoint": 52
+      }
+    }
+  },
+  {
+    "id": "tmp_0066",
+    "answerIndex": 3,
+    "category": "arts",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『ドン・キホーテ』の作者",
+        "choices": [
+          "ダンテ",
+          "ボッカッチョ",
+          "ユゴー",
+          "セルバンテス"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The author of Don Quixote",
+        "choices": [
+          "Dante Alighieri",
+          "Giovanni Boccaccio",
+          "Victor Hugo",
+          "Miguel de Cervantes"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "tmp_0067",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "標準的なピアノの鍵盤の数",
+        "choices": [
+          "61",
+          "100",
+          "88",
+          "76"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The number of keys on a standard piano",
+        "choices": [
+          "61",
+          "100",
+          "88",
+          "76"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "tmp_0068",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "カナダの首都",
+        "choices": [
+          "トロント",
+          "オタワ",
+          "バンクーバー",
+          "モントリオール"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The capital of Canada",
+        "choices": [
+          "Toronto",
+          "Ottawa",
+          "Vancouver",
+          "Montreal"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "tmp_0069",
+    "answerIndex": 0,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "マラソンの正式な距離",
+        "choices": [
+          "42.195km",
+          "45km",
+          "40km",
+          "50km"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The official distance of a marathon",
+        "choices": [
+          "42.195 km",
+          "45 km",
+          "40 km",
+          "50 km"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "tmp_0070",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "音の高さを決める波の性質",
+        "choices": [
+          "波形",
+          "速さ",
+          "振幅",
+          "振動数"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The property of a sound wave that determines its pitch",
+        "choices": [
+          "Waveform",
+          "Speed",
+          "Amplitude",
+          "Frequency"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "tmp_0071",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ヨーロッパで活版印刷術を実用化した人物",
+        "choices": [
+          "コペルニクス",
+          "グーテンベルク",
+          "ルター",
+          "ガリレオ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The inventor who introduced movable-type printing to Europe",
+        "choices": [
+          "Nicolaus Copernicus",
+          "Johannes Gutenberg",
+          "Martin Luther",
+          "Galileo Galilei"
+        ],
+        "decisionPoint": 49
+      }
+    }
+  },
+  {
+    "id": "tmp_0072",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ダイヤモンドを構成する元素",
+        "choices": [
+          "酸素",
+          "ケイ素",
+          "鉄",
+          "炭素"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The element that diamond is made of",
+        "choices": [
+          "Oxygen",
+          "Silicon",
+          "Iron",
+          "Carbon"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "tmp_0073",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番面積が小さい国",
+        "choices": [
+          "バチカン市国",
+          "サンマリノ",
+          "リヒテンシュタイン",
+          "モナコ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The smallest country in the world",
+        "choices": [
+          "Vatican City",
+          "San Marino",
+          "Liechtenstein",
+          "Monaco"
+        ],
+        "decisionPoint": 12
+      }
+    }
+  },
+  {
+    "id": "tmp_0074",
+    "answerIndex": 1,
+    "category": "tech",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "コンピュータが扱う情報の最小単位",
+        "choices": [
+          "バイト",
+          "ビット",
+          "ピクセル",
+          "ヘルツ"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The smallest unit of data in computing",
+        "choices": [
+          "Byte",
+          "Bit",
+          "Pixel",
+          "Hertz"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "tmp_0075",
+    "answerIndex": 0,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "地震そのものの規模を表す尺度",
+        "choices": [
+          "マグニチュード",
+          "デシベル",
+          "震度",
+          "ヘクトパスカル"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The scale that expresses the size of an earthquake itself",
+        "choices": [
+          "Magnitude",
+          "Decibel",
+          "Seismic intensity",
+          "Hectopascal"
+        ],
+        "decisionPoint": 50
+      }
+    }
+  },
+  {
+    "id": "tmp_0076",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号 W の元素",
+        "choices": [
+          "タンタル",
+          "イットリウム",
+          "バナジウム",
+          "タングステン"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The element with the symbol W",
+        "choices": [
+          "Tantalum",
+          "Yttrium",
+          "Vanadium",
+          "Tungsten"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0077",
+    "answerIndex": 3,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "世界で一番深い海溝",
+        "choices": [
+          "日本海溝",
+          "フィリピン海溝",
+          "トンガ海溝",
+          "マリアナ海溝"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The deepest ocean trench in the world",
+        "choices": [
+          "Japan Trench",
+          "Philippine Trench",
+          "Tonga Trench",
+          "Mariana Trench"
+        ],
+        "decisionPoint": 11
+      }
+    }
+  },
+  {
+    "id": "tmp_0078",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ローマ帝国の初代皇帝",
+        "choices": [
+          "ネロ",
+          "カエサル",
+          "アウグストゥス",
+          "トラヤヌス"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The first emperor of Rome",
+        "choices": [
+          "Nero",
+          "Julius Caesar",
+          "Augustus",
+          "Trajan"
+        ],
+        "decisionPoint": 17
+      }
+    }
+  },
+  {
+    "id": "tmp_0079",
+    "answerIndex": 1,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『罪と罰』の作者",
+        "choices": [
+          "チェーホフ",
+          "ドストエフスキー",
+          "ツルゲーネフ",
+          "トルストイ"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The author of Crime and Punishment",
+        "choices": [
+          "Anton Chekhov",
+          "Fyodor Dostoevsky",
+          "Ivan Turgenev",
+          "Leo Tolstoy"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "tmp_0080",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "正十二面体の1つの面の形",
+        "choices": [
+          "正六角形",
+          "正方形",
+          "正三角形",
+          "正五角形"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The shape of each face of a regular dodecahedron",
+        "choices": [
+          "Regular hexagon",
+          "Square",
+          "Equilateral triangle",
+          "Regular pentagon"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "tmp_0081",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "人体で一番長い骨",
+        "choices": [
+          "大腿骨",
+          "腓骨",
+          "脛骨",
+          "上腕骨"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The longest bone in the human body",
+        "choices": [
+          "Femur",
+          "Fibula",
+          "Tibia",
+          "Humerus"
+        ],
+        "decisionPoint": 11
+      }
+    }
+  },
+  {
+    "id": "tmp_0082",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "電気抵抗の単位",
+        "choices": [
+          "アンペア",
+          "ワット",
+          "オーム",
+          "ボルト"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The unit of electrical resistance",
+        "choices": [
+          "Ampere",
+          "Watt",
+          "Ohm",
+          "Volt"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "tmp_0083",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オーストラリア本土とタスマニア島の間の海峡",
+        "choices": [
+          "クック海峡",
+          "トレス海峡",
+          "バス海峡",
+          "マゼラン海峡"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The strait between mainland Australia and Tasmania",
+        "choices": [
+          "Cook Strait",
+          "Torres Strait",
+          "Bass Strait",
+          "Strait of Magellan"
+        ],
+        "decisionPoint": 50
+      }
+    }
+  },
+  {
+    "id": "tmp_0084",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "イングランドでマグナ・カルタが制定された年",
+        "choices": [
+          "1689年",
+          "1066年",
+          "1215年",
+          "1492年"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The year Magna Carta was sealed",
+        "choices": [
+          "1689",
+          "1066",
+          "1215",
+          "1492"
+        ],
+        "decisionPoint": 14
+      }
+    }
+  },
+  {
+    "id": "tmp_0085",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オペラ『魔笛』の作曲者",
+        "choices": [
+          "ヴェルディ",
+          "モーツァルト",
+          "プッチーニ",
+          "ワーグナー"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The composer of the opera The Magic Flute",
+        "choices": [
+          "Giuseppe Verdi",
+          "Wolfgang Amadeus Mozart",
+          "Giacomo Puccini",
+          "Richard Wagner"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "tmp_0086",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "太陽系で一番大きい衛星",
+        "choices": [
+          "タイタン",
+          "ガニメデ",
+          "エウロパ",
+          "月"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The largest moon in the solar system",
+        "choices": [
+          "Titan",
+          "Ganymede",
+          "Europa",
+          "The Moon"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "tmp_0087",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "常温で液体である金属",
+        "choices": [
+          "水銀",
+          "亜鉛",
+          "スズ",
+          "鉛"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The metal that is liquid at room temperature",
+        "choices": [
+          "Mercury",
+          "Zinc",
+          "Tin",
+          "Lead"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "tmp_0088",
+    "answerIndex": 1,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "小説『雪国』の作者",
+        "choices": [
+          "谷崎潤一郎",
+          "川端康成",
+          "大江健三郎",
+          "三島由紀夫"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The author of the novel Snow Country",
+        "choices": [
+          "Jun'ichiro Tanizaki",
+          "Yasunari Kawabata",
+          "Kenzaburo Oe",
+          "Yukio Mishima"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "tmp_0089",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "陸上で世界一長い山脈",
+        "choices": [
+          "ロッキー山脈",
+          "ヒマラヤ山脈",
+          "アンデス山脈",
+          "アルプス山脈"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The longest mountain range on land",
+        "choices": [
+          "Rocky Mountains",
+          "Himalayas",
+          "Andes",
+          "Alps"
+        ],
+        "decisionPoint": 11
+      }
+    }
+  },
+  {
+    "id": "tmp_0090",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "コンスタンティノープルがオスマン帝国に征服された年",
+        "choices": [
+          "1453年",
+          "1517年",
+          "1492年",
+          "1204年"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The year Constantinople fell to the Ottomans",
+        "choices": [
+          "1453",
+          "1517",
+          "1492",
+          "1204"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "tmp_0091",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "植物の細胞で光合成を行う細胞小器官",
+        "choices": [
+          "リボソーム",
+          "ゴルジ体",
+          "ミトコンドリア",
+          "葉緑体"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The organelle where photosynthesis takes place",
+        "choices": [
+          "Ribosome",
+          "Golgi apparatus",
+          "Mitochondrion",
+          "Chloroplast"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "tmp_0092",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "絶対零度をセ氏で表した温度",
+        "choices": [
+          "−100℃",
+          "−273.15℃",
+          "−459.67℃",
+          "0℃"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "Absolute zero expressed in degrees Celsius",
+        "choices": [
+          "−100°C",
+          "−273.15°C",
+          "−459.67°C",
+          "0°C"
+        ],
+        "decisionPoint": 13
+      }
+    }
+  },
+  {
+    "id": "tmp_0093",
+    "answerIndex": 3,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『真珠の耳飾りの少女』を描いた画家",
+        "choices": [
+          "ルーベンス",
+          "ヴァン・ダイク",
+          "レンブラント",
+          "フェルメール"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The painter of Girl with a Pearl Earring",
+        "choices": [
+          "Peter Paul Rubens",
+          "Anthony van Dyck",
+          "Rembrandt",
+          "Johannes Vermeer"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "tmp_0094",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "自然対数の底 e のおよその値",
+        "choices": [
+          "1.618",
+          "2.718",
+          "3.142",
+          "1.414"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The approximate value of Euler's number e",
+        "choices": [
+          "1.618",
+          "2.718",
+          "3.142",
+          "1.414"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "tmp_0095",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "日本で面積が一番小さい都道府県",
+        "choices": [
+          "東京都",
+          "香川県",
+          "大阪府",
+          "沖縄県"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "Japan's smallest prefecture by area",
+        "choices": [
+          "Tokyo",
+          "Kagawa",
+          "Osaka",
+          "Okinawa"
+        ],
+        "decisionPoint": 16
+      }
+    }
+  },
+  {
+    "id": "tmp_0096",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『資本論』の著者",
+        "choices": [
+          "マルクス",
+          "リカード",
+          "ケインズ",
+          "アダム・スミス"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The author of Das Kapital",
+        "choices": [
+          "Karl Marx",
+          "David Ricardo",
+          "John Maynard Keynes",
+          "Adam Smith"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "tmp_0097",
+    "answerIndex": 0,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ト音記号が五線譜の上で示す音",
+        "choices": [
+          "ソ",
+          "ファ",
+          "ド",
+          "ラ"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The note that a treble clef marks on the staff",
+        "choices": [
+          "G",
+          "F",
+          "C",
+          "A"
+        ],
+        "decisionPoint": 22
+      }
+    }
+  },
+  {
+    "id": "tmp_0098",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "血液の中で酸素を運ぶタンパク質",
+        "choices": [
+          "ケラチン",
+          "インスリン",
+          "ヘモグロビン",
+          "コラーゲン"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The protein that carries oxygen in the blood",
+        "choices": [
+          "Keratin",
+          "Insulin",
+          "Hemoglobin",
+          "Collagen"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "tmp_0099",
+    "answerIndex": 2,
+    "category": "language",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ギリシャ文字の最後の文字",
+        "choices": [
+          "シグマ",
+          "アルファ",
+          "オメガ",
+          "ゼータ"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The last letter of the Greek alphabet",
+        "choices": [
+          "Sigma",
+          "Alpha",
+          "Omega",
+          "Zeta"
+        ],
+        "decisionPoint": 8
+      }
+    }
+  },
+  {
+    "id": "tmp_0100",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "2の10乗の値",
+        "choices": [
+          "512",
+          "2048",
+          "1000",
+          "1024"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "Two to the tenth power",
+        "choices": [
+          "512",
+          "2048",
+          "1000",
+          "1024"
+        ],
+        "decisionPoint": 16
+      }
+    }
+  }
+]

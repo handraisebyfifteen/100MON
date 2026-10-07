@@ -1,0 +1,1063 @@
+/*
+  画面は 1920×1080 を基準に px で組む（Stage が表示先に合わせて全体を拡大縮小する）。
+  TV では画面の端が切れることがあるので、上下 54px・左右 96px には文字を置かない。
+  選択中・残り時間・正誤などの状態は、色だけに頼らず、大きさ・長さ・形・動きでも示す。
+
+  見た目は 8 ビット時代のゲーム機の作法に寄せている。
+    - 文字はドット文字。大きさは 16 の倍数（数字用の書体は 8 の倍数）にして、ドットを揃える
+    - 枠は角を1ドット欠いた二重線。丸みやぼかしは使わない
+    - 動きは段階的に切り替える（なめらかに変化させない）
+    - 画面全体を速く点滅させない（色を出すのは1回ずつ、狭い範囲だけ）
+*/
+
+:root {
+  --panel: #000a3c;
+  --blue: #0058f8;
+  --deep: #002a88;
+  --sky: #3cbcfc;
+  --white: #fcfcfc;
+  --dim: #8fa8e8;
+  --select: #f8d878;
+  --gold: #f8b800;
+  --ink: #000;
+  --gauge: #fce0a8;
+  --gauge-empty: #18245c;
+  --urgent: #f83800;
+  --correct: #58d854;
+  --wrong: #f83800;
+  --timeout: #fc9838;
+
+  --font-text: 'DotGothic16', 'Noto Sans JP', 'Noto Sans CJK JP', 'Hiragino Sans', 'Yu Gothic', Meiryo, sans-serif;
+  /* 問題文と選択肢の書体。TV でドット文字が読みにくい場合は、ここだけ通常の書体に替えられる */
+  --font-question: var(--font-text);
+  --font-digits: 'Press Start 2P', 'DotGothic16', monospace;
+
+  /* 角を 8px 欠いた形 */
+  --notch: polygon(
+    8px 0,
+    calc(100% - 8px) 0,
+    calc(100% - 8px) 8px,
+    100% 8px,
+    100% calc(100% - 8px),
+    calc(100% - 8px) calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    8px 100%,
+    8px calc(100% - 8px),
+    0 calc(100% - 8px),
+    0 8px,
+    8px 8px
+  );
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  overflow: hidden;
+  background: #000;
+  color: var(--white);
+  font-family: var(--font-text);
+  font-weight: 400;
+  font-synthesis: none;
+  line-height: 1.25;
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+  cursor: default;
+}
+
+h1,
+h2,
+th {
+  font-weight: 400;
+}
+
+.stage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 1080px;
+  overflow: hidden;
+  transform-origin: 0 0;
+  background: #000;
+}
+
+/* 上下の帯。端が切れる範囲に置く飾り */
+.stage::before,
+.stage::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 32px;
+  pointer-events: none;
+}
+
+.stage::before {
+  top: 0;
+  background: linear-gradient(var(--blue) 0 24px, var(--sky) 24px 32px);
+}
+
+.stage::after {
+  bottom: 0;
+  background: linear-gradient(var(--sky) 0 8px, var(--blue) 8px 32px);
+}
+
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 54px 96px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ---- 共通の部品 ---- */
+
+/* 二重線の枠。外が明るい青、内が濃い青 */
+.choice,
+.menu-row,
+.ok,
+.stat,
+.card,
+.action,
+.verdict {
+  border: 8px solid var(--sky);
+  background: var(--panel);
+  box-shadow: inset 0 0 0 8px var(--blue);
+  clip-path: var(--notch);
+}
+
+/* 選択中：塗り・拡大・枠の点滅で示す */
+.choice.is-selected,
+.menu-row.is-focused,
+.action.is-primary {
+  border-color: var(--white);
+  background: var(--select);
+  box-shadow: inset 0 0 0 8px var(--gold);
+  color: var(--ink);
+}
+
+.choice.is-selected,
+.menu-row.is-focused {
+  position: relative;
+  z-index: 1;
+  animation: frame-blink 400ms steps(1, end) infinite;
+}
+
+@keyframes frame-blink {
+  0%,
+  100% {
+    border-color: var(--white);
+  }
+  50% {
+    border-color: var(--gold);
+  }
+}
+
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.px-icon {
+  display: block;
+  width: 1em;
+  height: 1em;
+}
+
+.arrow-right {
+  transform: rotate(90deg);
+}
+
+.arrow-down {
+  transform: rotate(180deg);
+}
+
+.arrow-left {
+  transform: rotate(270deg);
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 16px;
+  border: 4px solid var(--dim);
+  color: var(--dim);
+  font-family: var(--font-text);
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 0;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+.tag.is-strong {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 50px;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  gap: 72px;
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.keyhint {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.keyhint-keys {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.keyhint .px-icon {
+  width: 28px;
+  height: 28px;
+}
+
+.keycap {
+  padding: 0 8px;
+  border: 4px solid currentColor;
+  font-family: var(--font-digits);
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* ---- タイトル ---- */
+
+.title h1 {
+  margin: 8px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  font-size: 128px;
+  line-height: 1.15;
+  letter-spacing: 8px;
+  text-shadow: 8px 8px 0 var(--blue);
+}
+
+:lang(en) .title h1 {
+  font-family: var(--font-digits);
+  font-size: 88px;
+  line-height: 148px;
+  letter-spacing: 0;
+}
+
+.tagline {
+  margin: 4px 0 0;
+  color: var(--sky);
+  font-size: 48px;
+}
+
+.period-line {
+  margin: 20px 0 0;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  font-size: 32px;
+}
+
+.best {
+  color: var(--gold);
+}
+
+.menu {
+  width: 1056px;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.menu-row {
+  height: 100px;
+  padding: 0 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 48px;
+}
+
+.menu-row.is-action {
+  justify-content: center;
+}
+
+.menu-row.is-focused {
+  transform: scale(1.06);
+}
+
+.menu-value {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.menu-arrow {
+  padding: 12px;
+  color: var(--sky);
+}
+
+.menu-arrow .px-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.is-focused .menu-arrow {
+  color: var(--ink);
+}
+
+.menu-current {
+  min-width: 400px;
+  text-align: center;
+}
+
+.pace {
+  margin: 24px 0 0;
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.pace.is-warning {
+  margin-top: 8px;
+  color: var(--timeout);
+}
+
+/* ---- ゲーム ---- */
+
+.game {
+  align-items: stretch;
+}
+
+.game-head {
+  height: 76px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.progress {
+  min-width: 480px;
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  font-family: var(--font-digits);
+}
+
+.progress-now {
+  font-size: 56px;
+}
+
+.progress-total {
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.game-period {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.tally {
+  min-width: 480px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 16px;
+}
+
+.tally-label {
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.tally-count {
+  min-width: 112px;
+  font-family: var(--font-digits);
+  font-size: 56px;
+  text-align: right;
+  transform-origin: 100% 50%;
+}
+
+.tally-count.is-bump {
+  animation: tally-bump 480ms steps(1, end) both;
+}
+
+@keyframes tally-bump {
+  0% {
+    color: var(--correct);
+    transform: scale(1.3);
+  }
+  50% {
+    color: var(--correct);
+    transform: scale(1);
+  }
+  100% {
+    color: var(--white);
+    transform: scale(1);
+  }
+}
+
+/* 直前の判定。形（丸・バツ）と色の両方で示し、次に答えるまで残す */
+.mark {
+  margin-right: 16px;
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 32px;
+}
+
+.mark .px-icon {
+  width: 44px;
+  height: 44px;
+}
+
+.mark-correct,
+.verdict-correct {
+  color: var(--correct);
+}
+
+.mark-wrong,
+.verdict-wrong {
+  color: var(--wrong);
+}
+
+.mark-timeout,
+.verdict-timeout {
+  color: var(--timeout);
+}
+
+/*
+  枠タイマー：4辺の棒を目盛りに区切ったゲージ。
+  上下は両端から中央へ、左右は上から下へ、目盛り1つぶんずつ減る。空の目盛りは暗い色で残る。
+  目盛りは 16px ごと（上下 1728px = 108 個、左右 208px = 13 個）。FrameTimer.tsx の数と揃える。
+*/
+.frame {
+  position: relative;
+  height: 264px;
+  flex: none;
+  margin-top: 14px;
+}
+
+.bar {
+  position: absolute;
+  overflow: hidden;
+  background: var(--gauge-empty);
+}
+
+.bar i {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: var(--gauge);
+  will-change: transform;
+}
+
+/* 目盛りの切れ目。棒そのものは transform で縮め、切れ目は動かさない */
+.bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bar-top,
+.bar-bottom {
+  left: 0;
+  right: 0;
+  height: 20px;
+}
+
+.bar-top {
+  top: 0;
+}
+
+.bar-bottom {
+  bottom: 0;
+}
+
+.bar-top::after,
+.bar-bottom::after {
+  background: repeating-linear-gradient(90deg, #000 0 2px, transparent 2px 14px, #000 14px 16px);
+}
+
+.bar-left,
+.bar-right {
+  top: 28px;
+  bottom: 28px;
+  width: 20px;
+}
+
+.bar-left {
+  left: 0;
+}
+
+.bar-right {
+  right: 0;
+}
+
+.bar-left::after,
+.bar-right::after {
+  background: repeating-linear-gradient(180deg, #000 0 2px, transparent 2px 14px, #000 14px 16px);
+}
+
+.bar-left i,
+.bar-right i {
+  transform-origin: 50% 100%;
+}
+
+.frame.is-urgent .bar i {
+  background: var(--urgent);
+}
+
+.frame-body {
+  position: absolute;
+  top: 28px;
+  right: 28px;
+  bottom: 28px;
+  left: 28px;
+  padding: 0 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 判定の色を枠の中に1回だけ出し、4段階で消す */
+.flash {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  animation: flash-out 480ms steps(4, end) both;
+}
+
+.flash-correct {
+  background: var(--correct);
+}
+
+.flash-wrong {
+  background: var(--wrong);
+}
+
+.flash-timeout {
+  background: var(--timeout);
+}
+
+@keyframes flash-out {
+  0% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.ready {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-digits);
+  font-size: 96px;
+  letter-spacing: 8px;
+  animation: blink 300ms steps(1, end) infinite;
+}
+
+.q-text {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  font-family: var(--font-question);
+  line-height: 1.25;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+/* 日本語は文節の切れ目で折り返す（対応していないブラウザでは通常の折り返し） */
+:lang(ja) .q-text {
+  line-break: strict;
+  word-break: auto-phrase;
+}
+
+.q-text.size-lg {
+  font-size: 80px;
+}
+
+.q-text.size-md {
+  font-size: 64px;
+}
+
+.q-text.size-sm {
+  font-size: 48px;
+}
+
+/* まだ出ていない文字も場所だけ取っておき、表示の途中で行が動かないようにする */
+.q-text .pending {
+  visibility: hidden;
+}
+
+/* 十字の4択：画面上の位置が、そのまま十字キーの方向 */
+.cross {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: 660px 150px 660px;
+  grid-template-rows: repeat(3, 142px);
+  gap: 20px 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.choice {
+  width: 660px;
+  height: 142px;
+  padding: 0 28px 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.choice.is-selected {
+  transform: scale(1.08);
+}
+
+.dir-up {
+  grid-area: 1 / 1 / 2 / 4;
+  justify-self: center;
+}
+
+.dir-left {
+  grid-area: 2 / 1;
+}
+
+.dir-right {
+  grid-area: 2 / 3;
+}
+
+.dir-down {
+  grid-area: 3 / 1 / 4 / 4;
+  justify-self: center;
+}
+
+.badge {
+  width: 64px;
+  height: 64px;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--blue);
+  color: var(--white);
+}
+
+.badge .px-icon {
+  width: 42px;
+  height: 42px;
+}
+
+.choice.is-selected .badge {
+  background: var(--ink);
+  color: var(--select);
+}
+
+.choice-label {
+  min-width: 0;
+  flex: 1;
+  font-family: var(--font-question);
+  line-height: 1.2;
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.choice-label.size-xl {
+  font-size: 64px;
+}
+
+.choice-label.size-lg {
+  font-size: 48px;
+}
+
+.choice-label.size-sm {
+  font-size: 32px;
+}
+
+/* 走り出す前は、選択肢の中身を見せない */
+.cross.is-waiting .choice-label {
+  visibility: hidden;
+}
+
+.ok {
+  width: 132px;
+  height: 132px;
+  grid-area: 2 / 2;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: var(--blue);
+  box-shadow: inset 0 0 0 8px var(--deep);
+  color: var(--dim);
+  font-family: var(--font-digits);
+  font-size: 40px;
+}
+
+/* どれかを選ぶと、確定できることを中央の OK が示す */
+.ok.is-ready {
+  box-shadow: inset 0 0 0 8px var(--blue);
+  transform: scale(1.08);
+  animation: ok-blink 400ms steps(1, end) infinite;
+}
+
+@keyframes ok-blink {
+  0%,
+  100% {
+    border-color: var(--gold);
+    color: var(--gold);
+  }
+  50% {
+    border-color: var(--white);
+    color: var(--white);
+  }
+}
+
+/*
+  直前の判定を、4つの選択肢の真ん中に大きく出す。
+  正解は「大きく出て止まる」、不正解と時間切れは「左右に揺れる」。色が見分けにくくても形と動きで分かる。
+*/
+.verdict {
+  position: relative;
+  z-index: 3;
+  width: 208px;
+  height: 208px;
+  grid-area: 2 / 2;
+  align-self: center;
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: currentColor;
+  background: #000;
+  box-shadow: none;
+  pointer-events: none;
+  animation: verdict-pop 720ms steps(1, end) both;
+}
+
+.verdict .px-icon {
+  width: 132px;
+  height: 132px;
+}
+
+.verdict-wrong,
+.verdict-timeout {
+  animation-name: verdict-shake;
+}
+
+@keyframes verdict-pop {
+  0% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+  14% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+@keyframes verdict-shake {
+  0% {
+    opacity: 1;
+    transform: translateX(-24px);
+  }
+  11% {
+    opacity: 1;
+    transform: translateX(24px);
+  }
+  22% {
+    opacity: 1;
+    transform: translateX(-16px);
+  }
+  33% {
+    opacity: 1;
+    transform: translateX(16px);
+  }
+  44% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+}
+
+/* ---- 結果・記録 ---- */
+
+.result h2,
+.records h2,
+.data-error h2 {
+  margin: 6px 0 0;
+  font-size: 64px;
+  letter-spacing: 8px;
+  text-shadow: 4px 4px 0 var(--blue);
+}
+
+.result-badges {
+  min-height: 48px;
+  margin-top: 16px;
+  display: flex;
+  gap: 24px;
+}
+
+.score {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.score-label {
+  color: var(--sky);
+  font-size: 48px;
+}
+
+.score-value {
+  margin-top: 8px;
+  color: var(--gold);
+  font-family: var(--font-digits);
+  font-size: 176px;
+  line-height: 1;
+  text-shadow: 8px 8px 0 #7c3c00;
+}
+
+.stat-row {
+  margin-top: 44px;
+  display: flex;
+  gap: 40px;
+}
+
+.stat,
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stat {
+  width: 480px;
+  height: 176px;
+}
+
+.stat-label {
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.stat-value {
+  margin-top: 8px;
+  font-family: var(--font-digits);
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+.stat-value small {
+  margin-left: 8px;
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.actions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 54px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.action {
+  padding: 20px 44px;
+  color: var(--dim);
+  font-size: 48px;
+}
+
+.action .keyhint {
+  gap: 24px;
+}
+
+.action .px-icon {
+  width: 35px;
+  height: 35px;
+}
+
+.records-period {
+  margin: 8px 0 0;
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.cards {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 552px);
+  gap: 20px;
+}
+
+.card {
+  height: 152px;
+}
+
+.card .stat-value {
+  font-size: 48px;
+}
+
+.runs {
+  width: 1696px;
+  margin-top: 24px;
+  border-collapse: collapse;
+  font-size: 32px;
+}
+
+.runs th {
+  padding: 4px 0;
+  border-bottom: 4px solid var(--blue);
+  color: var(--dim);
+}
+
+.runs td {
+  padding: 4px 0;
+  text-align: center;
+}
+
+.runs tr.is-best td {
+  color: var(--gold);
+}
+
+.empty {
+  margin-top: 220px;
+  color: var(--dim);
+  font-size: 48px;
+}
+
+.data-error p {
+  color: var(--dim);
+  font-size: 32px;
+}
+
+.data-error ul {
+  width: 1500px;
+  font-family: ui-monospace, Menlo, Consolas, monospace;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+/* ---- 確認用の表示（?debug=1）。拡大縮小の外に置く ---- */
+
+.debug {
+  position: fixed;
+  left: 8px;
+  bottom: 8px;
+  z-index: 10;
+  padding: 6px 10px;
+  background: rgba(0, 0, 0, 0.78);
+  color: #9dffb0;
+  font: 14px/1.4 ui-monospace, Menlo, Consolas, monospace;
+  pointer-events: none;
+}
+
+/* ---- 設定 ---- */
+
+.settings h2 {
+  margin: 6px 0 0;
+  font-size: 64px;
+  letter-spacing: 8px;
+  text-shadow: 4px 4px 0 var(--blue);
+}
+
+.settings-menu {
+  margin-top: 0;
+  gap: 12px;
+}
+
+.settings-menu .menu-row {
+  height: 84px;
+}
+
+/* 効果音ごとの行は、字下げして「効果音」の内訳だと分かるようにする */
+.settings-menu .menu-row.is-sub {
+  padding-left: 112px;
+}
+
+.settings-menu .menu-row.is-dimmed:not(.is-focused) {
+  color: var(--dim);
+}
+
+/* 上下にまだ行があることを示す矢印 */
+.scroll-mark {
+  width: 32px;
+  height: 32px;
+  margin: 8px 0;
+  color: var(--sky);
+}
+
+.scroll-mark.is-hidden {
+  visibility: hidden;
+}
+
+.settings .pace {
+  margin-top: 4px;
+}
+
+.settings-menu .menu-label {
+  white-space: nowrap;
+}
+
+/* 行ごとに値の位置がずれないよう、幅を揃える */
+.settings-menu .menu-value {
+  width: 520px;
+  flex: none;
+  justify-content: space-between;
+  white-space: nowrap;
+}
