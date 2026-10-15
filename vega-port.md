@@ -281,8 +281,12 @@ w3cmedia のまま入れ直しを鳴り終わりに移した版で、**アプリ
 ### 4. 残り（10/19）
 
 - `Settings.tsx`、`Records.tsx` — **済（2026-10-16、シミュレータで見え方を確認）**。ブラウザ版と同じ行・同じ操作。記録の表は RN に table が無いので、View を横に並べて 6 列を等分した
-- 見た目の細部（二重線、角の欠け、目盛りの縞、点滅）
-- 自動再生（デモ動画用）
+- 見た目の細部 — **済（2026-10-16、シミュレータで見え方を確認）**
+  - 二重線：§10-1 で済み（`Panel.tsx`）
+  - 角の欠け：`clip-path` が無いので、地の色の 8px の View を4隅にかぶせて欠いたように見せる（`Panel.tsx` の `notchColor`）
+  - 目盛りの縞：`repeating-linear-gradient` が無いので、16px ごとに幅 4px の黒い View を棒の上に並べる（上下 109 本、左右 14 本。一度作って動かさない）
+  - 点滅：タイトルと設定の選んでいる行の外枠を、白と金で 400ms 周期に切り替える（`useBlink`）。ゲーム画面の選択肢と OK は §10-2 で済み
+- 自動再生 — **済**。`devParams.ts` の `demo: true` で走る（§10-2 のラグの計測で使った）
 
 シミュレータを起動し直した直後、`vega exec vda install` が `failed to run abb_exec. Error: closed` で入らないことがあった。`vega device install-app -d emulator-5554 -p build/x86_64-release/qthehundred_x86_64.vpkg` なら入る。
 

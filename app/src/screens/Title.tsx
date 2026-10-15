@@ -4,6 +4,7 @@ import type { Locale } from '@core';
 import { KeyHint } from '../components/KeyHint';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
+import { useBlink } from '../components/steps';
 import { Tag } from '../components/Tag';
 import type { Strings } from '../i18n';
 import { exitApp, useRemoteInput } from '../platform/input';
@@ -65,6 +66,8 @@ export function TitleScreen(props: TitleProps) {
   const s = useStyles(makeStyles);
   // 中央ボタン1回で走り出せるよう、最初は「スタート」に合わせておく
   const [focus, setFocus] = useState(ROWS.indexOf('start'));
+  // 選んでいる行の外枠は白と金で点滅する（styles.css の frame-blink）
+  const blinkOn = useBlink(400, true);
 
   const moveTo = (index: number): void => {
     const next = Math.min(ROWS.length - 1, Math.max(0, index));
@@ -123,6 +126,7 @@ export function TitleScreen(props: TitleProps) {
             <Panel
               key={row}
               focused={focused}
+              outerColor={focused ? (blinkOn ? COLORS.white : COLORS.gold) : undefined}
               style={[s.menuRow, focused && { transform: [{ scale: 1.06 }] }]}
               innerStyle={s.menuRowInner}
             >

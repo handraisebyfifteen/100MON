@@ -6,6 +6,7 @@ import { KeyHint } from '../components/KeyHint';
 import { Panel } from '../components/Panel';
 import { PixelIcon } from '../components/PixelIcon';
 import { Screen } from '../components/Screen';
+import { useBlink } from '../components/steps';
 import { SPEED_MAX, SPEED_MIN } from '../devParams';
 import { STRINGS } from '../i18n';
 import type { Strings } from '../i18n';
@@ -97,6 +98,8 @@ export function SettingsScreen(props: SettingsProps) {
   const { px } = useStyles((stage) => stage);
   const [focus, setFocus] = useState(0);
   const [top, setTop] = useState(0);
+  // 選んでいる行の外枠は白と金で点滅する（styles.css の frame-blink）
+  const blinkOn = useBlink(400, true);
 
   const cycleLocale = (step: number): boolean => {
     const next = (LOCALES.indexOf(locale) + step + LOCALES.length) % LOCALES.length;
@@ -211,6 +214,7 @@ export function SettingsScreen(props: SettingsProps) {
             <Panel
               key={row.key}
               focused={focused}
+              outerColor={focused ? (blinkOn ? COLORS.white : COLORS.gold) : undefined}
               style={[s.menuRow, focused && { transform: [{ scale: 1.06 }] }]}
               innerStyle={[s.menuRowInner, isAction && s.menuRowAction, row.sub && s.menuRowSub]}
             >
