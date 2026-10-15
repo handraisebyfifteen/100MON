@@ -1,0 +1,2545 @@
+{
+ "generated_at": "2026-10-15T16:11:07+00:00",
+ "generator": "us.anthropic.claude-opus-4-6-v1",
+ "verifier1": "qwen.qwen3-235b-a22b-2507-v1:0",
+ "verifier2": "mistral.mistral-large-3-675b-instruct",
+ "questions": [
+  {
+   "id": "opus-4-6_hell_01",
+   "difficulty": "hell",
+   "category": "科学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "周期表でハロゲンに属する固体元素",
+    "choices": [
+     "フッ素",
+     "塩素",
+     "ヨウ素",
+     "臭素"
+    ]
+   },
+   "en": {
+    "text": "The halogen that is a solid at room temperature",
+    "choices": [
+     "Fluorine",
+     "Chlorine",
+     "Iodine",
+     "Bromine"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.01,
+     "input_tokens": 1802,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.1,
+     "input_tokens": 1859,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_02",
+   "difficulty": "hell",
+   "category": "数学",
+   "answerIndex": 1,
+   "ja": {
+    "text": "メルセンヌ素数で2番目に小さい数",
+    "choices": [
+     "5",
+     "7",
+     "13",
+     "17"
+    ]
+   },
+   "en": {
+    "text": "The second smallest Mersenne prime",
+    "choices": [
+     "5",
+     "7",
+     "13",
+     "17"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.51,
+     "input_tokens": 1787,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.24,
+     "input_tokens": 1843,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_03",
+   "difficulty": "hell",
+   "category": "歴史",
+   "answerIndex": 3,
+   "ja": {
+    "text": "ウェストファリア条約が結ばれた年",
+    "choices": [
+     "1618年",
+     "1635年",
+     "1640年",
+     "1648年"
+    ]
+   },
+   "en": {
+    "text": "Year the Peace of Westphalia was concluded",
+    "choices": [
+     "1618",
+     "1635",
+     "1640",
+     "1648"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.36,
+     "input_tokens": 1812,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.55,
+     "input_tokens": 1866,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_04",
+   "difficulty": "hell",
+   "category": "地理",
+   "answerIndex": 0,
+   "ja": {
+    "text": "ドナウ川が注ぐ海",
+    "choices": [
+     "黒海",
+     "カスピ海",
+     "地中海",
+     "バルト海"
+    ]
+   },
+   "en": {
+    "text": "The sea into which the Danube flows",
+    "choices": [
+     "Black Sea",
+     "Caspian Sea",
+     "Mediterranean Sea",
+     "Baltic Sea"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.38,
+     "input_tokens": 1797,
+     "output_tokens": 184,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "ドナウ川が黒海に注ぐことは、一般常識として広く知られた地理の基礎知識"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.6,
+     "input_tokens": 1851,
+     "output_tokens": 193,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "ドナウ川が黒海に注ぐことは、地理の基本的な教養として広く知られているため、難易度が低いと判断される。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_05",
+   "difficulty": "hell",
+   "category": "音楽",
+   "answerIndex": 2,
+   "ja": {
+    "text": "ベートーヴェン交響曲第6番の標題",
+    "choices": [
+     "運命",
+     "英雄",
+     "田園",
+     "合唱"
+    ]
+   },
+   "en": {
+    "text": "Subtitle of Beethoven's Symphony No. 6",
+    "choices": [
+     "Fate",
+     "Eroica",
+     "Pastoral",
+     "Choral"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.66,
+     "input_tokens": 1796,
+     "output_tokens": 187,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "ベートーヴェンの交響曲の標題は音楽に興味がある一般の大人であれば知っている教養レベル"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.44,
+     "input_tokens": 1851,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_06",
+   "difficulty": "hell",
+   "category": "文学",
+   "answerIndex": 1,
+   "ja": {
+    "text": "『変身』でグレーゴルが変わった生き物",
+    "choices": [
+     "蜘蛛",
+     "虫（毒虫）",
+     "蛇",
+     "鼠"
+    ]
+   },
+   "en": {
+    "text": "Creature Gregor Samsa turns into in Kafka's 'The Metamorphosis'",
+    "choices": [
+     "Spider",
+     "Vermin (insect)",
+     "Snake",
+     "Rat"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.93,
+     "input_tokens": 1805,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.37,
+     "input_tokens": 1870,
+     "output_tokens": 402,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「虫（毒虫）」という選択肢は曖昧であり、解釈によっては「蜘蛛」や「鼠」も「虫」の一部と捉えられる可能性がある。そのため、正解が複数に解釈される余地がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「虫（毒虫）」という表現は曖昧で、具体的にどのような生き物を指すかが明確でない。また、『変身』の原文や一般的な解釈では「毒虫」という表現は使われておらず、これが誤解を招く可能性がある。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版の「Vermin (insect)」は、原文や一般的な解釈に即していない表現であり、日本語版の「虫（毒虫）」とも厳密には一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "一般の大人には即答が難しいかもしれないが、文学作品『変身』は広く教養として知られているため、難易度が高すぎるわけではない。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_07",
+   "difficulty": "hell",
+   "category": "哲学",
+   "answerIndex": 3,
+   "ja": {
+    "text": "「万物は流転する」を唱えた哲学者",
+    "choices": [
+     "パルメニデス",
+     "デモクリトス",
+     "タレス",
+     "ヘラクレイトス"
+    ]
+   },
+   "en": {
+    "text": "Philosopher who taught 'everything flows'",
+    "choices": [
+     "Parmenides",
+     "Democritus",
+     "Thales",
+     "Heraclitus"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.88,
+     "input_tokens": 1808,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.1,
+     "input_tokens": 1863,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_08",
+   "difficulty": "hell",
+   "category": "芸術",
+   "answerIndex": 0,
+   "ja": {
+    "text": "『夜警』を描いたオランダの画家",
+    "choices": [
+     "レンブラント",
+     "フェルメール",
+     "ルーベンス",
+     "ファン・エイク"
+    ]
+   },
+   "en": {
+    "text": "Dutch painter of 'The Night Watch'",
+    "choices": [
+     "Rembrandt",
+     "Vermeer",
+     "Rubens",
+     "Van Eyck"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.9,
+     "input_tokens": 1802,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.58,
+     "input_tokens": 1859,
+     "output_tokens": 197,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "『夜警』やレンブラントは西洋美術史の基本的な教養として広く知られているため、物知りな一般の大人なら即答できる水準である。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_09",
+   "difficulty": "hell",
+   "category": "生物学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "ヒトの体で最も大きい臓器",
+    "choices": [
+     "肝臓",
+     "肺",
+     "皮膚",
+     "小腸"
+    ]
+   },
+   "en": {
+    "text": "The largest organ of the human body",
+    "choices": [
+     "Liver",
+     "Lungs",
+     "Skin",
+     "Small intestine"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.16,
+     "input_tokens": 1788,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.08,
+     "input_tokens": 1848,
+     "output_tokens": 216,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "「ヒトの体で最も大きい臓器は皮膚」は、医学や生物学の基礎知識として比較的広く知られているため、物知りな一般の大人でも即答できる水準といえる。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_10",
+   "difficulty": "hell",
+   "category": "言語",
+   "answerIndex": 1,
+   "ja": {
+    "text": "ロゼッタ・ストーンに刻まれていない文字",
+    "choices": [
+     "ヒエログリフ",
+     "楔形文字",
+     "デモティック",
+     "ギリシア文字"
+    ]
+   },
+   "en": {
+    "text": "Script NOT found on the Rosetta Stone",
+    "choices": [
+     "Hieroglyphics",
+     "Cuneiform",
+     "Demotic",
+     "Greek"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.86,
+     "input_tokens": 1802,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.06,
+     "input_tokens": 1860,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_11",
+   "difficulty": "hell",
+   "category": "天文学",
+   "answerIndex": 3,
+   "ja": {
+    "text": "太陽系で自転が逆回転の惑星（金星以外）",
+    "choices": [
+     "海王星",
+     "土星",
+     "木星",
+     "天王星"
+    ]
+   },
+   "en": {
+    "text": "Planet with retrograde rotation besides Venus",
+    "choices": [
+     "Neptune",
+     "Saturn",
+     "Jupiter",
+     "Uranus"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.39,
+     "input_tokens": 1802,
+     "output_tokens": 184,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "天王星の自転軸の傾きや逆回転については一般教養レベルで知られることが多い"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.52,
+     "input_tokens": 1855,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_12",
+   "difficulty": "hell",
+   "category": "歴史",
+   "answerIndex": 0,
+   "ja": {
+    "text": "マグナ・カルタが発布された年",
+    "choices": [
+     "1215年",
+     "1189年",
+     "1258年",
+     "1295年"
+    ]
+   },
+   "en": {
+    "text": "Year the Magna Carta was issued",
+    "choices": [
+     "1215",
+     "1189",
+     "1258",
+     "1295"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.87,
+     "input_tokens": 1812,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.88,
+     "input_tokens": 1862,
+     "output_tokens": 199,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "マグナ・カルタの発布年は歴史の教科書や一般教養として広く知られているため、物知りな一般の大人でも即答できる可能性が高いです。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_13",
+   "difficulty": "hell",
+   "category": "化学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "空気中で3番目に多い気体成分",
+    "choices": [
+     "酸素",
+     "二酸化炭素",
+     "アルゴン",
+     "ネオン"
+    ]
+   },
+   "en": {
+    "text": "Third most abundant gas in Earth's atmosphere",
+    "choices": [
+     "Oxygen",
+     "Carbon dioxide",
+     "Argon",
+     "Neon"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.1,
+     "input_tokens": 1795,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.53,
+     "input_tokens": 1855,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_14",
+   "difficulty": "hell",
+   "category": "地理",
+   "answerIndex": 1,
+   "ja": {
+    "text": "アフリカ大陸で面積最大の国",
+    "choices": [
+     "コンゴ民主共和国",
+     "アルジェリア",
+     "スーダン",
+     "リビア"
+    ]
+   },
+   "en": {
+    "text": "Largest country in Africa by area",
+    "choices": [
+     "DR Congo",
+     "Algeria",
+     "Sudan",
+     "Libya"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 6.13,
+     "input_tokens": 1797,
+     "output_tokens": 182,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "アフリカ大陸で面積最大の国は一般的な地理の常識として広く知られている"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.45,
+     "input_tokens": 1850,
+     "output_tokens": 189,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "国の面積は国境の変更や分離独立などにより変わる可能性があるため、時期によって答えが変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_15",
+   "difficulty": "hell",
+   "category": "物理学",
+   "answerIndex": 0,
+   "ja": {
+    "text": "光速の単位記号 c の由来となったラテン語",
+    "choices": [
+     "celeritas",
+     "cursus",
+     "claritas",
+     "constantia"
+    ]
+   },
+   "en": {
+    "text": "Latin word from which the speed-of-light symbol 'c' derives",
+    "choices": [
+     "celeritas",
+     "cursus",
+     "claritas",
+     "constantia"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.21,
+     "input_tokens": 1805,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.09,
+     "input_tokens": 1858,
+     "output_tokens": 273,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": "光速の単位記号「c」は、ラテン語の「celeritas（速さ）」に由来することが広く認められた事実。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": "この事実は物理学の教科書や信頼できる資料で確認できる確定した知識。"
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": "光速の単位記号「c」の由来は、物理学を学んだ人や専門知識を持つ人にとっては一般的だが、物知りな一般の大人でも即答できるとは限らない水準。"
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_16",
+   "difficulty": "hell",
+   "category": "日本史",
+   "answerIndex": 3,
+   "ja": {
+    "text": "承久の乱が起きた年",
+    "choices": [
+     "1185年",
+     "1192年",
+     "1219年",
+     "1221年"
+    ]
+   },
+   "en": {
+    "text": "Year the Jōkyū War took place",
+    "choices": [
+     "1185",
+     "1192",
+     "1219",
+     "1221"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.53,
+     "input_tokens": 1809,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.35,
+     "input_tokens": 1863,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_17",
+   "difficulty": "hell",
+   "category": "建築",
+   "answerIndex": 1,
+   "ja": {
+    "text": "サグラダ・ファミリアの設計者",
+    "choices": [
+     "ル・コルビュジエ",
+     "ガウディ",
+     "ミース",
+     "ライト"
+    ]
+   },
+   "en": {
+    "text": "Architect who designed the Sagrada Família",
+    "choices": [
+     "Le Corbusier",
+     "Gaudí",
+     "Mies van der Rohe",
+     "Frank Lloyd Wright"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.95,
+     "input_tokens": 1806,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.53,
+     "input_tokens": 1860,
+     "output_tokens": 150,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "サグラダ・ファミリアの設計者としてガウディは広く教養として知られた事実であるため、物知りな一般の大人なら即答できる水準である。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_18",
+   "difficulty": "hell",
+   "category": "文学",
+   "answerIndex": 2,
+   "ja": {
+    "text": "『源氏物語』の巻数",
+    "choices": [
+     "33巻",
+     "44巻",
+     "54巻",
+     "64巻"
+    ]
+   },
+   "en": {
+    "text": "Number of chapters in 'The Tale of Genji'",
+    "choices": [
+     "33",
+     "44",
+     "54",
+     "64"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.5,
+     "input_tokens": 1800,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.72,
+     "input_tokens": 1849,
+     "output_tokens": 193,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "『源氏物語』の巻数は、文学や日本史の教養として広く知られた事実に該当するため、即答できる一般の大人も多い。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_19",
+   "difficulty": "hell",
+   "category": "スポーツ",
+   "answerIndex": 0,
+   "ja": {
+    "text": "近代五種競技に含まれない種目",
+    "choices": [
+     "自転車",
+     "水泳",
+     "射撃",
+     "フェンシング"
+    ]
+   },
+   "en": {
+    "text": "Sport NOT part of the modern pentathlon",
+    "choices": [
+     "Cycling",
+     "Swimming",
+     "Shooting",
+     "Fencing"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.95,
+     "input_tokens": 1795,
+     "output_tokens": 158,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.11,
+     "input_tokens": 1846,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "opus-4-6_hell_20",
+   "difficulty": "hell",
+   "category": "古典",
+   "answerIndex": 3,
+   "ja": {
+    "text": "『イーリアス』の舞台となった戦争の年数",
+    "choices": [
+     "5年",
+     "7年",
+     "8年",
+     "10年"
+    ]
+   },
+   "en": {
+    "text": "Duration of the war depicted in Homer's 'Iliad'",
+    "choices": [
+     "5 years",
+     "7 years",
+     "8 years",
+     "10 years"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.54,
+     "input_tokens": 1802,
+     "output_tokens": 185,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": false,
+       "reason": "トロイア戦争が10年間続いたという話は、一般教養として広く知られている"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.13,
+     "input_tokens": 1856,
+     "output_tokens": 153,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      },
+      "hell_level": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  }
+ ],
+ "gen_log": [
+  {
+   "difficulty": "hell",
+   "n": 20,
+   "attempts": [
+    {
+     "latency_s": 33.29,
+     "input_tokens": 2604,
+     "output_tokens": 2730,
+     "returned": 20,
+     "accepted": 20,
+     "error": null
+    }
+   ],
+   "got": 20
+  }
+ ]
+}

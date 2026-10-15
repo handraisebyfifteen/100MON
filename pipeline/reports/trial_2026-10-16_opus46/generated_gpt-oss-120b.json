@@ -1,0 +1,2110 @@
+{
+ "generated_at": "2026-10-15T16:00:04+00:00",
+ "generator": "openai.gpt-oss-120b-1:0",
+ "verifier1": "qwen.qwen3-235b-a22b-2507-v1:0",
+ "verifier2": "mistral.mistral-large-3-675b-instruct",
+ "questions": [
+  {
+   "id": "gpt-oss-120b_beginner0_01",
+   "difficulty": "beginner0",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で一番高い山は何",
+    "choices": [
+     "富士山",
+     "北岳",
+     "奥穂高岳",
+     "槍ヶ岳"
+    ]
+   },
+   "en": {
+    "text": "What is the highest mountain in Japan?",
+    "choices": [
+     "Mount Fuji",
+     "Mount Kita",
+     "Mount Okuhotaka",
+     "Mount Yarigatake"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.92,
+     "input_tokens": 1282,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.65,
+     "input_tokens": 1291,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner0_02",
+   "difficulty": "beginner0",
+   "category": "Science",
+   "answerIndex": 0,
+   "ja": {
+    "text": "世界で最も大きい惑星は",
+    "choices": [
+     "木星",
+     "土星",
+     "地球",
+     "火星"
+    ]
+   },
+   "en": {
+    "text": "Which is the largest planet in the solar system?",
+    "choices": [
+     "Jupiter",
+     "Saturn",
+     "Earth",
+     "Mars"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.38,
+     "input_tokens": 1269,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.12,
+     "input_tokens": 1277,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner0_03",
+   "difficulty": "beginner0",
+   "category": "History",
+   "answerIndex": 0,
+   "ja": {
+    "text": "アメリカ独立宣言が採択された年は",
+    "choices": [
+     "1776年",
+     "1789年",
+     "1801年",
+     "1865年"
+    ]
+   },
+   "en": {
+    "text": "In what year was the United States Declaration of Independence adopted?",
+    "choices": [
+     "1776",
+     "1789",
+     "1801",
+     "1865"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.09,
+     "input_tokens": 1297,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.21,
+     "input_tokens": 1301,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner0_04",
+   "difficulty": "beginner0",
+   "category": "Culture",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本の国花は何でしょう",
+    "choices": [
+     "桜",
+     "梅",
+     "菊",
+     "椿"
+    ]
+   },
+   "en": {
+    "text": "What is the national flower of Japan?",
+    "choices": [
+     "Cherry blossom",
+     "Plum blossom",
+     "Chrysanthemum",
+     "Camellia"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.81,
+     "input_tokens": 1271,
+     "output_tokens": 161,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本には法律で定められた国花がないため、桜が公式な正解とは言えない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "国花が公式に定められていないため、複数の選択肢が主張される余地がある"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.8,
+     "input_tokens": 1280,
+     "output_tokens": 219,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本の国花は法律で正式に定められておらず、桜と菊の両方が広く国花として認識されているため、厳密には「桜」だけを正解とするのは不適切"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "桜と菊の両方が国花として広く認識されているため、正解が複数存在する可能性がある"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本の「国花」は法律で正式に定められていないため、解釈が分かれる可能性がある"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_01",
+   "difficulty": "beginner",
+   "category": "地理",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で一番高い山",
+    "choices": [
+     "富士山",
+     "北岳",
+     "奥穂高岳",
+     "間ノ岳"
+    ]
+   },
+   "en": {
+    "text": "The highest mountain in Japan",
+    "choices": [
+     "Mount Fuji",
+     "Mount Kita",
+     "Mount Okuhotaka",
+     "Mount Aino"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.09,
+     "input_tokens": 1276,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.14,
+     "input_tokens": 1284,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_02",
+   "difficulty": "beginner",
+   "category": "歴史",
+   "answerIndex": 1,
+   "ja": {
+    "text": "江戸時代最後の将軍は誰",
+    "choices": [
+     "徳川家茂",
+     "徳川慶喜",
+     "徳川家光",
+     "徳川秀忠"
+    ]
+   },
+   "en": {
+    "text": "Who was the last shogun of the Edo period",
+    "choices": [
+     "Tokugawa Iemochi",
+     "Tokugawa Yoshinobu",
+     "Tokugawa Iemitsu",
+     "Tokugawa Hidetada"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.13,
+     "input_tokens": 1309,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.18,
+     "input_tokens": 1306,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_03",
+   "difficulty": "beginner",
+   "category": "科学",
+   "answerIndex": 0,
+   "ja": {
+    "text": "水の化学式は何ですか",
+    "choices": [
+     "H2O",
+     "CO2",
+     "O2",
+     "N2"
+    ]
+   },
+   "en": {
+    "text": "What is the chemical formula of water",
+    "choices": [
+     "H2O",
+     "CO2",
+     "O2",
+     "N2"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.41,
+     "input_tokens": 1271,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.11,
+     "input_tokens": 1277,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_04",
+   "difficulty": "beginner",
+   "category": "文化",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本の国花は何ですか",
+    "choices": [
+     "桜",
+     "梅",
+     "菊",
+     "蓮"
+    ]
+   },
+   "en": {
+    "text": "What is the national flower of Japan",
+    "choices": [
+     "Cherry blossom",
+     "Plum blossom",
+     "Chrysanthemum",
+     "Lotus"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.31,
+     "input_tokens": 1270,
+     "output_tokens": 165,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本には法律で定められた国花がないため、桜を正解とすることは事実に反する"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "国花が公式に定められていないため、どの選択肢も正解とは言えず、不定解となる"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.91,
+     "input_tokens": 1279,
+     "output_tokens": 216,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本の国花は法律で正式に定められていないため、「桜」と「菊」の両方が広く国花として認識されている。"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "「桜」と「菊」の両方が国花として広く認識されているため、正解が複数存在する可能性がある。"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「国花」の定義が法律で厳密に定められていないため、複数の解釈が生じる可能性がある。"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_05",
+   "difficulty": "beginner",
+   "category": "スポーツ",
+   "answerIndex": 0,
+   "ja": {
+    "text": "東京オリンピック開催年は",
+    "choices": [
+     "1964",
+     "1972",
+     "1988",
+     "2000"
+    ]
+   },
+   "en": {
+    "text": "In what year did Tokyo first host the Olympics",
+    "choices": [
+     "1964",
+     "1972",
+     "1988",
+     "2000"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.68,
+     "input_tokens": 1291,
+     "output_tokens": 263,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "2020年開催も事実なので、選択肢にないだけで複数の正解が存在する可能性がある"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "『東京オリンピック開催年』という表現は、初めての開催か最近の開催かが明確でないため、複数の解釈が可能"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "2020年（実際は2021年）に東京オリンピックが再開催されたため、『初めて』開催した年かどうかの指定がないと時期によっては答えが変わる"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "英語版では明示的に\"first\"とあるが、日本語版にはその記述がなく、正解の解釈が一致しない"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.7,
+     "input_tokens": 1292,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_beginner_06",
+   "difficulty": "beginner",
+   "category": "ことば",
+   "answerIndex": 0,
+   "ja": {
+    "text": "英語で『犬』は何ですか",
+    "choices": [
+     "dog",
+     "cat",
+     "bird",
+     "fish"
+    ]
+   },
+   "en": {
+    "text": "What is the English word for “犬”",
+    "choices": [
+     "dog",
+     "cat",
+     "bird",
+     "fish"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.03,
+     "input_tokens": 1265,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.35,
+     "input_tokens": 1271,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_intermediate_01",
+   "difficulty": "intermediate",
+   "category": "geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で最も面積が大きい県",
+    "choices": [
+     "北海道",
+     "岩手県",
+     "福岡県",
+     "沖縄県"
+    ]
+   },
+   "en": {
+    "text": "Largest prefecture by area in Japan",
+    "choices": [
+     "Hokkaido",
+     "Iwate",
+     "Fukuoka",
+     "Okinawa"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.07,
+     "input_tokens": 1283,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.79,
+     "input_tokens": 1284,
+     "output_tokens": 181,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "北海道は都道府県の中で最も面積が大きいが、県ではなく「道」であるため、問題文の「県」に該当しない。"
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語の問題文では「県」に限定しているが、英語版ではその限定が明示されていないため、問題の意味が一致していない。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_intermediate_02",
+   "difficulty": "intermediate",
+   "category": "history",
+   "answerIndex": 0,
+   "ja": {
+    "text": "アメリカ独立宣言が採択された年",
+    "choices": [
+     "1776年",
+     "1789年",
+     "1804年",
+     "1765年"
+    ]
+   },
+   "en": {
+    "text": "Year the United States Declaration of Independence was adopted",
+    "choices": [
+     "1776",
+     "1789",
+     "1804",
+     "1765"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.53,
+     "input_tokens": 1294,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.4,
+     "input_tokens": 1299,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_intermediate_03",
+   "difficulty": "intermediate",
+   "category": "science",
+   "answerIndex": 0,
+   "ja": {
+    "text": "水の沸点は何度か",
+    "choices": [
+     "100°C",
+     "90°C",
+     "80°C",
+     "110°C"
+    ]
+   },
+   "en": {
+    "text": "Boiling point of water at standard pressure (°C)",
+    "choices": [
+     "100°C",
+     "90°C",
+     "80°C",
+     "110°C"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.57,
+     "input_tokens": 1286,
+     "output_tokens": 261,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "標準大気圧での沸点が100°Cだが、問題文にその条件が記載されていないため事実として正確とは言えない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "条件が明確でないため、正解が1つに定まらない可能性がある"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "日本語の問題文が『水の沸点は何度か』だけで、気圧の条件が明記されておらず、複数の解釈が可能"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "気圧によって沸点が変わるため、標準的な条件が明示されていないと時期や場所で答えが変わる可能性がある"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版には『標準圧力』の記載がなく、英語版との意味と正解の前提が一致していない"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.75,
+     "input_tokens": 1291,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_intermediate_04",
+   "difficulty": "intermediate",
+   "category": "culture",
+   "answerIndex": 0,
+   "ja": {
+    "text": "デンマーク王子が主人公の劇",
+    "choices": [
+     "ハムレット",
+     "マクベス",
+     "オセロ",
+     "リア王"
+    ]
+   },
+   "en": {
+    "text": "Shakespeare play featuring a Danish prince",
+    "choices": [
+     "Hamlet",
+     "Macbeth",
+     "Othello",
+     "King Lear"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 13.1,
+     "input_tokens": 1277,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.81,
+     "input_tokens": 1281,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_intermediate_05",
+   "difficulty": "intermediate",
+   "category": "sports",
+   "answerIndex": 0,
+   "ja": {
+    "text": "FIFAワールドカップで最も優勝回数が多い国",
+    "choices": [
+     "ブラジル",
+     "ドイツ",
+     "イタリア",
+     "アルゼンチン"
+    ]
+   },
+   "en": {
+    "text": "Country with the most FIFA World Cup titles",
+    "choices": [
+     "Brazil",
+     "Germany",
+     "Italy",
+     "Argentina"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.89,
+     "input_tokens": 1277,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "FIFAワールドカップの優勝回数は大会ごとに変化するため、時期によって答えが変わる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.53,
+     "input_tokens": 1279,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_advanced_01",
+   "difficulty": "advanced",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "アフリカで最も高い山は",
+    "choices": [
+     "キリマンジャロ",
+     "ケニア山",
+     "エベレスト",
+     "アコンカグア"
+    ]
+   },
+   "en": {
+    "text": "Highest mountain in Africa",
+    "choices": [
+     "Mount Kilimanjaro",
+     "Mount Kenya",
+     "Mount Everest",
+     "Aconcagua"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.08,
+     "input_tokens": 1281,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.88,
+     "input_tokens": 1290,
+     "output_tokens": 108,
+     "stop_reason": "end_turn",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_advanced_02",
+   "difficulty": "advanced",
+   "category": "History",
+   "answerIndex": 0,
+   "ja": {
+    "text": "ローマ帝国が滅亡した年",
+    "choices": [
+     "476年",
+     "1453年",
+     "1066年",
+     "1912年"
+    ]
+   },
+   "en": {
+    "text": "Year the Western Roman Empire fell",
+    "choices": [
+     "476 AD",
+     "1453 AD",
+     "1066 AD",
+     "1912 AD"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.3,
+     "input_tokens": 1293,
+     "output_tokens": 368,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "問題文が「ローマ帝国」としているが、正解が西ローマ帝国の滅亡である476年とされており、一般的にはローマ帝国の終焉として1453年も含まれるため不正確"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "476年（西ローマ帝国滅亡）と1453年（東ローマ帝国滅亡）の両方が一見して妥当に見えるため、正解が一つとは言い切れない"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「ローマ帝国」という表現は西ローマ帝国を指すのか東ローマ帝国を含むのか明確でない"
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "西ローマ帝国の滅亡年は476年だが、東ローマ帝国（ビザンツ帝国）は1453年まで存続しており、単に「ローマ帝国」とした場合の解釈が曖昧になるため時期に関わる問題となる"
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版は「ローマ帝国が滅亡した年」と汎用的な表現であるのに対し、英語版は「Western Roman Empire fell」と明確に西ローマ帝国と指定しているため、意味と正解の一致性がない"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 5.81,
+     "input_tokens": 1298,
+     "output_tokens": 196,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": false,
+       "reason": "日本語版の問題文は「ローマ帝国が滅亡した年」と表記されており、英語版の「Year the Western Roman Empire fell（西ローマ帝国が滅亡した年）」と完全には一致しない。東ローマ帝国（ビザンツ帝国）の滅亡年は1453年であり、混同のリスクがある。"
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_advanced_03",
+   "difficulty": "advanced",
+   "category": "Science",
+   "answerIndex": 0,
+   "ja": {
+    "text": "水の化学式（分子式）は",
+    "choices": [
+     "H2O",
+     "CO2",
+     "O2",
+     "NaCl"
+    ]
+   },
+   "en": {
+    "text": "Molecular formula of water",
+    "choices": [
+     "H2O",
+     "CO2",
+     "O2",
+     "NaCl"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.95,
+     "input_tokens": 1272,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.47,
+     "input_tokens": 1278,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_advanced_04",
+   "difficulty": "advanced",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "世界で最も長い山脈は",
+    "choices": [
+     "アンデス山脈",
+     "ヒマラヤ山脈",
+     "ロッキー山脈",
+     "アルプス山脈"
+    ]
+   },
+   "en": {
+    "text": "Longest mountain range in the world",
+    "choices": [
+     "Andes",
+     "Himalayas",
+     "Rocky Mountains",
+     "Alps"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.5,
+     "input_tokens": 1285,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.71,
+     "input_tokens": 1295,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_advanced_05",
+   "difficulty": "advanced",
+   "category": "Sports",
+   "answerIndex": 0,
+   "ja": {
+    "text": "サッカーワールドカップで優勝回数が最多の国",
+    "choices": [
+     "ブラジル",
+     "ドイツ",
+     "イタリア",
+     "アルゼンチン"
+    ]
+   },
+   "en": {
+    "text": "Country with the most FIFA World Cup titles",
+    "choices": [
+     "Brazil",
+     "Germany",
+     "Italy",
+     "Argentina"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.36,
+     "input_tokens": 1280,
+     "output_tokens": 134,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "優勝回数は大会開催ごとに変化するため、時期によって答えが変わる"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.62,
+     "input_tokens": 1282,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  }
+ ],
+ "gen_log": [
+  {
+   "difficulty": "beginner0",
+   "n": 4,
+   "attempts": [
+    {
+     "latency_s": 6.03,
+     "input_tokens": 954,
+     "output_tokens": 1506,
+     "returned": 4,
+     "accepted": 4,
+     "error": null
+    }
+   ],
+   "got": 4
+  },
+  {
+   "difficulty": "beginner",
+   "n": 6,
+   "attempts": [
+    {
+     "latency_s": 6.74,
+     "input_tokens": 957,
+     "output_tokens": 1673,
+     "returned": 6,
+     "accepted": 6,
+     "error": null
+    }
+   ],
+   "got": 6
+  },
+  {
+   "difficulty": "intermediate",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 5.9,
+     "input_tokens": 953,
+     "output_tokens": 1585,
+     "returned": 5,
+     "accepted": 5,
+     "error": null
+    }
+   ],
+   "got": 5
+  },
+  {
+   "difficulty": "advanced",
+   "n": 5,
+   "attempts": [
+    {
+     "latency_s": 10.3,
+     "input_tokens": 959,
+     "output_tokens": 2692,
+     "returned": 5,
+     "accepted": 5,
+     "error": null
+    }
+   ],
+   "got": 5
+  }
+ ]
+}

@@ -1,0 +1,2391 @@
+{
+ "generated_at": "2026-10-15T16:06:38+00:00",
+ "generator": "openai.gpt-oss-120b-1:0",
+ "verifier1": "qwen.qwen3-235b-a22b-2507-v1:0",
+ "verifier2": "mistral.mistral-large-3-675b-instruct",
+ "questions": [
+  {
+   "id": "gpt-oss-120b_hell_01",
+   "difficulty": "hell",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本で一番高い山",
+    "choices": [
+     "富士山",
+     "北岳",
+     "奥穂高岳",
+     "白馬岳"
+    ]
+   },
+   "en": {
+    "text": "Highest mountain in Japan",
+    "choices": [
+     "Mount Fuji",
+     "Mount Kita",
+     "Mount Okuhotaka",
+     "Mount Shirouma"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.19,
+     "input_tokens": 1609,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.38,
+     "input_tokens": 1652,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_02",
+   "difficulty": "hell",
+   "category": "History",
+   "answerIndex": 1,
+   "ja": {
+    "text": "最初の人工衛星打ち上げ年",
+    "choices": [
+     "1955年",
+     "1957年",
+     "1961年",
+     "1969年"
+    ]
+   },
+   "en": {
+    "text": "Year of the first artificial satellite launch",
+    "choices": [
+     "1955",
+     "1957",
+     "1961",
+     "1969"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.34,
+     "input_tokens": 1624,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.15,
+     "input_tokens": 1664,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_03",
+   "difficulty": "hell",
+   "category": "Science",
+   "answerIndex": 0,
+   "ja": {
+    "text": "屈折率が最も高い天然素材",
+    "choices": [
+     "ダイヤモンド",
+     "水晶",
+     "ガラス",
+     "アクリル"
+    ]
+   },
+   "en": {
+    "text": "Natural material with the highest refractive index",
+    "choices": [
+     "Diamond",
+     "Quartz",
+     "Glass",
+     "Acrylic"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.67,
+     "input_tokens": 1606,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.19,
+     "input_tokens": 1652,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_04",
+   "difficulty": "hell",
+   "category": "Geography",
+   "answerIndex": 1,
+   "ja": {
+    "text": "エベレストの標高（メートル）",
+    "choices": [
+     "8611",
+     "8848",
+     "8942",
+     "9022"
+    ]
+   },
+   "en": {
+    "text": "Height of Mount Everest (meters)",
+    "choices": [
+     "8611",
+     "8848",
+     "8942",
+     "9022"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.32,
+     "input_tokens": 1623,
+     "output_tokens": 218,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "エベレストの標高は測定時期や方法により数値が変動するため、時期によって答えが変わる可能性がある"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": false,
+       "reason": "エベレストの標高には複数の公式な数値が存在し、中国とネパールで公表値が異なるなど諸説あるため、確定した事実とは言えない"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.22,
+     "input_tokens": 1661,
+     "output_tokens": 228,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "エベレストの標高は測量技術の進歩や地殻変動、雪氷の厚さの変化により、時期によって公式な数値が更新される可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": false,
+       "reason": "エベレストの標高は複数の測量結果や諸説があり、公式な数値も確定的とは言えない場合がある。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_05",
+   "difficulty": "hell",
+   "category": "Mathematics",
+   "answerIndex": 1,
+   "ja": {
+    "text": "ピタゴラスの定理が成立しない三角形",
+    "choices": [
+     "直角三角形",
+     "鈍角三角形",
+     "二等辺三角形",
+     "正三角形"
+    ]
+   },
+   "en": {
+    "text": "Triangle type where the Pythagorean theorem does not apply",
+    "choices": [
+     "Right triangle",
+     "Obtuse triangle",
+     "Isosceles triangle",
+     "Equilateral triangle"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 7.05,
+     "input_tokens": 1630,
+     "output_tokens": 413,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "ピタゴラスの定理は直角三角形にのみ成立するため、直角三角形以外では成立しないが、問題文の「成立しない三角形」という表現では「どの三角形でも成立しない」という誤解を生む可能性があり、正確な記述ではない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "鈍角三角形以外にも、鋭角三角形（例: 二等辺や正三角形）ではピタゴラスの定理は成立しないため、複数の選択肢が正解となり得る"
+      },
+      "unambiguous": {
+       "pass": false,
+       "reason": "「成立しない三角形」という表現は、「定理が成り立たない三角形」と解釈すべきか、「そもそも定理の対象外の三角形」と解釈すべきか曖昧"
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "「直角三角形」が定理の適用対象であることを逆手に取り、反対の解釈を誘導する構造は引っかけに当たる"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": false,
+       "reason": "知識ではなく、問題の読み取り方や引っかけに依存して難しくなっている"
+      },
+      "well_established": {
+       "pass": false,
+       "reason": "ピタゴラスの定理の適用範囲は確定事実だが、問題の提示の仕方が定理の意味を誤解させるため、検証可能な形になっていない"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.98,
+     "input_tokens": 1672,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_06",
+   "difficulty": "hell",
+   "category": "Chemistry",
+   "answerIndex": 0,
+   "ja": {
+    "text": "元素記号Feの元素名",
+    "choices": [
+     "鉄",
+     "銅",
+     "銀",
+     "金"
+    ]
+   },
+   "en": {
+    "text": "Element name for the symbol Fe",
+    "choices": [
+     "Iron",
+     "Copper",
+     "Silver",
+     "Gold"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.81,
+     "input_tokens": 1597,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.17,
+     "input_tokens": 1636,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_07",
+   "difficulty": "hell",
+   "category": "Physics",
+   "answerIndex": 1,
+   "ja": {
+    "text": "特殊相対性理論の出版年",
+    "choices": [
+     "1900年",
+     "1905年",
+     "1910年",
+     "1915年"
+    ]
+   },
+   "en": {
+    "text": "Publication year of the special theory of relativity",
+    "choices": [
+     "1900",
+     "1905",
+     "1910",
+     "1915"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.09,
+     "input_tokens": 1627,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.18,
+     "input_tokens": 1666,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_08",
+   "difficulty": "hell",
+   "category": "Economics",
+   "answerIndex": 0,
+   "ja": {
+    "text": "イギリスの通貨単位",
+    "choices": [
+     "ポンド",
+     "ユーロ",
+     "ドル",
+     "フラン"
+    ]
+   },
+   "en": {
+    "text": "Currency unit of the United Kingdom",
+    "choices": [
+     "Pound",
+     "Euro",
+     "Dollar",
+     "Franc"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.15,
+     "input_tokens": 1603,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.05,
+     "input_tokens": 1637,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_09",
+   "difficulty": "hell",
+   "category": "Culture",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本の祝日で最も早いもの",
+    "choices": [
+     "元日",
+     "建国記念の日",
+     "敬老の日",
+     "体育の日"
+    ]
+   },
+   "en": {
+    "text": "Earliest public holiday in Japan",
+    "choices": [
+     "New Year's Day",
+     "National Foundation Day",
+     "Respect for the Aged Day",
+     "Health and Sports Day"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.89,
+     "input_tokens": 1618,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.59,
+     "input_tokens": 1662,
+     "output_tokens": 215,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": false,
+       "reason": "「体育の日」は2020年以降「スポーツの日」に改称され、日付も変更されているため、時期によって答えが変わる可能性がある。"
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": false,
+       "reason": "「体育の日」の名称と日付が変更されており、過去のデータと現在のデータで整合性が取れない部分がある。"
+      }
+     },
+     "verdict": false
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_10",
+   "difficulty": "hell",
+   "category": "Physics",
+   "answerIndex": 0,
+   "ja": {
+    "text": "光速（m/s）の正確な数値",
+    "choices": [
+     "299,792,458",
+     "300,000,000",
+     "150,000,000",
+     "1,080,000,000"
+    ]
+   },
+   "en": {
+    "text": "Exact value of the speed of light (m/s)",
+    "choices": [
+     "299,792,458",
+     "300,000,000",
+     "150,000,000",
+     "1,080,000,000"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.35,
+     "input_tokens": 1687,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.3,
+     "input_tokens": 1726,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_11",
+   "difficulty": "hell",
+   "category": "Art",
+   "answerIndex": 0,
+   "ja": {
+    "text": "モナリザの画家",
+    "choices": [
+     "ダ・ヴィンチ",
+     "ミケランジェロ",
+     "ラファエロ",
+     "ピカソ"
+    ]
+   },
+   "en": {
+    "text": "Painter of the Mona Lisa",
+    "choices": [
+     "Leonardo da Vinci",
+     "Michelangelo",
+     "Raphael",
+     "Picasso"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.02,
+     "input_tokens": 1612,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.32,
+     "input_tokens": 1652,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_12",
+   "difficulty": "hell",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "世界で最も深い湖",
+    "choices": [
+     "バイカル湖",
+     "タア湖",
+     "カスピ海",
+     "サンフランシスコ湾"
+    ]
+   },
+   "en": {
+    "text": "Deepest lake in the world",
+    "choices": [
+     "Lake Baikal",
+     "Lake Taa",
+     "Caspian Sea",
+     "San Francisco Bay"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.03,
+     "input_tokens": 1614,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.36,
+     "input_tokens": 1654,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_13",
+   "difficulty": "hell",
+   "category": "History",
+   "answerIndex": 0,
+   "ja": {
+    "text": "平安時代の都",
+    "choices": [
+     "平安京",
+     "平城京",
+     "長岡京",
+     "奈良"
+    ]
+   },
+   "en": {
+    "text": "Capital of Japan during the Heian period",
+    "choices": [
+     "Heian-kyō",
+     "Heijō-kyō",
+     "Nagaoka-kyō",
+     "Nara"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.78,
+     "input_tokens": 1615,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.9,
+     "input_tokens": 1654,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_14",
+   "difficulty": "hell",
+   "category": "Culture",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本の国鳥",
+    "choices": [
+     "キジ",
+     "ウグイス",
+     "カモメ",
+     "ツバメ"
+    ]
+   },
+   "en": {
+    "text": "National bird of Japan",
+    "choices": [
+     "Japanese pheasant",
+     "Bush warbler",
+     "Seagull",
+     "Swallow"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.65,
+     "input_tokens": 1603,
+     "output_tokens": 221,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": false,
+       "reason": "日本には正式な国鳥が存在しない"
+      },
+      "single_answer": {
+       "pass": false,
+       "reason": "国鳥が定められていないため、どの選択肢も正解にならない"
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": false,
+       "reason": "国鳥がない国に対して国鳥を問うている点で引っかけに近い"
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": false,
+       "reason": "前提が事実誤認に基づいており、知識の運用では補正できない"
+      },
+      "well_established": {
+       "pass": false,
+       "reason": "日本には国鳥が存在しないことが確立された事実である"
+      }
+     },
+     "verdict": false
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.3,
+     "input_tokens": 1643,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_15",
+   "difficulty": "hell",
+   "category": "Sports",
+   "answerIndex": 0,
+   "ja": {
+    "text": "最初の近代オリンピック開催都市",
+    "choices": [
+     "アテネ",
+     "パリ",
+     "ロンドン",
+     "ローマ"
+    ]
+   },
+   "en": {
+    "text": "Host city of the first modern Olympic Games",
+    "choices": [
+     "Athens",
+     "Paris",
+     "London",
+     "Rome"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.47,
+     "input_tokens": 1608,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.16,
+     "input_tokens": 1644,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_16",
+   "difficulty": "hell",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "ピラミッドが位置する砂漠",
+    "choices": [
+     "サハラ砂漠",
+     "アラビア砂漠",
+     "ゴビ砂漠",
+     "カラハリ砂漠"
+    ]
+   },
+   "en": {
+    "text": "Desert where the Egyptian pyramids are located",
+    "choices": [
+     "Sahara Desert",
+     "Arabian Desert",
+     "Gobi Desert",
+     "Kalahari Desert"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.05,
+     "input_tokens": 1626,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.03,
+     "input_tokens": 1674,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_17",
+   "difficulty": "hell",
+   "category": "Chemistry",
+   "answerIndex": 0,
+   "ja": {
+    "text": "二酸化炭素の化学式",
+    "choices": [
+     "CO2",
+     "H2O",
+     "O2",
+     "N2O"
+    ]
+   },
+   "en": {
+    "text": "Chemical formula of carbon dioxide",
+    "choices": [
+     "CO2",
+     "H2O",
+     "O2",
+     "N2O"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.56,
+     "input_tokens": 1607,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 3.83,
+     "input_tokens": 1648,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_18",
+   "difficulty": "hell",
+   "category": "History",
+   "answerIndex": 1,
+   "ja": {
+    "text": "フランス革命が起きた年",
+    "choices": [
+     "1776年",
+     "1789年",
+     "1799年",
+     "1804年"
+    ]
+   },
+   "en": {
+    "text": "Year the French Revolution began",
+    "choices": [
+     "1776",
+     "1789",
+     "1799",
+     "1804"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.43,
+     "input_tokens": 1620,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.42,
+     "input_tokens": 1658,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_19",
+   "difficulty": "hell",
+   "category": "Geography",
+   "answerIndex": 0,
+   "ja": {
+    "text": "日本の最長河川",
+    "choices": [
+     "信濃川",
+     "利根川",
+     "木曽川",
+     "荒川"
+    ]
+   },
+   "en": {
+    "text": "Longest river in Japan",
+    "choices": [
+     "Shinano River",
+     "Tone River",
+     "Kiso River",
+     "Arakawa River"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 4.04,
+     "input_tokens": 1609,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.22,
+     "input_tokens": 1651,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  {
+   "id": "gpt-oss-120b_hell_20",
+   "difficulty": "hell",
+   "category": "Biology",
+   "answerIndex": 0,
+   "ja": {
+    "text": "DNA二重らせん提唱者",
+    "choices": [
+     "ワトソンとクリック",
+     "フロイトとユング",
+     "ニュートンとガリレオ",
+     "アインシュタインとボーア"
+    ]
+   },
+   "en": {
+    "text": "Scientists who proposed the DNA double helix",
+    "choices": [
+     "Watson and Crick",
+     "Freud and Jung",
+     "Newton and Galileo",
+     "Einstein and Bohr"
+    ]
+   },
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.71,
+     "input_tokens": 1635,
+     "output_tokens": 144,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.11,
+     "input_tokens": 1674,
+     "output_tokens": 139,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      },
+      "knowledge_based": {
+       "pass": true,
+       "reason": ""
+      },
+      "well_established": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  }
+ ],
+ "gen_log": [
+  {
+   "difficulty": "hell",
+   "n": 20,
+   "attempts": [
+    {
+     "error": "ツール呼び出しが返らなかった",
+     "latency_s": 16.73,
+     "input_tokens": 1179,
+     "output_tokens": 4000
+    },
+    {
+     "latency_s": 16.42,
+     "input_tokens": 1208,
+     "output_tokens": 3956,
+     "returned": 20,
+     "accepted": 20,
+     "error": null
+    }
+   ],
+   "got": 20
+  }
+ ]
+}

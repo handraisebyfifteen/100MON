@@ -24,6 +24,21 @@
 
 REGION = "us-east-2"
 
+# ---- 本番（通常週）の構成（オーナー決定 2026-10-16）----
+# 5系・GPT-6系は 10/16 時点でもアカウント未開放（Claude Opus 4.7/4.8、GPT-5.5/5.6/6 系も同じ）。
+# 試作（reports/trial_2026-10-16_opus46/）で Opus 4.6 の一発合格率 70%（Sonnet 4.6 は 60%）を確認し、
+# 通常週は Opus 4.6 で本番生成することにした。検証は Anthropic 以外の2社に分ける。
+# 激ムズウィークの生成役は未定（Opus 4.6 は上級に寄る癖があり、別途判断。第12ピリオドまでに決める）。
+# 5系が開放されたら PROD_GENERATOR を GENERATOR（下の5系ID）に戻すだけでよい。
+PROD_GENERATOR = "us.anthropic.claude-opus-4-6-v1"
+PROD_VERIFIER_1 = "mistral.mistral-large-3-675b-instruct"   # 9月の比較で Opus に次ぐ成績
+PROD_VERIFIER_2 = "qwen.qwen3-235b-a22b-2507-v1:0"          # 次点。事実誤認が稀にある（将棋の駒数など）ので副
+PROD_DECISION_POINT_MODEL = "mistral.mistral-large-3-675b-instruct"
+
+# 通常週の難易度配分（設計書 §8。合計100）と、修正の上限回数
+PROD_ALLOCATION = {"beginner0": 25, "beginner": 30, "intermediate": 20, "advanced": 25}
+PROD_FIX_ROUNDS = 3
+
 # ---- 生成・修正役（手順3の5系再テストで確定させる）----
 GENERATOR = "global.anthropic.claude-sonnet-5-5"
 

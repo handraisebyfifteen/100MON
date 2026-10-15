@@ -1,0 +1,2502 @@
+[
+ {
+  "category": "literature",
+  "answerIndex": 2,
+  "ja": {
+   "text": "『源氏物語』の作者",
+   "choices": [
+    "清少納言",
+    "小野小町",
+    "紫式部",
+    "和泉式部"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The author of 'The Tale of Genji'",
+   "choices": [
+    "Sei Shōnagon",
+    "Ono no Komachi",
+    "Murasaki Shikibu",
+    "Izumi Shikibu"
+   ],
+   "decisionPoint": 33
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "地球の表面で海が占める割合の目安",
+   "choices": [
+    "約7割",
+    "約5割",
+    "約6割",
+    "約8割"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The approximate percentage of Earth's surface covered by ocean",
+   "choices": [
+    "About 70%",
+    "About 50%",
+    "About 60%",
+    "About 80%"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "math",
+  "answerIndex": 0,
+  "ja": {
+   "text": "1キロメートルは何メートル",
+   "choices": [
+    "1000",
+    "100",
+    "10000",
+    "500"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "How many meters in one kilometer",
+   "choices": [
+    "1000",
+    "100",
+    "10000",
+    "500"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "language",
+  "answerIndex": 2,
+  "ja": {
+   "text": "英語で「猫」を意味する単語",
+   "choices": [
+    "Dog",
+    "Bird",
+    "Cat",
+    "Fish"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The English word for 'neko' (猫)",
+   "choices": [
+    "Dog",
+    "Bird",
+    "Cat",
+    "Fish"
+   ],
+   "decisionPoint": 31
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "food",
+  "answerIndex": 2,
+  "ja": {
+   "text": "お寿司についてくる緑色の薬味",
+   "choices": [
+    "からし",
+    "コショウ",
+    "わさび",
+    "しょうが"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The green condiment served with sushi",
+   "choices": [
+    "Mustard",
+    "Pepper",
+    "Wasabi",
+    "Ginger"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で一番深い湖",
+   "choices": [
+    "チチカカ湖",
+    "カスピ海",
+    "バイカル湖",
+    "スペリオル湖"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The deepest lake in the world",
+   "choices": [
+    "Lake Titicaca",
+    "Caspian Sea",
+    "Lake Baikal",
+    "Lake Superior"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "music",
+  "answerIndex": 0,
+  "ja": {
+   "text": "五線譜に引かれている線の数",
+   "choices": [
+    "5本",
+    "4本",
+    "6本",
+    "3本"
+   ],
+   "decisionPoint": 3
+  },
+  "en": {
+   "text": "The number of lines on a musical staff",
+   "choices": [
+    "5",
+    "4",
+    "6",
+    "3"
+   ],
+   "decisionPoint": 38
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 3,
+  "ja": {
+   "text": "世界で一番長い山脈",
+   "choices": [
+    "ヒマラヤ山脈",
+    "ロッキー山脈",
+    "アルプス山脈",
+    "アンデス山脈"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The longest mountain range in the world",
+   "choices": [
+    "Himalayas",
+    "Rocky Mountains",
+    "Alps",
+    "Andes"
+   ],
+   "decisionPoint": 39
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 0,
+  "ja": {
+   "text": "正十二面体を構成する正多角形",
+   "choices": [
+    "正五角形",
+    "正三角形",
+    "正六角形",
+    "正四角形"
+   ],
+   "decisionPoint": 14
+  },
+  "en": {
+   "text": "The regular polygon that forms a regular dodecahedron",
+   "choices": [
+    "Regular pentagon",
+    "Equilateral triangle",
+    "Regular hexagon",
+    "Square"
+   ],
+   "decisionPoint": 53
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 3,
+  "ja": {
+   "text": "世界で一番大きい島",
+   "choices": [
+    "ボルネオ島",
+    "マダガスカル島",
+    "ニューギニア島",
+    "グリーンランド"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The largest island in the world",
+   "choices": [
+    "Borneo",
+    "Madagascar",
+    "New Guinea",
+    "Greenland"
+   ],
+   "decisionPoint": 31
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "language",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ラテン語で「水」を意味する単語",
+   "choices": [
+    "テラ",
+    "イグニス",
+    "アクア",
+    "ルクス"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The Latin word meaning 'water'",
+   "choices": [
+    "Terra",
+    "Ignis",
+    "Aqua",
+    "Lux"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 3,
+  "ja": {
+   "text": "正二十面体の面の形",
+   "choices": [
+    "正方形",
+    "正五角形",
+    "正六角形",
+    "正三角形"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The shape of each face of a regular icosahedron",
+   "choices": [
+    "Square",
+    "Regular pentagon",
+    "Regular hexagon",
+    "Equilateral triangle"
+   ],
+   "decisionPoint": 47
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "history",
+  "answerIndex": 2,
+  "ja": {
+   "text": "エジプトにあるピラミッドの形",
+   "choices": [
+    "円柱",
+    "立方体",
+    "四角錐",
+    "円錐"
+   ],
+   "decisionPoint": 14
+  },
+  "en": {
+   "text": "Shape of the Egyptian pyramids",
+   "choices": [
+    "Cylinder",
+    "Cube",
+    "Square pyramid",
+    "Cone"
+   ],
+   "decisionPoint": 18
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "body",
+  "answerIndex": 2,
+  "ja": {
+   "text": "血液を全身に送り出す臓器",
+   "choices": [
+    "肺",
+    "肝臓",
+    "心臓",
+    "腎臓"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The organ that pumps blood throughout the body",
+   "choices": [
+    "Lungs",
+    "Liver",
+    "Heart",
+    "Kidneys"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で一番面積が大きい国",
+   "choices": [
+    "中国",
+    "アメリカ",
+    "ロシア",
+    "カナダ"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The largest country in the world by area",
+   "choices": [
+    "China",
+    "United States",
+    "Russia",
+    "Canada"
+   ],
+   "decisionPoint": 33
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "space",
+  "answerIndex": 1,
+  "ja": {
+   "text": "人類が初めて月面に降り立った年",
+   "choices": [
+    "1965年",
+    "1969年",
+    "1972年",
+    "1961年"
+   ],
+   "decisionPoint": 15
+  },
+  "en": {
+   "text": "The year humans first set foot on the Moon",
+   "choices": [
+    "1965",
+    "1969",
+    "1972",
+    "1961"
+   ],
+   "decisionPoint": 42
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ダイヤモンドの主成分の元素",
+   "choices": [
+    "炭素",
+    "ケイ素",
+    "アルミニウム",
+    "ホウ素"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The element that makes up diamond",
+   "choices": [
+    "Carbon",
+    "Silicon",
+    "Aluminum",
+    "Boron"
+   ],
+   "decisionPoint": 33
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "space",
+  "answerIndex": 0,
+  "ja": {
+   "text": "地球から一番近い恒星",
+   "choices": [
+    "太陽",
+    "北極星",
+    "シリウス",
+    "ベガ"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The closest star to Earth",
+   "choices": [
+    "The Sun",
+    "Polaris",
+    "Sirius",
+    "Vega"
+   ],
+   "decisionPoint": 21
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "science",
+  "answerIndex": 3,
+  "ja": {
+   "text": "元素記号「Au」の元素",
+   "choices": [
+    "銀",
+    "銅",
+    "アルミニウム",
+    "金"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The element with the symbol 'Au'",
+   "choices": [
+    "Silver",
+    "Copper",
+    "Aluminium",
+    "Gold"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "literature",
+  "answerIndex": 2,
+  "ja": {
+   "text": "「羅生門」の作者",
+   "choices": [
+    "太宰治",
+    "川端康成",
+    "芥川龍之介",
+    "三島由紀夫"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The author of 'Rashōmon'",
+   "choices": [
+    "Osamu Dazai",
+    "Yasunari Kawabata",
+    "Ryūnosuke Akutagawa",
+    "Yukio Mishima"
+   ],
+   "decisionPoint": 20
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "language",
+  "answerIndex": 2,
+  "ja": {
+   "text": "英語のアルファベットの文字数",
+   "choices": [
+    "24",
+    "25",
+    "26",
+    "28"
+   ],
+   "decisionPoint": 14
+  },
+  "en": {
+   "text": "The number of letters in the English alphabet",
+   "choices": [
+    "24",
+    "25",
+    "26",
+    "28"
+   ],
+   "decisionPoint": 45
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "animals",
+  "answerIndex": 2,
+  "ja": {
+   "text": "陸上で最も速い動物",
+   "choices": [
+    "ライオン",
+    "ガゼル",
+    "チーター",
+    "ウマ"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The fastest land animal",
+   "choices": [
+    "Lion",
+    "Gazelle",
+    "Cheetah",
+    "Horse"
+   ],
+   "decisionPoint": 17
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "math",
+  "answerIndex": 2,
+  "ja": {
+   "text": "円周率の最初の3桁",
+   "choices": [
+    "3.16",
+    "3.12",
+    "3.14",
+    "3.18"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The first three digits of pi",
+   "choices": [
+    "3.16",
+    "3.12",
+    "3.14",
+    "3.18"
+   ],
+   "decisionPoint": 25
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で一番高い山",
+   "choices": [
+    "キリマンジャロ",
+    "K2",
+    "エベレスト",
+    "モンブラン"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The tallest mountain in the world",
+   "choices": [
+    "Kilimanjaro",
+    "K2",
+    "Everest",
+    "Mont Blanc"
+   ],
+   "decisionPoint": 33
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "music",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「四季」を作曲した作曲家",
+   "choices": [
+    "バッハ",
+    "ヴィヴァルディ",
+    "モーツァルト",
+    "ヘンデル"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The composer of The Four Seasons",
+   "choices": [
+    "Bach",
+    "Vivaldi",
+    "Mozart",
+    "Handel"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "science",
+  "answerIndex": 0,
+  "ja": {
+   "text": "地球の衛星の名前",
+   "choices": [
+    "月",
+    "火星",
+    "金星",
+    "土星"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The name of Earth's natural satellite",
+   "choices": [
+    "The Moon",
+    "Mars",
+    "Venus",
+    "Saturn"
+   ],
+   "decisionPoint": 20
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "history",
+  "answerIndex": 0,
+  "ja": {
+   "text": "本能寺の変を起こした武将",
+   "choices": [
+    "明智光秀",
+    "柴田勝家",
+    "豊臣秀吉",
+    "徳川家康"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The warlord who launched the Honnō-ji Incident",
+   "choices": [
+    "Akechi Mitsuhide",
+    "Shibata Katsuie",
+    "Toyotomi Hideyoshi",
+    "Tokugawa Ieyasu"
+   ],
+   "decisionPoint": 38
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 0,
+  "ja": {
+   "text": "日本で一番高い山",
+   "choices": [
+    "富士山",
+    "北岳",
+    "槍ヶ岳",
+    "白山"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The tallest mountain in Japan",
+   "choices": [
+    "Mt. Fuji",
+    "Mt. Kitadake",
+    "Mt. Yarigatake",
+    "Mt. Hakusan"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "animals",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ミツバチが花から集めて作るもの",
+   "choices": [
+    "ワックス",
+    "バター",
+    "砂糖",
+    "ハチミツ"
+   ],
+   "decisionPoint": 15
+  },
+  "en": {
+   "text": "What honeybees produce from flower nectar",
+   "choices": [
+    "Wax",
+    "Butter",
+    "Sugar",
+    "Honey"
+   ],
+   "decisionPoint": 34
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "history",
+  "answerIndex": 1,
+  "ja": {
+   "text": "日本の最初の元号",
+   "choices": [
+    "天平",
+    "大化",
+    "和銅",
+    "白雉"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The first era name in Japanese history",
+   "choices": [
+    "Tenpyō",
+    "Taika",
+    "Wadō",
+    "Hakuchi"
+   ],
+   "decisionPoint": 27
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "math",
+  "answerIndex": 2,
+  "ja": {
+   "text": "正六面体（立方体）の頂点の数",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "12"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The number of vertices on a cube",
+   "choices": [
+    "4",
+    "6",
+    "8",
+    "12"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 1,
+  "ja": {
+   "text": "正方形の辺の数",
+   "choices": [
+    "3本",
+    "4本",
+    "5本",
+    "6本"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "Number of sides of a square",
+   "choices": [
+    "3",
+    "4",
+    "5",
+    "6"
+   ],
+   "decisionPoint": 27
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "animals",
+  "answerIndex": 2,
+  "ja": {
+   "text": "パンダの体の色",
+   "choices": [
+    "茶色と白",
+    "黒一色",
+    "白と黒",
+    "白一色"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The colors of a giant panda",
+   "choices": [
+    "Brown and white",
+    "All black",
+    "Black and white",
+    "All white"
+   ],
+   "decisionPoint": 21
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "space",
+  "answerIndex": 1,
+  "ja": {
+   "text": "太陽系で最も太陽に近い惑星",
+   "choices": [
+    "金星",
+    "水星",
+    "火星",
+    "地球"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The planet closest to the Sun in the solar system",
+   "choices": [
+    "Venus",
+    "Mercury",
+    "Mars",
+    "Earth"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "science",
+  "answerIndex": 1,
+  "ja": {
+   "text": "元素記号「Hg」の元素",
+   "choices": [
+    "ヘリウム",
+    "水銀",
+    "ハフニウム",
+    "水素"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The element with the symbol 'Hg'",
+   "choices": [
+    "Helium",
+    "Mercury",
+    "Hafnium",
+    "Hydrogen"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "science",
+  "answerIndex": 0,
+  "ja": {
+   "text": "水の化学式",
+   "choices": [
+    "H₂O",
+    "CO₂",
+    "NaCl",
+    "O₂"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The chemical formula for water",
+   "choices": [
+    "H₂O",
+    "CO₂",
+    "NaCl",
+    "O₂"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "science",
+  "answerIndex": 2,
+  "ja": {
+   "text": "元素記号「Na」の元素",
+   "choices": [
+    "窒素",
+    "ニッケル",
+    "ナトリウム",
+    "ネオン"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The element with the symbol \"Na\"",
+   "choices": [
+    "Nitrogen",
+    "Nickel",
+    "Sodium",
+    "Neon"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "history",
+  "answerIndex": 2,
+  "ja": {
+   "text": "マグナ・カルタが制定された世紀",
+   "choices": [
+    "11世紀",
+    "12世紀",
+    "13世紀",
+    "14世紀"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The century in which the Magna Carta was issued",
+   "choices": [
+    "11th century",
+    "12th century",
+    "13th century",
+    "14th century"
+   ],
+   "decisionPoint": 47
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "space",
+  "answerIndex": 1,
+  "ja": {
+   "text": "天の川銀河の形の分類",
+   "choices": [
+    "楕円銀河",
+    "渦巻銀河",
+    "不規則銀河",
+    "レンズ状銀河"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The classification of the Milky Way's shape",
+   "choices": [
+    "Elliptical galaxy",
+    "Spiral galaxy",
+    "Irregular galaxy",
+    "Lenticular galaxy"
+   ],
+   "decisionPoint": 43
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "music",
+  "answerIndex": 1,
+  "ja": {
+   "text": "ドレミファソラシの最初の音",
+   "choices": [
+    "ラ",
+    "ド",
+    "ソ",
+    "ミ"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The first note of Do-Re-Mi-Fa-Sol-La-Ti",
+   "choices": [
+    "La",
+    "Do",
+    "Sol",
+    "Mi"
+   ],
+   "decisionPoint": 24
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "food",
+  "answerIndex": 0,
+  "ja": {
+   "text": "チーズの主な原料",
+   "choices": [
+    "牛乳",
+    "小麦粉",
+    "卵",
+    "大豆"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The main ingredient of cheese",
+   "choices": [
+    "Milk",
+    "Wheat flour",
+    "Eggs",
+    "Soybeans"
+   ],
+   "decisionPoint": 23
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "space",
+  "answerIndex": 3,
+  "ja": {
+   "text": "太陽が沈む方角",
+   "choices": [
+    "北",
+    "南",
+    "東",
+    "西"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The direction in which the sun sets",
+   "choices": [
+    "North",
+    "South",
+    "East",
+    "West"
+   ],
+   "decisionPoint": 35
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "science",
+  "answerIndex": 0,
+  "ja": {
+   "text": "植物が光で栄養を作ること",
+   "choices": [
+    "光合成",
+    "発酵",
+    "蒸散",
+    "呼吸"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The process by which plants make food using light",
+   "choices": [
+    "Photosynthesis",
+    "Fermentation",
+    "Transpiration",
+    "Respiration"
+   ],
+   "decisionPoint": 49
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "body",
+  "answerIndex": 0,
+  "ja": {
+   "text": "人間の大人の永久歯の本数",
+   "choices": [
+    "32本",
+    "24本",
+    "28本",
+    "36本"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "Number of permanent teeth in an adult human",
+   "choices": [
+    "32",
+    "24",
+    "28",
+    "36"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "science",
+  "answerIndex": 2,
+  "ja": {
+   "text": "地球の大気で最も多い気体",
+   "choices": [
+    "酸素",
+    "二酸化炭素",
+    "窒素",
+    "水素"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The most abundant gas in Earth's atmosphere",
+   "choices": [
+    "Oxygen",
+    "Carbon dioxide",
+    "Nitrogen",
+    "Hydrogen"
+   ],
+   "decisionPoint": 30
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "sports",
+  "answerIndex": 3,
+  "ja": {
+   "text": "バスケットボールの1チームの人数",
+   "choices": [
+    "6人",
+    "7人",
+    "4人",
+    "5人"
+   ],
+   "decisionPoint": 16
+  },
+  "en": {
+   "text": "Number of players per team in basketball",
+   "choices": [
+    "6",
+    "7",
+    "4",
+    "5"
+   ],
+   "decisionPoint": 39
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "music",
+  "answerIndex": 2,
+  "ja": {
+   "text": "交響曲第9番「新世界より」の作曲家",
+   "choices": [
+    "チャイコフスキー",
+    "ブラームス",
+    "ドヴォルザーク",
+    "シベリウス"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The composer of Symphony No. 9 'From the New World'",
+   "choices": [
+    "Tchaikovsky",
+    "Brahms",
+    "Dvořák",
+    "Sibelius"
+   ],
+   "decisionPoint": 51
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "animals",
+  "answerIndex": 3,
+  "ja": {
+   "text": "オタマジャクシが成長すると何になる",
+   "choices": [
+    "メダカ",
+    "ヘビ",
+    "カメ",
+    "カエル"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The animal a tadpole grows up to become",
+   "choices": [
+    "Killifish",
+    "Snake",
+    "Turtle",
+    "Frog"
+   ],
+   "decisionPoint": 30
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "math",
+  "answerIndex": 3,
+  "ja": {
+   "text": "六角形の辺の数",
+   "choices": [
+    "5本",
+    "7本",
+    "8本",
+    "6本"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The number of sides of a hexagon",
+   "choices": [
+    "5",
+    "7",
+    "8",
+    "6"
+   ],
+   "decisionPoint": 30
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "math",
+  "answerIndex": 1,
+  "ja": {
+   "text": "三角形の内角の和",
+   "choices": [
+    "90度",
+    "180度",
+    "270度",
+    "360度"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The sum of interior angles of a triangle",
+   "choices": [
+    "90°",
+    "180°",
+    "270°",
+    "360°"
+   ],
+   "decisionPoint": 40
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "language",
+  "answerIndex": 2,
+  "ja": {
+   "text": "日本語の五十音の最初の文字",
+   "choices": [
+    "か",
+    "う",
+    "あ",
+    "い"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The first character in the Japanese kana chart",
+   "choices": [
+    "Ka",
+    "U",
+    "A",
+    "I"
+   ],
+   "decisionPoint": 46
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "science",
+  "answerIndex": 3,
+  "ja": {
+   "text": "元素記号「Fe」の元素",
+   "choices": [
+    "フッ素",
+    "フランシウム",
+    "フェルミウム",
+    "鉄"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The element with the symbol Fe",
+   "choices": [
+    "Fluorine",
+    "Francium",
+    "Fermium",
+    "Iron"
+   ],
+   "decisionPoint": 30
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "history",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ロゼッタ・ストーンに刻まれた3種の文字の1つ",
+   "choices": [
+    "楔形文字",
+    "ルーン文字",
+    "ヒエログリフ",
+    "線文字B"
+   ],
+   "decisionPoint": 18
+  },
+  "en": {
+   "text": "One of the three scripts inscribed on the Rosetta Stone",
+   "choices": [
+    "Cuneiform",
+    "Runes",
+    "Hieroglyphs",
+    "Linear B"
+   ],
+   "decisionPoint": 55
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "世界で一番大きい花を咲かせる植物",
+   "choices": [
+    "ラフレシア",
+    "ヒマワリ",
+    "タイタンアルム",
+    "ハス"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The plant that produces the world's largest single flower",
+   "choices": [
+    "Rafflesia",
+    "Sunflower",
+    "Titan arum",
+    "Lotus"
+   ],
+   "decisionPoint": 57
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "science",
+  "answerIndex": 2,
+  "ja": {
+   "text": "氷が溶けると何になるか",
+   "choices": [
+    "水蒸気",
+    "霜",
+    "水",
+    "雪"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "What ice turns into when it melts",
+   "choices": [
+    "Steam",
+    "Frost",
+    "Water",
+    "Snow"
+   ],
+   "decisionPoint": 25
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "body",
+  "answerIndex": 2,
+  "ja": {
+   "text": "人体で最も長い骨",
+   "choices": [
+    "上腕骨",
+    "脛骨",
+    "大腿骨",
+    "鎖骨"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The longest bone in the human body",
+   "choices": [
+    "Humerus",
+    "Tibia",
+    "Femur",
+    "Clavicle"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "animals",
+  "answerIndex": 3,
+  "ja": {
+   "text": "現存する世界最大の爬虫類",
+   "choices": [
+    "コモドオオトカゲ",
+    "アナコンダ",
+    "オサガメ",
+    "イリエワニ"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The largest living reptile in the world",
+   "choices": [
+    "Komodo dragon",
+    "Anaconda",
+    "Leatherback sea turtle",
+    "Saltwater crocodile"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 3,
+  "ja": {
+   "text": "桜の花びらの色",
+   "choices": [
+    "青",
+    "黄",
+    "赤",
+    "ピンク"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The typical color of cherry blossoms",
+   "choices": [
+    "Blue",
+    "Yellow",
+    "Red",
+    "Pink"
+   ],
+   "decisionPoint": 25
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "music",
+  "answerIndex": 3,
+  "ja": {
+   "text": "四本の弦を弓で弾く最小の楽器",
+   "choices": [
+    "チェロ",
+    "ビオラ",
+    "コントラバス",
+    "バイオリン"
+   ],
+   "decisionPoint": 14
+  },
+  "en": {
+   "text": "The smallest bowed string instrument with four strings",
+   "choices": [
+    "Cello",
+    "Viola",
+    "Double bass",
+    "Violin"
+   ],
+   "decisionPoint": 36
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "daily",
+  "answerIndex": 2,
+  "ja": {
+   "text": "1週間の日数",
+   "choices": [
+    "5日",
+    "6日",
+    "7日",
+    "10日"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The number of days in a week",
+   "choices": [
+    "5",
+    "6",
+    "7",
+    "10"
+   ],
+   "decisionPoint": 28
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "body",
+  "answerIndex": 1,
+  "ja": {
+   "text": "人体で一番硬い組織",
+   "choices": [
+    "骨",
+    "歯のエナメル質",
+    "爪",
+    "軟骨"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The hardest tissue in the human body",
+   "choices": [
+    "Bone",
+    "Tooth enamel",
+    "Nail",
+    "Cartilage"
+   ],
+   "decisionPoint": 16
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "language",
+  "answerIndex": 2,
+  "ja": {
+   "text": "英語で「ありがとう」の意味の言葉",
+   "choices": [
+    "Good morning",
+    "Goodbye",
+    "Thank you",
+    "Please"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The English phrase meaning 'arigatou' in Japanese",
+   "choices": [
+    "Good morning",
+    "Goodbye",
+    "Thank you",
+    "Please"
+   ],
+   "decisionPoint": 37
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "arts",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「最後の晩餐」を描いた画家",
+   "choices": [
+    "ミケランジェロ",
+    "レオナルド・ダ・ヴィンチ",
+    "ラファエロ",
+    "ボッティチェリ"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The painter of 'The Last Supper'",
+   "choices": [
+    "Michelangelo",
+    "Leonardo da Vinci",
+    "Raphael",
+    "Botticelli"
+   ],
+   "decisionPoint": 32
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 1,
+  "ja": {
+   "text": "1ダースの数",
+   "choices": [
+    "10",
+    "12",
+    "24",
+    "6"
+   ],
+   "decisionPoint": 4
+  },
+  "en": {
+   "text": "The number in one dozen",
+   "choices": [
+    "10",
+    "12",
+    "24",
+    "6"
+   ],
+   "decisionPoint": 17
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 0,
+  "ja": {
+   "text": "日本で一番大きい島",
+   "choices": [
+    "本州",
+    "北海道",
+    "九州",
+    "四国"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The largest island of Japan",
+   "choices": [
+    "Honshu",
+    "Hokkaido",
+    "Kyushu",
+    "Shikoku"
+   ],
+   "decisionPoint": 27
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "food",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ワインの主な原料となる果物",
+   "choices": [
+    "リンゴ",
+    "モモ",
+    "ブドウ",
+    "プラム"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The fruit that is the main ingredient of wine",
+   "choices": [
+    "Apple",
+    "Peach",
+    "Grape",
+    "Plum"
+   ],
+   "decisionPoint": 45
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "space",
+  "answerIndex": 0,
+  "ja": {
+   "text": "火星が赤く見える主な原因の物質",
+   "choices": [
+    "酸化鉄",
+    "硫黄",
+    "銅",
+    "マンガン"
+   ],
+   "decisionPoint": 15
+  },
+  "en": {
+   "text": "The substance that mainly makes Mars appear red",
+   "choices": [
+    "Iron oxide",
+    "Sulfur",
+    "Copper",
+    "Manganese"
+   ],
+   "decisionPoint": 47
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "history",
+  "answerIndex": 2,
+  "ja": {
+   "text": "鎌倉幕府を開いた人物",
+   "choices": [
+    "足利尊氏",
+    "徳川家康",
+    "源頼朝",
+    "北条時宗"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The person who established the Kamakura shogunate",
+   "choices": [
+    "Ashikaga Takauji",
+    "Tokugawa Ieyasu",
+    "Minamoto no Yoritomo",
+    "Hojo Tokimune"
+   ],
+   "decisionPoint": 40
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "music",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「ボレロ」を作曲したフランスの作曲家",
+   "choices": [
+    "ドビュッシー",
+    "ラヴェル",
+    "サン＝サーンス",
+    "フォーレ"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The French composer of \"Boléro\"",
+   "choices": [
+    "Debussy",
+    "Ravel",
+    "Saint-Saëns",
+    "Fauré"
+   ],
+   "decisionPoint": 31
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 2,
+  "ja": {
+   "text": "直角三角形で最も長い辺の名前",
+   "choices": [
+    "底辺",
+    "対辺",
+    "斜辺",
+    "隣辺"
+   ],
+   "decisionPoint": 11
+  },
+  "en": {
+   "text": "The name of the longest side of a right triangle",
+   "choices": [
+    "Base",
+    "Opposite",
+    "Hypotenuse",
+    "Adjacent"
+   ],
+   "decisionPoint": 48
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "literature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "『枕草子』の作者",
+   "choices": [
+    "清少納言",
+    "紫式部",
+    "和泉式部",
+    "小野小町"
+   ],
+   "decisionPoint": 5
+  },
+  "en": {
+   "text": "The author of 'The Pillow Book'",
+   "choices": [
+    "Sei Shōnagon",
+    "Murasaki Shikibu",
+    "Izumi Shikibu",
+    "Ono no Komachi"
+   ],
+   "decisionPoint": 31
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "虹の色の数（一般的な数え方）",
+   "choices": [
+    "7色",
+    "5色",
+    "6色",
+    "10色"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "Number of colors in a rainbow (commonly counted)",
+   "choices": [
+    "7",
+    "5",
+    "6",
+    "10"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "literature",
+  "answerIndex": 2,
+  "ja": {
+   "text": "「変身」で虫になる男を描いた作家",
+   "choices": [
+    "ドストエフスキー",
+    "ヘミングウェイ",
+    "カフカ",
+    "カミュ"
+   ],
+   "decisionPoint": 14
+  },
+  "en": {
+   "text": "Author of 'The Metamorphosis' about a man who turns into a bug",
+   "choices": [
+    "Dostoevsky",
+    "Hemingway",
+    "Kafka",
+    "Camus"
+   ],
+   "decisionPoint": 57
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 3,
+  "ja": {
+   "text": "世界で一番高い滝",
+   "choices": [
+    "ナイアガラの滝",
+    "ヴィクトリアの滝",
+    "イグアスの滝",
+    "エンジェルフォール"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The world's tallest waterfall",
+   "choices": [
+    "Niagara Falls",
+    "Victoria Falls",
+    "Iguazu Falls",
+    "Angel Falls"
+   ],
+   "decisionPoint": 25
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "space",
+  "answerIndex": 3,
+  "ja": {
+   "text": "太陽系で一番大きい惑星",
+   "choices": [
+    "土星",
+    "天王星",
+    "火星",
+    "木星"
+   ],
+   "decisionPoint": 11
+  },
+  "en": {
+   "text": "The largest planet in the solar system",
+   "choices": [
+    "Saturn",
+    "Uranus",
+    "Mars",
+    "Jupiter"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "space",
+  "answerIndex": 1,
+  "ja": {
+   "text": "太陽系で「赤い惑星」と呼ばれる星",
+   "choices": [
+    "金星",
+    "火星",
+    "土星",
+    "海王星"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The planet in our solar system known as the \"Red Planet\"",
+   "choices": [
+    "Venus",
+    "Mars",
+    "Saturn",
+    "Neptune"
+   ],
+   "decisionPoint": 56
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で面積が一番小さい国",
+   "choices": [
+    "モナコ",
+    "サンマリノ",
+    "バチカン市国",
+    "リヒテンシュタイン"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The country with the smallest area in the world",
+   "choices": [
+    "Monaco",
+    "San Marino",
+    "Vatican City",
+    "Liechtenstein"
+   ],
+   "decisionPoint": 47
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "nature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "世界で一番大きい動物",
+   "choices": [
+    "シロナガスクジラ",
+    "アフリカゾウ",
+    "ジンベエザメ",
+    "マッコウクジラ"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The largest animal in the world",
+   "choices": [
+    "Blue whale",
+    "African elephant",
+    "Whale shark",
+    "Sperm whale"
+   ],
+   "decisionPoint": 18
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "literature",
+  "answerIndex": 2,
+  "ja": {
+   "text": "「吾輩は猫である」の作者",
+   "choices": [
+    "芥川龍之介",
+    "太宰治",
+    "夏目漱石",
+    "森鷗外"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The author of I Am a Cat",
+   "choices": [
+    "Ryunosuke Akutagawa",
+    "Osamu Dazai",
+    "Soseki Natsume",
+    "Ogai Mori"
+   ],
+   "decisionPoint": 24
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "food",
+  "answerIndex": 1,
+  "ja": {
+   "text": "うな重に使われる魚",
+   "choices": [
+    "サンマ",
+    "ウナギ",
+    "サケ",
+    "タイ"
+   ],
+   "decisionPoint": 3
+  },
+  "en": {
+   "text": "The fish used in unaju (eel rice box)",
+   "choices": [
+    "Pacific saury",
+    "Eel",
+    "Salmon",
+    "Sea bream"
+   ],
+   "decisionPoint": 37
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "sports",
+  "answerIndex": 0,
+  "ja": {
+   "text": "オリンピックの五輪の輪の数",
+   "choices": [
+    "5つ",
+    "4つ",
+    "6つ",
+    "7つ"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "The number of rings in the Olympic symbol",
+   "choices": [
+    "5",
+    "4",
+    "6",
+    "7"
+   ],
+   "decisionPoint": 41
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "sports",
+  "answerIndex": 3,
+  "ja": {
+   "text": "サッカーの1チームの人数",
+   "choices": [
+    "9人",
+    "5人",
+    "15人",
+    "11人"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "Number of players per team in soccer",
+   "choices": [
+    "9",
+    "5",
+    "15",
+    "11"
+   ],
+   "decisionPoint": 36
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "arts",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「ゲルニカ」を描いた画家",
+   "choices": [
+    "ダリ",
+    "ピカソ",
+    "ゴッホ",
+    "ミロ"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The painter who created 'Guernica'",
+   "choices": [
+    "Dalí",
+    "Picasso",
+    "Van Gogh",
+    "Miró"
+   ],
+   "decisionPoint": 34
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "literature",
+  "answerIndex": 0,
+  "ja": {
+   "text": "「人間失格」の作者",
+   "choices": [
+    "太宰治",
+    "三島由紀夫",
+    "川端康成",
+    "志賀直哉"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The author of 'No Longer Human'",
+   "choices": [
+    "Osamu Dazai",
+    "Yukio Mishima",
+    "Yasunari Kawabata",
+    "Naoya Shiga"
+   ],
+   "decisionPoint": 29
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "history",
+  "answerIndex": 0,
+  "ja": {
+   "text": "フランス革命が始まった年",
+   "choices": [
+    "1789年",
+    "1776年",
+    "1804年",
+    "1815年"
+   ],
+   "decisionPoint": 12
+  },
+  "en": {
+   "text": "The year the French Revolution began",
+   "choices": [
+    "1789",
+    "1776",
+    "1804",
+    "1815"
+   ],
+   "decisionPoint": 36
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "music",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ピアノの鍵盤の数",
+   "choices": [
+    "88",
+    "76",
+    "102",
+    "64"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The number of keys on a standard piano",
+   "choices": [
+    "88",
+    "76",
+    "102",
+    "64"
+   ],
+   "decisionPoint": 38
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "language",
+  "answerIndex": 3,
+  "ja": {
+   "text": "英語で「犬」を意味する単語",
+   "choices": [
+    "Cat",
+    "Bear",
+    "Fox",
+    "Dog"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The English word meaning 'inu' in Japanese",
+   "choices": [
+    "Cat",
+    "Bear",
+    "Fox",
+    "Dog"
+   ],
+   "decisionPoint": 30
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "history",
+  "answerIndex": 1,
+  "ja": {
+   "text": "日本初の女性天皇",
+   "choices": [
+    "持統天皇",
+    "推古天皇",
+    "皇極天皇",
+    "元明天皇"
+   ],
+   "decisionPoint": 6
+  },
+  "en": {
+   "text": "The first empress regnant of Japan",
+   "choices": [
+    "Empress Jitō",
+    "Empress Suiko",
+    "Empress Kōgyoku",
+    "Empress Genmei"
+   ],
+   "decisionPoint": 34
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "music",
+  "answerIndex": 2,
+  "ja": {
+   "text": "オペラ「魔笛」の作曲家",
+   "choices": [
+    "ワーグナー",
+    "ヴェルディ",
+    "モーツァルト",
+    "プッチーニ"
+   ],
+   "decisionPoint": 7
+  },
+  "en": {
+   "text": "The composer of the opera 'The Magic Flute'",
+   "choices": [
+    "Wagner",
+    "Verdi",
+    "Mozart",
+    "Puccini"
+   ],
+   "decisionPoint": 43
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "food",
+  "answerIndex": 3,
+  "ja": {
+   "text": "味噌汁の主な原料となる豆",
+   "choices": [
+    "小豆",
+    "えんどう豆",
+    "ひよこ豆",
+    "大豆"
+   ],
+   "decisionPoint": 9
+  },
+  "en": {
+   "text": "The bean used as the main ingredient in miso soup",
+   "choices": [
+    "Azuki bean",
+    "Pea",
+    "Chickpea",
+    "Soybean"
+   ],
+   "decisionPoint": 49
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "space",
+  "answerIndex": 1,
+  "ja": {
+   "text": "太陽系で環（リング）が最も目立つ惑星",
+   "choices": [
+    "木星",
+    "土星",
+    "天王星",
+    "海王星"
+   ],
+   "decisionPoint": 18
+  },
+  "en": {
+   "text": "The planet in our solar system with the most prominent rings",
+   "choices": [
+    "Jupiter",
+    "Saturn",
+    "Uranus",
+    "Neptune"
+   ],
+   "decisionPoint": 60
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で一番大きい熱帯雨林",
+   "choices": [
+    "コンゴ熱帯雨林",
+    "東南アジア熱帯雨林",
+    "アマゾン熱帯雨林",
+    "デインツリー熱帯雨林"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The largest tropical rainforest in the world",
+   "choices": [
+    "Congo Rainforest",
+    "Southeast Asian Rainforest",
+    "Amazon Rainforest",
+    "Daintree Rainforest"
+   ],
+   "decisionPoint": 31
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "sports",
+  "answerIndex": 2,
+  "ja": {
+   "text": "柔道発祥の国",
+   "choices": [
+    "中国",
+    "韓国",
+    "日本",
+    "ブラジル"
+   ],
+   "decisionPoint": 4
+  },
+  "en": {
+   "text": "The country where judo originated",
+   "choices": [
+    "China",
+    "South Korea",
+    "Japan",
+    "Brazil"
+   ],
+   "decisionPoint": 22
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "body",
+  "answerIndex": 1,
+  "ja": {
+   "text": "人体で一番大きい臓器",
+   "choices": [
+    "腎臓",
+    "肝臓",
+    "胃",
+    "肺"
+   ],
+   "decisionPoint": 8
+  },
+  "en": {
+   "text": "The largest internal organ in the human body",
+   "choices": [
+    "Kidney",
+    "Liver",
+    "Stomach",
+    "Lung"
+   ],
+   "decisionPoint": 27
+  },
+  "difficulty": "beginner"
+ },
+ {
+  "category": "science",
+  "answerIndex": 1,
+  "ja": {
+   "text": "元素の周期表を考案したロシアの化学者",
+   "choices": [
+    "ラボアジエ",
+    "メンデレーエフ",
+    "ドルトン",
+    "アボガドロ"
+   ],
+   "decisionPoint": 15
+  },
+  "en": {
+   "text": "Russian chemist who devised the periodic table of elements",
+   "choices": [
+    "Lavoisier",
+    "Mendeleev",
+    "Dalton",
+    "Avogadro"
+   ],
+   "decisionPoint": 58
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "geography",
+  "answerIndex": 2,
+  "ja": {
+   "text": "日本の首都",
+   "choices": [
+    "大阪",
+    "京都",
+    "東京",
+    "名古屋"
+   ],
+   "decisionPoint": 4
+  },
+  "en": {
+   "text": "The capital of Japan",
+   "choices": [
+    "Osaka",
+    "Kyoto",
+    "Tokyo",
+    "Nagoya"
+   ],
+   "decisionPoint": 20
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "sports",
+  "answerIndex": 1,
+  "ja": {
+   "text": "テニスで得点が0のときの呼び方",
+   "choices": [
+    "ノー",
+    "ラブ",
+    "ゼロ",
+    "ニル"
+   ],
+   "decisionPoint": 15
+  },
+  "en": {
+   "text": "The term for a score of zero in tennis",
+   "choices": [
+    "No",
+    "Love",
+    "Zero",
+    "Nil"
+   ],
+   "decisionPoint": 38
+  },
+  "difficulty": "intermediate"
+ },
+ {
+  "category": "music",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ピアノの鍵盤の数（標準的なもの）",
+   "choices": [
+    "76鍵",
+    "81鍵",
+    "88鍵",
+    "92鍵"
+   ],
+   "decisionPoint": 16
+  },
+  "en": {
+   "text": "Number of keys on a standard piano",
+   "choices": [
+    "76",
+    "81",
+    "88",
+    "92"
+   ],
+   "decisionPoint": 27
+  },
+  "difficulty": "advanced"
+ },
+ {
+  "category": "math",
+  "answerIndex": 1,
+  "ja": {
+   "text": "1から10まで足した合計",
+   "choices": [
+    "45",
+    "55",
+    "50",
+    "60"
+   ],
+   "decisionPoint": 10
+  },
+  "en": {
+   "text": "The sum of all numbers from 1 to 10",
+   "choices": [
+    "45",
+    "55",
+    "50",
+    "60"
+   ],
+   "decisionPoint": 35
+  },
+  "difficulty": "beginner0"
+ },
+ {
+  "category": "science",
+  "answerIndex": 2,
+  "ja": {
+   "text": "水が沸騰する温度（1気圧）",
+   "choices": [
+    "50℃",
+    "75℃",
+    "100℃",
+    "120℃"
+   ],
+   "decisionPoint": 13
+  },
+  "en": {
+   "text": "Boiling point of water at 1 atm",
+   "choices": [
+    "50°C",
+    "75°C",
+    "100°C",
+    "120°C"
+   ],
+   "decisionPoint": 26
+  },
+  "difficulty": "beginner"
+ }
+]
