@@ -17,7 +17,6 @@ export function makeQuestion(id: string, charCount: number, answerIndex = 0): Qu
 
 /** 1文字 100ms・猶予 5秒・確定後 200ms は入力を受け付けない */
 export const SETTINGS: RunSettings = {
-  baseTimeMs: 300_000,
   answerWindowMs: 5_000,
   msPerChar: 100,
   inputLockMs: 200,

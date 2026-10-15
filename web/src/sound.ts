@@ -12,6 +12,7 @@ export const SOUND_NAMES = [
   'select',
   'urgent',
   'correct',
+  'streak',
   'wrong',
   'timeout',
   'finish',

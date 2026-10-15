@@ -15,7 +15,7 @@ interface RecordsProps {
   entry: PeriodEntry | null;
   /** このピリオド・この言語の走行 */
   runs: readonly RunRecord[];
-  /** いまの表示速度と回答の猶予で走った走行の、タイムの中央値（基準時間を決める材料） */
+  /** いまの表示速度と回答の猶予で走った走行の、タイムの中央値 */
   medianMs: number | null;
   medianCount: number;
   onBack: () => void;

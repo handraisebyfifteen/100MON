@@ -8,7 +8,8 @@ import type { SoundSettings } from './sound';
 const KEYS = {
   settings: 'qth.settings.v1',
   player: 'qth.player.v1',
-  runs: 'qth.runs.v1',
+  // v2：スコアの式を変えた（1問10点・1000点満点）。v1 の記録とは比べられないので分ける
+  runs: 'qth.runs.v2',
 } as const;
 
 /** 保存しておく走行の上限。1走行は約 10KB */

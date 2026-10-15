@@ -94,7 +94,7 @@ function checkPeriod(value: unknown, errors: string[]): value is Period {
   } else if (new Set(ids).size !== ids.length) {
     errors.push('period.questionIds: must not contain duplicates');
   }
-  for (const key of ['baseTimeSec', 'answerWindowSec', 'maxAttempts', 'retryWindowMin'] as const) {
+  for (const key of ['answerWindowSec', 'maxAttempts', 'retryWindowMin'] as const) {
     const raw = value[key];
     if (raw !== undefined && !(typeof raw === 'number' && raw > 0)) {
       errors.push(`period.${key}: must be a positive number when present`);

@@ -432,6 +432,62 @@ th {
   }
 }
 
+/*
+  連続正解。5問から、ピリオド名の代わりに出す。正解するたびに跳ねる。
+  10問ごとの節目は、大きく出して数回点滅する（狭い範囲だけ）。
+*/
+.streak {
+  color: var(--correct);
+  font-size: 48px;
+  letter-spacing: 4px;
+  text-shadow: 4px 4px 0 #005800;
+  animation: streak-pop 480ms steps(1, end) both;
+}
+
+.streak.is-milestone {
+  color: var(--gold);
+  font-size: 64px;
+  text-shadow: 4px 4px 0 #7c3c00;
+  animation: streak-milestone 1200ms steps(1, end) both;
+}
+
+@keyframes streak-pop {
+  0% {
+    transform: scale(1.3);
+  }
+  34%,
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes streak-milestone {
+  0% {
+    color: var(--white);
+    transform: scale(1.5);
+  }
+  15% {
+    color: var(--gold);
+    transform: scale(1.25);
+  }
+  30% {
+    color: var(--white);
+    transform: scale(1.1);
+  }
+  45% {
+    color: var(--gold);
+    transform: scale(1);
+  }
+  60% {
+    color: var(--white);
+  }
+  75%,
+  100% {
+    color: var(--gold);
+    transform: scale(1);
+  }
+}
+
 /* 直前の判定。形（丸・バツ）と色の両方で示し、次に答えるまで残す */
 .mark {
   margin-right: 16px;
@@ -868,6 +924,13 @@ th {
   font-size: 176px;
   line-height: 1;
   text-shadow: 8px 8px 0 #7c3c00;
+}
+
+.score-value small {
+  margin-left: 16px;
+  color: var(--dim);
+  font-size: 40px;
+  text-shadow: none;
 }
 
 .stat-row {

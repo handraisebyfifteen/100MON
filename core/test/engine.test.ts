@@ -219,11 +219,31 @@ describe('1走行', () => {
     expect(result.correctCount).toBe(50);
     expect(result.timedOutCount).toBe(0);
     expect(result.accuracy).toBe(0.5);
-    // 300秒 ÷ 150秒 × 0.5
-    expect(result.score).toBeCloseTo(1.0, 10);
+    // 1問 6000ms のうち 1500ms で正解 → 0.5 + 0.5 × 0.75 = 0.875。それが半分の50問
+    expect(result.score).toBeCloseTo(0.4375, 10);
     expect(result.answers.map((a) => a.order)).toEqual(Array.from({ length: 100 }, (_, i) => i + 1));
     // 100問すべてが1回ずつ出題される
     expect(new Set(result.answers.map((a) => a.questionId)).size).toBe(100);
+  });
+
+  it('連続正解の数を数え、不正解で 0 に戻す', () => {
+    const engine = new RunEngine({ questions: many(10), locale: 'ja', settings: SETTINGS, seed: 1, now: 0 });
+    let now = 0;
+    const answer = (correct: boolean): number | undefined => {
+      const view = engine.tick(now);
+      if (!view) return undefined;
+      now += 300;
+      engine.select(correct ? view.question.answerIndex : (view.question.answerIndex + 1) % 4, now);
+      engine.confirm(now);
+      return engine.tick(now)?.streak;
+    };
+    expect(answer(true)).toBe(1);
+    expect(answer(true)).toBe(2);
+    expect(answer(true)).toBe(3);
+    expect(answer(false)).toBe(0);
+    expect(answer(true)).toBe(1);
+    // 時間切れでも 0 に戻る
+    expect(engine.tick(now + 6000)?.streak).toBe(0);
   });
 
   it('同じ種なら同じ出題順、種が違えば違う出題順になる', () => {

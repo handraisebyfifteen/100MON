@@ -34,6 +34,7 @@ export interface Strings {
   off: string;
 
   correct: string;
+  streak: (n: number) => string;
   /** 正解の記号。日本語は丸、英語はチェック */
   correctIcon: IconName;
   timeUp: string;
@@ -42,6 +43,7 @@ export interface Strings {
 
   resultTitle: string;
   score: string;
+  scoreMax: string;
   time: string;
   correctCount: string;
   timeouts: string;
@@ -102,6 +104,7 @@ export const STRINGS: Record<Locale, Strings> = {
       select: '選択肢をえらぶ',
       urgent: '残り時間わずか',
       correct: '正解',
+      streak: '10問連続正解ごと',
       wrong: '不正解',
       timeout: '時間切れ',
       finish: '結果',
@@ -111,6 +114,7 @@ export const STRINGS: Record<Locale, Strings> = {
     off: 'OFF',
 
     correct: '正解',
+    streak: (n) => `${n}問連続正解！`,
     correctIcon: 'ring',
     timeUp: '時間切れ',
     hintChoose: 'えらぶ',
@@ -118,6 +122,7 @@ export const STRINGS: Record<Locale, Strings> = {
 
     resultTitle: '結果',
     score: 'スコア',
+    scoreMax: '/1000',
     time: 'タイム',
     correctCount: '正答数',
     timeouts: '時間切れ',
@@ -176,6 +181,7 @@ export const STRINGS: Record<Locale, Strings> = {
       select: 'Pick a choice',
       urgent: 'Running out',
       correct: 'Correct',
+      streak: 'Every 10 in a row',
       wrong: 'Wrong',
       timeout: 'Time up',
       finish: 'Result',
@@ -185,6 +191,7 @@ export const STRINGS: Record<Locale, Strings> = {
     off: 'OFF',
 
     correct: 'Correct',
+    streak: (n) => `${n} IN A ROW!`,
     correctIcon: 'check',
     timeUp: 'Time up',
     hintChoose: 'Choose',
@@ -192,6 +199,7 @@ export const STRINGS: Record<Locale, Strings> = {
 
     resultTitle: 'Result',
     score: 'Score',
+    scoreMax: '/1000',
     time: 'Time',
     correctCount: 'Correct',
     timeouts: 'Timeouts',

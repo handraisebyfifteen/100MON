@@ -9,6 +9,7 @@ import {
   estimatePace,
   median,
   mulberry32,
+  questionScore,
   resolveSettings,
   scoreToPoints,
   shuffled,
@@ -55,20 +56,31 @@ describe('文字の数え方', () => {
 });
 
 describe('スコア', () => {
-  it('基準時間 ÷ 実タイム × 正答率', () => {
-    expect(computeScore(300_000, 300_000, 100, 100)).toBe(1);
-    expect(computeScore(300_000, 150_000, 100, 100)).toBe(2);
-    expect(computeScore(300_000, 150_000, 80, 100)).toBeCloseTo(1.6, 10);
-    expect(computeScore(300_000, 300_000, 0, 100)).toBe(0);
+  it('1問の点：正解は速いほど高く、締切ちょうどで半分。不正解は 0', () => {
+    expect(questionScore(true, 0, 6000)).toBe(1);
+    expect(questionScore(true, 3000, 6000)).toBe(0.75);
+    expect(questionScore(true, 6000, 6000)).toBe(0.5);
+    expect(questionScore(false, 0, 6000)).toBe(0);
   });
 
-  it('タイムが 0 のときは 0 にする', () => {
-    expect(computeScore(300_000, 0, 100, 100)).toBe(0);
+  it('走行のスコアは1問の点の平均。全問一瞬で正解して満点', () => {
+    expect(computeScore([1, 1, 1, 1], 4)).toBe(1);
+    expect(computeScore([1, 0.5, 0, 0], 4)).toBe(0.375);
+    expect(computeScore([], 0)).toBe(0);
+  });
+
+  it('読まずに連打しても、真面目に答えるより低い', () => {
+    // 連打：4問に1問当たり、ほぼ一瞬で答える
+    const mash = computeScore(Array.from({ length: 100 }, (_, i) => questionScore(i % 4 === 0, 300, 6000)), 100);
+    // 真面目：85問正解、締切の半分で答える
+    const honest = computeScore(Array.from({ length: 100 }, (_, i) => questionScore(i < 85, 3000, 6000)), 100);
+    expect(mash).toBeLessThan(0.3);
+    expect(honest).toBeGreaterThan(0.6);
   });
 
   it('表示は 1000 倍の整数', () => {
     expect(scoreToPoints(1)).toBe(1000);
-    expect(scoreToPoints(1.2345)).toBe(1235);
+    expect(scoreToPoints(0.6914)).toBe(691);
   });
 });
 
@@ -91,11 +103,9 @@ describe('設定の決まり方', () => {
   it('ピリオドの指定は Config より優先する（激ムズウィーク用）', () => {
     const normal = resolveSettings(DEFAULT_CONFIG, period, 'ja');
     expect(normal.answerWindowMs).toBe(5000);
-    expect(normal.baseTimeMs).toBe(300_000);
 
-    const hard = resolveSettings(DEFAULT_CONFIG, { ...period, isHardWeek: true, answerWindowSec: 2.5, baseTimeSec: 240 }, 'ja');
+    const hard = resolveSettings(DEFAULT_CONFIG, { ...period, isHardWeek: true, answerWindowSec: 2.5 }, 'ja');
     expect(hard.answerWindowMs).toBe(2500);
-    expect(hard.baseTimeMs).toBe(240_000);
   });
 
   it('調整用の上書きが最優先', () => {

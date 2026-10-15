@@ -63,7 +63,10 @@ export function ResultScreen(props: ResultProps) {
 
       <div className="score">
         <span className="score-label">{strings.score}</span>
-        <span className="score-value">{scoreToPoints(result.score)}</span>
+        <span className="score-value">
+          {scoreToPoints(result.score)}
+          <small>{strings.scoreMax}</small>
+        </span>
       </div>
 
       <div className="stat-row">

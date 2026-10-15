@@ -1,4 +1,4 @@
-import { computeScore } from './score';
+import { computeScore, questionScore } from './score';
 import { mulberry32, shuffled } from './rng';
 import type { RunSettings } from './settings';
 import { splitChars, typingDurationMs, visibleCharCount } from './text';
@@ -43,6 +43,8 @@ export interface QuestionView {
   selected: number | null;
   inputLocked: boolean;
   correctCount: number;
+  /** 直前までの連続正解数。不正解・時間切れで 0 に戻る */
+  streak: number;
   lastAnswer: Answer | null;
 }
 
@@ -90,6 +92,8 @@ export class RunEngine {
   private clock: number;
   private finishedAt: number | null = null;
   private correctCount = 0;
+  private streak = 0;
+  private readonly questionScores: number[] = [];
 
   constructor(options: RunOptions) {
     if (options.questions.length === 0) {
@@ -165,6 +169,7 @@ export class RunEngine {
       selected: this.selected,
       inputLocked: t < this.lockedUntil,
       correctCount: this.correctCount,
+      streak: this.streak,
       lastAnswer: this.answers.length > 0 ? (this.answers[this.answers.length - 1] as Answer) : null,
     };
   }
@@ -186,7 +191,7 @@ export class RunEngine {
       correctCount: this.correctCount,
       timedOutCount,
       accuracy: this.correctCount / this.total,
-      score: computeScore(this.settings.baseTimeMs, totalMs, this.correctCount, this.total),
+      score: computeScore(this.questionScores, this.total),
     };
   }
 
@@ -219,6 +224,10 @@ export class RunEngine {
       elapsedMs: Math.round(at - this.questionStartedAt),
     });
     if (correct) this.correctCount += 1;
+    this.streak = correct ? this.streak + 1 : 0;
+    this.questionScores.push(
+      questionScore(correct, at - this.questionStartedAt, item.typingMs + this.settings.answerWindowMs),
+    );
 
     this.index += 1;
     this.selected = null;

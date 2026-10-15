@@ -13,6 +13,10 @@ import { playSound } from '../sound';
 
 /** 枠の色を変える残り時間。色は補助で、残り時間そのものは枠の長さで伝える */
 const URGENT_MS = 1500;
+/** 連続正解をこの数から出す */
+const STREAK_SHOW_FROM = 5;
+/** 連続正解がこの数の倍数になるたびに、特別な音と演出を出す */
+const STREAK_MILESTONE = 10;
 
 interface GameProps {
   engine: RunEngine;
@@ -38,6 +42,19 @@ type Verdict = 'correct' | 'wrong' | 'timeout';
 function verdictOf(answer: Answer): Verdict {
   if (answer.timedOut) return 'timeout';
   return answer.correct ? 'correct' : 'wrong';
+}
+
+/** 判定の音。連続正解の節目では、正解の音の代わりに特別な音を鳴らす */
+function playVerdict(answer: Answer, streak: number): void {
+  if (answer.correct && streak > 0 && streak % STREAK_MILESTONE === 0) playSound('streak');
+  else playSound(verdictOf(answer));
+}
+
+/** 末尾から数えた連続正解の数 */
+function trailingStreak(answers: readonly Answer[]): number {
+  let n = 0;
+  for (let i = answers.length - 1; i >= 0 && answers[i]?.correct; i--) n++;
+  return n;
 }
 
 export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, onAbort }: GameProps) {
@@ -71,7 +88,7 @@ export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, 
         stopped = true;
         const result = engine.result();
         const last = result.answers[result.answers.length - 1];
-        if (last) playSound(verdictOf(last));
+        if (last) playVerdict(last, trailingStreak(result.answers));
         finish.current(result);
         return;
       }
@@ -82,7 +99,7 @@ export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, 
       if (waiting && !h.ready) playSound('ready');
       h.ready = true;
       if (view.index !== h.index) {
-        if (h.index >= 0 && view.lastAnswer) playSound(verdictOf(view.lastAnswer));
+        if (h.index >= 0 && view.lastAnswer) playVerdict(view.lastAnswer, view.streak);
         heard.current = { ready: true, index: view.index, chars: 0, selected: null, urgent: false };
       }
       const s = heard.current;
@@ -140,6 +157,8 @@ export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, 
   const verdict = view.lastAnswer ? verdictOf(view.lastAnswer) : null;
   const verdictIcon = verdict === 'correct' ? strings.correctIcon : 'cross';
   const labelSize = choiceSize(view.choices);
+  const streak = view.streak >= STREAK_SHOW_FROM ? view.streak : 0;
+  const milestone = streak > 0 && streak % STREAK_MILESTONE === 0;
 
   // カーソルやタッチで操作する場合：選択肢を押して選び、もう一度押すか OK で確定
   const pressChoice = (choiceIndex: number, event: PointerEvent): void => {
@@ -155,14 +174,21 @@ export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, 
           <span className="progress-now">{view.index + 1}</span>
           <span className="progress-total">/{view.total}</span>
         </div>
-        <div className="game-period">
-          <span>{periodLabel}</span>
-          {tags.map((tag) => (
-            <span key={tag} className="tag">
-              {tag}
-            </span>
-          ))}
-        </div>
+        {streak > 0 ? (
+          // 連続正解の間は、ピリオド名の代わりに出す。正解するたびに出し直して跳ねさせる
+          <div key={streak} className={`streak${milestone ? ' is-milestone' : ''}`}>
+            {strings.streak(streak)}
+          </div>
+        ) : (
+          <div className="game-period">
+            <span>{periodLabel}</span>
+            {tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        )}
         <div className="tally">
           {/* 直前の判定は、次に答えるまで右上に残しておく */}
           {verdict && (

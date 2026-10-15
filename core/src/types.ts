@@ -45,8 +45,6 @@ export interface Period {
   isHardWeek: boolean;
   questionIds: string[];
   /** 指定があれば Config より優先（激ムズウィーク用） */
-  baseTimeSec?: number;
-  /** 同上 */
   answerWindowSec?: number;
   /** 激ムズウィークは 2。判定はサーバー側で行う */
   maxAttempts?: number;
@@ -56,7 +54,6 @@ export interface Period {
 
 /** サーバー設定値 */
 export interface Config {
-  baseTimeSec: number;
   answerWindowSec: number;
   typewriterMsPerChar: number;
   /**
