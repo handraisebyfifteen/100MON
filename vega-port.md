@@ -4,6 +4,7 @@
 > 設計書 §15 の第3週ぶん。ブラウザ版（`/web`）を React Native for Vega の `/app` に移す手順。
 > Vega SDK の細かい API はまだ確かめていない。「要確認」と書いた項目は、Mac で SDK を入れたあと、
 > Amazon Devices Builder Tools（MCP）と公式ドキュメントで確かめてから着手する。
+> 2026-10-15：実験アプリで確かめた結果を §10 の 0 番の下に表でまとめた。各節の「要確認」はその表が優先。
 
 ---
 
@@ -78,7 +79,7 @@ export function useStage() {
 | 角を欠く `clip-path: polygon(...)` | **後回し**。角の 8px に背景色の小さな View を4つ重ねて欠けたように見せる |
 | `animation: ... steps(n)` | `setInterval` か `requestAnimationFrame` で state を段階的に切り替える。`Animated` のなめらかな補間は使わない（段階的な動きが見た目の決まり） |
 | `text-shadow: 4px 4px 0` | `textShadowOffset: {width: px(4), height: px(4)}, textShadowRadius: 0` |
-| `font-family: var(--font-digits)` | `fontFamily: 'PressStart2P-Regular'`（同梱した TTF のファイル名に合わせる。要確認） |
+| `font-family: var(--font-digits)` | `fontFamily: 'Press Start 2P'`（同梱した TTF のファイル名から拡張子を除いたもの。§10-0 で確認済み） |
 | `letter-spacing` | `letterSpacing` |
 | `display: grid`（十字の4択） | `position: 'absolute'` で4つを座標指定。グリッドは無い |
 | `:root` の色変数 | `app/src/theme.ts` に同じ名前で定数化 |
@@ -158,19 +159,118 @@ export function useStage() {
 
 ここで詰まったものは、設計を変える（例：音は正解・不正解だけ、保存はメモリだけ、など）。
 
-### 1. 骨組み（10/16）
+#### 実験の結果（2026-10-15、Vega SDK 0.24.12112 / CLI 1.4.4、Apple Silicon、Vega Virtual Device）
+
+実験アプリは `~/qth-probe`（helloWorld テンプレート、RN 0.83）。このリポジトリには入れていない。
+
+| 項目 | 結果 | Vega 版での扱い |
+|---|---|---|
+| キーを受け取る API | `@amazon-devices/react-native-kepler` の `useTVEventHandler` で取れた。manifest に `com.amazon.inputd.service` を入れている | `useRemoteInput` の中身をこれにする |
+| イベントの中身 | `{eventType, eventKeyAction, eventId}` だけ。**時刻は無い**。`eventKeyAction` は 0 が押した・1 が離した | 0 のときだけ処理する。時刻は受け取った瞬間の `performance.now()` |
+| 決定ボタンの名前 | `inputd-cli` の `KEY_ENTER`（＝キーボードの Enter）は **`enter`** で来る。純正リモコンの中央は文書上 `select` | `select` と `enter` の両方を `ok` にする |
+| 押しっぱなし | 0 が**同じ `eventId` のまま**繰り返し来る。最初の繰り返しまで約 540ms、以降約 200ms 間隔 | 直前の押下と `eventId` が同じなら `repeat = true` |
+| 戻る | `useTVEventHandler` に `back` が来るのに加えて、離したときに `BackHandler` の `hardwareBackPress` が呼ばれる。`true` を返すと終了しない、`false` で**アプリが終了した** | 戻るは `BackHandler` だけで扱い、`useTVEventHandler` 側の `back` は捨てる（二重に動かないように）。タイトルでは `false` |
+| フォーカス | 画面にフォーカスできる要素が無くてもキーは届いた（1 回だけ確認）。念のため見えない `Pressable` を 1 つ置いた版でも同じ | §4 の方針どおり、RN のフォーカス移動は使わない |
+| `useWindowDimensions` | **960×540、scale 2**（`useKeplerWindowDimensionsV2` も同じ）。`Dimensions.get('screen')` は 0×0 で使えない | §3 の式で倍率 0.5 になり、そのまま動く。丸めは `Math.round` より `PixelRatio.roundToNearestPixel`（実画素で揃う） |
+| 保存 | `@react-native-async-storage/async-storage` を `npm:@amazon-devices/react-native-async-storage__async-storage@~2.1.0` で入れて（`overrides` も同じ）、読み書きできた。2 キーの読み込みは約 30ms。アプリを止めて起動し直しても残った（画面でも、2 回目の起動で前回の値から続いて数えた）。`vega run-app` で入れ直すと消える | §7 のとおり。起動時に読み終えてから画面を出す |
+| 効果音の鳴らし方 | `@amazon-devices/react-native-w3cmedia` の `AudioPlayer`（React の部品ではないクラス）を音ごとに 1 つ作り、`initialize()` → `src` を設定。14 本の準備に約 1.3 秒 | 起動時の読み込み待ちに入れる |
+| 同梱 wav の場所 | `assets/sfx/*.wav` に置くと `.vpkg` の `assets/sfx/` に入る。`src` は **`/pkg/assets/sfx/<名前>.wav`**。`file:///pkg/...` は GStreamer がファイル名として探して失敗する | |
+| 遅延 | `play()` から `playing` イベントまで 1〜6ms。ただし**耳で聞いた遅れは未確認** | |
+| 2 回目以降の再生 | 一度鳴り終わるとプレイヤーが閉じ、`currentTime = 0` → `play()` ではすぐ `ended` になって**鳴らない**。`src` を入れ直してから `play()` すると鳴り直す（`playing` まで約 60ms） | 鳴らすたびに `src` を入れ直す。60ms が気になる音は、プレイヤーを 2 つ用意して交互に使い、使い終わった方を先に入れ直しておく |
+| 再生の長さ | `play()` から `ended` まで、1.8 秒の音で約 2.24 秒、1.3 秒の音で約 1.75 秒。どちらも音の長さより約 0.45 秒長い | 0.45 秒が「鳴り始めの遅れ」か「終わりの余白」かは耳で確かめる |
+| 耳で聞いた結果（シミュレータ、Mac → HDMI → テレビのスピーカー） | **長い音（0.4 秒以上）は聞こえるが、短い音（0.3 秒以下）は聞こえない。** 無音をループで流し続けて出力経路を起こしておいても変わらない。イベント上は `playing` → `ended` が来ていて、鳴ったことになっている | **シミュレータでは決着がつかないので打ち切り（約 1.5 時間使った）。** 実機で確かめるまで、音の作りは下の「決めたこと」で進める |
+| 試した対策 | ① 頭に無音を足す：結果があいまい。② 先に `play()`→`pause()` で止めておく「準備済み」方式：短い音は `pause()` が間に合わず、**準備した瞬間に鳴ってしまう**（0.8 秒の無音付きなら漏れない）。使えない | |
+
+**音について決めたこと（2026-10-15）**
+
+- Vega 版の `sound.ts` は、音ごとに `AudioPlayer` を 1 つ持ち、鳴らすたびに `src` を入れ直して `play()` する、いちばん単純な作りにする。設定画面で音を 1 つずつ切れる作りはそのまま残す
+- 短い音がシミュレータで聞こえない件は、**実機（Vega OS の Fire TV）で確かめるまで保留**。実機でも聞こえなければ、正解・不正解・タイムアップ・終了の長い音だけ残し、カーソル・文字送りの音は切る（§6 に書いたとおり）
+- 実験アプリ `~/qth-probe` は、実機が手に入ったときに同じ手順で確かめるために残しておく（操作は `src/App.tsx` の冒頭に書いてある）
+- 手元の Fire TV は **Fire OS** なので Vega 版は動かない。Vega OS の実機（2025 年の Fire TV Stick 4K Select など）が無い間は、音の確認はできない。提出前に実機を用意するか、長い音だけの構成で提出するかを第 4 週に決める
+| 連続再生 | `type` を 70ms 間隔で 10 回発行はできた。**10 回聞こえるかは未確認**。`setInterval(70)` 10 回の所要時間は 704〜931ms とばらついた | 文字送りなど時間で進むものは、呼ばれた回数ではなく経過時刻から計算する（ブラウザ版と同じ） |
+| w3cmedia の版 | npm の RN 0.83 向けは `2.3.4-rn-83`（`rn83-alpha` タグ）。ビルド時に「kepler-compatibility.json に無い版」と警告が出るが、ビルドは通る。実行時は端末側の 2.3.2 が使われた | 警告は無視してよいか、正式版が出たら差し替え |
+| w3cmedia の manifest | `com.amazon.mediametrics.service`・`mediabuffer`・`mediatransform`・`audio.stream`・`audio.control`・`media.server` を `[wants]` に入れた | 同じものを入れる |
+| 同梱 TTF | `assets/fonts/` に置くと `.vpkg` に入り、**画面で効いた**（Press Start 2P の数字、DotGothic16 のかな・漢字とも）。`fontFamily` はファイル名（拡張子なし）で指定する。`Press Start 2P.ttf` → `'Press Start 2P'`、`PressStart2P-Regular.ttf` → `'PressStart2P-Regular'` のどちらも効いた | `styles.css` と同じ名前にそろえて `Press Start 2P.ttf` / `DotGothic16.ttf` で同梱する |
+| 記号の文字 | `◀` `▶` が書体に関係なく**カラー絵文字**で表示された | 矢印などの記号は文字で出さず PixelIcon で描く（ブラウザ版も問題文の `−` 以外は使っていない） |
+
+ほかに分かったこと
+
+- **リリースビルドでは `console.log` が端末のログに出ない。** `console.warn` は出る。ログは `vega exec vda -s <serial> shell "loggingctl log -f -o short_precise"` で流して `grep -a` で拾う
+- 音のプレイヤーは 1 本ごとに大量のログを出し、端末のログ上限（毎秒 300 行）で起動直後の他のログが間引かれる
+- 音のプレイヤーが「PlayerSession を作れない」というエラーをログに出す（`com.amazon.media.playersession.service` を入れていないため）。鳴らすのには影響していない。メディア操作（再生・一時停止ボタン）を奪っていないかは未確認
+- 仮想デバイスの中のシェル（`com.amazon.dev.shell.service`）が落ちて、ログもキー送信もできなくなることがある。`vega virtual-device stop` → `start` で戻った
+- 仮想デバイスでは公式のスクリーンショット（`gwsi-tool-screenshooter`）は使えない（実機だけ）
+
+### 1. 骨組み（10/16）— **済（2026-10-15）**
 
 - `/app` を作り、`/core` と `/data` を読み込めるようにする（§5）
 - `platform/` の3つ（入力・音・保存）を実験アプリの結果で作る
 - `theme.ts`（色）、`layout.ts`（`px()`）
 - タイトル → ゲーム → 結果 の切り替えだけの `App.tsx`
 
-### 2. 1問が動く（10/17）
+できたこと：シミュレータで タイトル → ゲーム → 3問回答 → 結果 → タイトル → ゲーム → 戻る → タイトル が通った（`inputd-cli` でキーを送り、`[qth]` のログで確認）。
+ゲーム画面は進行と音の呼び出しまでブラウザ版と同じ。枠タイマー・判定の大きな丸バツ・点滅は §10-2。記録・設定の画面は §10-4（いまはタイトルに戻るだけ）。
+
+作りながら分かったこと：
+
+- Metro は `watchFolders` に `../core` と `../data` を足し、`resolver.extraNodeModules['@core']` を `../core/src` に向ければ読める。ただし `/core` のファイルが使う `@babel/runtime` が見つからないので、`resolver.nodeModulesPaths` に `app/node_modules` を足す
+- `data/*.json` は `import rawQuestions from '../../data/questions.temp.json'` でそのまま読める
+- `react-native build-vega` が `manifest.toml` の `[needs]` に使っているモジュール（w3cmedia、async-storage など）を自動で書き足す。手で書く必要はない
+- `performance.now()` は RN にあるが型が無いので、`src/global.d.ts` で宣言した
+- `devParams.ts` の `debug` を true にすると、画面の切り替えと受け取ったキーを `[qth]` で端末のログに出す。確認のときは `questionLimit: 3` にすると 3 問で結果まで行ける
+- シミュレータを長く動かしていると、`loggingctl log -f` にアプリのログが流れなくなった。`vega virtual-device stop` → `start` で戻る
+
+### 2. 1問が動く（10/17）— **済（2026-10-15、見た目の確認待ち）**
 
 - `Game.tsx`：問題文のタイプライター、4択、確定、判定の丸バツ
 - `FrameTimer`（§9）
 - `PixelIcon`（§8）
 - この時点でシミュレータで遊べること。**ここまでが最優先**
+
+できたこと：ブラウザ版の演出をひととおり写した。真ん中に大きく出る丸バツ（正解は大きく出て止まる、不正解と時間切れは左右に揺れる）、枠の中の色の一瞬の点滅、正解数の跳ね、連続正解の跳ねと節目の点滅、選択中の枠と OK の点滅、READY の点滅、枠タイマー（目盛り 54 / 13 で段階的に減る、残りわずかで赤）。
+CSS の `animation: steps(n)` は `components/steps.ts` の `useSteps`（決めた時刻で描き直す）と `useBlink`（周期で切り替える）に置き換えた。時刻は `styles.css` の keyframes の % から出している。
+まだ無いもの：枠の角の欠け、枠タイマーの目盛りの縞模様（§10-4）。
+
+**引っかかり（ラグ）の調査と対策（2026-10-15）**
+
+自動再生（`demo`）で 10 問走らせ、フレームの間隔を測った（`debug` のとき `[qth] frames` でログに出る）。
+
+| 条件 | 1問あたり 50ms 超の引っかかり | 最長 |
+|---|---|---|
+| `requestAnimationFrame` のループ、音あり | 2〜10 回 | 350〜425ms |
+| タイマーで 60fps に抑えたループ、音あり | 2〜10 回 | 350〜446ms |
+| 同、音なし | **0 回** | 21〜40ms |
+| 同、音あり、入れ直しを鳴り終わりに移してプレイヤーを複数持つ | 2〜6 回 | 100〜150ms |
+| 同、文字送りの音だけオフ（下の 4。Vega 版の既定） | **0 回** | 29〜48ms |
+
+分かったこと：
+
+1. **Vega の `requestAnimationFrame` は画面の更新に同期していない。** 1 問で 5,000〜15,000 回（毎秒 1,000 回以上）呼ばれ、JS スレッドを食いつぶす。`platform/frame.ts` の `startFrameLoop`（`setTimeout` 16ms）に置き換えた。ゲームの進行ループと枠タイマーの両方
+2. **引っかかりの正体は効果音の `src` の入れ直し。** 前の再生が終わっていないパイプラインを壊して作り直すと 100〜360ms、終わっていれば 20〜60ms（たまに 140ms）JS スレッドが止まる。`play()` 自体は 1ms。ライブラリの JS 側のログ（`LogUtil.setLogLevel`）を止めても変わらない
+3. 対策：入れ直しを `ended` のとき（鳴り終わり）に行い、鳴らすときは `play()` だけにした。鳴り終わっていないプレイヤーしか無ければ飛ばす。それでも文字送りの音（70ms おき）は入れ直しが途切れず、20〜60ms の引っかかりが続く
+4. ~~Vega 版は文字送りの音を最初からオフにする~~ → 下の「効果音の作り直し」で不要になった。全部の音をオンに戻した
+
+**効果音の作り直し（2026-10-16）**
+
+w3cmedia のまま入れ直しを鳴り終わりに移した版で、**アプリが強制終了された**（AppNotResponding。JS スレッドが 7 秒以上止まった）。クラッシュ記録を変換すると、止まっていたのは `src` の入れ直し。w3cmedia の `AudioPlayer` は動画用の重いプレイヤーで、**同時に開いておける数に上限がある**らしく、ほかのプレイヤーが閉じるのを待って 1 回 1〜7 秒止まっていた（プレイヤーを 18 個持たせたので悪化した）。
+
+試したもの：
+
+| 方式 | 引っかかり（40 問） | 落ちたか | メモリ（PSS） | 判断 |
+|---|---|---|---|---|
+| w3cmedia の `AudioPlayer` を音ごとに持つ | 多数、最長 7 秒 | ANR で強制終了 | 約 93MB | やめた |
+| 見えない WebView の Web Audio（WebView 4.0 から使える） | 0 回、最長 38ms | 起動直後に OS の描画部分（`libkepler_slatium.so`）で SIGSEGV。3 回中 2 回 | 約 245MB（WebView のプロセスが別に約 87MB） | やめた。重いうえに落ちる |
+| **`keplerscript-audio-lib` の `AudioPlaybackStream` に生の PCM を流し込む** | **3 回、最長 59ms** | なし | **約 85MB** | **採用** |
+
+採用した作り（`app/src/platform/sound.ts`）：
+
+- ファミコンの音源と同じ考え方。音声の出力を 1 本だけ開いておき、512 フレーム（約 11.6ms）ごとに「いま鳴っている音を足し合わせたもの」を `writeAsync` で流し込み続ける。何も鳴っていないときは無音を流す
+- `writeAsync` は出力に空きができるまで待ってから返るので、ループは自然に実時間に揃う（1 秒に約 86 回、詰まり・エラーなし）
+- 音のデータは `app/tools/embed-sfx.mjs` が `web/public/sfx/*.wav` から PCM だけを取り出し、`app/src/generated/sfxData.ts` に base64 で埋め込む（ビルドのたびに作り直す。git には入れない）。起動時に `Int16Array` に戻す（14 本、約 650KB）
+- 鳴らすときは「この音を重ねる」と一覧に足すだけ。同時に鳴らせるのは 8 つまで
+- 背景に回ったら出力を閉じ、前面に戻ったら開き直す
+- 出力の開き方：`FLAG_LOW_LATENCY` と、1 回の長さ・溜める数の指定は、シミュレータでは「error starting playback stream」で断られた。指定を外した `CONTENT_TYPE_GAME`・`USAGE_MEDIA`・モノラル・44.1kHz で開けた。実機では低遅延の指定が通るかもしれないので、上から順に試す作りにしてある
+- まだ確かめていないこと：シミュレータで短い音が聞こえるか、鳴るまでの遅れ（耳で）
 
 ### 3. 100問通してスコアが出る（10/18）
 
@@ -235,6 +335,7 @@ export function useStage() {
   vega run-app build/aarch64-release/sampleapp_aarch64.vpkg com.example.sampleapp.main -d VirtualDevice
   ```
   Intel Mac は `x86_64-release/…_x86_64.vpkg`。実機（Fire TV）は `armv7`
+  - `.vpkg` は `build/private/kepler/@amazon-devices/<名前>/undefined/vega/<arch>/Release/@amazon-devices/` の下にもできる。VS Code の Vega Studio でビルドしたときはこちらにしかできなかった。CLI の `npm run build:release` では両方にできた
 - `manifest.toml` に `[os.version]` が無いとビルドが失敗する。その場合は `vega project update-manifest --os-min 1.2 --os-version 1.2`
 
 ### 4. MCP（Amazon Devices Builder Tools）を Claude Code につなぐ

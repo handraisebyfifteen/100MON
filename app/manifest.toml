@@ -1,0 +1,49 @@
+schema-version = 1
+
+[package]
+title = "Q the Hundred"
+version = "0.1.0"
+id = "com.byfifteen.qthehundred"
+
+[os.version]
+min = "1.2"
+target = "1.2"
+
+[needs]
+[[needs.module]]
+id = "/com.amazon.vega.os@IVega_1_2"
+
+[[needs.module]]
+id = "/com.amazon.kepler.keplerscript_4@IKeplerScript_0"
+
+[[needs.module]]
+id = "/com.amazon.kepler.async_storage__async_storage_2@IAsyncStorage__AsyncStorage_1"
+
+[[needs.module]]
+id = "/com.amazon.kepler.audio_lib_2@IAudioLib_0"
+
+
+
+
+
+
+
+
+[components]
+[[components.interactive]]
+id = "com.byfifteen.qthehundred.main"
+runtime-module = "/com.amazon.kepler.runtime.react_native_kepler_4@IReactNativeKepler_0"
+launch-type = "singleton"
+categories = ["com.amazon.category.main"]
+
+[wants]
+# リモコン入力（useTVEventHandler）
+[[wants.service]]
+id = "com.amazon.inputd.service"
+
+# 効果音（keplerscript-audio-lib の AudioPlaybackStream に生の PCM を流し込む）
+[[wants.service]]
+id = "com.amazon.audio.stream"
+
+[[wants.service]]
+id = "com.amazon.audio.control"

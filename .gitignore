@@ -16,3 +16,9 @@ __pycache__/
 # Node（ブラウザ版）
 node_modules/
 web/dist/
+
+# Vega 版（/app）
+app/node_modules/
+app/build/
+app/dist/
+app/buildinfo.json

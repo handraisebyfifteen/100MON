@@ -1,0 +1,13 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["jest", "@amazon-devices/react-native-kepler"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src", "test", "index.js"]
+}
