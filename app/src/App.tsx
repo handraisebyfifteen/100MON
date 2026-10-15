@@ -4,6 +4,7 @@ import {
   buildPeriodEntry,
   DEFAULT_CONFIG,
   estimatePace,
+  median,
   resolveSettings,
   RunEngine,
   scoreToPoints,
@@ -25,7 +26,9 @@ import type { SoundSettings } from './platform/sound';
 import { appendRun, getPlayerId, loadRuns, loadSettings, newRunId, saveSettings } from './platform/storage';
 import type { StoredSettings } from './platform/storage';
 import { GameScreen } from './screens/Game';
+import { RecordsScreen } from './screens/Records';
 import { ResultScreen } from './screens/Result';
+import { SettingsScreen } from './screens/Settings';
 import { TitleScreen } from './screens/Title';
 import { COLORS, FONTS } from './theme';
 
@@ -33,7 +36,6 @@ import { COLORS, FONTS } from './theme';
 //   - URL パラメータの代わりに devParams.ts の定数を使う
 //   - 保存と効果音の読み込みが非同期なので、読み終えるまで画面を出さない（§7）
 //   - 消灯を防ぐ wakeLock と、ページの言語の切り替えは無い
-// 記録と設定の画面は §10-4 で足す。
 
 /** 自動再生で結果画面を出しておく時間 */
 const DEMO_RESULT_MS = 8000;
@@ -155,9 +157,7 @@ function Main({ questions, period, params, boot }: MainProps) {
     () => (params.questionLimit === null ? questions : questions.slice(0, params.questionLimit)),
     [questions, params.questionLimit],
   );
-  // 設定画面（§10-4）で使う。それまでは計算だけしておく
   const pace = useMemo(() => estimatePace(playable, locale, runSettings), [playable, locale, runSettings]);
-  void pace;
 
   const periodRuns = useMemo(
     () => runs.filter((run) => run.periodId === period.id && run.locale === locale),
@@ -222,10 +222,6 @@ function Main({ questions, period, params, boot }: MainProps) {
     update({ ...settings, msPerChar: { ...settings.msPerChar, [locale]: value } });
   };
   const changeSound = (sound: SoundSettings): void => update({ ...settings, sound });
-  // 設定画面（§10-4）で使う
-  void changeLocale;
-  void changeSpeed;
-  void changeSound;
 
   // 自動再生：開いたらすぐ走り出す
   const autoStarted = useRef(false);
@@ -274,7 +270,41 @@ function Main({ questions, period, params, boot }: MainProps) {
     );
   }
 
-  // 記録と設定の画面は §10-4 で足す。それまではタイトルに戻す
+  if (screen.name === 'records') {
+    const comparable = periodRuns.filter(
+      (run) =>
+        run.settings.msPerChar === runSettings.msPerChar &&
+        run.settings.answerWindowMs === runSettings.answerWindowMs,
+    );
+    return (
+      <RecordsScreen
+        strings={strings}
+        periodLabel={`${periodLabel}　${STRINGS[locale].languageName}`}
+        entry={entry}
+        runs={periodRuns}
+        medianMs={median(comparable.map((run) => run.totalMs))}
+        medianCount={comparable.length}
+        onBack={() => setScreen({ name: 'title' })}
+      />
+    );
+  }
+
+  if (screen.name === 'settings') {
+    return (
+      <SettingsScreen
+        strings={strings}
+        locale={locale}
+        msPerChar={msPerChar}
+        sound={settings.sound}
+        pace={pace}
+        onLocale={changeLocale}
+        onSpeed={changeSpeed}
+        onSound={changeSound}
+        onBack={() => setScreen({ name: 'title' })}
+      />
+    );
+  }
+
   return (
     <TitleScreen
       strings={strings}
@@ -283,8 +313,8 @@ function Main({ questions, period, params, boot }: MainProps) {
       tags={tags}
       bestPoints={entry ? scoreToPoints(entry.bestScore) : null}
       onStart={startRun}
-      onRecords={() => setScreen({ name: 'title' })}
-      onSettings={() => setScreen({ name: 'title' })}
+      onRecords={() => setScreen({ name: 'records' })}
+      onSettings={() => setScreen({ name: 'settings' })}
     />
   );
 }
