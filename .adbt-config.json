@@ -1,0 +1,8 @@
+{
+  "project": {
+    "identifier": "q-the-hundred"
+  },
+  "platform": {
+    "default": "vega_os"
+  }
+}
