@@ -16,6 +16,8 @@ export interface Strings {
   languageName: string;
   speed: string;
   speedUnit: string;
+  /** 表示速度の行を選んでいるときに出す注意 */
+  speedNote: string;
   start: string;
   records: string;
   best: string;
@@ -105,6 +107,7 @@ export const STRINGS: Record<Locale, Strings> = {
     languageName: '日本語',
     speed: '文字の速さ',
     speedUnit: 'ミリ秒／文字',
+    speedNote: 'ランキングの走行には効きません（サーバーの速さで走ります）',
     start: 'スタート',
     records: '記録',
     best: 'ベスト',
@@ -209,6 +212,7 @@ export const STRINGS: Record<Locale, Strings> = {
     languageName: 'English',
     speed: 'Text speed',
     speedUnit: 'ms / char',
+    speedNote: 'Not used in ranked runs (the server sets the speed)',
     start: 'Start',
     records: 'Records',
     best: 'Best',

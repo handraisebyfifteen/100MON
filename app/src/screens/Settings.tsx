@@ -80,6 +80,7 @@ const makeStyles = ({ px }: Stage) => ({
   menuArrow: { padding: px(12) },
   menuCurrent: { minWidth: px(400), textAlign: 'center' as const, fontFamily: FONTS.text, fontSize: px(48), lineHeight: px(56) },
   pace: { marginTop: px(4), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.dim },
+  speedNote: { marginTop: px(8), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.sky },
   paceWarning: { marginTop: px(8), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.timeout },
   hint: {
     position: 'absolute' as const,
@@ -248,6 +249,8 @@ export function SettingsScreen(props: SettingsProps) {
         {strings.paceAllTimeout((pace.allTimeoutMs / 60_000).toFixed(1))}
       </Text>
       {overCount > 0 && <Text style={s.paceWarning}>！ {strings.paceOver(overCount)}</Text>}
+      {/* 下のキー案内に重ならないよう、警告と同じ位置に出す。警告が出ているときは警告を優先する */}
+      {overCount === 0 && rows[focus]?.key === 'speed' && <Text style={s.speedNote}>{strings.speedNote}</Text>}
 
       <View style={s.hint}>
         <KeyHint keys={['up', 'down']} label={strings.hintMove} />

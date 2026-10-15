@@ -12,6 +12,7 @@
     "test:snapshot": "jest --colors --updateSnapshot",
     "lint": "eslint src test package.json --ext .ts,.tsx",
     "lint:fix": "eslint src test package.json --ext .ts,.tsx --fix",
+    "sim": "bash tools/sim.sh",
     "build:release": "node tools/embed-sfx.mjs && react-native build-vega --build-type Release",
     "build:debug": "node tools/embed-sfx.mjs && react-native build-vega --build-type Debug",
     "build:app": "npm-run-all build:release",
