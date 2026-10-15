@@ -11,6 +11,7 @@ import type { Locale } from '@core';
  *   questionLimit   先頭の n 問だけで走る（お試し。記録には残さない）
  *   seed            出題順を固定する
  *   sound           効果音の全体のオン・オフを保存より優先する（重さの切り分け用）
+ *   online          false にするとサーバーを一切呼ばない（端末内だけで走る）
  */
 export interface DevParams {
   demo: boolean;
@@ -21,6 +22,7 @@ export interface DevParams {
   questionLimit: number | null;
   seed: number | null;
   sound: boolean | null;
+  online: boolean;
 }
 
 export const SPEED_MIN = 20;
@@ -36,4 +38,5 @@ export const DEV_PARAMS: DevParams = {
   questionLimit: null,
   seed: null,
   sound: null,
+  online: true,
 };

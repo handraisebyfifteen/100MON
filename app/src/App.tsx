@@ -18,6 +18,7 @@ import { DEV_PARAMS } from './devParams';
 import type { DevParams } from './devParams';
 import { formatPeriodRange } from './format';
 import { STRINGS } from './i18n';
+import { ApiError, finishRun as reportFinish, startRun as reportStart } from './platform/api';
 import { now } from './platform/input';
 import { useStyles } from './platform/layout';
 import type { Stage } from './platform/layout';
@@ -26,16 +27,19 @@ import type { SoundSettings } from './platform/sound';
 import { appendRun, getPlayerId, loadRuns, loadSettings, newRunId, saveSettings } from './platform/storage';
 import type { StoredSettings } from './platform/storage';
 import { GameScreen } from './screens/Game';
+import { RankingScreen } from './screens/Ranking';
 import { RecordsScreen } from './screens/Records';
 import { ResultScreen } from './screens/Result';
+import type { ServerResult } from './screens/Result';
 import { SettingsScreen } from './screens/Settings';
 import { TitleScreen } from './screens/Title';
 import { COLORS, FONTS } from './theme';
 
-// ブラウザ版の web/src/App.tsx と同じ構造。違いは次の3つ。
+// ブラウザ版の web/src/App.tsx と同じ構造。違いは次の4つ。
 //   - URL パラメータの代わりに devParams.ts の定数を使う
 //   - 保存と効果音の読み込みが非同期なので、読み終えるまで画面を出さない（§7）
 //   - 消灯を防ぐ wakeLock と、ページの言語の切り替えは無い
+//   - ランキングのサーバーに走行の開始と終了を申告する（Vega 版だけ。platform/api.ts）
 
 /** 自動再生で結果画面を出しておく時間 */
 const DEMO_RESULT_MS = 8000;
@@ -46,10 +50,26 @@ const RESULT_SOUND_DELAY_MS = 500;
 /** 走り出す前に「READY」を出す時間。タイムには含めない。0 にすると出さない */
 const READY_MS = 1200;
 
+/** サーバーに申告した走行。終了時に同じ runId で結果を送る */
+interface OnlineRun {
+  runId: string;
+  attemptNumber: number;
+}
+
 type Screen =
   | { name: 'title' }
-  | { name: 'game'; runKey: number; engine: RunEngine; bot: DemoBot | null; startedAtIso: string }
+  | {
+      name: 'game';
+      runKey: number;
+      engine: RunEngine;
+      bot: DemoBot | null;
+      startedAtIso: string;
+      online: OnlineRun | null;
+      /** 申告しようとして断られた理由。申告しない走行では null */
+      offlineReason: string | null;
+    }
   | { name: 'result'; runKey: number; result: RunResult; attemptNumber: number | null; isNewBest: boolean }
+  | { name: 'ranking' }
   | { name: 'records' }
   | { name: 'settings' };
 
@@ -167,24 +187,53 @@ function Main({ questions, period, params, boot }: MainProps) {
 
   // 自動再生とお試し（問題数を減らした走行）は記録に残さない
   const recordable = !params.demo && params.questionLimit === null;
+  // 記録に残す走行だけ、サーバーに申告してランキングに載せる
+  const reportable = recordable && params.online;
 
-  const startRun = useCallback(
-    (at: number): void => {
-      const seed = params.seed ?? randomSeed();
+  // サーバーに走行開始を申告している間（タイトルで待つ）
+  const [busy, setBusy] = useState(false);
+  const starting = useRef(false);
+  // 直近の走行のサーバーの扱い（結果画面に出す）
+  const [server, setServer] = useState<ServerResult>({ status: 'none' });
+
+  const startRun = useCallback((): void => {
+    if (starting.current) return;
+    starting.current = true;
+    void (async () => {
+      let seed = params.seed ?? randomSeed();
+      let engineSettings = runSettings;
+      let online: OnlineRun | null = null;
+      let offlineReason: string | null = null;
+      if (reportable) {
+        setBusy(true);
+        try {
+          const started = await reportStart({ playerId: boot.playerId, periodId: period.id, locale, seed: params.seed });
+          // サーバーが決めた種と設定で走る。終了時にサーバーが同じ種・設定で検証するため
+          seed = started.seed;
+          engineSettings = started.settings;
+          online = { runId: started.runId, attemptNumber: started.attemptNumber };
+        } catch (error) {
+          // つながらない・期間外などは、端末内の記録だけの走行にする
+          offlineReason = error instanceof ApiError ? error.code : 'OFFLINE';
+        }
+        setBusy(false);
+      }
+      starting.current = false;
       runCounter.current += 1;
       setScreen({
         name: 'game',
         runKey: runCounter.current,
         // 開始を少し先の時刻にしておくと、その間は RunEngine が待ってくれる
-        engine: new RunEngine({ questions: playable, locale, settings: runSettings, seed, now: at + READY_MS }),
+        engine: new RunEngine({ questions: playable, locale, settings: engineSettings, seed, now: now() + READY_MS }),
         bot: params.demo ? createDemoBot(seed) : null,
         startedAtIso: new Date(Date.now() + READY_MS).toISOString(),
+        online,
+        offlineReason,
       });
-    },
-    [params.seed, params.demo, playable, locale, runSettings],
-  );
+    })();
+  }, [params.seed, params.demo, reportable, boot.playerId, period.id, playable, locale, runSettings]);
 
-  const finishRun = (result: RunResult, runKey: number, startedAtIso: string): void => {
+  const finishRun = (result: RunResult, runKey: number, game: Extract<Screen, { name: 'game' }>): void => {
     let attemptNumber: number | null = null;
     let isNewBest = false;
     if (recordable) {
@@ -197,7 +246,7 @@ function Main({ questions, period, params, boot }: MainProps) {
           periodId: period.id,
           locale: result.locale,
           attemptNumber,
-          startedAt: startedAtIso,
+          startedAt: game.startedAtIso,
           finishedAt: new Date().toISOString(),
           totalMs: result.totalMs,
           answers: result.answers,
@@ -208,7 +257,32 @@ function Main({ questions, period, params, boot }: MainProps) {
       );
     }
     playSound(isNewBest ? 'newBest' : 'finish', RESULT_SOUND_DELAY_MS);
-    setScreen({ name: 'result', runKey, result, attemptNumber, isNewBest });
+    setScreen({
+      name: 'result',
+      runKey,
+      result,
+      // 申告した走行は、サーバーが数えた回数を出す（入れ直しても続きから数えられる）
+      attemptNumber: game.online?.attemptNumber ?? attemptNumber,
+      isNewBest,
+    });
+
+    if (game.online !== null) {
+      const { runId } = game.online;
+      setServer({ status: 'pending' });
+      reportFinish(runId, { playerId: boot.playerId, answers: result.answers, clientTotalMs: Math.round(result.totalMs) })
+        .then((finished) => {
+          if (runCounter.current !== runKey) return;
+          setServer({ status: 'ok', rank: finished.rank, entrants: finished.entrants, isNewBest: finished.isNewBest });
+        })
+        .catch((error: unknown) => {
+          if (runCounter.current !== runKey) return;
+          setServer({ status: 'error', code: error instanceof ApiError ? error.code : 'OFFLINE' });
+        });
+    } else if (game.offlineReason !== null) {
+      setServer({ status: 'offline', reason: game.offlineReason });
+    } else {
+      setServer({ status: 'none' });
+    }
   };
 
   const update = (next: StoredSettings): void => {
@@ -228,7 +302,7 @@ function Main({ questions, period, params, boot }: MainProps) {
   useEffect(() => {
     if (!params.demo || autoStarted.current) return;
     autoStarted.current = true;
-    startRun(now());
+    startRun();
   }, [params.demo, startRun]);
 
   const periodLabel = `${period.id}　${formatPeriodRange(period.startsAt, period.endsAt)}`;
@@ -240,16 +314,16 @@ function Main({ questions, period, params, boot }: MainProps) {
   ];
 
   if (screen.name === 'game') {
-    const { runKey, startedAtIso } = screen;
+    const game = screen;
     return (
       <GameScreen
-        key={runKey}
-        engine={screen.engine}
+        key={game.runKey}
+        engine={game.engine}
         strings={strings}
         periodLabel={period.id}
-        tags={tags}
-        bot={screen.bot}
-        onFinish={(result) => finishRun(result, runKey, startedAtIso)}
+        tags={[...tags, ...(game.offlineReason !== null ? [strings.offline] : [])]}
+        bot={game.bot}
+        onFinish={(result) => finishRun(result, game.runKey, game)}
         onAbort={() => setScreen({ name: 'title' })}
       />
     );
@@ -263,9 +337,23 @@ function Main({ questions, period, params, boot }: MainProps) {
         result={screen.result}
         attemptNumber={screen.attemptNumber}
         isNewBest={screen.isNewBest}
+        server={server}
         autoContinueMs={params.demo ? DEMO_RESULT_MS : null}
         onRetry={startRun}
         onTitle={() => setScreen({ name: 'title' })}
+      />
+    );
+  }
+
+  if (screen.name === 'ranking') {
+    return (
+      <RankingScreen
+        strings={strings}
+        periodLabel={`${periodLabel}　${STRINGS[locale].languageName}`}
+        periodId={period.id}
+        locale={locale}
+        playerId={boot.playerId}
+        onBack={() => setScreen({ name: 'title' })}
       />
     );
   }
@@ -312,7 +400,9 @@ function Main({ questions, period, params, boot }: MainProps) {
       periodLabel={periodLabel}
       tags={tags}
       bestPoints={entry ? scoreToPoints(entry.bestScore) : null}
+      busy={busy}
       onStart={startRun}
+      onRanking={() => setScreen({ name: 'ranking' })}
       onRecords={() => setScreen({ name: 'records' })}
       onSettings={() => setScreen({ name: 'settings' })}
     />

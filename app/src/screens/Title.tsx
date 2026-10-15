@@ -13,8 +13,8 @@ import type { Stage } from '../platform/layout';
 import { playSound } from '../platform/sound';
 import { COLORS, FONTS } from '../theme';
 
-type Row = 'start' | 'records' | 'settings';
-const ROWS: readonly Row[] = ['start', 'records', 'settings'];
+type Row = 'start' | 'ranking' | 'records' | 'settings';
+const ROWS: readonly Row[] = ['start', 'ranking', 'records', 'settings'];
 
 interface TitleProps {
   strings: Strings;
@@ -22,7 +22,10 @@ interface TitleProps {
   periodLabel: string;
   tags: readonly string[];
   bestPoints: number | null;
-  onStart: (at: number) => void;
+  /** サーバーに走行開始を申告している間。案内を出し、入力を受け付けない */
+  busy: boolean;
+  onStart: () => void;
+  onRanking: () => void;
   onRecords: () => void;
   onSettings: () => void;
 }
@@ -59,10 +62,11 @@ const makeStyles = ({ px }: Stage) => ({
     justifyContent: 'center' as const,
   },
   hintGap: { width: px(72) },
+  status: { marginTop: px(24), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.dim },
 });
 
 export function TitleScreen(props: TitleProps) {
-  const { strings, locale, onStart, onRecords, onSettings } = props;
+  const { strings, locale, busy, onStart, onRanking, onRecords, onSettings } = props;
   const s = useStyles(makeStyles);
   // 中央ボタン1回で走り出せるよう、最初は「スタート」に合わせておく
   const [focus, setFocus] = useState(ROWS.indexOf('start'));
@@ -76,24 +80,27 @@ export function TitleScreen(props: TitleProps) {
     playSound('cursor');
   };
 
-  const activate = (row: Row, at: number): void => {
+  const activate = (row: Row): void => {
     // スタートは、走り出す前の合図がこのあと鳴る
     if (row !== 'start') playSound('decide');
-    if (row === 'start') onStart(at);
+    if (row === 'start') onStart();
+    if (row === 'ranking') onRanking();
     if (row === 'records') onRecords();
     if (row === 'settings') onSettings();
   };
 
-  useRemoteInput((input, at, repeat) => {
+  useRemoteInput((input, _at, repeat) => {
+    if (busy) return;
     if (input === 'up') moveTo(focus - 1);
     if (input === 'down') moveTo(focus + 1);
-    if (input === 'ok' && !repeat) activate(ROWS[focus] as Row, at);
+    if (input === 'ok' && !repeat) activate(ROWS[focus] as Row);
     // タイトルで「戻る」はアプリの終了
     if (input === 'back') exitApp();
   });
 
   const labels: Record<Row, string> = {
     start: strings.start,
+    ranking: strings.ranking,
     records: strings.records,
     settings: strings.settings,
   };
@@ -135,6 +142,7 @@ export function TitleScreen(props: TitleProps) {
           );
         })}
       </View>
+      {busy && <Text style={s.status}>{strings.connecting}</Text>}
 
       <View style={s.hint}>
         <KeyHint keys={['up', 'down']} label={strings.hintMove} />

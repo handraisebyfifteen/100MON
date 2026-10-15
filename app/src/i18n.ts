@@ -65,6 +65,29 @@ export interface Strings {
   colSpeed: string;
   back: string;
 
+  /** ランキング（サーバーの値。Vega 版だけ） */
+  ranking: string;
+  rankingTitle: string;
+  loading: string;
+  connecting: string;
+  entrants: (n: number) => string;
+  you: string;
+  colRank: string;
+  colName: string;
+  colPoints: string;
+  colAttempts: string;
+  noEntries: string;
+  reload: string;
+  /** 結果画面の順位の行 */
+  rankPending: string;
+  rankLine: (rank: number, entrants: number) => string;
+  rankFailed: (code: string) => string;
+  notRanked: (reason: string) => string;
+  /** サーバーに申告できなかった走行の札 */
+  offline: string;
+  /** サーバーが弾いた理由を人の言葉に */
+  serverReason: (code: string) => string;
+
   dataError: string;
 }
 
@@ -140,6 +163,33 @@ export const STRINGS: Record<Locale, Strings> = {
     medianTime: (n) => `中央値・いまの速さ（${n}走行）`,
     totalAnswered: '累計回答数',
     noRuns: 'まだ記録がありません',
+
+    ranking: 'ランキング',
+    rankingTitle: 'ランキング',
+    loading: '読み込んでいます…',
+    connecting: 'サーバーにつないでいます…',
+    entrants: (n) => `参加 ${n}人`,
+    you: 'あなた',
+    colRank: '順位',
+    colName: '名前',
+    colPoints: 'ベスト',
+    colAttempts: '挑戦',
+    noEntries: 'まだ誰も走っていません',
+    reload: 'もう一度',
+    rankPending: '順位を取得しています…',
+    rankLine: (rank, entrants) => `順位 ${rank}位 ／ ${entrants}人`,
+    rankFailed: (code) => `順位を取得できませんでした（${code}）`,
+    notRanked: (reason) => `ランキング対象外：${reason}`,
+    offline: 'オフライン',
+    serverReason: (code) =>
+      ({
+        OFFLINE: 'サーバーにつながりません',
+        TIMEOUT: 'サーバーの応答がありません',
+        PERIOD_CLOSED: '今は期間外です',
+        PERIOD_NOT_FOUND: 'この週の問題がサーバーにありません',
+        ATTEMPTS_EXHAUSTED: '今週の挑戦回数を使い切りました',
+        RETRY_WINDOW_CLOSED: '2回目の期限を過ぎました',
+      })[code] ?? `サーバーに断られました（${code}）`,
     colAttempt: '回',
     colSpeed: '速さ',
     back: '戻る',
@@ -217,6 +267,33 @@ export const STRINGS: Record<Locale, Strings> = {
     medianTime: (n) => `Median, this speed (${n} runs)`,
     totalAnswered: 'Total answered',
     noRuns: 'No runs yet',
+
+    ranking: 'Ranking',
+    rankingTitle: 'Ranking',
+    loading: 'Loading…',
+    connecting: 'Connecting to the server…',
+    entrants: (n) => `${n} players`,
+    you: 'You',
+    colRank: 'Rank',
+    colName: 'Name',
+    colPoints: 'Best',
+    colAttempts: 'Tries',
+    noEntries: 'Nobody has run yet',
+    reload: 'Reload',
+    rankPending: 'Getting your rank…',
+    rankLine: (rank, entrants) => `Rank ${rank} of ${entrants}`,
+    rankFailed: (code) => `Could not get your rank (${code})`,
+    notRanked: (reason) => `Not ranked: ${reason}`,
+    offline: 'OFFLINE',
+    serverReason: (code) =>
+      ({
+        OFFLINE: 'cannot reach the server',
+        TIMEOUT: 'the server did not respond',
+        PERIOD_CLOSED: 'this week is not open',
+        PERIOD_NOT_FOUND: 'this week is not on the server',
+        ATTEMPTS_EXHAUSTED: 'no attempts left this week',
+        RETRY_WINDOW_CLOSED: 'the retry window has closed',
+      })[code] ?? `the server refused (${code})`,
     colAttempt: '#',
     colSpeed: 'Speed',
     back: 'Back',

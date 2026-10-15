@@ -17,15 +17,26 @@ import { COLORS, FONTS } from '../theme';
 /** 最後の問題の連打で、そのまま次の走行が始まってしまわないようにする */
 const INPUT_LOCK_MS = 700;
 
+/** サーバー（ランキング）から見た、この走行の扱い */
+export type ServerResult =
+  /** サーバーに申告しない走行（お試し・自動再生・online オフ） */
+  | { status: 'none' }
+  /** 申告できなかった（つながらない・期間外・回数切れなど）。端末内の記録だけ */
+  | { status: 'offline'; reason: string }
+  | { status: 'pending' }
+  | { status: 'ok'; rank: number; entrants: number; isNewBest: boolean }
+  | { status: 'error'; code: string };
+
 interface ResultProps {
   strings: Strings;
   result: RunResult;
   /** 何回目の挑戦か。記録に残さない走行では null */
   attemptNumber: number | null;
   isNewBest: boolean;
+  server: ServerResult;
   /** 自動再生のとき、この時間が過ぎたら次の走行へ進む */
   autoContinueMs: number | null;
-  onRetry: (at: number) => void;
+  onRetry: () => void;
   onTitle: () => void;
 }
 
@@ -63,6 +74,7 @@ const makeStyles = ({ px }: Stage) => ({
   statValueRow: { marginTop: px(8), flexDirection: 'row' as const, alignItems: 'flex-end' as const },
   statValue: { fontFamily: FONTS.digits, fontSize: px(64), lineHeight: px(70), color: COLORS.white },
   statSmall: { marginLeft: px(8), fontFamily: FONTS.digits, fontSize: px(32), lineHeight: px(44), color: COLORS.dim },
+  server: { marginTop: px(40), fontFamily: FONTS.text, fontSize: px(40), lineHeight: px(48) },
   actions: {
     position: 'absolute' as const,
     left: 0,
@@ -76,7 +88,7 @@ const makeStyles = ({ px }: Stage) => ({
 });
 
 export function ResultScreen(props: ResultProps) {
-  const { strings, result, attemptNumber, isNewBest, autoContinueMs, onRetry, onTitle } = props;
+  const { strings, result, attemptNumber, isNewBest, server, autoContinueMs, onRetry, onTitle } = props;
   const s = useStyles(makeStyles);
   const shownAt = useRef(now());
   const retry = useRef(onRetry);
@@ -86,14 +98,14 @@ export function ResultScreen(props: ResultProps) {
 
   useEffect(() => {
     if (autoContinueMs === null) return;
-    const timer = setTimeout(() => retry.current(now()), autoContinueMs);
+    const timer = setTimeout(() => retry.current(), autoContinueMs);
     return () => clearTimeout(timer);
   }, [autoContinueMs]);
 
   const act = (input: 'retry' | 'title', at: number): void => {
     if (at - shownAt.current < INPUT_LOCK_MS) return;
     if (input === 'retry') {
-      onRetry(at);
+      onRetry();
     } else {
       playSound('back');
       onTitle();
@@ -105,6 +117,22 @@ export function ResultScreen(props: ResultProps) {
     if (input === 'ok') act('retry', at);
     if (input === 'left' || input === 'back') act('title', at);
   });
+
+  // サーバーの順位の行。申告しない走行では出さない
+  const serverLine = ((): { text: string; color: string } | null => {
+    switch (server.status) {
+      case 'none':
+        return null;
+      case 'pending':
+        return { text: strings.rankPending, color: COLORS.dim };
+      case 'ok':
+        return { text: strings.rankLine(server.rank, server.entrants), color: COLORS.gold };
+      case 'error':
+        return { text: strings.rankFailed(server.code), color: COLORS.timeout };
+      case 'offline':
+        return { text: strings.notRanked(strings.serverReason(server.reason)), color: COLORS.dim };
+    }
+  })();
 
   return (
     <Screen>
@@ -149,6 +177,7 @@ export function ResultScreen(props: ResultProps) {
           </View>
         </Panel>
       </View>
+      {serverLine !== null && <Text style={[s.server, { color: serverLine.color }]}>{serverLine.text}</Text>}
 
       <View style={s.actions}>
         <Panel focused style={s.action} innerStyle={s.actionInner}>
