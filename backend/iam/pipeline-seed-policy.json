@@ -1,0 +1,11 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "SeedQuestionSetsIntoConfigTable",
+      "Effect": "Allow",
+      "Action": ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:Query"],
+      "Resource": "arn:aws:dynamodb:us-east-2:796837507149:table/q-the-hundred-backend-ConfigTable-GKT3R3IVJ3DZ"
+    }
+  ]
+}

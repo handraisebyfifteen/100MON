@@ -22,3 +22,7 @@ app/node_modules/
 app/build/
 app/dist/
 app/buildinfo.json
+
+# バックエンド（Lambda のバンドルと SAM の作業ファイル）
+backend/dist/
+backend/.aws-sam/

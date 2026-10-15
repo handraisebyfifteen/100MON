@@ -1,0 +1,150 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  Q the hundred - ranking backend.
+  API Gateway (HTTP API) -> Lambda -> DynamoDB. The app calls only the 4 public routes.
+
+Parameters:
+  StageName:
+    Type: String
+    Default: prod
+  # ブラウザ版プロトタイプから呼ぶときだけ必要。Vega 版だけなら空でよい
+  AllowedOrigin:
+    Type: String
+    Default: '*'
+
+Globals:
+  Function:
+    Runtime: nodejs22.x
+    Architectures: [arm64]
+    Timeout: 10
+    MemorySize: 256
+    Environment:
+      Variables:
+        RUNS_TABLE: !Ref RunsTable
+        LEADERBOARD_TABLE: !Ref LeaderboardTable
+        CONFIG_TABLE: !Ref ConfigTable
+
+Resources:
+  # ---- データ ----
+  RunsTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+      AttributeDefinitions:
+        - { AttributeName: pk, AttributeType: S }
+        - { AttributeName: sk, AttributeType: S }
+      KeySchema:
+        - { AttributeName: pk, KeyType: HASH }
+        - { AttributeName: sk, KeyType: RANGE }
+
+  LeaderboardTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+      AttributeDefinitions:
+        - { AttributeName: board, AttributeType: S }
+        - { AttributeName: playerId, AttributeType: S }
+        - { AttributeName: rankKey, AttributeType: S }
+      KeySchema:
+        - { AttributeName: board, KeyType: HASH }
+        - { AttributeName: playerId, KeyType: RANGE }
+      GlobalSecondaryIndexes:
+        - IndexName: byRank
+          KeySchema:
+            - { AttributeName: board, KeyType: HASH }
+            - { AttributeName: rankKey, KeyType: RANGE }
+          Projection: { ProjectionType: ALL }
+        - IndexName: byPlayer
+          KeySchema:
+            - { AttributeName: playerId, KeyType: HASH }
+            - { AttributeName: board, KeyType: RANGE }
+          Projection: { ProjectionType: ALL }
+
+  ConfigTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - { AttributeName: pk, AttributeType: S }
+        - { AttributeName: sk, AttributeType: S }
+      KeySchema:
+        - { AttributeName: pk, KeyType: HASH }
+        - { AttributeName: sk, KeyType: RANGE }
+
+  # ---- 入口 ----
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      StageName: !Ref StageName
+      CorsConfiguration:
+        AllowOrigins: [!Ref AllowedOrigin]
+        AllowMethods: [GET, POST, OPTIONS]
+        AllowHeaders: [content-type]
+      # ステージ全体の上限。1端末ごとの上限は HTTP API では掛けられない（README 参照）
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 50
+        ThrottlingRateLimit: 25
+
+  ApiFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: dist/api
+      Handler: index.handler
+      Policies:
+        - DynamoDBCrudPolicy: { TableName: !Ref RunsTable }
+        - DynamoDBCrudPolicy: { TableName: !Ref LeaderboardTable }
+        - DynamoDBReadPolicy: { TableName: !Ref ConfigTable }
+      Events:
+        StartRun:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: POST, Path: /runs/start }
+        FinishRun:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: POST, Path: '/runs/{runId}/finish' }
+        Leaderboard:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: GET, Path: /leaderboard }
+        PlayerStats:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: GET, Path: '/players/{playerId}/stats' }
+
+  # ---- 週の終わりの集計 ----
+  AggregateFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      CodeUri: dist/aggregate
+      Handler: index.handler
+      Timeout: 300
+      MemorySize: 512
+      Policies:
+        - DynamoDBCrudPolicy: { TableName: !Ref LeaderboardTable }
+        - DynamoDBReadPolicy: { TableName: !Ref ConfigTable }
+      Events:
+        WeeklyClose:
+          Type: ScheduleV2
+          Properties:
+            # ピリオドの境目は月曜 00:00 UTC。10分後に、終わった週を集計する
+            ScheduleExpression: cron(10 0 ? * MON *)
+            ScheduleExpressionTimezone: UTC
+
+Outputs:
+  ApiUrl:
+    Description: Base URL for the app
+    Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${StageName}'
+  RunsTableName:
+    Value: !Ref RunsTable
+  LeaderboardTableName:
+    Value: !Ref LeaderboardTable
+  ConfigTableName:
+    Value: !Ref ConfigTable

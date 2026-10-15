@@ -1,0 +1,9 @@
+# sam deploy の既定値。リージョンは設計書 §2 のとおり us-east-2
+version = 0.1
+
+[default.deploy.parameters]
+stack_name = "q-the-hundred-backend"
+region = "us-east-2"
+resolve_s3 = true
+capabilities = "CAPABILITY_IAM"
+confirm_changeset = true
