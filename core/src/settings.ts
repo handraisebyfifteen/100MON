@@ -2,7 +2,7 @@ import type { Config, Locale, Period } from './types';
 
 /**
  * 暫定の設定値。本番ではサーバーから受け取る。
- * 表示速度は第2週に実測で決める（設計書 §18）。
+ * 表示速度は TV で確認して確定した（設計書 §5）。
  */
 export const DEFAULT_CONFIG: Config = {
   answerWindowSec: 5,
