@@ -18,7 +18,7 @@ if ! command -v vega >/dev/null 2>&1; then
 fi
 
 DEVICE="${DEVICE:-emulator-5554}"
-APP_ID="com.byfifteen.qthehundred.main"
+APP_ID="com.byfifteen.hyakumon.main"
 VPKG="build/x86_64-release/qthehundred_x86_64.vpkg"
 
 build=1

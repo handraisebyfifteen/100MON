@@ -396,7 +396,6 @@ function Main({ questions, period, params, boot }: MainProps) {
   return (
     <TitleScreen
       strings={strings}
-      locale={locale}
       periodLabel={periodLabel}
       tags={tags}
       bestPoints={entry ? scoreToPoints(entry.bestScore) : null}

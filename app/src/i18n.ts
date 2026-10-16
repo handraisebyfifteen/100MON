@@ -6,7 +6,6 @@ import type { SoundName } from './platform/sound';
 export interface Strings {
   appTitle: string;
   tagline: string;
-  workingTitle: string;
   tempData: string;
   hardWeek: string;
   practice: string;
@@ -95,9 +94,8 @@ export interface Strings {
 
 export const STRINGS: Record<Locale, Strings> = {
   ja: {
-    appTitle: '速読トリビア',
+    appTitle: '100MON',
     tagline: '100問タイムアタック',
-    workingTitle: '仮称',
     tempData: '仮データ',
     hardWeek: '激ムズウィーク',
     practice: 'お試し',
@@ -200,9 +198,8 @@ export const STRINGS: Record<Locale, Strings> = {
     dataError: '問題データを読み込めませんでした',
   },
   en: {
-    appTitle: 'SPEED TRIVIA',
+    appTitle: '100MON',
     tagline: '100-question time attack',
-    workingTitle: 'working title',
     tempData: 'temp data',
     hardWeek: 'Hard week',
     practice: 'Practice',

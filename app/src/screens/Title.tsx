@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { Text, View } from 'react-native';
-import type { Locale } from '@core';
 import { KeyHint } from '../components/KeyHint';
 import { Panel } from '../components/Panel';
 import { Screen } from '../components/Screen';
@@ -18,7 +17,6 @@ const ROWS: readonly Row[] = ['start', 'ranking', 'records', 'settings'];
 
 interface TitleProps {
   strings: Strings;
-  locale: Locale;
   periodLabel: string;
   tags: readonly string[];
   bestPoints: number | null;
@@ -32,18 +30,16 @@ interface TitleProps {
 
 const makeStyles = ({ px }: Stage) => ({
   h1Row: { marginTop: px(8), flexDirection: 'row' as const, alignItems: 'center' as const },
+  // 名前は英数字なので、言語に関係なく数字の書体で出す
   h1: {
-    fontFamily: FONTS.text,
-    fontSize: px(128),
-    lineHeight: px(147),
-    letterSpacing: px(8),
+    fontFamily: FONTS.digits,
+    fontSize: px(88),
+    lineHeight: px(148),
     color: COLORS.white,
     textShadowColor: COLORS.blue,
     textShadowOffset: { width: px(8), height: px(8) },
     textShadowRadius: 0,
-    marginRight: px(32),
   },
-  h1En: { fontFamily: FONTS.digits, fontSize: px(88), lineHeight: px(148), letterSpacing: 0 },
   tagline: { marginTop: px(4), fontFamily: FONTS.text, fontSize: px(48), color: COLORS.sky },
   periodLine: { marginTop: px(20), flexDirection: 'row' as const, alignItems: 'center' as const },
   periodItem: { marginRight: px(24) },
@@ -66,7 +62,7 @@ const makeStyles = ({ px }: Stage) => ({
 });
 
 export function TitleScreen(props: TitleProps) {
-  const { strings, locale, busy, onStart, onRanking, onRecords, onSettings } = props;
+  const { strings, busy, onStart, onRanking, onRecords, onSettings } = props;
   const s = useStyles(makeStyles);
   // 中央ボタン1回で走り出せるよう、最初は「スタート」に合わせておく
   const [focus, setFocus] = useState(ROWS.indexOf('start'));
@@ -108,8 +104,7 @@ export function TitleScreen(props: TitleProps) {
   return (
     <Screen>
       <View style={s.h1Row}>
-        <Text style={[s.h1, locale === 'en' && s.h1En]}>{strings.appTitle}</Text>
-        <Tag text={strings.workingTitle} />
+        <Text style={s.h1}>{strings.appTitle}</Text>
       </View>
       <Text style={s.tagline}>{strings.tagline}</Text>
       <View style={s.periodLine}>

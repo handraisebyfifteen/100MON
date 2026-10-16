@@ -1,9 +1,10 @@
 schema-version = 1
 
 [package]
-title = "Q the Hundred"
+title = "100MON"
+icon = "@image/icon.png"
 version = "0.1.0"
-id = "com.byfifteen.qthehundred"
+id = "com.byfifteen.hyakumon"
 
 [os.version]
 min = "1.2"
@@ -31,7 +32,7 @@ id = "/com.amazon.kepler.audio_lib_2@IAudioLib_0"
 
 [components]
 [[components.interactive]]
-id = "com.byfifteen.qthehundred.main"
+id = "com.byfifteen.hyakumon.main"
 runtime-module = "/com.amazon.kepler.runtime.react_native_kepler_4@IReactNativeKepler_0"
 launch-type = "singleton"
 categories = ["com.amazon.category.main"]
