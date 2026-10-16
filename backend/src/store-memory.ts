@@ -1,13 +1,12 @@
-import type { Locale, Period, Question } from '../../core/src/index';
+import type { Locale, Period } from '../../core/src/index';
 import { compareRankKey } from './rank-key';
-import type { Store } from './store';
-import type { LeaderboardItem, PointsResult, RunItem, ServerConfig } from './types';
+import type { BestRecord, RunContribution, Store } from './store';
+import type { LeaderboardItem, PeriodItem, PointsResult, RunItem, ServerConfig } from './types';
 
-/** テスト用。DynamoDB と同じ取り出し方だけを提供する */
+/** テスト用。DynamoDB と同じ取り出し方・同じ条件だけを提供する */
 export class MemoryStore implements Store {
   private config: ServerConfig | null = null;
-  private readonly periods = new Map<string, Period>();
-  private readonly questions = new Map<string, Question[]>();
+  private readonly periods = new Map<string, PeriodItem>();
   private readonly runs = new Map<string, RunItem>();
   private readonly entries = new Map<string, LeaderboardItem>();
 
@@ -27,38 +26,47 @@ export class MemoryStore implements Store {
     return this.config ? MemoryStore.clone(this.config) : null;
   }
 
+  async putConfigIfAbsent(config: ServerConfig): Promise<boolean> {
+    if (this.config) return false;
+    this.config = MemoryStore.clone(config);
+    return true;
+  }
+
+  /** テスト用：設定を差し替える */
   async putConfig(config: ServerConfig): Promise<void> {
     this.config = MemoryStore.clone(config);
   }
 
-  async getPeriod(periodId: string): Promise<Period | null> {
-    const period = this.periods.get(periodId);
-    return period ? MemoryStore.clone(period) : null;
+  async getPeriod(periodId: string): Promise<PeriodItem | null> {
+    const item = this.periods.get(periodId);
+    return item ? MemoryStore.clone(item) : null;
   }
 
-  async putPeriod(period: Period): Promise<void> {
-    this.periods.set(period.id, MemoryStore.clone(period));
+  async putPeriod(item: PeriodItem): Promise<void> {
+    this.periods.set(item.period.id, MemoryStore.clone(item));
   }
 
   async listPeriods(): Promise<Period[]> {
-    return [...this.periods.values()].map((p) => MemoryStore.clone(p));
-  }
-
-  async getQuestions(periodId: string): Promise<Question[] | null> {
-    const questions = this.questions.get(periodId);
-    return questions ? MemoryStore.clone(questions) : null;
-  }
-
-  async putQuestions(periodId: string, questions: Question[]): Promise<void> {
-    this.questions.set(periodId, MemoryStore.clone(questions));
+    return [...this.periods.values()].map((p) => MemoryStore.clone(p.period));
   }
 
   async putRun(run: RunItem): Promise<void> {
     this.runs.set(MemoryStore.runKey(run.playerId, run.runId), MemoryStore.clone(run));
   }
 
-  async getRun(playerId: string, runId: string): Promise<RunItem | null> {
-    const run = this.runs.get(MemoryStore.runKey(playerId, runId));
+  async finishRun(run: RunItem): Promise<boolean> {
+    const key = MemoryStore.runKey(run.playerId, run.runId);
+    const current = this.runs.get(key);
+    if (!current || current.status !== 'started') return false;
+    this.runs.set(key, MemoryStore.clone(run));
+    return true;
+  }
+
+  async getRun(runId: string, playerId?: string): Promise<RunItem | null> {
+    const run =
+      playerId !== undefined
+        ? this.runs.get(MemoryStore.runKey(playerId, runId))
+        : [...this.runs.values()].find((r) => r.runId === runId);
     return run ? MemoryStore.clone(run) : null;
   }
 
@@ -70,42 +78,66 @@ export class MemoryStore implements Store {
       .map((r) => MemoryStore.clone(r));
   }
 
+  async listRunsSince(playerId: string, sinceMs: number): Promise<RunItem[]> {
+    return (await this.listRuns(playerId)).filter((r) => Date.parse(r.serverStartedAt) >= sinceMs);
+  }
+
   async getEntry(board: string, playerId: string): Promise<LeaderboardItem | null> {
     const entry = this.entries.get(MemoryStore.entryKey(board, playerId));
     return entry ? MemoryStore.clone(entry) : null;
   }
 
-  async putEntry(entry: LeaderboardItem, expectedAttempts: number | null): Promise<boolean> {
-    const key = MemoryStore.entryKey(entry.board, entry.playerId);
-    const current = this.entries.get(key);
-    if (expectedAttempts === null ? current !== undefined : current?.attempts !== expectedAttempts) {
-      return false;
-    }
-    this.entries.set(key, MemoryStore.clone(entry));
+  async recordRun(c: RunContribution): Promise<LeaderboardItem> {
+    const key = MemoryStore.entryKey(c.board, c.playerId);
+    const current = this.entries.get(key) ?? {
+      board: c.board,
+      playerId: c.playerId,
+      displayName: c.displayName,
+      periodId: c.periodId,
+      locale: c.locale,
+      totalCorrect: 0,
+      totalAnswered: 0,
+      attempts: 0,
+    };
+    current.attempts += 1;
+    current.totalCorrect += c.correct;
+    current.totalAnswered += c.answered;
+    if (c.firstScore !== null && current.firstScore === undefined) current.firstScore = c.firstScore;
+    this.entries.set(key, current);
+    return MemoryStore.clone(current);
+  }
+
+  async updateBest(board: string, playerId: string, best: BestRecord): Promise<boolean> {
+    const current = this.entries.get(MemoryStore.entryKey(board, playerId));
+    if (!current) return false;
+    if (current.bestScore !== undefined && !(current.bestScore < best.bestScore)) return false;
+    Object.assign(current, best);
     return true;
   }
 
   async setEntryPoints(board: string, playerId: string, points: PointsResult): Promise<void> {
-    const key = MemoryStore.entryKey(board, playerId);
-    const current = this.entries.get(key);
+    const current = this.entries.get(MemoryStore.entryKey(board, playerId));
     if (!current) return;
     current.points = MemoryStore.clone(points);
   }
 
+  private ranked(board: string): LeaderboardItem[] {
+    return [...this.entries.values()]
+      .filter((e) => e.board === board && e.rankKey !== undefined)
+      .sort((a, b) => compareRankKey(a.rankKey as string, b.rankKey as string));
+  }
+
   async listEntriesByRank(board: string, limit?: number): Promise<LeaderboardItem[]> {
-    const sorted = [...this.entries.values()]
-      .filter((e) => e.board === board)
-      .sort((a, b) => compareRankKey(a.rankKey, b.rankKey));
+    const sorted = this.ranked(board);
     return (limit === undefined ? sorted : sorted.slice(0, limit)).map((e) => MemoryStore.clone(e));
   }
 
   async countBetter(board: string, rankKey: string): Promise<number> {
-    return [...this.entries.values()].filter((e) => e.board === board && compareRankKey(e.rankKey, rankKey) < 0)
-      .length;
+    return this.ranked(board).filter((e) => compareRankKey(e.rankKey as string, rankKey) < 0).length;
   }
 
   async countEntries(board: string): Promise<number> {
-    return [...this.entries.values()].filter((e) => e.board === board).length;
+    return this.ranked(board).length;
   }
 
   async listEntriesByPlayer(playerId: string): Promise<LeaderboardItem[]> {

@@ -13,10 +13,11 @@ import { isRecord } from './validate';
 /**
  * 走行の検証（設計書 §12）。アプリから送られた回答を信用せず、サーバーで確かめ直す。
  *
+ * - 問題ID：そのピリオドに存在する問題か
  * - 出題順：開始時に決めた種から並べ直し、送られた順と一致するか
  * - 正誤：選んだ番号と正解の番号から判定し直す（アプリの correct は見ない）
  * - 時間：1問ごとの経過時間が「表示時間＋猶予」を超えていないか
- * - スコア：サーバー側の設定値で計算し直す（アプリの score は見ない）
+ * - スコア：サーバー側の設定値で計算し直す（設計書 §5。アプリの score は見ない）
  *
  * ここで弾けるのは「形がおかしい記録」だけ。答えを覚えて速く押すことは防げない（設計どおり）。
  */
@@ -49,9 +50,29 @@ export interface VerifyInput {
   serverDurationMs: number;
 }
 
-/** 理論上の最短時間。各問とも、出題直後の入力ロックが明けるまでは答えられない */
-export function minimumDurationMs(questionCount: number, settings: RunSettings): number {
-  return questionCount * Math.max(0, settings.inputLockMs);
+/**
+ * 理論上の最短時間（設計書 §5「理論上の上限と下限」）。
+ *
+ * 1問あたりの最短 ＝ max(入力ロック, 確定位置 × 1文字の表示時間)。
+ * 答えが確定する文字が出るまでは、読んで答えることはできない（それより前に押せるのは
+ * 答えを覚えている場合だけ）。ただし答えを覚える遊び方は設計どおり認めているので、
+ * 合計に係数（Config.minTimeFactor、暫定 0.5）を掛けて緩める。
+ * 「確定位置の半分より前に全問を押し続ける」のは、覚えていても問題を見分ける時間が足りないとみなす。
+ * 係数は本番の走行データで調整する前提（設計書 §18）。
+ */
+export function minimumDurationMs(
+  questions: readonly Question[],
+  locale: Locale,
+  settings: RunSettings,
+  factor: number,
+): number {
+  const clamped = Math.min(1, Math.max(0, Number.isFinite(factor) ? factor : 1));
+  let total = 0;
+  for (const question of questions) {
+    const decisionMs = typingDurationMs(question.locales[locale].decisionPoint, settings.msPerChar);
+    total += Math.max(Math.max(0, settings.inputLockMs), decisionMs);
+  }
+  return Math.round(total * clamped);
 }
 
 /** 理論上の最長時間。全問時間切れのときの長さ */
@@ -77,7 +98,17 @@ export function verifyRun(input: VerifyInput): VerifyResult {
 
   if (!Array.isArray(answers)) return fail('INVALID_ANSWERS', 'answers must be an array');
   if (answers.length !== questions.length) {
-    return fail('INCOMPLETE_RUN', `answers must have ${questions.length} items`);
+    return fail('INCOMPLETE_RUN', `answers must have exactly ${questions.length} items`);
+  }
+
+  // 先に「存在しない問題ID」を弾く（順番の違いとは分けて伝える）
+  const known = new Set(questions.map((q) => q.id));
+  for (let i = 0; i < answers.length; i++) {
+    const raw: unknown = answers[i];
+    if (!isRecord(raw)) return fail('INVALID_ANSWERS', `answers[${i}] must be an object`);
+    if (typeof raw.questionId !== 'string' || !known.has(raw.questionId)) {
+      return fail('UNKNOWN_QUESTION', `answers[${i}].questionId is not in this period`);
+    }
   }
 
   const order = shuffled(questions, mulberry32(seed));
@@ -89,11 +120,10 @@ export function verifyRun(input: VerifyInput): VerifyResult {
 
   for (let i = 0; i < order.length; i++) {
     const question = order[i] as Question;
-    const raw: unknown = answers[i];
+    const raw = answers[i] as Record<string, unknown>;
     const where = `answers[${i}]`;
-    if (!isRecord(raw)) return fail('INVALID_ANSWERS', `${where} must be an object`);
     if (raw.questionId !== question.id) {
-      return fail('ORDER_MISMATCH', `${where}.questionId does not match the order for this seed`);
+      return fail('ORDER_MISMATCH', `${where}.questionId does not match the order for this run`);
     }
     if (raw.order !== i + 1) return fail('ORDER_MISMATCH', `${where}.order must be ${i + 1}`);
 

@@ -1,17 +1,21 @@
 AWSTemplateFormatVersion: '2010-09-09'
 Transform: AWS::Serverless-2016-10-31
 Description: >
-  Q the hundred - ranking backend.
-  API Gateway (HTTP API) -> Lambda -> DynamoDB. The app calls only the 4 public routes.
+  trivia backend - weekly 100-question speed quiz for Fire TV.
+  App -> API Gateway (HTTP API) -> Lambda -> DynamoDB. The app calls only the 5 public routes.
 
 Parameters:
   StageName:
     Type: String
     Default: prod
-  # ブラウザ版プロトタイプから呼ぶときだけ必要。Vega 版だけなら空でよい
+  # ブラウザ版プロトタイプから呼ぶときだけ必要。Vega / Fire OS 版だけなら空でよい
   AllowedOrigin:
     Type: String
     Default: '*'
+  # リソース名の先頭。アプリ名が変わっても困らないよう仮の名前にしてある
+  NamePrefix:
+    Type: String
+    Default: trivia
 
 Globals:
   Function:
@@ -21,32 +25,59 @@ Globals:
     MemorySize: 256
     Environment:
       Variables:
+        PERIODS_TABLE: !Ref PeriodsTable
         RUNS_TABLE: !Ref RunsTable
         LEADERBOARD_TABLE: !Ref LeaderboardTable
         CONFIG_TABLE: !Ref ConfigTable
 
 Resources:
-  # ---- データ ----
+  # ---- データ（用途ごとにテーブルを分ける。課金はオンデマンド） ----
+
+  # 1ピリオド＝1件。100問ぶんの問題を同じ項目に入れる（約30KB。1件の上限 400KB に収まる）
+  PeriodsTable:
+    Type: AWS::DynamoDB::Table
+    DeletionPolicy: Retain
+    UpdateReplacePolicy: Retain
+    Properties:
+      TableName: !Sub '${NamePrefix}-periods'
+      BillingMode: PAY_PER_REQUEST
+      PointInTimeRecoverySpecification:
+        PointInTimeRecoveryEnabled: true
+      AttributeDefinitions:
+        - { AttributeName: periodId, AttributeType: S }
+      KeySchema:
+        - { AttributeName: periodId, KeyType: HASH }
+
+  # 走行の生データ。playerId ごとに開始時刻の順で取り出せる（runId は開始時刻で始まる）
+  # byRunId：終了時に runId だけで1件引くため
   RunsTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Retain
     UpdateReplacePolicy: Retain
     Properties:
+      TableName: !Sub '${NamePrefix}-runs'
       BillingMode: PAY_PER_REQUEST
       PointInTimeRecoverySpecification:
         PointInTimeRecoveryEnabled: true
       AttributeDefinitions:
-        - { AttributeName: pk, AttributeType: S }
-        - { AttributeName: sk, AttributeType: S }
+        - { AttributeName: playerId, AttributeType: S }
+        - { AttributeName: runId, AttributeType: S }
       KeySchema:
-        - { AttributeName: pk, KeyType: HASH }
-        - { AttributeName: sk, KeyType: RANGE }
+        - { AttributeName: playerId, KeyType: HASH }
+        - { AttributeName: runId, KeyType: RANGE }
+      GlobalSecondaryIndexes:
+        - IndexName: byRunId
+          KeySchema:
+            - { AttributeName: runId, KeyType: HASH }
+          Projection: { ProjectionType: ALL }
 
+  # ピリオド×言語ごとのベスト。byRank：スコアの高い順（同スコアは挑戦回数の少ない順）、byPlayer：自分の全ピリオド
   LeaderboardTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Retain
     UpdateReplacePolicy: Retain
     Properties:
+      TableName: !Sub '${NamePrefix}-leaderboard'
       BillingMode: PAY_PER_REQUEST
       PointInTimeRecoverySpecification:
         PointInTimeRecoveryEnabled: true
@@ -69,18 +100,18 @@ Resources:
             - { AttributeName: board, KeyType: RANGE }
           Projection: { ProjectionType: ALL }
 
+  # サーバー設定値（1件）。activePeriodId で今週のピリオドを固定できる
   ConfigTable:
     Type: AWS::DynamoDB::Table
     DeletionPolicy: Retain
     UpdateReplacePolicy: Retain
     Properties:
+      TableName: !Sub '${NamePrefix}-config'
       BillingMode: PAY_PER_REQUEST
       AttributeDefinitions:
-        - { AttributeName: pk, AttributeType: S }
-        - { AttributeName: sk, AttributeType: S }
+        - { AttributeName: key, AttributeType: S }
       KeySchema:
-        - { AttributeName: pk, KeyType: HASH }
-        - { AttributeName: sk, KeyType: RANGE }
+        - { AttributeName: key, KeyType: HASH }
 
   # ---- 入口 ----
   HttpApi:
@@ -91,25 +122,35 @@ Resources:
         AllowOrigins: [!Ref AllowedOrigin]
         AllowMethods: [GET, POST, OPTIONS]
         AllowHeaders: [content-type]
-      # ステージ全体の上限。1端末ごとの上限は HTTP API では掛けられない（README 参照）
+      # ステージ全体の上限（秒あたり）。1端末ごとの上限は HTTP API では掛けられない（README 参照）
       DefaultRouteSettings:
         ThrottlingBurstLimit: 50
         ThrottlingRateLimit: 25
 
+  # 公開する5つの API。読む：Periods・Config、読み書き：Runs・Leaderboard
   ApiFunction:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: !Sub '${NamePrefix}-api'
       CodeUri: dist/api
       Handler: index.handler
       Policies:
+        - DynamoDBReadPolicy: { TableName: !Ref PeriodsTable }
+        - DynamoDBReadPolicy: { TableName: !Ref ConfigTable }
         - DynamoDBCrudPolicy: { TableName: !Ref RunsTable }
         - DynamoDBCrudPolicy: { TableName: !Ref LeaderboardTable }
-        - DynamoDBReadPolicy: { TableName: !Ref ConfigTable }
       Events:
+        CurrentPeriod:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: GET, Path: /period/current }
         StartRun:
           Type: HttpApi
           Properties: { ApiId: !Ref HttpApi, Method: POST, Path: /runs/start }
         FinishRun:
+          Type: HttpApi
+          Properties: { ApiId: !Ref HttpApi, Method: POST, Path: /runs/finish }
+        # 同じ処理の別の呼び方（runId をパスに置く）。アプリの古い呼び方のために残す
+        FinishRunByPath:
           Type: HttpApi
           Properties: { ApiId: !Ref HttpApi, Method: POST, Path: '/runs/{runId}/finish' }
         Leaderboard:
@@ -119,21 +160,25 @@ Resources:
           Type: HttpApi
           Properties: { ApiId: !Ref HttpApi, Method: GET, Path: '/players/{playerId}/stats' }
 
-  # ---- 週の終わりの集計 ----
+  # ---- 週の終わりの集計（ポイント付け）。読む：Periods・Config、読み書き：Leaderboard ----
   AggregateFunction:
     Type: AWS::Serverless::Function
     Properties:
+      FunctionName: !Sub '${NamePrefix}-aggregate'
       CodeUri: dist/aggregate
       Handler: index.handler
       Timeout: 300
       MemorySize: 512
       Policies:
-        - DynamoDBCrudPolicy: { TableName: !Ref LeaderboardTable }
+        - DynamoDBReadPolicy: { TableName: !Ref PeriodsTable }
         - DynamoDBReadPolicy: { TableName: !Ref ConfigTable }
+        - DynamoDBCrudPolicy: { TableName: !Ref LeaderboardTable }
       Events:
         WeeklyClose:
           Type: ScheduleV2
           Properties:
+            # 名前を省くと論理IDがそのまま名前になり、他のスタックと衝突するので付ける
+            Name: !Sub '${NamePrefix}-weekly-close'
             # ピリオドの境目は月曜 00:00 UTC。10分後に、終わった週を集計する
             ScheduleExpression: cron(10 0 ? * MON *)
             ScheduleExpressionTimezone: UTC
@@ -142,6 +187,8 @@ Outputs:
   ApiUrl:
     Description: Base URL for the app
     Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com/${StageName}'
+  PeriodsTableName:
+    Value: !Ref PeriodsTable
   RunsTableName:
     Value: !Ref RunsTable
   LeaderboardTableName:

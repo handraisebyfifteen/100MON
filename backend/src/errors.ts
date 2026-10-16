@@ -1,6 +1,7 @@
 /**
  * API が返すエラー。status は HTTP のステータス、code はアプリが分岐に使う短い名前。
  * message は人が読む用。内部の事情（テーブル名、スタックトレースなど）は入れない。
+ * 返す形はいつも { "error": { "code", "message" } }。
  */
 export class ApiError extends Error {
   readonly status: number;
@@ -14,6 +15,7 @@ export class ApiError extends Error {
 }
 
 export const badRequest = (code: string, message: string): ApiError => new ApiError(400, code, message);
+export const forbidden = (code: string, message: string): ApiError => new ApiError(403, code, message);
 export const notFound = (code: string, message: string): ApiError => new ApiError(404, code, message);
 export const conflict = (code: string, message: string): ApiError => new ApiError(409, code, message);
-export const forbidden = (code: string, message: string): ApiError => new ApiError(403, code, message);
+export const tooMany = (code: string, message: string): ApiError => new ApiError(429, code, message);

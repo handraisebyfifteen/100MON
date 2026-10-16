@@ -2,10 +2,13 @@
   "Version": "2012-10-17",
   "Statement": [
     {
-      "Sid": "SeedQuestionSetsIntoConfigTable",
+      "Sid": "SeedPeriodsAndConfig",
       "Effect": "Allow",
-      "Action": ["dynamodb:GetItem", "dynamodb:PutItem", "dynamodb:Query"],
-      "Resource": "arn:aws:dynamodb:us-east-2:796837507149:table/q-the-hundred-backend-ConfigTable-GKT3R3IVJ3DZ"
+      "Action": ["dynamodb:GetItem", "dynamodb:PutItem"],
+      "Resource": [
+        "arn:aws:dynamodb:us-east-2:796837507149:table/trivia-periods",
+        "arn:aws:dynamodb:us-east-2:796837507149:table/trivia-config"
+      ]
     }
   ]
 }

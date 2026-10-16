@@ -1,9 +1,10 @@
-# sam deploy の既定値。リージョンは設計書 §2 のとおり us-east-2
+# sam deploy の既定値。リージョンは設計書 §2 のとおり us-east-2。
+# スタック名は仮の trivia-（アプリ名が決まっても困らないように）。
 version = 0.1
 
 [default.deploy.parameters]
-stack_name = "q-the-hundred-backend"
+stack_name = "trivia-backend"
 region = "us-east-2"
 resolve_s3 = true
 capabilities = "CAPABILITY_IAM"
-confirm_changeset = true
+confirm_changeset = false

@@ -6,11 +6,13 @@ import { fileURLToPath } from 'node:url';
 
 const here = dirname(fileURLToPath(import.meta.url));
 const outRoot = join(here, 'dist');
-const functions = ['api', 'aggregate', 'seed'];
+// api / aggregate は Lambda、seed / smoke は手元で動かす道具
+const functions = ['api', 'aggregate', 'seed', 'smoke'];
 
 await rm(outRoot, { recursive: true, force: true });
 for (const name of functions) {
-  const entry = name === 'seed' ? join(here, 'src/seed.ts') : join(here, `src/handlers/${name}.ts`);
+  const isScript = name === 'seed' || name === 'smoke';
+  const entry = isScript ? join(here, `scripts/${name}.ts`) : join(here, `src/handlers/${name}.ts`);
   await build({
     entryPoints: [entry],
     outfile: join(outRoot, name, 'index.mjs'),

@@ -1,4 +1,4 @@
-import type { DivisionResult, LeaderboardItem, PointsConfig, PointsResult } from './types';
+import type { DivisionResult, PointsConfig, PointsResult, RankedLeaderboardItem } from './types';
 
 /**
  * 週のポイント（設計書 §6「ポイント制」）。
@@ -82,7 +82,7 @@ function division(
  * 激ムズ：3部門ともベスト走行の値で判定し、割り引きなし。
  */
 export function computePoints(
-  entries: readonly LeaderboardItem[],
+  entries: readonly RankedLeaderboardItem[],
   isHardWeek: boolean,
   config: PointsConfig,
   now: Date,

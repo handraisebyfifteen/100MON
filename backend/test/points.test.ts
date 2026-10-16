@@ -3,7 +3,7 @@ import { displayNameFor } from '../src/names';
 import { computePoints, discountedAccuracy, rankContenders, tierPoints } from '../src/points';
 import { compareRankKey, rankKey } from '../src/rank-key';
 import { DEFAULT_POINTS_CONFIG } from '../src/types';
-import type { LeaderboardItem } from '../src/types';
+import type { RankedLeaderboardItem } from '../src/types';
 
 const config = DEFAULT_POINTS_CONFIG;
 
@@ -47,7 +47,7 @@ describe('順位', () => {
   });
 });
 
-function entry(playerId: string, overrides: Partial<LeaderboardItem>): LeaderboardItem {
+function entry(playerId: string, overrides: Partial<RankedLeaderboardItem>): RankedLeaderboardItem {
   return {
     board: 'P#ja',
     playerId,

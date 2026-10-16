@@ -161,6 +161,7 @@ TVの前で、100問の4択クイズをどれだけ速く正確に走り切れ�
 
 - 上限：1問の最大 ＝ 問題文の表示時間 ＋ 回答の猶予（通常週5秒、激ムズウィーク10秒）。全問放置でもこの合計で終わる
 - 下限：タイプライター表示速度から、1問の最短時間が決まる。これを下回る記録は物理的にあり得ない（不正検知に使う）
+  - 実装（2026-10-17）：最短時間 ＝ Σ max(入力ロック 200ms, 確定位置 × 1文字の表示時間) × 係数（`Config.minTimeFactor`、暫定 0.5）。答えを覚える遊び方を認めているので確定位置の半分までは許す。係数は本番の走行データで調整する（§18）
 
 ### タイプライター表示速度（確定 2026-10-15）
 
@@ -505,6 +506,7 @@ type Run = {
   serverFinishedAt: string;
   answers: Answer[];       // 100件
   score: number;
+  suspicious?: boolean;    // 理論上の最短時間を下回ったなど。順位には載せないが生データは残す
 };
 
 type Answer = {
@@ -536,7 +538,8 @@ type LeaderboardEntry = {
 ```
 
 - bestScore 系はベストを更新したときだけ書き換える
-- totalCorrect・totalAnswered・attempts は走行のたびに足していく
+- totalCorrect・totalAnswered・attempts は走行のたびに足していく（DynamoDB の ADD。suspicious な走行も足す）
+- bestScore 系と firstScore は、suspicious でない走行が1つ出るまで無い。無い間は順位に載らない
 
 ### DynamoDB での持ち方
 
@@ -544,25 +547,32 @@ DynamoDB は「どう取り出すか」を先に決めてからテーブルを�
 
 | 取り出したいもの | キーの組み方 |
 |---|---|
+| 今週のピリオドと、その100問 | `periodId` で1件取る（問題はピリオドと同じ件に入れる） |
 | あるピリオド・ある言語の上位10人 | `ピリオドID#言語` ごとに、スコアの高い順に並べる |
 | 3部門それぞれの上位何%か（週の終わりに1回だけ集計） | `ピリオドID#言語` の全件を読み、Lambda で並べ替えてポイントを付ける |
 | 自分の順位とベスト | `ピリオドID#言語` と `playerId` で1件取る |
 | 自分の走行の履歴 | `playerId` ごとに、走行日時の順に並べる |
 
-- 走行（Run）、ランキング（Leaderboard Entry）、設定（Config）で、テーブルを分ける
+- ピリオドと問題（Periods）、走行（Run）、ランキング（Leaderboard Entry）、設定（Config）で、テーブルを分ける
+- **毎週の問題は Periods テーブルから配る**（2026-10-17）。1ピリオド＝1件で、100問ぶんの Question（両言語・answerIndex 込み）を同じ件に入れる。1件 約36KB で、DynamoDB の上限 400KB に収まる。アプリを更新せずに問題を差し替えられる
 - 同スコアの順位（何回目で出したか）は、並べ替え用のキーにスコアと一緒に入れて表現する
-- キーの具体的な形は実装で確定した（2026-10-15）。`backend/README.md` の「DynamoDB の持ち方」を正とする
-  - Runs：pk = playerId、sk = runId（開始時刻で始まる）
-  - Leaderboard：pk = `ピリオドID#言語`、sk = playerId。索引 byRank（rankKey 順）と byPlayer
-  - Config：pk = 種類（config / period / questions）、sk = ID。問題セットとピリオドもここに入れる
+- キーの具体的な形は実装で確定した（2026-10-17 に `trivia-` の名前で作り直し）。`backend/README.md` の「DynamoDB の持ち方」を正とする
+  - Periods（`trivia-periods`）：pk = periodId。ピリオドの項目と questions を同じ件に入れる
+  - Runs（`trivia-runs`）：pk = playerId、sk = runId（開始時刻で始まる）。索引 byRunId（終了時に runId だけで引く）
+  - Leaderboard（`trivia-leaderboard`）：pk = `ピリオドID#言語`、sk = playerId。索引 byRank（rankKey 順）と byPlayer
+  - Config（`trivia-config`）：pk = key（`global` の1件）
 
 ### Config（サーバー設定値）
 
 ```ts
 type Config = {
   answerWindowSec: number; // 5
-  typewriterMsPerChar: number; // 150
+  typewriterMsPerChar: number; // 150（暫定。実際は言語別の値が使われる）
   typewriterMsPerCharByLocale?: { ja?: number; en?: number }; // ja: 150, en: 50
+  inputLockMs?: number;    // 200
+  activePeriodId?: string; // 指定があれば「今週」をこれに固定する（開発・デモ用）
+  startRateLimit: { windowSec: number; max: number }; // 同じ playerId の走行開始の上限（600秒に10回）
+  minTimeFactor: number;   // 理論上の最短時間の係数（暫定 0.5。§5）
 };
 ```
 
@@ -603,19 +613,22 @@ type Config = {
 ### やること
 
 1. 開始と終了をサーバー時刻で記録し、差をタイムとする
-2. 理論上の最短時間を下回る記録は自動で除外する
+2. 理論上の最短時間を下回る記録は自動で除外する（Run には `suspicious: true` で残し、順位とベスト・1回目のスコアには反映しない。式は §5）
 3. 不正な記録は DynamoDB のコンソールから手動で削除できる状態にしておく
 4. 生データを全部残し、後からおかしい記録を洗い出せるようにする
 5. API Gateway で呼び出し回数に上限をかける（大量の書き込みを防ぐ）
    - 実装メモ（2026-10-15）：HTTP API では「1端末あたり」の上限は掛けられず、ステージ全体の上限になる。端末ごとに掛けるには REST API＋APIキーか WAF が要る。ハッカソン時点ではステージ全体の上限で進める
 6. 出題順（種）・正誤・スコアはサーバーで計算し直す。アプリから送られた正誤やスコアは使わない（2026-10-15 追加）
+7. 同じ匿名IDからの走行開始が短時間に多すぎれば拒否する（`Config.startRateLimit`。2026-10-17 追加）
+8. 同じ走行の終了を2回受け取っても二重に数えない（2回目以降は保存してある結果を返す）
 
 ### アクセスの境界
 
 - アプリは DynamoDB に直接触れない。**すべて API Gateway → Lambda 経由**
 - アプリに AWS のキーを持たせない
 - Lambda には、このテーブルの読み書きに必要な権限だけを与える（それ以外の AWS の操作はできないようにする）
-- 公開する API は「走行開始」「走行終了」「ランキング取得」「個人成績取得」の4つだけ
+- 公開する API は「今週の問題の取得」「走行開始」「走行終了」「ランキング取得」「個人成績取得」の**5つ**だけ（2026-10-17 に「今週の問題の取得」を追加。毎週の公式戦でアプリを更新せずに問題を差し替えるため。開始前のピリオドの問題は返さない）
+- 「走行開始」は開始した時点で1回の挑戦として数える。回数の上限・60分の期限・開始回数の上限の判定はすべてここで行う
 
 ### やらないこと
 
@@ -708,6 +721,10 @@ type Config = {
 | 難易度の下限の基準 | 第1週 |
 | Mac の種類とシミュレータの挙動 | SDK導入時 |
 | プライバシーポリシー | ストア公開時（ハッカソンでは不要） |
+| 毎週の問題配信は DynamoDB（Periods テーブル）から行う。本番運用で必要。投入は `backend/scripts/seed.ts`（2026-10-17） | 運用開始時に手順を固める |
+| 問題の `answerIndex` をアプリに返している（ハッカソン時点の割り切り。通信を見れば答えが分かる） | 本番運用の前に、答えを返さない形にするか決める |
+| 理論上の最短時間の係数 `minTimeFactor`（暫定 0.5）と、開始回数の上限 `startRateLimit`（暫定 10分に10回） | 第2週の実測 |
+| AWS のリソース名の先頭 `trivia-`（仮） | アプリ名が決まったとき。名前を変えるにはスタックの作り直しが要る |
 
 ---
 
