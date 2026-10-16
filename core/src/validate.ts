@@ -103,6 +103,31 @@ function checkPeriod(value: unknown, errors: string[]): value is Period {
   return errors.length === before;
 }
 
+export type QuestionListResult = { ok: true; questions: Question[] } | { ok: false; errors: string[] };
+
+/**
+ * ピリオドに属さない問題の一覧（エキシビジョンの既定の問題など）を読み、形を確かめる。
+ * parseQuestionSet と同じく、1つでもおかしければ全体を不合格にする。
+ */
+export function parseQuestionList(rawQuestions: unknown): QuestionListResult {
+  const errors: string[] = [];
+  const questions: Question[] = [];
+  const ids = new Set<string>();
+  if (!Array.isArray(rawQuestions)) return { ok: false, errors: ['questions: must be an array'] };
+  rawQuestions.forEach((raw, i) => {
+    const where = isRecord(raw) && isNonEmptyString(raw.id) ? `question ${raw.id}` : `questions[${i}]`;
+    if (!checkQuestion(raw, where, errors)) return;
+    if (ids.has(raw.id)) {
+      errors.push(`${where}: duplicate id`);
+      return;
+    }
+    ids.add(raw.id);
+    questions.push(raw);
+  });
+  if (errors.length > 0) return { ok: false, errors };
+  return { ok: true, questions };
+}
+
 /**
  * 問題セットとピリオドのファイル（設計書 §9）を読み、形を確かめる。
  * 合格すれば、ピリオドの questionIds の順に並べた問題を返す。

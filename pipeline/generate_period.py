@@ -14,6 +14,15 @@
 - 途中で落ちても accepted.json から --resume で続きから再開できる
 
 --dry-run N を付けると合計 N 問だけ作り、出力先を reports 配下にして data/ は触らない。
+
+通常週は、100問のうち config.PROD_REUSE_RATIO（25%）を過去の通常週の問題から使い回す（元の ID のまま）。
+直前の config.REUSE_SKIP_RECENT ピリオドの問題と激ムズウィークの問題は使わず、使われた回数の少ないものから選ぶ。
+残りを生成する。--reuse-ratio 0 で使い回しをやめる。
+
+エキシビジョン（記録に残らないモード）の既定の問題は --exhibition で作る。期間は無く、配分は config.EXHIBITION_ALLOCATION。
+    python3 pipeline/generate_period.py --exhibition --period-id exhibition-2026-10
+出力は data/questions.<id>.json だけ（ピリオドのファイルは書かない）。過去ピリオドと同じく使用済みの題材に入るので、
+あとの週の問題とはかぶらない。
 """
 
 import argparse
@@ -59,8 +68,9 @@ def make_runtime(read_timeout=300):
     return boto3.client("bedrock-runtime", config=cfg)
 
 
-def with_retry(fn, what, tries=5):
-    """スロットリングや一時的なエラーは待って繰り返す。それ以外は上に投げる"""
+def with_retry(fn, what, tries=8):
+    """スロットリングや一時的なエラーは待って繰り返す。それ以外は上に投げる
+    （2026-10-16、エキシビジョン300問の生成中に5回では足りず落ちたので8回に。待ちは合計で約3分）"""
     for attempt in range(tries):
         try:
             return fn()
@@ -113,6 +123,10 @@ STYLE_RULES = [
     "かっこで断り書きを足さず（「（一般的な数え方）」など）、言い方そのもので意味を1つに絞る",
     "- 本・小説の題名は『』、曲・絵・映画の題名は「」で囲む",
     "- 英語版は日本語版と意味と正解が完全に一致するように作る（直訳でなく自然な英語で。疑問符は付けない）",
+    "- 日本語でも英語でも同じ知識を問う問題にする。片方の言語でしか成り立たない問題は作らない"
+    "（例:「英語で『犬』は？」は英語版では「日本語の inu はどれか」という別の問題になる。"
+    "日本語と英語の間で言葉を訳して答える問題は作らない。ラテン語のように、どちらの話者にとっても外国語のものはよい。"
+    "英語版の問題文に正解の語が出てしまう問題も作らない）",
     "- 選択肢は単語か短い語句。日英で answerIndex（正解の位置、0始まり）は共通。正解の位置は問題ごとにばらけさせる",
     "- 正解以外の3つは、確実に不正解だが同じ種類のもので揃える（例: すべて山の名前）",
     "- 同じカテゴリで揃えた選択肢の問題（最後まで読ませる）と、揃えない問題（早く確定する）を意図的に混ぜる",
@@ -142,8 +156,8 @@ def build_prompt(difficulty, n, avoid, feedback=None, category=None):
         *STYLE_RULES,
         "",
         f"- {n}問の分野は偏らないように散らす。同じ題材を2回使わない",
-        "- 使用済みの題材と同じ型の問題を増やさない（例: 元素記号から元素を答える問題や、"
-        "日本語の単語を英語で答える問題がすでにあれば、正解が違っても作らない）",
+        "- 使用済みの題材と同じ型の問題を増やさない（例: 元素記号から元素を答える問題がすでにあれば、"
+        "正解が違っても作らない）",
     ]
     if category:
         lines.append(f"- 分野は {category} にする（同じ分野の問題の差し替え）")
@@ -338,17 +352,76 @@ def load_used_from_data(exclude_period_id):
     return answers, texts, avoid
 
 
+# ---------------------------------------------------------------- 使い回し
+
+def load_past_periods(before_iso, exclude_period_id):
+    """data/ にある、before_iso までに終わった通常週のピリオドを古い順に返す（激ムズウィークと仮データは除く）"""
+    periods = []
+    for path in sorted(DATA_DIR.glob("period.*.json")):
+        if ".temp." in path.name:
+            continue
+        try:
+            period = json.loads(path.read_text(encoding="utf-8"))
+            if period["id"] == exclude_period_id or period.get("isHardWeek") or period["endsAt"] > before_iso:
+                continue
+            by_id = {q["id"]: q for q in json.loads((DATA_DIR / f"questions.{period['id']}.json").read_text(encoding="utf-8"))}
+        except (OSError, ValueError, KeyError):
+            continue
+        periods.append((period["startsAt"], [by_id[i] for i in period["questionIds"] if i in by_id]))
+    periods.sort(key=lambda p: p[0])
+    return [qs for _, qs in periods]
+
+
+def pick_reuse(period_id, starts, allocation, ratio, skip_recent):
+    """過去の通常週から、難易度ごとに 目標数×ratio 問を選ぶ。選んだ問題は元の ID と中身のまま返す"""
+    past = load_past_periods(starts, period_id)
+    recent = past[len(past) - skip_recent:] if skip_recent > 0 else []
+    recent_ids = {q["id"] for qs in recent for q in qs}
+    times_used = Counter(q["id"] for qs in past for q in qs)
+    pool = {}
+    for qs in past:
+        for q in qs:
+            if q["id"] not in recent_ids:
+                pool[q["id"]] = q  # 同じ ID が何度も出てきたら、新しいピリオドの中身を使う
+    rng = random.Random(f"{period_id}:reuse")
+    picked, seen = [], set()
+    for difficulty, target in allocation.items():
+        want = int(target * ratio + 0.5)
+        cands = [q for q in pool.values() if q["difficulty"] == difficulty]
+        rng.shuffle(cands)
+        cands.sort(key=lambda q: times_used[q["id"]])  # 使われた回数の少ないものから（同じ回数なら順不同）
+        got = 0
+        for q in cands:
+            if got >= want:
+                break
+            keys = text_keys(q["locales"])
+            if keys & seen:
+                continue
+            seen |= keys
+            picked.append(q)
+            got += 1
+    return picked
+
+
 # ---------------------------------------------------------------- 本体
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--period-id", required=True)
-    ap.add_argument("--starts", required=True, help="UTC、例 2026-10-19T00:00:00Z")
-    ap.add_argument("--ends", required=True)
+    ap.add_argument("--starts", help="UTC、例 2026-10-19T00:00:00Z（--exhibition では不要）")
+    ap.add_argument("--ends")
+    ap.add_argument("--exhibition", action="store_true", help="エキシビジョン用の問題を作る（期間なし）")
+    ap.add_argument("--reuse-ratio", type=float, default=config.PROD_REUSE_RATIO,
+                    help="過去の通常週から使い回す割合（既定は config.PROD_REUSE_RATIO。エキシビジョンでは使わない）")
     ap.add_argument("--quarter", type=int, default=1)
     ap.add_argument("--dry-run", type=int, default=0, help="合計 N 問だけ作る（data/ は触らない）")
     ap.add_argument("--resume", action="store_true", help="accepted.json から続きを再開する")
+    ap.add_argument("--no-generate", action="store_true",
+                    help="生成せず、accepted.json の採用済みの問題だけで確定位置を測って書き出す"
+                         "（生成役の1日の上限に当たったときなど。--resume と一緒に使う）")
     args = ap.parse_args()
+    if not args.exhibition and not (args.starts and args.ends):
+        ap.error("--starts と --ends が要る（エキシビジョン用は --exhibition）")
 
     period_id = args.period_id
     out_dir = REPORTS / period_id
@@ -356,11 +429,19 @@ def main():
     accepted_path = out_dir / "accepted.json"
     log_path = out_dir / "log.json"
 
-    allocation = dict(config.PROD_ALLOCATION)
+    allocation = dict(config.EXHIBITION_ALLOCATION if args.exhibition else config.PROD_ALLOCATION)
     if args.dry_run:
         total = sum(allocation.values())
         allocation = {k: max(1, round(v * args.dry_run / total)) for k, v in allocation.items()}
     target_total = sum(allocation.values())
+    # 使い回す問題を先に選び、そのぶん生成する数を減らす（毎回同じものが選ばれるので --resume でも変わらない）
+    reused = [] if args.exhibition or args.reuse_ratio <= 0 else pick_reuse(
+        period_id, args.starts, allocation, args.reuse_ratio, config.REUSE_SKIP_RECENT)
+    full_allocation = dict(allocation)
+    for q in reused:
+        allocation[q["difficulty"]] -= 1
+    if reused:
+        print(f"使い回し: 過去の通常週から {len(reused)} 問（{dict(Counter(q['difficulty'] for q in reused))}）", flush=True)
 
     checks = json.loads(FIXTURES.read_text(encoding="utf-8"))["checks"]
     verifier_tool = build_verifier_tool(checks)
@@ -375,7 +456,7 @@ def main():
     log = {"period_id": period_id, "started_at": datetime.now(timezone.utc).isoformat(timespec="seconds"),
            "generator": config.PROD_GENERATOR, "verifier1": config.PROD_VERIFIER_1,
            "verifier2": config.PROD_VERIFIER_2, "decision_point_model": config.PROD_DECISION_POINT_MODEL,
-           "allocation": allocation, "events": []}
+           "allocation": allocation, "reused": [q["id"] for q in reused], "events": []}
     if args.resume and accepted_path.exists():
         accepted = json.loads(accepted_path.read_text(encoding="utf-8"))
         print(f"再開: 採用済み {len(accepted)} 問を読み込んだ")
@@ -394,7 +475,8 @@ def main():
     def mark_used(q):
         answer = q["ja"]["choices"][q["answerIndex"]]
         used_answers.add(answer)
-        used_texts |= text_keys(q)
+        # 「|=」だと内側の関数の変数として扱われて落ちる（UnboundLocalError）ので、update で足す
+        used_texts.update(text_keys(q))
         avoid.append(f"{q['ja']['text']} → {answer}")
 
     def process(q, difficulty):
@@ -426,9 +508,13 @@ def main():
         return None
 
     for difficulty, target in allocation.items():
+        if args.no_generate:
+            break
         have = sum(1 for q in accepted if q["difficulty"] == difficulty)
         calls = 0
-        while have < target and calls < MAX_GEN_CALLS:
+        # 1バッチで頼める数より目標が多いとき（エキシビジョンの100問など）は、上限もそれに合わせて増やす
+        max_calls = max(MAX_GEN_CALLS, 2 * -(-target // BATCH_SIZE))
+        while have < target and calls < max_calls:
             need = min(BATCH_SIZE, target - have)
             calls += 1
             print(f"[{DIFF_LABEL[difficulty]}] {have}/{target} 採用済み。{need}問を生成（{calls}回目）...", flush=True)
@@ -452,7 +538,7 @@ def main():
             print(f"[{DIFF_LABEL[difficulty]}] このバッチ {len(got)}/{len(uniq)} 採用 → {have}/{target}", flush=True)
             save_progress()
         if have < target:
-            print(f"[{DIFF_LABEL[difficulty]}] 上限 {MAX_GEN_CALLS} 回でも {have}/{target} 問。足りないまま続行", flush=True)
+            print(f"[{DIFF_LABEL[difficulty]}] 上限 {max_calls} 回でも {have}/{target} 問。足りないまま続行", flush=True)
 
     # ---- 確定位置 ----
     print(f"確定位置を測る（{len(accepted)}問 × 2言語）...", flush=True)
@@ -482,6 +568,9 @@ def main():
                 "en": {"text": q["en"]["text"], "choices": q["en"]["choices"], "decisionPoint": q["en"]["decisionPoint"]},
             },
         })
+    # 使い回す問題は元の ID と中身のまま足し、まとめて並べ直す
+    questions += reused
+    random.Random(f"{period_id}:order").shuffle(questions)
     period = {
         "id": period_id, "startsAt": args.starts, "endsAt": args.ends, "quarter": args.quarter,
         "isHardWeek": False, "questionIds": [q["id"] for q in questions],
@@ -490,14 +579,17 @@ def main():
         q_path, p_path = out_dir / "questions.dryrun.json", out_dir / "period.dryrun.json"
     else:
         q_path, p_path = DATA_DIR / f"questions.{period_id}.json", DATA_DIR / f"period.{period_id}.json"
+    if args.exhibition:
+        p_path = None
     q_path.write_text(json.dumps(questions, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    p_path.write_text(json.dumps(period, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    if p_path is not None:
+        p_path.write_text(json.dumps(period, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
 
     log["finished_at"] = datetime.now(timezone.utc).isoformat(timespec="seconds")
     log["cost"] = [{"model": m, "calls": c, "in": ti, "out": to, "usd": cost} for m, c, ti, to, cost in meter.rows()]
     save_progress()
-    write_report(out_dir, period_id, questions, log, allocation, target_total, q_path, p_path)
-    print(f"\n書き出し: {q_path}\n        {p_path}\n報告: {out_dir / 'report.md'}")
+    write_report(out_dir, period_id, questions, log, full_allocation, target_total, q_path, p_path)
+    print(f"\n書き出し: {q_path}\n        {p_path or '（ピリオドのファイルは無し）'}\n報告: {out_dir / 'report.md'}")
 
 
 def write_report(out_dir, period_id, questions, log, allocation, target_total, q_path, p_path):
@@ -510,10 +602,11 @@ def write_report(out_dir, period_id, questions, log, allocation, target_total, q
     lines = [f"# ピリオド {period_id} の100問（本番生成の記録）", "",
              f"- 生成: `{log['generator']}` / 検証1: `{log['verifier1']}` / 検証2: `{log['verifier2']}` / 確定位置: `{log['decision_point_model']}`",
              f"- 開始 {log['started_at']} → 終了 {log.get('finished_at')}",
-             f"- 出力: `{q_path.relative_to(WORKSPACE)}`, `{p_path.relative_to(WORKSPACE)}`", "",
+             f"- 出力: `{q_path.relative_to(WORKSPACE)}`" + (f", `{p_path.relative_to(WORKSPACE)}`" if p_path else "（エキシビジョン用。ピリオドのファイルは無し）"), "",
              "## 集計", "",
              f"| 項目 | 数 |", "| :-- | --: |",
              f"| 採用 | {len(questions)}/{target_total} |",
+             f"| うち過去の通常週から使い回し | {len(log.get('reused', []))} |",
              f"| うち一発合格 | {first_pass} |",
              f"| うち修正して合格 | {fixed} |",
              f"| 不採用（修正しても不合格） | {len(discarded)} |", ""]
@@ -551,6 +644,13 @@ def write_report(out_dir, period_id, questions, log, allocation, target_total, q
                     flags[(m.group(1), m.group(2) or "形式")] += 1
     for (who, key), n in sorted(flags.items(), key=lambda kv: -kv[1]):
         lines.append(f"- {who} {key}: {n}")
+
+    if log.get("reused"):
+        lines += ["", "## 使い回した問題（元の ID のまま。検証は元のピリオドで済んでいる）", ""]
+        by_id = {q["id"]: q for q in questions}
+        for qid in log["reused"]:
+            ja = by_id[qid]["locales"]["ja"]
+            lines.append(f"- {qid}　{ja['text']} → {ja['choices'][by_id[qid]['answerIndex']]}")
 
     lines += ["", "## 不採用になった問題", ""]
     for e in discarded:

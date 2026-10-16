@@ -1,0 +1,2946 @@
+[
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "光合成で出る酸素のもとになる物質",
+   "choices": [
+    "二酸化炭素の分子",
+    "ブドウ糖の分子",
+    "クロロフィルの分子",
+    "水の分子"
+   ]
+  },
+  "en": {
+   "text": "The molecule that the oxygen released in photosynthesis comes from",
+   "choices": [
+    "Carbon dioxide",
+    "Glucose",
+    "Chlorophyll",
+    "Water"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "常温・常圧で液体の非金属元素",
+   "choices": [
+    "塩素",
+    "ヨウ素",
+    "臭素",
+    "フッ素"
+   ]
+  },
+  "en": {
+   "text": "The nonmetallic element that is liquid at room temperature and pressure",
+   "choices": [
+    "Chlorine",
+    "Iodine",
+    "Bromine",
+    "Fluorine"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "地殻に一番多く含まれる金属元素",
+   "choices": [
+    "アルミニウム",
+    "鉄",
+    "カルシウム",
+    "ナトリウム"
+   ]
+  },
+  "en": {
+   "text": "The most abundant metallic element in Earth's crust",
+   "choices": [
+    "Aluminum",
+    "Iron",
+    "Calcium",
+    "Sodium"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "融点が一番高い金属",
+   "choices": [
+    "オスミウム",
+    "タングステン",
+    "タンタル",
+    "レニウム"
+   ]
+  },
+  "en": {
+   "text": "The metal with the highest melting point",
+   "choices": [
+    "Osmium",
+    "Tungsten",
+    "Tantalum",
+    "Rhenium"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "密度が一番大きい元素",
+   "choices": [
+    "イリジウム",
+    "オスミウム",
+    "白金",
+    "金"
+   ]
+  },
+  "en": {
+   "text": "The element with the highest density",
+   "choices": [
+    "Iridium",
+    "Osmium",
+    "Platinum",
+    "Gold"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "電気を一番よく通す金属",
+   "choices": [
+    "銅",
+    "金",
+    "銀",
+    "アルミニウム"
+   ]
+  },
+  "en": {
+   "text": "The metal with the highest electrical conductivity",
+   "choices": [
+    "Copper",
+    "Gold",
+    "Silver",
+    "Aluminum"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ふつうの水素の原子核に含まれる中性子の数",
+   "choices": [
+    "1個",
+    "2個",
+    "3個",
+    "0個"
+   ]
+  },
+  "en": {
+   "text": "The number of neutrons in the nucleus of an ordinary hydrogen atom",
+   "choices": [
+    "1",
+    "2",
+    "3",
+    "0"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "ビタミンB12の中心にある金属元素",
+   "choices": [
+    "鉄",
+    "コバルト",
+    "マグネシウム",
+    "亜鉛"
+   ]
+  },
+  "en": {
+   "text": "The metal atom at the center of vitamin B12",
+   "choices": [
+    "Iron",
+    "Cobalt",
+    "Magnesium",
+    "Zinc"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "木星の衛星の観測から光の速さを初めて見積もった人物",
+   "choices": [
+    "ガリレオ・ガリレイ",
+    "アルマン・フィゾー",
+    "オーレ・レーマー",
+    "アルバート・マイケルソン"
+   ]
+  },
+  "en": {
+   "text": "The astronomer who first estimated the speed of light from observations of Jupiter's moons",
+   "choices": [
+    "Galileo Galilei",
+    "Hippolyte Fizeau",
+    "Ole Rømer",
+    "Albert Michelson"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "空が青く見える原因になる光の散乱",
+   "choices": [
+    "ミー散乱",
+    "レイリー散乱",
+    "ラマン散乱",
+    "コンプトン散乱"
+   ]
+  },
+  "en": {
+   "text": "The scattering of light that makes the sky look blue",
+   "choices": [
+    "Mie scattering",
+    "Rayleigh scattering",
+    "Raman scattering",
+    "Compton scattering"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "1気圧はおよそ何ヘクトパスカル？",
+   "choices": [
+    "101.3hPa",
+    "1013hPa",
+    "760hPa",
+    "10130hPa"
+   ]
+  },
+  "en": {
+   "text": "One standard atmosphere, in hectopascals",
+   "choices": [
+    "101.3 hPa",
+    "1013 hPa",
+    "760 hPa",
+    "10,130 hPa"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "生物の分類で「目」と「属」の間の階級",
+   "choices": [
+    "綱",
+    "科",
+    "門",
+    "種"
+   ]
+  },
+  "en": {
+   "text": "The taxonomic rank between order and genus",
+   "choices": [
+    "Class",
+    "Family",
+    "Phylum",
+    "Species"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "DNAでアデニンと対になる塩基",
+   "choices": [
+    "グアニン",
+    "シトシン",
+    "ウラシル",
+    "チミン"
+   ]
+  },
+  "en": {
+   "text": "The DNA base that pairs with adenine",
+   "choices": [
+    "Guanine",
+    "Cytosine",
+    "Uracil",
+    "Thymine"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "太陽系で表面の温度が一番高い惑星",
+   "choices": [
+    "金星",
+    "水星",
+    "火星",
+    "木星"
+   ]
+  },
+  "en": {
+   "text": "The planet with the hottest surface in the Solar System",
+   "choices": [
+    "Venus",
+    "Mercury",
+    "Mars",
+    "Jupiter"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "月が地球に常に同じ面を向けている理由",
+   "choices": [
+    "月が自転していないから",
+    "自転と公転の周期が同じだから",
+    "地球の磁場に引かれるから",
+    "太陽の重力に引かれるから"
+   ]
+  },
+  "en": {
+   "text": "Why the Moon always shows the same face to Earth",
+   "choices": [
+    "It does not rotate",
+    "Its spin and orbit periods match",
+    "Earth's magnetic field holds it",
+    "The Sun's gravity holds it"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "日本に四季がある一番の理由",
+   "choices": [
+    "太陽との距離が変わるから",
+    "太陽の明るさが変わるから",
+    "地軸が傾いているから",
+    "月の位置が変わるから"
+   ]
+  },
+  "en": {
+   "text": "The main reason Japan has four seasons",
+   "choices": [
+    "Earth's distance from the Sun changes",
+    "The Sun's brightness changes",
+    "Earth's axis is tilted",
+    "The Moon's position changes"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "6月の夏至の日に太陽が真上に来る緯線",
+   "choices": [
+    "北回帰線",
+    "赤道",
+    "南回帰線",
+    "北極圏の境"
+   ]
+  },
+  "en": {
+   "text": "The line of latitude where the Sun is directly overhead on the June solstice",
+   "choices": [
+    "Tropic of Cancer",
+    "Equator",
+    "Tropic of Capricorn",
+    "Arctic Circle"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "太陽の光が地球に届くまでのおよその時間",
+   "choices": [
+    "約8分20秒",
+    "約3分",
+    "約16分",
+    "約43分"
+   ]
+  },
+  "en": {
+   "text": "About how long sunlight takes to reach Earth",
+   "choices": [
+    "About 8 min 20 s",
+    "About 3 minutes",
+    "About 16 minutes",
+    "About 43 minutes"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "月の満ち欠けがひと回りする期間",
+   "choices": [
+    "約27.3日",
+    "約30.4日",
+    "約29.5日",
+    "約31.5日"
+   ]
+  },
+  "en": {
+   "text": "The length of one full cycle of the Moon's phases",
+   "choices": [
+    "About 27.3 days",
+    "About 30.4 days",
+    "About 29.5 days",
+    "About 31.5 days"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "太陽系で濃い大気を持つ唯一の衛星",
+   "choices": [
+    "ガニメデ",
+    "タイタン",
+    "イオ",
+    "トリトン"
+   ]
+  },
+  "en": {
+   "text": "The only moon in the Solar System with a dense atmosphere",
+   "choices": [
+    "Ganymede",
+    "Titan",
+    "Io",
+    "Triton"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "冥王星を発見した天文学者",
+   "choices": [
+    "パーシヴァル・ローウェル",
+    "エドウィン・ハッブル",
+    "ウィリアム・ハーシェル",
+    "クライド・トンボー"
+   ]
+  },
+  "en": {
+   "text": "The astronomer who discovered Pluto",
+   "choices": [
+    "Percival Lowell",
+    "Edwin Hubble",
+    "William Herschel",
+    "Clyde Tombaugh"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "1天文単位はおよそ何キロメートル？",
+   "choices": [
+    "約1億5000万km",
+    "約5000万km",
+    "約3億km",
+    "約15億km"
+   ]
+  },
+  "en": {
+   "text": "The approximate length of one astronomical unit",
+   "choices": [
+    "About 150 million km",
+    "About 50 million km",
+    "About 300 million km",
+    "About 1.5 billion km"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "最後に月面着陸したアポロは何号？",
+   "choices": [
+    "17号",
+    "14号",
+    "15号",
+    "16号"
+   ]
+  },
+  "en": {
+   "text": "The last Apollo mission to land on the Moon",
+   "choices": [
+    "Apollo 17",
+    "Apollo 14",
+    "Apollo 15",
+    "Apollo 16"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "100以下の素数はいくつ？",
+   "choices": [
+    "21個",
+    "23個",
+    "25個",
+    "27個"
+   ]
+  },
+  "en": {
+   "text": "The number of prime numbers up to 100",
+   "choices": [
+    "21",
+    "23",
+    "25",
+    "27"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "凸多面体で「頂点−辺＋面」はいくつ？",
+   "choices": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ]
+  },
+  "en": {
+   "text": "For any convex polyhedron, vertices minus edges plus faces",
+   "choices": [
+    "0",
+    "1",
+    "2",
+    "3"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "どんな平面の地図も塗り分けられる最少の色数",
+   "choices": [
+    "3色",
+    "5色",
+    "6色",
+    "4色"
+   ]
+  },
+  "en": {
+   "text": "The fewest colors that can always color any map on a plane",
+   "choices": [
+    "3",
+    "5",
+    "6",
+    "4"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "1から100までの整数をすべて足した数",
+   "choices": [
+    "4950",
+    "5000",
+    "5100",
+    "5050"
+   ]
+  },
+  "en": {
+   "text": "The sum of all integers from 1 to 100",
+   "choices": [
+    "4950",
+    "5000",
+    "5100",
+    "5050"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "0の階乗の値",
+   "choices": [
+    "1",
+    "0",
+    "無限大",
+    "定義されない"
+   ]
+  },
+  "en": {
+   "text": "The value of 0 factorial",
+   "choices": [
+    "1",
+    "0",
+    "Infinity",
+    "Undefined"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "正六角形の1つの内角",
+   "choices": [
+    "108度",
+    "135度",
+    "144度",
+    "120度"
+   ]
+  },
+  "en": {
+   "text": "Each interior angle of a regular hexagon",
+   "choices": [
+    "108°",
+    "135°",
+    "144°",
+    "120°"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "サイコロ2個の目の和で一番出やすい数",
+   "choices": [
+    "7",
+    "6",
+    "8",
+    "12"
+   ]
+  },
+  "en": {
+   "text": "The most likely sum when rolling two dice",
+   "choices": [
+    "7",
+    "6",
+    "8",
+    "12"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "10進数の100を2進数で書いたときの桁数",
+   "choices": [
+    "6桁",
+    "7桁",
+    "8桁",
+    "10桁"
+   ]
+  },
+  "en": {
+   "text": "The number of digits in the binary form of the decimal number 100",
+   "choices": [
+    "6",
+    "7",
+    "8",
+    "10"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "円を4本の直線で切ると最大でいくつに分かれる？",
+   "choices": [
+    "8",
+    "10",
+    "11",
+    "16"
+   ]
+  },
+  "en": {
+   "text": "The most pieces a circle can be cut into with 4 straight lines",
+   "choices": [
+    "8",
+    "10",
+    "11",
+    "16"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "フェルマーの最終定理を証明した数学者",
+   "choices": [
+    "アンドリュー・ワイルズ",
+    "グリゴリー・ペレルマン",
+    "テレンス・タオ",
+    "ジョン・ナッシュ"
+   ]
+  },
+  "en": {
+   "text": "The mathematician who proved Fermat's Last Theorem",
+   "choices": [
+    "Andrew Wiles",
+    "Grigori Perelman",
+    "Terence Tao",
+    "John Nash"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ケーニヒスベルクの橋の問題を解いた数学者",
+   "choices": [
+    "オイラー",
+    "ガウス",
+    "ライプニッツ",
+    "ラグランジュ"
+   ]
+  },
+  "en": {
+   "text": "The mathematician who solved the Seven Bridges of Königsberg problem",
+   "choices": [
+    "Leonhard Euler",
+    "Carl Friedrich Gauss",
+    "Gottfried Leibniz",
+    "Joseph-Louis Lagrange"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "12個を12組まとめた「1グロス」の個数",
+   "choices": [
+    "100個",
+    "144個",
+    "120個",
+    "1000個"
+   ]
+  },
+  "en": {
+   "text": "The number of items in one gross",
+   "choices": [
+    "100",
+    "144",
+    "120",
+    "1,000"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "墾田永年私財法が出された年",
+   "choices": [
+    "743年",
+    "723年",
+    "752年",
+    "794年"
+   ]
+  },
+  "en": {
+   "text": "The year Japan's law allowing permanent ownership of newly cultivated land was issued",
+   "choices": [
+    "743",
+    "723",
+    "752",
+    "794"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "御成敗式目を定めた執権",
+   "choices": [
+    "北条時政",
+    "北条泰時",
+    "北条義時",
+    "北条時宗"
+   ]
+  },
+  "en": {
+   "text": "The regent who established the Goseibai Shikimoku legal code",
+   "choices": [
+    "Hōjō Tokimasa",
+    "Hōjō Yasutoki",
+    "Hōjō Yoshitoki",
+    "Hōjō Tokimune"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "応仁の乱が始まったときの将軍",
+   "choices": [
+    "足利義政",
+    "足利義満",
+    "足利義教",
+    "足利義昭"
+   ]
+  },
+  "en": {
+   "text": "The shogun in power when the Ōnin War began",
+   "choices": [
+    "Ashikaga Yoshimasa",
+    "Ashikaga Yoshimitsu",
+    "Ashikaga Yoshinori",
+    "Ashikaga Yoshiaki"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "寛政の改革を行った老中",
+   "choices": [
+    "田沼意次",
+    "松平定信",
+    "水野忠邦",
+    "新井白石"
+   ]
+  },
+  "en": {
+   "text": "The senior councillor who led the Kansei Reforms",
+   "choices": [
+    "Tanuma Okitsugu",
+    "Matsudaira Sadanobu",
+    "Mizuno Tadakuni",
+    "Arai Hakuseki"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "徳川慶喜が大政奉還を表明した城",
+   "choices": [
+    "江戸城",
+    "大坂城",
+    "名古屋城",
+    "二条城"
+   ]
+  },
+  "en": {
+   "text": "The castle where Tokugawa Yoshinobu announced the return of power to the emperor",
+   "choices": [
+    "Edo Castle",
+    "Osaka Castle",
+    "Nagoya Castle",
+    "Nijō Castle"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "藤原道長が「この世をば」の歌で自分をたとえたもの",
+   "choices": [
+    "桜",
+    "満月",
+    "紅葉",
+    "雪"
+   ]
+  },
+  "en": {
+   "text": "What Fujiwara no Michinaga compared himself to in his poem beginning 'Kono yo o ba'",
+   "choices": [
+    "Cherry blossoms",
+    "The full moon",
+    "Autumn leaves",
+    "Snow"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "日米和親条約で開かれた2つの港",
+   "choices": [
+    "長崎と横浜",
+    "神戸と新潟",
+    "下田と長崎",
+    "下田と箱館"
+   ]
+  },
+  "en": {
+   "text": "The two ports opened by the 1854 Convention of Kanagawa",
+   "choices": [
+    "Nagasaki and Yokohama",
+    "Kobe and Niigata",
+    "Shimoda and Nagasaki",
+    "Shimoda and Hakodate"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "最初の勅撰和歌集",
+   "choices": [
+    "万葉集",
+    "新古今和歌集",
+    "古今和歌集",
+    "後撰和歌集"
+   ]
+  },
+  "en": {
+   "text": "The first imperially commissioned anthology of Japanese waka poetry",
+   "choices": [
+    "Man'yōshū",
+    "Shin Kokin Wakashū",
+    "Kokin Wakashū",
+    "Gosen Wakashū"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "ナポレオン法典が公布された年",
+   "choices": [
+    "1789年",
+    "1804年",
+    "1799年",
+    "1815年"
+   ]
+  },
+  "en": {
+   "text": "The year the Napoleonic Code was enacted",
+   "choices": [
+    "1789",
+    "1804",
+    "1799",
+    "1815"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "東ローマ帝国が滅びた年",
+   "choices": [
+    "1066年",
+    "1453年",
+    "1204年",
+    "1492年"
+   ]
+  },
+  "en": {
+   "text": "The year the Byzantine Empire fell",
+   "choices": [
+    "1066",
+    "1453",
+    "1204",
+    "1492"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ハンムラビ法典で知られる王の都",
+   "choices": [
+    "ウル",
+    "ニネヴェ",
+    "バビロン",
+    "ペルセポリス"
+   ]
+  },
+  "en": {
+   "text": "The capital of the king known for the Code of Hammurabi",
+   "choices": [
+    "Ur",
+    "Nineveh",
+    "Babylon",
+    "Persepolis"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "アメリカ合衆国の第2代大統領",
+   "choices": [
+    "トマス・ジェファーソン",
+    "ジェームズ・マディソン",
+    "ベンジャミン・フランクリン",
+    "ジョン・アダムズ"
+   ]
+  },
+  "en": {
+   "text": "The second President of the United States",
+   "choices": [
+    "Thomas Jefferson",
+    "James Madison",
+    "Benjamin Franklin",
+    "John Adams"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ロシア革命で倒れた王朝",
+   "choices": [
+    "リューリク朝",
+    "ハプスブルク家",
+    "ホーエンツォレルン家",
+    "ロマノフ朝"
+   ]
+  },
+  "en": {
+   "text": "The dynasty overthrown by the Russian Revolution",
+   "choices": [
+    "Rurik dynasty",
+    "House of Habsburg",
+    "House of Hohenzollern",
+    "Romanov dynasty"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "16世紀に「太陽の沈まない国」と呼ばれた国",
+   "choices": [
+    "イギリス",
+    "オランダ",
+    "スペイン",
+    "フランス"
+   ]
+  },
+  "en": {
+   "text": "The country called 'the empire on which the sun never sets' in the 16th century",
+   "choices": [
+    "Britain",
+    "the Netherlands",
+    "Spain",
+    "France"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ツタンカーメン王の墓を発見した考古学者",
+   "choices": [
+    "ハインリヒ・シュリーマン",
+    "アーサー・エヴァンズ",
+    "フリンダーズ・ピートリー",
+    "ハワード・カーター"
+   ]
+  },
+  "en": {
+   "text": "The archaeologist who discovered Tutankhamun's tomb",
+   "choices": [
+    "Heinrich Schliemann",
+    "Arthur Evans",
+    "Flinders Petrie",
+    "Howard Carter"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "マルコ・ポーロが仕えた元の皇帝",
+   "choices": [
+    "フビライ・ハン",
+    "チンギス・ハン",
+    "オゴタイ・ハン",
+    "ティムール"
+   ]
+  },
+  "en": {
+   "text": "The Yuan emperor whom Marco Polo served",
+   "choices": [
+    "Kublai Khan",
+    "Genghis Khan",
+    "Ögedei Khan",
+    "Timur"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "アフリカ大陸の最南端の岬",
+   "choices": [
+    "アガラス岬",
+    "喜望峰",
+    "ケープポイント",
+    "グアルダフイ岬"
+   ]
+  },
+  "en": {
+   "text": "The southernmost cape of the African continent",
+   "choices": [
+    "Cape Agulhas",
+    "Cape of Good Hope",
+    "Cape Point",
+    "Cape Guardafui"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "南アメリカ大陸の最高峰",
+   "choices": [
+    "アコンカグア",
+    "チンボラソ",
+    "ワスカラン",
+    "ボリバル峰"
+   ]
+  },
+  "en": {
+   "text": "The highest mountain in South America",
+   "choices": [
+    "Aconcagua",
+    "Chimborazo",
+    "Huascarán",
+    "Pico Bolívar"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "世界で2番目に大きい島",
+   "choices": [
+    "ボルネオ島",
+    "マダガスカル島",
+    "ニューギニア島",
+    "バフィン島"
+   ]
+  },
+  "en": {
+   "text": "The second-largest island in the world",
+   "choices": [
+    "Borneo",
+    "Madagascar",
+    "New Guinea",
+    "Baffin Island"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "イスタンブールでヨーロッパとアジアを分ける海峡",
+   "choices": [
+    "ダーダネルス海峡",
+    "ボスポラス海峡",
+    "ジブラルタル海峡",
+    "ホルムズ海峡"
+   ]
+  },
+  "en": {
+   "text": "The strait that divides Europe and Asia in Istanbul",
+   "choices": [
+    "Dardanelles",
+    "Bosporus",
+    "Strait of Gibraltar",
+    "Strait of Hormuz"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "海に面していない国で一番広い国",
+   "choices": [
+    "カザフスタン",
+    "モンゴル",
+    "チャド",
+    "ボリビア"
+   ]
+  },
+  "en": {
+   "text": "The largest landlocked country",
+   "choices": [
+    "Kazakhstan",
+    "Mongolia",
+    "Chad",
+    "Bolivia"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "緯度0度・経度0度の地点がある湾",
+   "choices": [
+    "アデン湾",
+    "ベンガル湾",
+    "メキシコ湾",
+    "ギニア湾"
+   ]
+  },
+  "en": {
+   "text": "The gulf that contains the point at 0° latitude and 0° longitude",
+   "choices": [
+    "Gulf of Aden",
+    "Bay of Bengal",
+    "Gulf of Mexico",
+    "Gulf of Guinea"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "日本の最東端の島",
+   "choices": [
+    "沖ノ鳥島",
+    "南鳥島",
+    "与那国島",
+    "択捉島"
+   ]
+  },
+  "en": {
+   "text": "The easternmost island of Japan",
+   "choices": [
+    "Okinotorishima",
+    "Minamitorishima",
+    "Yonaguni",
+    "Etorofu"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "青ナイルと白ナイルが合流する都市",
+   "choices": [
+    "カイロ",
+    "アディスアベバ",
+    "ハルツーム",
+    "カンパラ"
+   ]
+  },
+  "en": {
+   "text": "The city where the Blue Nile and the White Nile meet",
+   "choices": [
+    "Cairo",
+    "Addis Ababa",
+    "Khartoum",
+    "Kampala"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "日本で流域面積が一番広い川",
+   "choices": [
+    "利根川",
+    "信濃川",
+    "石狩川",
+    "北上川"
+   ]
+  },
+  "en": {
+   "text": "The river with the largest drainage basin in Japan",
+   "choices": [
+    "Tone River",
+    "Shinano River",
+    "Ishikari River",
+    "Kitakami River"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "琵琶湖の次に大きい日本の湖",
+   "choices": [
+    "霞ヶ浦",
+    "サロマ湖",
+    "猪苗代湖",
+    "中海"
+   ]
+  },
+  "en": {
+   "text": "The largest lake in Japan after Lake Biwa",
+   "choices": [
+    "Lake Kasumigaura",
+    "Lake Saroma",
+    "Lake Inawashiro",
+    "Nakaumi"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "『デカメロン』の作者",
+   "choices": [
+    "ダンテ",
+    "ペトラルカ",
+    "ボッカッチョ",
+    "マキャヴェッリ"
+   ]
+  },
+  "en": {
+   "text": "The author of 'The Decameron'",
+   "choices": [
+    "Dante Alighieri",
+    "Petrarch",
+    "Giovanni Boccaccio",
+    "Niccolò Machiavelli"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "『百年の孤独』の作者",
+   "choices": [
+    "ボルヘス",
+    "ガルシア＝マルケス",
+    "バルガス＝リョサ",
+    "ネルーダ"
+   ]
+  },
+  "en": {
+   "text": "The author of 'One Hundred Years of Solitude'",
+   "choices": [
+    "Jorge Luis Borges",
+    "Gabriel García Márquez",
+    "Mario Vargas Llosa",
+    "Pablo Neruda"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "『雨月物語』の作者",
+   "choices": [
+    "井原西鶴",
+    "曲亭馬琴",
+    "近松門左衛門",
+    "上田秋成"
+   ]
+  },
+  "en": {
+   "text": "The author of 'Tales of Moonlight and Rain' (Ugetsu Monogatari)",
+   "choices": [
+    "Ihara Saikaku",
+    "Kyokutei Bakin",
+    "Chikamatsu Monzaemon",
+    "Ueda Akinari"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "『細雪』の作者",
+   "choices": [
+    "永井荷風",
+    "志賀直哉",
+    "川端康成",
+    "谷崎潤一郎"
+   ]
+  },
+  "en": {
+   "text": "The author of 'The Makioka Sisters' (Sasameyuki)",
+   "choices": [
+    "Kafū Nagai",
+    "Naoya Shiga",
+    "Yasunari Kawabata",
+    "Jun'ichirō Tanizaki"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "『おくのほそ道』の旅で芭蕉に同行した弟子",
+   "choices": [
+    "宝井其角",
+    "河合曾良",
+    "向井去来",
+    "服部嵐雪"
+   ]
+  },
+  "en": {
+   "text": "The disciple who traveled with Bashō on 'The Narrow Road to the Deep North'",
+   "choices": [
+    "Takarai Kikaku",
+    "Kawai Sora",
+    "Mukai Kyorai",
+    "Hattori Ransetsu"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "『ロミオとジュリエット』の舞台の都市",
+   "choices": [
+    "ヴェローナ",
+    "ヴェネツィア",
+    "フィレンツェ",
+    "ミラノ"
+   ]
+  },
+  "en": {
+   "text": "The city where 'Romeo and Juliet' is set",
+   "choices": [
+    "Verona",
+    "Venice",
+    "Florence",
+    "Milan"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "『ゴドーを待ちながら』の作者",
+   "choices": [
+    "ウジェーヌ・イヨネスコ",
+    "ハロルド・ピンター",
+    "サミュエル・ベケット",
+    "ジャン＝ポール・サルトル"
+   ]
+  },
+  "en": {
+   "text": "The author of 'Waiting for Godot'",
+   "choices": [
+    "Eugène Ionesco",
+    "Harold Pinter",
+    "Samuel Beckett",
+    "Jean-Paul Sartre"
+   ]
+  }
+ },
+ {
+  "category": "literature",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "シャーロック・ホームズの相棒ワトソンの職業",
+   "choices": [
+    "弁護士",
+    "新聞記者",
+    "医師",
+    "警部"
+   ]
+  },
+  "en": {
+   "text": "The profession of John Watson, Sherlock Holmes's companion",
+   "choices": [
+    "Lawyer",
+    "Journalist",
+    "Doctor",
+    "Police inspector"
+   ]
+  }
+ },
+ {
+  "category": "philosophy",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "「万物の根源は水である」と考えた哲学者",
+   "choices": [
+    "ヘラクレイトス",
+    "デモクリトス",
+    "ピタゴラス",
+    "タレス"
+   ]
+  },
+  "en": {
+   "text": "The philosopher who held that water is the origin of all things",
+   "choices": [
+    "Heraclitus",
+    "Democritus",
+    "Pythagoras",
+    "Thales"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "現在の標準のピッチで、A（ラ）の音の周波数",
+   "choices": [
+    "415Hz",
+    "440Hz",
+    "432Hz",
+    "466Hz"
+   ]
+  },
+  "en": {
+   "text": "The frequency of the note A in today's standard concert pitch",
+   "choices": [
+    "415 Hz",
+    "440 Hz",
+    "432 Hz",
+    "466 Hz"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ハ長調と同じ調号を持つ短調",
+   "choices": [
+    "ニ短調",
+    "ホ短調",
+    "ロ短調",
+    "イ短調"
+   ]
+  },
+  "en": {
+   "text": "The minor key that shares its key signature with C major",
+   "choices": [
+    "D minor",
+    "E minor",
+    "B minor",
+    "A minor"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "オーケストラの音合わせで最初に基準の音を出す楽器",
+   "choices": [
+    "オーボエ",
+    "フルート",
+    "クラリネット",
+    "トランペット"
+   ]
+  },
+  "en": {
+   "text": "The instrument that traditionally gives the tuning note to an orchestra",
+   "choices": [
+    "Oboe",
+    "Flute",
+    "Clarinet",
+    "Trumpet"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "「交響曲の父」と呼ばれる作曲家",
+   "choices": [
+    "バッハ",
+    "モーツァルト",
+    "ベートーヴェン",
+    "ハイドン"
+   ]
+  },
+  "en": {
+   "text": "The composer known as the 'Father of the Symphony'",
+   "choices": [
+    "J. S. Bach",
+    "Wolfgang Amadeus Mozart",
+    "Ludwig van Beethoven",
+    "Joseph Haydn"
+   ]
+  }
+ },
+ {
+  "category": "arts",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "歌舞伎で、見せ場に動きを止めてポーズを決めること",
+   "choices": [
+    "六方",
+    "見得",
+    "隈取",
+    "花道"
+   ]
+  },
+  "en": {
+   "text": "In kabuki, the frozen pose an actor strikes at a dramatic climax",
+   "choices": [
+    "Roppō",
+    "Mie",
+    "Kumadori",
+    "Hanamichi"
+   ]
+  }
+ },
+ {
+  "category": "arts",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「ヴィーナスの誕生」を描いた画家",
+   "choices": [
+    "ラファエロ",
+    "ボッティチェリ",
+    "ティツィアーノ",
+    "ミケランジェロ"
+   ]
+  },
+  "en": {
+   "text": "The painter of 'The Birth of Venus'",
+   "choices": [
+    "Raphael",
+    "Sandro Botticelli",
+    "Titian",
+    "Michelangelo"
+   ]
+  }
+ },
+ {
+  "category": "arts",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "「叫び」を描いた画家の出身国",
+   "choices": [
+    "スウェーデン",
+    "ノルウェー",
+    "デンマーク",
+    "フィンランド"
+   ]
+  },
+  "en": {
+   "text": "The home country of the painter of 'The Scream'",
+   "choices": [
+    "Sweden",
+    "Norway",
+    "Denmark",
+    "Finland"
+   ]
+  }
+ },
+ {
+  "category": "arts",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "「見返り美人図」を描いた絵師",
+   "choices": [
+    "菱川師宣",
+    "喜多川歌麿",
+    "鈴木春信",
+    "歌川国芳"
+   ]
+  },
+  "en": {
+   "text": "The ukiyo-e artist who painted 'Beauty Looking Back'",
+   "choices": [
+    "Hishikawa Moronobu",
+    "Kitagawa Utamaro",
+    "Suzuki Harunobu",
+    "Utagawa Kuniyoshi"
+   ]
+  }
+ },
+ {
+  "category": "arts",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "「グランド・ジャット島の日曜日の午後」の画家",
+   "choices": [
+    "スーラ",
+    "シニャック",
+    "モネ",
+    "ルノワール"
+   ]
+  },
+  "en": {
+   "text": "The painter of 'A Sunday Afternoon on the Island of La Grande Jatte'",
+   "choices": [
+    "Georges Seurat",
+    "Paul Signac",
+    "Claude Monet",
+    "Pierre-Auguste Renoir"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "体温を一定に保つはたらきの中心になる脳の部位",
+   "choices": [
+    "視床下部",
+    "小脳",
+    "延髄",
+    "海馬"
+   ]
+  },
+  "en": {
+   "text": "The part of the brain that serves as the body's thermostat",
+   "choices": [
+    "Hypothalamus",
+    "Cerebellum",
+    "Medulla oblongata",
+    "Hippocampus"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "耳の中にある、人体で一番小さい骨",
+   "choices": [
+    "つち骨",
+    "きぬた骨",
+    "あぶみ骨",
+    "豆状骨"
+   ]
+  },
+  "en": {
+   "text": "The smallest bone in the human body, found in the middle ear",
+   "choices": [
+    "Malleus",
+    "Incus",
+    "Stapes",
+    "Pisiform"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "インスリンを出す、すい臓の細胞の集まり",
+   "choices": [
+    "ネフロン",
+    "肺胞",
+    "ランゲルハンス島",
+    "絨毛"
+   ]
+  },
+  "en": {
+   "text": "The clusters of pancreatic cells that secrete insulin",
+   "choices": [
+    "Nephrons",
+    "Alveoli",
+    "Islets of Langerhans",
+    "Villi"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "胃液に含まれる、たんぱく質を分解する酵素",
+   "choices": [
+    "アミラーゼ",
+    "リパーゼ",
+    "トリプシン",
+    "ペプシン"
+   ]
+  },
+  "en": {
+   "text": "The protein-digesting enzyme found in gastric juice",
+   "choices": [
+    "Amylase",
+    "Lipase",
+    "Trypsin",
+    "Pepsin"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ABO式血液型を発見した人物",
+   "choices": [
+    "ラントシュタイナー",
+    "パスツール",
+    "コッホ",
+    "北里柴三郎"
+   ]
+  },
+  "en": {
+   "text": "The scientist who discovered the ABO blood groups",
+   "choices": [
+    "Karl Landsteiner",
+    "Louis Pasteur",
+    "Robert Koch",
+    "Kitasato Shibasaburō"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "人の赤血球のおよその寿命",
+   "choices": [
+    "約30日",
+    "約60日",
+    "約120日",
+    "約365日"
+   ]
+  },
+  "en": {
+   "text": "The approximate lifespan of a human red blood cell",
+   "choices": [
+    "About 30 days",
+    "About 60 days",
+    "About 120 days",
+    "About 365 days"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "キリンの首の骨の数",
+   "choices": [
+    "7個",
+    "12個",
+    "18個",
+    "24個"
+   ]
+  },
+  "en": {
+   "text": "The number of neck vertebrae in a giraffe",
+   "choices": [
+    "7",
+    "12",
+    "18",
+    "24"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "クジラに一番近い現生の陸の動物",
+   "choices": [
+    "ゾウ",
+    "ウシ",
+    "カバ",
+    "アザラシ"
+   ]
+  },
+  "en": {
+   "text": "The closest living land relative of whales",
+   "choices": [
+    "Elephant",
+    "Cow",
+    "Hippopotamus",
+    "Seal"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ジャイアントパンダが分類上属する科",
+   "choices": [
+    "アライグマ科",
+    "レッサーパンダ科",
+    "イヌ科",
+    "クマ科"
+   ]
+  },
+  "en": {
+   "text": "The family the giant panda belongs to",
+   "choices": [
+    "Raccoon family",
+    "Red panda family",
+    "Dog family",
+    "Bear family"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "カモノハシが属する哺乳類のなかま",
+   "choices": [
+    "有袋類",
+    "有胎盤類",
+    "単孔類",
+    "貧歯類"
+   ]
+  },
+  "en": {
+   "text": "The group of mammals the platypus belongs to",
+   "choices": [
+    "Marsupials",
+    "Placentals",
+    "Monotremes",
+    "Edentates"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "200年以上生きた例が知られるクジラ",
+   "choices": [
+    "シロナガスクジラ",
+    "ホッキョククジラ",
+    "マッコウクジラ",
+    "ザトウクジラ"
+   ]
+  },
+  "en": {
+   "text": "The whale known to have lived more than 200 years",
+   "choices": [
+    "Blue whale",
+    "Bowhead whale",
+    "Sperm whale",
+    "Humpback whale"
+   ]
+  }
+ },
+ {
+  "category": "nature",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "イチゴの表面のつぶつぶの正体",
+   "choices": [
+    "種",
+    "花びらの跡",
+    "毛",
+    "果実"
+   ]
+  },
+  "en": {
+   "text": "What the tiny specks on the surface of a strawberry really are",
+   "choices": [
+    "Seeds",
+    "Petal scars",
+    "Hairs",
+    "Fruits"
+   ]
+  }
+ },
+ {
+  "category": "nature",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "竹が属する植物の科",
+   "choices": [
+    "ヤシ科",
+    "イネ科",
+    "ラン科",
+    "マメ科"
+   ]
+  },
+  "en": {
+   "text": "The plant family that bamboo belongs to",
+   "choices": [
+    "Palm family",
+    "Grass family",
+    "Orchid family",
+    "Legume family"
+   ]
+  }
+ },
+ {
+  "category": "nature",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "光合成でできた糖を運ぶ植物の管",
+   "choices": [
+    "師管",
+    "道管",
+    "仮道管",
+    "形成層"
+   ]
+  },
+  "en": {
+   "text": "The plant tissue that carries the sugars made by photosynthesis",
+   "choices": [
+    "Phloem",
+    "Xylem vessels",
+    "Tracheids",
+    "Cambium"
+   ]
+  }
+ },
+ {
+  "category": "food",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "スパイスのサフランは花のどの部分？",
+   "choices": [
+    "おしべ",
+    "花びら",
+    "めしべ",
+    "種"
+   ]
+  },
+  "en": {
+   "text": "The part of the flower that the spice saffron comes from",
+   "choices": [
+    "Stamen",
+    "Petal",
+    "Pistil",
+    "Seed"
+   ]
+  }
+ },
+ {
+  "category": "food",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ナツメグと同じ実からとれる香辛料",
+   "choices": [
+    "クローブ",
+    "カルダモン",
+    "メース",
+    "オールスパイス"
+   ]
+  },
+  "en": {
+   "text": "The spice that comes from the same fruit as nutmeg",
+   "choices": [
+    "Clove",
+    "Cardamom",
+    "Mace",
+    "Allspice"
+   ]
+  }
+ },
+ {
+  "category": "food",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "からすみの原料になる卵の魚",
+   "choices": [
+    "タラ",
+    "ニシン",
+    "ボラ",
+    "サケ"
+   ]
+  },
+  "en": {
+   "text": "The fish whose roe is used to make karasumi",
+   "choices": [
+    "Cod",
+    "Herring",
+    "Mullet",
+    "Salmon"
+   ]
+  }
+ },
+ {
+  "category": "food",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "テキーラの原料になる植物",
+   "choices": [
+    "リュウゼツラン",
+    "サトウキビ",
+    "トウモロコシ",
+    "大麦"
+   ]
+  },
+  "en": {
+   "text": "The plant that tequila is made from",
+   "choices": [
+    "Agave",
+    "Sugarcane",
+    "Corn",
+    "Barley"
+   ]
+  }
+ },
+ {
+  "category": "food",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "イタリアの乾燥パスタの原料になる小麦",
+   "choices": [
+    "スペルト小麦",
+    "デュラム小麦",
+    "ライ麦",
+    "大麦"
+   ]
+  },
+  "en": {
+   "text": "The wheat that Italian dried pasta is made from",
+   "choices": [
+    "Spelt",
+    "Durum wheat",
+    "Rye",
+    "Barley"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "フィギュアスケートで前向きに踏み切る唯一のジャンプ",
+   "choices": [
+    "ルッツ",
+    "フリップ",
+    "サルコウ",
+    "アクセル"
+   ]
+  },
+  "en": {
+   "text": "The only figure skating jump that takes off going forward",
+   "choices": [
+    "Lutz",
+    "Flip",
+    "Salchow",
+    "Axel"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "ゴルフでパーより3打少ないスコアを何という？",
+   "choices": [
+    "イーグル",
+    "コンドル",
+    "バーディー",
+    "アルバトロス"
+   ]
+  },
+  "en": {
+   "text": "In golf, the term for a score three strokes under par",
+   "choices": [
+    "Eagle",
+    "Condor",
+    "Birdie",
+    "Albatross"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "テニスでデュースになるのは何対何から？",
+   "choices": [
+    "30対30",
+    "15対15",
+    "30対40",
+    "40対40"
+   ]
+  },
+  "en": {
+   "text": "The score at which deuce is first called in tennis",
+   "choices": [
+    "30–30",
+    "15–15",
+    "30–40",
+    "40–40"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "マラソンが42.195kmになったもとの五輪の開催地",
+   "choices": [
+    "アテネ",
+    "ロンドン",
+    "パリ",
+    "ストックホルム"
+   ]
+  },
+  "en": {
+   "text": "The Olympic host city whose marathon set the 42.195 km distance",
+   "choices": [
+    "Athens",
+    "London",
+    "Paris",
+    "Stockholm"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "チェスで最初に盤上に並ぶ駒の数",
+   "choices": [
+    "28個",
+    "30個",
+    "36個",
+    "32個"
+   ]
+  },
+  "en": {
+   "text": "The total number of pieces on the board at the start of a chess game",
+   "choices": [
+    "28",
+    "30",
+    "36",
+    "32"
+   ]
+  }
+ },
+ {
+  "category": "language",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ひらがなのもとになった字体",
+   "choices": [
+    "漢字の楷書体",
+    "漢字の偏や旁",
+    "漢字の草書体",
+    "梵字"
+   ]
+  },
+  "en": {
+   "text": "The style of writing that hiragana developed from",
+   "choices": [
+    "Standard-script kanji",
+    "Parts of kanji",
+    "Cursive kanji",
+    "Siddham script"
+   ]
+  }
+ },
+ {
+  "category": "language",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "エスペラントを考案した人物",
+   "choices": [
+    "ソシュール",
+    "チョムスキー",
+    "ヤーコプ・グリム",
+    "ザメンホフ"
+   ]
+  },
+  "en": {
+   "text": "The creator of Esperanto",
+   "choices": [
+    "Ferdinand de Saussure",
+    "Noam Chomsky",
+    "Jacob Grimm",
+    "L. L. Zamenhof"
+   ]
+  }
+ },
+ {
+  "category": "language",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "ハングルをつくらせた朝鮮の王",
+   "choices": [
+    "太祖",
+    "正祖",
+    "世宗",
+    "光海君"
+   ]
+  },
+  "en": {
+   "text": "The Joseon king who had Hangul created",
+   "choices": [
+    "Taejo",
+    "Jeongjo",
+    "Sejong",
+    "Gwanghaegun"
+   ]
+  }
+ },
+ {
+  "category": "language",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "楔形文字を最初に使った人々",
+   "choices": [
+    "シュメール人",
+    "エジプト人",
+    "フェニキア人",
+    "ヒッタイト人"
+   ]
+  },
+  "en": {
+   "text": "The people who first used cuneiform writing",
+   "choices": [
+    "Sumerians",
+    "Egyptians",
+    "Phoenicians",
+    "Hittites"
+   ]
+  }
+ },
+ {
+  "category": "tech",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "バベッジの解析機関の手順を書いた女性",
+   "choices": [
+    "グレース・ホッパー",
+    "ヘディ・ラマー",
+    "メアリー・サマヴィル",
+    "エイダ・ラブレス"
+   ]
+  },
+  "en": {
+   "text": "The woman known for writing an algorithm for Babbage's Analytical Engine",
+   "choices": [
+    "Grace Hopper",
+    "Hedy Lamarr",
+    "Mary Somerville",
+    "Ada Lovelace"
+   ]
+  }
+ },
+ {
+  "category": "tech",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "分離凝縮器で蒸気機関を大きく改良した人物",
+   "choices": [
+    "トーマス・ニューコメン",
+    "ジェームズ・ワット",
+    "ジョージ・スチーブンソン",
+    "リチャード・トレビシック"
+   ]
+  },
+  "en": {
+   "text": "The inventor who greatly improved the steam engine with a separate condenser",
+   "choices": [
+    "Thomas Newcomen",
+    "James Watt",
+    "George Stephenson",
+    "Richard Trevithick"
+   ]
+  }
+ },
+ {
+  "category": "tech",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "電子計算機ENIACがつくられた国",
+   "choices": [
+    "イギリス",
+    "ドイツ",
+    "アメリカ",
+    "ソ連"
+   ]
+  },
+  "en": {
+   "text": "The country where the ENIAC computer was built",
+   "choices": [
+    "United Kingdom",
+    "Germany",
+    "United States",
+    "Soviet Union"
+   ]
+  }
+ },
+ {
+  "category": "daily",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "国際単位系の基本単位の数",
+   "choices": [
+    "5つ",
+    "6つ",
+    "7つ",
+    "8つ"
+   ]
+  },
+  "en": {
+   "text": "The number of base units in the International System of Units",
+   "choices": [
+    "5",
+    "6",
+    "7",
+    "8"
+   ]
+  }
+ },
+ {
+  "category": "daily",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "宝石の1カラットは何グラム？",
+   "choices": [
+    "0.1グラム",
+    "0.5グラム",
+    "1グラム",
+    "0.2グラム"
+   ]
+  },
+  "en": {
+   "text": "The mass in grams of one carat, the unit used for gemstones",
+   "choices": [
+    "0.1 grams",
+    "0.5 grams",
+    "1 gram",
+    "0.2 grams"
+   ]
+  }
+ },
+ {
+  "category": "science",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "水の三重点の温度",
+   "choices": [
+    "0℃",
+    "−0.01℃",
+    "4℃",
+    "0.01℃"
+   ]
+  },
+  "en": {
+   "text": "The temperature of the triple point of water",
+   "choices": [
+    "0 °C",
+    "−0.01 °C",
+    "4 °C",
+    "0.01 °C"
+   ]
+  }
+ },
+ {
+  "category": "space",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "太陽が一生の最後になる天体",
+   "choices": [
+    "中性子星",
+    "ブラックホール",
+    "白色矮星",
+    "赤色巨星"
+   ]
+  },
+  "en": {
+   "text": "The kind of object the Sun will finally become",
+   "choices": [
+    "Neutron star",
+    "Black hole",
+    "White dwarf",
+    "Red giant"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "素数が無限にあることを初めて証明した数学者",
+   "choices": [
+    "ピタゴラス",
+    "エラトステネス",
+    "アルキメデス",
+    "ユークリッド"
+   ]
+  },
+  "en": {
+   "text": "The mathematician who first proved that there are infinitely many primes",
+   "choices": [
+    "Pythagoras",
+    "Eratosthenes",
+    "Archimedes",
+    "Euclid"
+   ]
+  }
+ },
+ {
+  "category": "math",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "円周率が無理数であることを初めて証明した人物",
+   "choices": [
+    "ランベルト",
+    "オイラー",
+    "ルジャンドル",
+    "リンデマン"
+   ]
+  },
+  "en": {
+   "text": "The first person to prove that pi is irrational",
+   "choices": [
+    "Johann Lambert",
+    "Leonhard Euler",
+    "Adrien-Marie Legendre",
+    "Ferdinand von Lindemann"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "平安京に移る前に都があった場所",
+   "choices": [
+    "平城京",
+    "長岡京",
+    "藤原京",
+    "難波京"
+   ]
+  },
+  "en": {
+   "text": "The capital immediately before Heian-kyō",
+   "choices": [
+    "Heijō-kyō",
+    "Nagaoka-kyō",
+    "Fujiwara-kyō",
+    "Naniwa-kyō"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "江戸幕府の将軍で在職期間が一番長い人物",
+   "choices": [
+    "徳川家康",
+    "徳川吉宗",
+    "徳川家斉",
+    "徳川綱吉"
+   ]
+  },
+  "en": {
+   "text": "The Tokugawa shogun who held office the longest",
+   "choices": [
+    "Tokugawa Ieyasu",
+    "Tokugawa Yoshimune",
+    "Tokugawa Ienari",
+    "Tokugawa Tsunayoshi"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ワシントンが初代大統領に就任した都市",
+   "choices": [
+    "ニューヨーク",
+    "ワシントンD.C.",
+    "フィラデルフィア",
+    "ボストン"
+   ]
+  },
+  "en": {
+   "text": "The city where George Washington was inaugurated as the first president",
+   "choices": [
+    "New York City",
+    "Washington, D.C.",
+    "Philadelphia",
+    "Boston"
+   ]
+  }
+ },
+ {
+  "category": "history",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "ローマ帝国の初代皇帝",
+   "choices": [
+    "アウグストゥス",
+    "ユリウス・カエサル",
+    "ティベリウス",
+    "ネロ"
+   ]
+  },
+  "en": {
+   "text": "The first emperor of the Roman Empire",
+   "choices": [
+    "Augustus",
+    "Julius Caesar",
+    "Tiberius",
+    "Nero"
+   ]
+  }
+ },
+ {
+  "category": "geography",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "ユニオンジャックに旗が入っていない地域",
+   "choices": [
+    "イングランド",
+    "ウェールズ",
+    "スコットランド",
+    "アイルランド"
+   ]
+  },
+  "en": {
+   "text": "The part of the British Isles whose flag is not included in the Union Jack",
+   "choices": [
+    "England",
+    "Wales",
+    "Scotland",
+    "Ireland"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "ベートーヴェンの「第九」の合唱の詩を書いた詩人",
+   "choices": [
+    "ゲーテ",
+    "シラー",
+    "ハイネ",
+    "ヘルダーリン"
+   ]
+  },
+  "en": {
+   "text": "The poet who wrote the words sung in the finale of Beethoven's Ninth Symphony",
+   "choices": [
+    "Johann Wolfgang von Goethe",
+    "Friedrich Schiller",
+    "Heinrich Heine",
+    "Friedrich Hölderlin"
+   ]
+  }
+ },
+ {
+  "category": "music",
+  "difficulty": "hell",
+  "answerIndex": 0,
+  "ja": {
+   "text": "88鍵のピアノで一番低い音",
+   "choices": [
+    "ラ",
+    "ド",
+    "ミ",
+    "ソ"
+   ]
+  },
+  "en": {
+   "text": "The lowest note on an 88-key piano",
+   "choices": [
+    "A",
+    "C",
+    "E",
+    "G"
+   ]
+  }
+ },
+ {
+  "category": "body",
+  "difficulty": "hell",
+  "answerIndex": 1,
+  "ja": {
+   "text": "舌で感じる5つの基本の味に入らないもの",
+   "choices": [
+    "甘味",
+    "辛味",
+    "うま味",
+    "苦味"
+   ]
+  },
+  "en": {
+   "text": "The one that is not among the five basic tastes",
+   "choices": [
+    "Sweetness",
+    "Spicy heat",
+    "Umami",
+    "Bitterness"
+   ]
+  }
+ },
+ {
+  "category": "animals",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "イカの血の色",
+   "choices": [
+    "赤",
+    "緑",
+    "黄",
+    "青"
+   ]
+  },
+  "en": {
+   "text": "The color of squid blood",
+   "choices": [
+    "Red",
+    "Green",
+    "Yellow",
+    "Blue"
+   ]
+  }
+ },
+ {
+  "category": "sports",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "白黒のサッカーボールにある黒い五角形の数",
+   "choices": [
+    "20枚",
+    "30枚",
+    "12枚",
+    "32枚"
+   ]
+  },
+  "en": {
+   "text": "The number of black pentagons on a classic black-and-white soccer ball",
+   "choices": [
+    "20",
+    "30",
+    "12",
+    "32"
+   ]
+  }
+ },
+ {
+  "category": "language",
+  "difficulty": "hell",
+  "answerIndex": 3,
+  "ja": {
+   "text": "「ありがとう」のもとになった言葉",
+   "choices": [
+    "ポルトガル語の「オブリガード」",
+    "中国語の「謝謝」",
+    "オランダ語の「ダンク・ユー」",
+    "古語の「有り難し」"
+   ]
+  },
+  "en": {
+   "text": "Where the Japanese word 'arigatō' comes from",
+   "choices": [
+    "Portuguese 'obrigado'",
+    "Chinese 'xièxie'",
+    "Dutch 'dank je'",
+    "Old Japanese 'arigatashi'"
+   ]
+  }
+ },
+ {
+  "category": "nature",
+  "difficulty": "hell",
+  "answerIndex": 2,
+  "ja": {
+   "text": "台風とハリケーンを呼び分ける基準",
+   "choices": [
+    "風の強さ",
+    "雨の量",
+    "発生する場所",
+    "大きさ"
+   ]
+  },
+  "en": {
+   "text": "What determines whether a storm is called a typhoon or a hurricane",
+   "choices": [
+    "Its wind speed",
+    "Its rainfall",
+    "Where it forms",
+    "Its size"
+   ]
+  }
+ }
+]

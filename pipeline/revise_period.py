@@ -87,6 +87,10 @@ def main():
 
     edits, replaces = [], []
     for rev in revisions:
+        # 使い回した問題（ID が別のピリオドのもの）は、ここでは直さない。同じ ID で中身の違う問題ができてしまう。
+        # 中身がおかしければ元のピリオドで直す。このピリオドから外したいときは generate_period.py で作り直す
+        if not rev["id"].startswith(f"{period_id}_"):
+            sys.exit(f"{rev['id']} は別のピリオドから使い回した問題なので、{period_id} では直さない（元のピリオドで直す）")
         w = work[rev["id"]]
         if w["ja"]["text"] != rev["was"]:
             print(f"飛ばす（済み）: {rev['id']} {w['ja']['text']}")

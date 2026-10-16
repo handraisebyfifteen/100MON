@@ -1,0 +1,7982 @@
+[
+  {
+    "id": "exhibition-2026-10_q244",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "カメレオンが変えられるもの",
+        "choices": [
+          "体の色",
+          "体の大きさ",
+          "脚の数",
+          "目の数"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "What a chameleon can change",
+        "choices": [
+          "Its body color",
+          "Its body size",
+          "The number of its legs",
+          "The number of its eyes"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q221",
+    "answerIndex": 2,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きいカエル",
+        "choices": [
+          "ウシガエル",
+          "ヒキガエル",
+          "ゴライアスガエル",
+          "アマガエル"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The largest frog in the world",
+        "choices": [
+          "Bullfrog",
+          "Common toad",
+          "Goliath frog",
+          "Tree frog"
+        ],
+        "decisionPoint": 17
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q282",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ムガル帝国が成立した世紀",
+        "choices": [
+          "17世紀",
+          "16世紀",
+          "14世紀",
+          "18世紀"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The century in which the Mughal Empire was established",
+        "choices": [
+          "17th century",
+          "16th century",
+          "14th century",
+          "18th century"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q265",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "平行四辺形の対角の関係",
+        "choices": [
+          "足すと90度",
+          "等しい",
+          "足すと270度",
+          "差が60度"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The relationship between opposite angles of a parallelogram",
+        "choices": [
+          "They add up to 90°",
+          "They are equal",
+          "They add up to 270°",
+          "They differ by 60°"
+        ],
+        "decisionPoint": 59
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q124",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "パナマ運河がある国",
+        "choices": [
+          "エジプト",
+          "コロンビア",
+          "パナマ",
+          "メキシコ"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The country where the Panama Canal is located",
+        "choices": [
+          "Egypt",
+          "Colombia",
+          "Panama",
+          "Mexico"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q223",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "水球で1チームがプールに入る人数",
+        "choices": [
+          "6人",
+          "7人",
+          "8人",
+          "9人"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The number of players per team in the pool in water polo",
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "9"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q052",
+    "answerIndex": 3,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "キリマンジャロがある国",
+        "choices": [
+          "ケニア",
+          "ウガンダ",
+          "エチオピア",
+          "タンザニア"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The country where Mount Kilimanjaro is located",
+        "choices": [
+          "Kenya",
+          "Uganda",
+          "Ethiopia",
+          "Tanzania"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q156",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『神曲』の作者",
+        "choices": [
+          "ホメロス",
+          "ダンテ",
+          "ペトラルカ",
+          "ボッカチオ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of the Divine Comedy",
+        "choices": [
+          "Homer",
+          "Dante",
+          "Petrarch",
+          "Boccaccio"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q169",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "活版印刷術を発明したドイツ人",
+        "choices": [
+          "ルター",
+          "コペルニクス",
+          "グーテンベルク",
+          "ガリレオ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The German who invented the movable-type printing press",
+        "choices": [
+          "Luther",
+          "Copernicus",
+          "Gutenberg",
+          "Galileo"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q010",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ラクダのこぶに蓄えられているもの",
+        "choices": [
+          "脂肪",
+          "水",
+          "筋肉",
+          "血液"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "What is stored in a camel's hump",
+        "choices": [
+          "Fat",
+          "Water",
+          "Muscle",
+          "Blood"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q059",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "1から100までの整数の合計は？",
+        "choices": [
+          "4950",
+          "5005",
+          "5050",
+          "5500"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The sum of all integers from 1 to 100",
+        "choices": [
+          "4950",
+          "5005",
+          "5050",
+          "5500"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q033",
+    "answerIndex": 3,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「威風堂々」の作曲家",
+        "choices": [
+          "ホルスト",
+          "ヘンデル",
+          "ブリテン",
+          "エルガー"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The composer of Pomp and Circumstance",
+        "choices": [
+          "Holst",
+          "Handel",
+          "Britten",
+          "Elgar"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q113",
+    "answerIndex": 2,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「星月夜」を描いた画家",
+        "choices": [
+          "モネ",
+          "ゴーギャン",
+          "ゴッホ",
+          "セザンヌ"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The painter of The Starry Night",
+        "choices": [
+          "Monet",
+          "Gauguin",
+          "Van Gogh",
+          "Cézanne"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q272",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "室町幕府を開いた人物",
+        "choices": [
+          "足利尊氏",
+          "足利義満",
+          "足利義政",
+          "足利義昭"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The founder of the Muromachi shogunate",
+        "choices": [
+          "Ashikaga Takauji",
+          "Ashikaga Yoshimitsu",
+          "Ashikaga Yoshimasa",
+          "Ashikaga Yoshiaki"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q172",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "骨と骨をつなぐ伸縮する組織を何という？",
+        "choices": [
+          "腱",
+          "靱帯",
+          "軟骨",
+          "筋膜"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The elastic tissue that connects bone to bone",
+        "choices": [
+          "Tendon",
+          "Ligament",
+          "Cartilage",
+          "Fascia"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q047",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "マーマレードの特徴的な材料",
+        "choices": [
+          "柑橘類の皮",
+          "リンゴの果肉",
+          "イチゴの実",
+          "ブドウの果汁"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The distinctive ingredient in marmalade",
+        "choices": [
+          "Citrus peel",
+          "Apple flesh",
+          "Strawberries",
+          "Grape juice"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q267",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "正三角形の1つの内角の大きさ",
+        "choices": [
+          "45度",
+          "90度",
+          "60度",
+          "120度"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The measure of each interior angle of an equilateral triangle",
+        "choices": [
+          "45 degrees",
+          "90 degrees",
+          "60 degrees",
+          "120 degrees"
+        ],
+        "decisionPoint": 61
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q116",
+    "answerIndex": 1,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "地球上で一番硬い天然鉱物",
+        "choices": [
+          "ルビー",
+          "ダイヤモンド",
+          "サファイア",
+          "水晶"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The hardest natural mineral on Earth",
+        "choices": [
+          "Ruby",
+          "Diamond",
+          "Sapphire",
+          "Quartz"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q153",
+    "answerIndex": 3,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "火星の衛星の数",
+        "choices": [
+          "0個",
+          "1個",
+          "3個",
+          "2個"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The number of moons Mars has",
+        "choices": [
+          "0",
+          "1",
+          "3",
+          "2"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q097",
+    "answerIndex": 3,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "イルカの分類",
+        "choices": [
+          "魚類",
+          "両生類",
+          "爬虫類",
+          "哺乳類"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The biological classification of dolphins",
+        "choices": [
+          "Fish",
+          "Amphibians",
+          "Reptiles",
+          "Mammals"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q008",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "日本の都道府県の数",
+        "choices": [
+          "43",
+          "45",
+          "47",
+          "50"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The number of prefectures in Japan",
+        "choices": [
+          "43",
+          "45",
+          "47",
+          "50"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q228",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "世界で一番流域面積が大きい川",
+        "choices": [
+          "ナイル川",
+          "アマゾン川",
+          "ミシシッピ川",
+          "長江"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The river with the largest drainage basin in the world",
+        "choices": [
+          "Nile",
+          "Amazon",
+          "Mississippi",
+          "Yangtze"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q168",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "剣道の試合で有効打突となる部位の数",
+        "choices": [
+          "3つ",
+          "5つ",
+          "4つ",
+          "6つ"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The number of valid strike zones in a kendo match",
+        "choices": [
+          "3",
+          "5",
+          "4",
+          "6"
+        ],
+        "decisionPoint": 49
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q063",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "『たけくらべ』の作者",
+        "choices": [
+          "与謝野晶子",
+          "紫式部",
+          "清少納言",
+          "樋口一葉"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The author of the novel 'Takekurabe'",
+        "choices": [
+          "Yosano Akiko",
+          "Murasaki Shikibu",
+          "Sei Shōnagon",
+          "Higuchi Ichiyō"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q111",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ラグビーのトライの得点",
+        "choices": [
+          "3点",
+          "4点",
+          "5点",
+          "7点"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "Points scored for a try in rugby union",
+        "choices": [
+          "3 points",
+          "4 points",
+          "5 points",
+          "7 points"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q043",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "かまぼこの主な原料",
+        "choices": [
+          "イカ",
+          "エビ",
+          "豆腐",
+          "白身魚のすり身"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The main ingredient of kamaboko (Japanese fish cake)",
+        "choices": [
+          "Squid",
+          "Shrimp",
+          "Tofu",
+          "White fish paste"
+        ],
+        "decisionPoint": 52
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q101",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ガンジス川がある国",
+        "choices": [
+          "インド",
+          "中国",
+          "タイ",
+          "ブラジル"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The country where the Ganges River flows",
+        "choices": [
+          "India",
+          "China",
+          "Thailand",
+          "Brazil"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q211",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "アメリカの初代大統領",
+        "choices": [
+          "リンカーン",
+          "ワシントン",
+          "ジェファーソン",
+          "アダムズ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The first president of the United States",
+        "choices": [
+          "Lincoln",
+          "Washington",
+          "Jefferson",
+          "Adams"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q015",
+    "answerIndex": 2,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「夜警」を描いた画家",
+        "choices": [
+          "フェルメール",
+          "ルーベンス",
+          "レンブラント",
+          "ファン・エイク"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The painter of 'The Night Watch'",
+        "choices": [
+          "Vermeer",
+          "Rubens",
+          "Rembrandt",
+          "Van Eyck"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q212",
+    "answerIndex": 3,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きい半島",
+        "choices": [
+          "インド半島",
+          "スカンディナビア半島",
+          "バルカン半島",
+          "アラビア半島"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The largest peninsula in the world",
+        "choices": [
+          "Indian Peninsula",
+          "Scandinavian Peninsula",
+          "Balkan Peninsula",
+          "Arabian Peninsula"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q227",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "エベレストがある山脈",
+        "choices": [
+          "アルプス山脈",
+          "ロッキー山脈",
+          "ヒマラヤ山脈",
+          "カラコルム山脈"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The mountain range where Mount Everest is located",
+        "choices": [
+          "Alps",
+          "Rocky Mountains",
+          "Himalayas",
+          "Karakoram"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q050",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "日本で一番大きい湖",
+        "choices": [
+          "洞爺湖",
+          "十和田湖",
+          "琵琶湖",
+          "諏訪湖"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The largest lake in Japan",
+        "choices": [
+          "Lake Tōya",
+          "Lake Towada",
+          "Lake Biwa",
+          "Lake Suwa"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q258",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "コロンブスがアメリカ大陸に到達した世紀",
+        "choices": [
+          "14世紀",
+          "15世紀",
+          "16世紀",
+          "17世紀"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The century when Columbus reached the Americas",
+        "choices": [
+          "14th century",
+          "15th century",
+          "16th century",
+          "17th century"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q224",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「K」が表す元素は？",
+        "choices": [
+          "カリウム",
+          "カルシウム",
+          "クリプトン",
+          "コバルト"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The element represented by the symbol K",
+        "choices": [
+          "Potassium",
+          "Calcium",
+          "Krypton",
+          "Cobalt"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q175",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ベルリンの壁が崩壊した年",
+        "choices": [
+          "1991年",
+          "1985年",
+          "1989年",
+          "1993年"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The year the Berlin Wall fell",
+        "choices": [
+          "1991",
+          "1985",
+          "1989",
+          "1993"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q225",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Sn」が表す元素は？",
+        "choices": [
+          "亜鉛",
+          "銅",
+          "スズ",
+          "アンチモン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Sn",
+        "choices": [
+          "Zinc",
+          "Copper",
+          "Tin",
+          "Antimony"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q230",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "音を伝えられない場所",
+        "choices": [
+          "真空",
+          "水中",
+          "地中",
+          "空気中"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The environment where sound cannot travel",
+        "choices": [
+          "A vacuum",
+          "Underwater",
+          "Underground",
+          "Air"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q203",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "正五角形の1つの内角の大きさ",
+        "choices": [
+          "100度",
+          "104度",
+          "108度",
+          "120度"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The measure of one interior angle of a regular pentagon",
+        "choices": [
+          "100 degrees",
+          "104 degrees",
+          "108 degrees",
+          "120 degrees"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q162",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "パナマ運河が結ぶ2つの海",
+        "choices": [
+          "大西洋と地中海",
+          "大西洋と太平洋",
+          "太平洋とインド洋",
+          "インド洋と大西洋"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The two oceans connected by the Panama Canal",
+        "choices": [
+          "Atlantic and Mediterranean",
+          "Atlantic and Pacific",
+          "Pacific and Indian",
+          "Indian and Atlantic"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q073",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "現存する世界最大の甲殻類",
+        "choices": [
+          "ロブスター",
+          "タカアシガニ",
+          "ヤシガニ",
+          "ダイオウグソクムシ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The largest living crustacean in the world",
+        "choices": [
+          "Lobster",
+          "Japanese spider crab",
+          "Coconut crab",
+          "Giant isopod"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q011",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "日本酒の主な原料",
+        "choices": [
+          "小麦",
+          "トウモロコシ",
+          "米",
+          "大麦"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The main ingredient of sake",
+        "choices": [
+          "Wheat",
+          "Corn",
+          "Rice",
+          "Barley"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q001",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "無理数と証明された最初の数",
+        "choices": [
+          "円周率",
+          "ネイピア数",
+          "√2",
+          "黄金比"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The first number proven to be irrational",
+        "choices": [
+          "Pi",
+          "Euler's number",
+          "√2",
+          "The golden ratio"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q048",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "カカオ豆から作られる甘いお菓子",
+        "choices": [
+          "キャラメル",
+          "グミ",
+          "チョコレート",
+          "マシュマロ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "A sweet confection made from cacao beans",
+        "choices": [
+          "Caramel",
+          "Gummy candy",
+          "Chocolate",
+          "Marshmallow"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q138",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『方丈記』の作者",
+        "choices": [
+          "吉田兼好",
+          "鴨長明",
+          "西行",
+          "紀貫之"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The author of Hōjōki",
+        "choices": [
+          "Yoshida Kenkō",
+          "Kamo no Chōmei",
+          "Saigyō",
+          "Ki no Tsurayuki"
+        ],
+        "decisionPoint": 20
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q045",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "地球の自転の向き",
+        "choices": [
+          "東から西",
+          "西から東",
+          "北から南",
+          "南から北"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The direction of Earth's rotation",
+        "choices": [
+          "East to west",
+          "West to east",
+          "North to south",
+          "South to north"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q129",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ゴルフで基準打数ちょうどのことを何という？",
+        "choices": [
+          "ボギー",
+          "バーディー",
+          "パー",
+          "イーグル"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The term in golf for completing a hole in exactly the standard number of strokes",
+        "choices": [
+          "Bogey",
+          "Birdie",
+          "Par",
+          "Eagle"
+        ],
+        "decisionPoint": 62
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q197",
+    "answerIndex": 1,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "イネ科に属する竹の植物学上の分類",
+        "choices": [
+          "木本",
+          "草本",
+          "シダ植物",
+          "コケ植物"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The botanical classification of bamboo, which belongs to the grass family",
+        "choices": [
+          "Woody plant",
+          "Herbaceous plant",
+          "Fern",
+          "Moss"
+        ],
+        "decisionPoint": 66
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q243",
+    "answerIndex": 1,
+    "category": "nature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "雲の中の放電で空が光る現象",
+        "choices": [
+          "虹",
+          "稲妻",
+          "オーロラ",
+          "流れ星"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The flash of light caused by electrical discharge in clouds",
+        "choices": [
+          "Rainbow",
+          "Lightning",
+          "Aurora",
+          "Shooting star"
+        ],
+        "decisionPoint": 49
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q035",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "納豆を作るときに使う微生物",
+        "choices": [
+          "乳酸菌",
+          "納豆菌",
+          "麹菌",
+          "酵母菌"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The microorganism used to make natto",
+        "choices": [
+          "Lactic acid bacteria",
+          "Bacillus subtilis var. natto",
+          "Koji mold",
+          "Yeast"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q121",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "茶葉を揉んだあと完全に酸化させて作るお茶",
+        "choices": [
+          "緑茶",
+          "ウーロン茶",
+          "紅茶",
+          "ジャスミン茶"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The type of tea made by fully oxidizing the leaves after rolling",
+        "choices": [
+          "Green tea",
+          "Oolong tea",
+          "Black tea",
+          "Jasmine tea"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q259",
+    "answerIndex": 2,
+    "category": "nature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "タコの心臓の数",
+        "choices": [
+          "1つ",
+          "2つ",
+          "3つ",
+          "4つ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The number of hearts an octopus has",
+        "choices": [
+          "1",
+          "2",
+          "3",
+          "4"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q196",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ウスターソースの名前の由来となった国",
+        "choices": [
+          "フランス",
+          "ドイツ",
+          "アメリカ",
+          "イギリス"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The country that gave Worcestershire sauce its name",
+        "choices": [
+          "France",
+          "Germany",
+          "The United States",
+          "England"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q189",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "日本の通貨の単位",
+        "choices": [
+          "ドル",
+          "ポンド",
+          "円",
+          "ユーロ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The currency unit of Japan",
+        "choices": [
+          "Dollar",
+          "Pound",
+          "Yen",
+          "Euro"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q201",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "紅茶の「アールグレイ」に使う柑橘",
+        "choices": [
+          "レモン",
+          "ライム",
+          "ベルガモット",
+          "オレンジ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The citrus fruit used to flavor Earl Grey tea",
+        "choices": [
+          "Lemon",
+          "Lime",
+          "Bergamot",
+          "Orange"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q241",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『ユリシーズ』の作者",
+        "choices": [
+          "イェイツ",
+          "ベケット",
+          "ワイルド",
+          "ジョイス"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of Ulysses",
+        "choices": [
+          "Yeats",
+          "Beckett",
+          "Wilde",
+          "Joyce"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q051",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "豆腐を凍らせて乾燥させた食品",
+        "choices": [
+          "がんもどき",
+          "厚揚げ",
+          "油揚げ",
+          "高野豆腐"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "A Japanese food made by freezing and drying tofu",
+        "choices": [
+          "Ganmodoki",
+          "Atsuage",
+          "Aburaage",
+          "Koya-dofu"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q093",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "人体で最も長い筋肉",
+        "choices": [
+          "縫工筋",
+          "大腿四頭筋",
+          "広背筋",
+          "腓腹筋"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The longest muscle in the human body",
+        "choices": [
+          "Sartorius",
+          "Quadriceps",
+          "Latissimus dorsi",
+          "Gastrocnemius"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q276",
+    "answerIndex": 0,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「ラプソディ・イン・ブルー」の作曲家",
+        "choices": [
+          "ガーシュウィン",
+          "コープランド",
+          "バーンスタイン",
+          "エリントン"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The composer of Rhapsody in Blue",
+        "choices": [
+          "Gershwin",
+          "Copland",
+          "Bernstein",
+          "Ellington"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q061",
+    "answerIndex": 3,
+    "category": "music",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "「展覧会の絵」の作曲家",
+        "choices": [
+          "リムスキー＝コルサコフ",
+          "ボロディン",
+          "グリンカ",
+          "ムソルグスキー"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The composer of 'Pictures at an Exhibition'",
+        "choices": [
+          "Rimsky-Korsakov",
+          "Borodin",
+          "Glinka",
+          "Mussorgsky"
+        ],
+        "decisionPoint": 43
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q028",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "世界で一番長い鍾乳洞",
+        "choices": [
+          "マンモスケーブ",
+          "カールズバッド洞窟",
+          "ポストイナ鍾乳洞",
+          "ウィンドケーブ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The longest cave system in the world",
+        "choices": [
+          "Mammoth Cave",
+          "Carlsbad Caverns",
+          "Postojna Cave",
+          "Wind Cave"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q005",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "音速の何倍かを表す単位は？",
+        "choices": [
+          "ヘルツ",
+          "マッハ",
+          "デシベル",
+          "ノット"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The unit that expresses how many times faster something is than the speed of sound",
+        "choices": [
+          "Hertz",
+          "Mach",
+          "Decibel",
+          "Knot"
+        ],
+        "decisionPoint": 68
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q123",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ビールの主な原料となる穀物",
+        "choices": [
+          "とうもろこし",
+          "小麦",
+          "大麦",
+          "米"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The main grain used to brew beer",
+        "choices": [
+          "Corn",
+          "Wheat",
+          "Barley",
+          "Rice"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q139",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "火薬・羅針盤と並ぶ中国の三大発明の1つ",
+        "choices": [
+          "車輪",
+          "ガラス",
+          "紙",
+          "望遠鏡"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "One of China's three great inventions alongside gunpowder and the compass",
+        "choices": [
+          "The wheel",
+          "Glass",
+          "Paper",
+          "The telescope"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q215",
+    "answerIndex": 1,
+    "category": "arts",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「叫び」を描いた画家",
+        "choices": [
+          "ゴッホ",
+          "ムンク",
+          "ダリ",
+          "クリムト"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The painter of The Scream",
+        "choices": [
+          "Van Gogh",
+          "Munch",
+          "Dalí",
+          "Klimt"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q253",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "餅の主な原料",
+        "choices": [
+          "うるち米",
+          "小麦粉",
+          "そば粉",
+          "もち米"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The main ingredient of mochi (Japanese rice cake)",
+        "choices": [
+          "Regular rice",
+          "Wheat flour",
+          "Buckwheat flour",
+          "Glutinous rice"
+        ],
+        "decisionPoint": 49
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q280",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "バルサミコ酢の発祥地として有名なイタリアの都市",
+        "choices": [
+          "ナポリ",
+          "モデナ",
+          "ミラノ",
+          "パレルモ"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The Italian city famous as the birthplace of balsamic vinegar",
+        "choices": [
+          "Naples",
+          "Modena",
+          "Milan",
+          "Palermo"
+        ],
+        "decisionPoint": 58
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q117",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オペラ「セビリアの理髪師」の作曲家",
+        "choices": [
+          "プッチーニ",
+          "ロッシーニ",
+          "ドニゼッティ",
+          "ベッリーニ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The composer of the opera The Barber of Seville",
+        "choices": [
+          "Puccini",
+          "Rossini",
+          "Donizetti",
+          "Bellini"
+        ],
+        "decisionPoint": 47
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q146",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "お寿司のご飯に混ぜる調味料",
+        "choices": [
+          "醤油",
+          "味噌",
+          "酢",
+          "みりん"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The seasoning mixed into sushi rice",
+        "choices": [
+          "Soy sauce",
+          "Miso",
+          "Vinegar",
+          "Mirin"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q080",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "お好み焼きに使われる野菜",
+        "choices": [
+          "レタス",
+          "キャベツ",
+          "白菜",
+          "ほうれん草"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The vegetable used in okonomiyaki",
+        "choices": [
+          "Lettuce",
+          "Cabbage",
+          "Napa cabbage",
+          "Spinach"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q135",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「惑星」を作曲したイギリス人",
+        "choices": [
+          "エルガー",
+          "ブリテン",
+          "ホルスト",
+          "ヴォーン・ウィリアムズ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The British composer of 'The Planets'",
+        "choices": [
+          "Elgar",
+          "Britten",
+          "Holst",
+          "Vaughan Williams"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q095",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ウィーン会議が開かれた世紀",
+        "choices": [
+          "17世紀",
+          "18世紀",
+          "19世紀",
+          "20世紀"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The century in which the Congress of Vienna was held",
+        "choices": [
+          "17th century",
+          "18th century",
+          "19th century",
+          "20th century"
+        ],
+        "decisionPoint": 43
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q062",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Li」が表す元素は？",
+        "choices": [
+          "ランタン",
+          "リチウム",
+          "ルテチウム",
+          "ローレンシウム"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Li",
+        "choices": [
+          "Lanthanum",
+          "Lithium",
+          "Lutetium",
+          "Lawrencium"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q126",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ナンプラーの主な原料",
+        "choices": [
+          "エビ",
+          "魚",
+          "大豆",
+          "カニ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The main ingredient of nam pla (Thai fish sauce)",
+        "choices": [
+          "Shrimp",
+          "Fish",
+          "Soybeans",
+          "Crab"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q084",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "梅干しの主な原料となる果実",
+        "choices": [
+          "ウメ",
+          "アンズ",
+          "モモ",
+          "スモモ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The fruit used to make umeboshi (Japanese pickled plums)",
+        "choices": [
+          "Japanese apricot (ume)",
+          "Apricot",
+          "Peach",
+          "Plum"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q060",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "アメリカ独立宣言が出された年",
+        "choices": [
+          "1783年",
+          "1776年",
+          "1789年",
+          "1804年"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The year the United States Declaration of Independence was adopted",
+        "choices": [
+          "1783",
+          "1776",
+          "1789",
+          "1804"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q151",
+    "answerIndex": 3,
+    "category": "space",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "太陽系の小惑星帯がある場所",
+        "choices": [
+          "地球と火星の間",
+          "木星と土星の間",
+          "土星と天王星の間",
+          "火星と木星の間"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The location of the asteroid belt in the solar system",
+        "choices": [
+          "Between Earth and Mars",
+          "Between Jupiter and Saturn",
+          "Between Saturn and Uranus",
+          "Between Mars and Jupiter"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q222",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オペラ「トゥーランドット」の作曲家",
+        "choices": [
+          "ヴェーバー",
+          "ドニゼッティ",
+          "プッチーニ",
+          "ベッリーニ"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The composer of the opera Turandot",
+        "choices": [
+          "Weber",
+          "Donizetti",
+          "Puccini",
+          "Bellini"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q014",
+    "answerIndex": 0,
+    "category": "space",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "火星にある太陽系最大の火山",
+        "choices": [
+          "オリンポス山",
+          "アスクレウス山",
+          "アルシア山",
+          "パヴォニス山"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The largest volcano in the solar system, located on Mars",
+        "choices": [
+          "Olympus Mons",
+          "Ascraeus Mons",
+          "Arsia Mons",
+          "Pavonis Mons"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q257",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "キムチの主な原料となる野菜",
+        "choices": [
+          "ダイコン",
+          "ハクサイ",
+          "キュウリ",
+          "ニンジン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The main vegetable used to make kimchi",
+        "choices": [
+          "Daikon radish",
+          "Napa cabbage",
+          "Cucumber",
+          "Carrot"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q281",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "オペラ「カルメン」の作曲家",
+        "choices": [
+          "ヴェルディ",
+          "ビゼー",
+          "プッチーニ",
+          "ロッシーニ"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The composer of the opera Carmen",
+        "choices": [
+          "Verdi",
+          "Bizet",
+          "Puccini",
+          "Rossini"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q239",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "絶対零度はセ氏何度？",
+        "choices": [
+          "-100℃",
+          "-200℃",
+          "-273℃",
+          "-373℃"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The temperature of absolute zero in degrees Celsius",
+        "choices": [
+          "-100°C",
+          "-200°C",
+          "-273°C",
+          "-373°C"
+        ],
+        "decisionPoint": 51
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q114",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「春の祭典」の作曲家",
+        "choices": [
+          "ドビュッシー",
+          "ストラヴィンスキー",
+          "プロコフィエフ",
+          "バルトーク"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The composer of 'The Rite of Spring'",
+        "choices": [
+          "Debussy",
+          "Stravinsky",
+          "Prokofiev",
+          "Bartók"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q055",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "タツノオトシゴで出産する方の性別",
+        "choices": [
+          "メス",
+          "オス",
+          "両方",
+          "どちらでもない"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The sex that gives birth in seahorses",
+        "choices": [
+          "Female",
+          "Male",
+          "Both",
+          "Neither"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q269",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "承久の乱を起こした上皇",
+        "choices": [
+          "白河上皇",
+          "後鳥羽上皇",
+          "崇徳上皇",
+          "後白河上皇"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The retired emperor who started the Jōkyū War in 1221",
+        "choices": [
+          "Emperor Shirakawa",
+          "Emperor Go-Toba",
+          "Emperor Sutoku",
+          "Emperor Go-Shirakawa"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q030",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ミツバチの巣の部屋の断面の形",
+        "choices": [
+          "正六角形",
+          "正方形",
+          "正三角形",
+          "円"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The cross-sectional shape of a honeycomb cell",
+        "choices": [
+          "Regular hexagon",
+          "Square",
+          "Equilateral triangle",
+          "Circle"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q149",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ハワイ諸島がある海",
+        "choices": [
+          "大西洋",
+          "太平洋",
+          "インド洋",
+          "北極海"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The ocean where the Hawaiian Islands are located",
+        "choices": [
+          "Atlantic Ocean",
+          "Pacific Ocean",
+          "Indian Ocean",
+          "Arctic Ocean"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q057",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ルネサンス期に宗教改革を始めたドイツ人",
+        "choices": [
+          "カルヴァン",
+          "ツヴィングリ",
+          "ルター",
+          "エラスムス"
+        ],
+        "decisionPoint": 19
+      },
+      "en": {
+        "text": "The German who started the Protestant Reformation",
+        "choices": [
+          "Calvin",
+          "Zwingli",
+          "Luther",
+          "Erasmus"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q155",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "ピラミッドを造った古代文明の国",
+        "choices": [
+          "ギリシャ",
+          "エジプト",
+          "ローマ",
+          "ペルシャ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The ancient civilization that built the Great Pyramids",
+        "choices": [
+          "Greece",
+          "Egypt",
+          "Rome",
+          "Persia"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q118",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "円周率を表すギリシャ文字",
+        "choices": [
+          "シグマ",
+          "デルタ",
+          "パイ",
+          "オメガ"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The Greek letter used to represent the ratio of a circle's circumference to its diameter",
+        "choices": [
+          "Sigma",
+          "Delta",
+          "Pi",
+          "Omega"
+        ],
+        "decisionPoint": 66
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q206",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ゾウの妊娠期間はおよそ何か月？",
+        "choices": [
+          "約6か月",
+          "約12か月",
+          "約22か月",
+          "約30か月"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "Approximate gestation period of an elephant in months",
+        "choices": [
+          "About 6 months",
+          "About 12 months",
+          "About 22 months",
+          "About 30 months"
+        ],
+        "decisionPoint": 53
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q096",
+    "answerIndex": 0,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "地球は太陽系の第何惑星？",
+        "choices": [
+          "第3",
+          "第2",
+          "第4",
+          "第5"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "Earth's position from the Sun among the planets",
+        "choices": [
+          "3rd",
+          "2nd",
+          "4th",
+          "5th"
+        ],
+        "decisionPoint": 22
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q252",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Si」が表す元素は？",
+        "choices": [
+          "硫黄",
+          "ケイ素",
+          "銀",
+          "ストロンチウム"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Si",
+        "choices": [
+          "Sulfur",
+          "Silicon",
+          "Silver",
+          "Strontium"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q248",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『車輪の下』の作者",
+        "choices": [
+          "トーマス・マン",
+          "カフカ",
+          "ゲーテ",
+          "ヘッセ"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The author of 'Beneath the Wheel'",
+        "choices": [
+          "Thomas Mann",
+          "Kafka",
+          "Goethe",
+          "Hesse"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q148",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ガリレオの「地動説」を支持した著書が出た世紀",
+        "choices": [
+          "16世紀",
+          "17世紀",
+          "18世紀",
+          "15世紀"
+        ],
+        "decisionPoint": 22
+      },
+      "en": {
+        "text": "The century Galileo published his work supporting heliocentrism",
+        "choices": [
+          "16th century",
+          "17th century",
+          "18th century",
+          "15th century"
+        ],
+        "decisionPoint": 14
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q207",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "円の面積を求める公式に使う値",
+        "choices": [
+          "底辺と高さ",
+          "対角線の長さ",
+          "辺の長さ",
+          "半径と円周率"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The values used in the formula for the area of a circle",
+        "choices": [
+          "Base and height",
+          "Diagonal length",
+          "Side length",
+          "Radius and pi"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q109",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "光が真空中で進む速さはおよそ秒速何km？",
+        "choices": [
+          "秒速3万km",
+          "秒速30万km",
+          "秒速300万km",
+          "秒速3000万km"
+        ],
+        "decisionPoint": 20
+      },
+      "en": {
+        "text": "Approximate speed of light in a vacuum",
+        "choices": [
+          "30,000 km/s",
+          "300,000 km/s",
+          "3,000,000 km/s",
+          "30,000,000 km/s"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q081",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Ag」が表す元素",
+        "choices": [
+          "金",
+          "銀",
+          "銅",
+          "鉛"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Ag",
+        "choices": [
+          "Gold",
+          "Silver",
+          "Copper",
+          "Lead"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q275",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "光と音で速く伝わるのは",
+        "choices": [
+          "音",
+          "どちらも同じ",
+          "光",
+          "速さは比べられない"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "Which travels faster, light or sound",
+        "choices": [
+          "Sound",
+          "They are the same",
+          "Light",
+          "Their speeds cannot be compared"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q236",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "7×8はいくつ？",
+        "choices": [
+          "48",
+          "54",
+          "63",
+          "56"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The product of 7 and 8",
+        "choices": [
+          "48",
+          "54",
+          "63",
+          "56"
+        ],
+        "decisionPoint": 22
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q128",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "太陽系で地球のすぐ内側の惑星",
+        "choices": [
+          "火星",
+          "木星",
+          "金星",
+          "水星"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The planet in our solar system just inside Earth's orbit",
+        "choices": [
+          "Mars",
+          "Jupiter",
+          "Venus",
+          "Mercury"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q179",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "海王星の最大の衛星",
+        "choices": [
+          "カリスト",
+          "トリトン",
+          "エウロパ",
+          "ミランダ"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The largest moon of Neptune",
+        "choices": [
+          "Callisto",
+          "Triton",
+          "Europa",
+          "Miranda"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q108",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『嘔吐』の作者",
+        "choices": [
+          "カミュ",
+          "ジッド",
+          "プルースト",
+          "サルトル"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of the novel Nausea",
+        "choices": [
+          "Camus",
+          "Gide",
+          "Proust",
+          "Sartre"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q238",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『舞姫』の作者",
+        "choices": [
+          "島崎藤村",
+          "芥川龍之介",
+          "森鷗外",
+          "志賀直哉"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The author of 'The Dancing Girl'",
+        "choices": [
+          "Toson Shimazaki",
+          "Ryunosuke Akutagawa",
+          "Ogai Mori",
+          "Naoya Shiga"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q132",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『赤と黒』の作者",
+        "choices": [
+          "バルザック",
+          "スタンダール",
+          "フローベール",
+          "モーパッサン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The author of 'The Red and the Black'",
+        "choices": [
+          "Balzac",
+          "Stendhal",
+          "Flaubert",
+          "Maupassant"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q085",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『嵐が丘』の作者",
+        "choices": [
+          "ジェイン・オースティン",
+          "シャーロット・ブロンテ",
+          "メアリー・シェリー",
+          "エミリー・ブロンテ"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The author of Wuthering Heights",
+        "choices": [
+          "Jane Austen",
+          "Charlotte Brontë",
+          "Mary Shelley",
+          "Emily Brontë"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q145",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ゴルフで基準打数より1打少ないことを何という？",
+        "choices": [
+          "イーグル",
+          "ボギー",
+          "バーディー",
+          "アルバトロス"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The golf term for one stroke under par",
+        "choices": [
+          "Eagle",
+          "Bogey",
+          "Birdie",
+          "Albatross"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q054",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "『星の王子さま』の作者",
+        "choices": [
+          "ヴィクトル・ユゴー",
+          "サン＝テグジュペリ",
+          "アレクサンドル・デュマ",
+          "ジュール・ヴェルヌ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The author of The Little Prince",
+        "choices": [
+          "Victor Hugo",
+          "Antoine de Saint-Exupéry",
+          "Alexandre Dumas",
+          "Jules Verne"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q266",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "五角形の内角の和",
+        "choices": [
+          "360度",
+          "450度",
+          "600度",
+          "540度"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "The sum of the interior angles of a pentagon",
+        "choices": [
+          "360 degrees",
+          "450 degrees",
+          "600 degrees",
+          "540 degrees"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q273",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『失われた時を求めて』の作者",
+        "choices": [
+          "バルザック",
+          "フローベール",
+          "プルースト",
+          "ゾラ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The author of 'In Search of Lost Time'",
+        "choices": [
+          "Balzac",
+          "Flaubert",
+          "Proust",
+          "Zola"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q245",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「He」が表す元素は？",
+        "choices": [
+          "水素",
+          "リチウム",
+          "ヘリウム",
+          "ネオン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol He",
+        "choices": [
+          "Hydrogen",
+          "Lithium",
+          "Helium",
+          "Neon"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q237",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "2の10乗はいくつ？",
+        "choices": [
+          "512",
+          "1024",
+          "2048",
+          "256"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The value of 2 to the power of 10",
+        "choices": [
+          "512",
+          "1024",
+          "2048",
+          "256"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q159",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『罪と罰』の作者",
+        "choices": [
+          "トルストイ",
+          "チェーホフ",
+          "ツルゲーネフ",
+          "ドストエフスキー"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The author of Crime and Punishment",
+        "choices": [
+          "Tolstoy",
+          "Chekhov",
+          "Turgenev",
+          "Dostoevsky"
+        ],
+        "decisionPoint": 20
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q163",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "アイスホッケーで打つ円盤を何という？",
+        "choices": [
+          "シャトル",
+          "ボール",
+          "パック",
+          "ディスク"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The name of the disc used in ice hockey",
+        "choices": [
+          "Shuttle",
+          "Ball",
+          "Puck",
+          "Disc"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q087",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "太陽系で自転軸の傾きが最も大きい惑星",
+        "choices": [
+          "土星",
+          "海王星",
+          "天王星",
+          "木星"
+        ],
+        "decisionPoint": 18
+      },
+      "en": {
+        "text": "The planet in our solar system with the greatest axial tilt",
+        "choices": [
+          "Saturn",
+          "Neptune",
+          "Uranus",
+          "Jupiter"
+        ],
+        "decisionPoint": 59
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q171",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "呼吸で空気中から取り込む気体",
+        "choices": [
+          "二酸化炭素",
+          "窒素",
+          "酸素",
+          "水素"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The gas we take in from the air when we breathe",
+        "choices": [
+          "Carbon dioxide",
+          "Nitrogen",
+          "Oxygen",
+          "Hydrogen"
+        ],
+        "decisionPoint": 47
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q071",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "10の階乗（10!）はいくつ？",
+        "choices": [
+          "1000000",
+          "100000",
+          "5040",
+          "3628800"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The value of 10 factorial (10!)",
+        "choices": [
+          "1,000,000",
+          "100,000",
+          "5,040",
+          "3,628,800"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q247",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "天の川は何がたくさん集まったもの？",
+        "choices": [
+          "雲",
+          "星",
+          "隕石",
+          "彗星"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "What the Milky Way is a vast collection of",
+        "choices": [
+          "Clouds",
+          "Stars",
+          "Meteorites",
+          "Comets"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q192",
+    "answerIndex": 0,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "交響曲「幻想交響曲」の作曲家",
+        "choices": [
+          "ベルリオーズ",
+          "リスト",
+          "ブラームス",
+          "マーラー"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The composer of the Symphonie fantastique",
+        "choices": [
+          "Berlioz",
+          "Liszt",
+          "Brahms",
+          "Mahler"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q046",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Ar」が表す元素は？",
+        "choices": [
+          "アルミニウム",
+          "ヒ素",
+          "アルゴン",
+          "アスタチン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol \"Ar\"",
+        "choices": [
+          "Aluminium",
+          "Arsenic",
+          "Argon",
+          "Astatine"
+        ],
+        "decisionPoint": 42
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q170",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Cu」が表す元素は？",
+        "choices": [
+          "コバルト",
+          "カルシウム",
+          "銅",
+          "クロム"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Cu",
+        "choices": [
+          "Cobalt",
+          "Calcium",
+          "Copper",
+          "Chromium"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q229",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "一般的なDNAの二重らせんの巻き方",
+        "choices": [
+          "左巻き",
+          "右巻き",
+          "交互巻き",
+          "巻かない"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The twist direction of a typical DNA double helix",
+        "choices": [
+          "Left-handed",
+          "Right-handed",
+          "Alternating",
+          "Not twisted"
+        ],
+        "decisionPoint": 49
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q036",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "テキーラの原料となる植物",
+        "choices": [
+          "アガベ",
+          "サトウキビ",
+          "トウモロコシ",
+          "ライ麦"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The plant used to make tequila",
+        "choices": [
+          "Agave",
+          "Sugarcane",
+          "Corn",
+          "Rye"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q150",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オペラ「アイーダ」の作曲家",
+        "choices": [
+          "プッチーニ",
+          "ロッシーニ",
+          "ヴェルディ",
+          "ドニゼッティ"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The composer of the opera 'Aida'",
+        "choices": [
+          "Puccini",
+          "Rossini",
+          "Verdi",
+          "Donizetti"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q021",
+    "answerIndex": 0,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "立方体の辺の数",
+        "choices": [
+          "12本",
+          "8本",
+          "10本",
+          "6本"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The number of edges on a cube",
+        "choices": [
+          "12",
+          "8",
+          "10",
+          "6"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q279",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "素数の中で唯一の偶数",
+        "choices": [
+          "1",
+          "2",
+          "4",
+          "0"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The only even prime number",
+        "choices": [
+          "1",
+          "2",
+          "4",
+          "0"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q077",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「ラ・カンパネラ」の作曲家",
+        "choices": [
+          "ショパン",
+          "シューマン",
+          "リスト",
+          "ブラームス"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The composer of 'La Campanella'",
+        "choices": [
+          "Chopin",
+          "Schumann",
+          "Liszt",
+          "Brahms"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q053",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "『ロミオとジュリエット』の作者",
+        "choices": [
+          "ディケンズ",
+          "ゲーテ",
+          "シェイクスピア",
+          "トルストイ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The author of Romeo and Juliet",
+        "choices": [
+          "Dickens",
+          "Goethe",
+          "Shakespeare",
+          "Tolstoy"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q204",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『ファウスト』の作者",
+        "choices": [
+          "シラー",
+          "ヘッセ",
+          "カフカ",
+          "ゲーテ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of Faust",
+        "choices": [
+          "Schiller",
+          "Hesse",
+          "Kafka",
+          "Goethe"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q027",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "『老人と海』の作者",
+        "choices": [
+          "マーク・トウェイン",
+          "スタインベック",
+          "ヘミングウェイ",
+          "フィッツジェラルド"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The author of 'The Old Man and the Sea'",
+        "choices": [
+          "Mark Twain",
+          "John Steinbeck",
+          "Ernest Hemingway",
+          "F. Scott Fitzgerald"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q105",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Cr」が表す元素は？",
+        "choices": [
+          "コバルト",
+          "クロム",
+          "カルシウム",
+          "塩素"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Cr",
+        "choices": [
+          "Cobalt",
+          "Chromium",
+          "Calcium",
+          "Chlorine"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q278",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "日本で一番長い川",
+        "choices": [
+          "利根川",
+          "石狩川",
+          "信濃川",
+          "北上川"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The longest river in Japan",
+        "choices": [
+          "Tone River",
+          "Ishikari River",
+          "Shinano River",
+          "Kitakami River"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q285",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "電気の単位「ボルト」の由来となった科学者の出身国",
+        "choices": [
+          "ドイツ",
+          "フランス",
+          "イタリア",
+          "イギリス"
+        ],
+        "decisionPoint": 20
+      },
+      "en": {
+        "text": "Country of origin of the scientist after whom the volt is named",
+        "choices": [
+          "Germany",
+          "France",
+          "Italy",
+          "England"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q184",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "近代オリンピックが初めて開かれた都市",
+        "choices": [
+          "パリ",
+          "アテネ",
+          "ロンドン",
+          "ローマ"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The city where the first modern Olympic Games were held",
+        "choices": [
+          "Paris",
+          "Athens",
+          "London",
+          "Rome"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q234",
+    "answerIndex": 3,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "天王星の自転軸の特徴",
+        "choices": [
+          "ほぼ直立",
+          "約45度傾いている",
+          "逆回転している",
+          "ほぼ横倒し"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The distinctive feature of Uranus's axis of rotation",
+        "choices": [
+          "Nearly upright",
+          "Tilted about 45 degrees",
+          "Rotating backwards",
+          "Nearly sideways"
+        ],
+        "decisionPoint": 52
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q042",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『戦争と平和』の作者",
+        "choices": [
+          "ドストエフスキー",
+          "チェーホフ",
+          "ツルゲーネフ",
+          "トルストイ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of 'War and Peace'",
+        "choices": [
+          "Dostoevsky",
+          "Chekhov",
+          "Turgenev",
+          "Tolstoy"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q205",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ワーテルローの戦いで敗れた指導者",
+        "choices": [
+          "アレクサンダー大王",
+          "カエサル",
+          "ナポレオン",
+          "ハンニバル"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The leader defeated at the Battle of Waterloo",
+        "choices": [
+          "Alexander the Great",
+          "Caesar",
+          "Napoleon",
+          "Hannibal"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q083",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "正十二面体の頂点の数",
+        "choices": [
+          "10",
+          "12",
+          "15",
+          "20"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The number of vertices on a regular dodecahedron",
+        "choices": [
+          "10",
+          "12",
+          "15",
+          "20"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q263",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "カーリングで投げる石を何という？",
+        "choices": [
+          "ロック",
+          "ストーン",
+          "ペブル",
+          "ボール"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The name of the polished granite disc slid in curling",
+        "choices": [
+          "Rock",
+          "Stone",
+          "Pebble",
+          "Ball"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q041",
+    "answerIndex": 0,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ボウリングのピンの数",
+        "choices": [
+          "10本",
+          "8本",
+          "12本",
+          "6本"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The number of pins in bowling",
+        "choices": [
+          "10",
+          "8",
+          "12",
+          "6"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q130",
+    "answerIndex": 0,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "「新世界交響曲」に使われた楽器、イングリッシュホルンの分類",
+        "choices": [
+          "木管楽器",
+          "金管楽器",
+          "弦楽器",
+          "打楽器"
+        ],
+        "decisionPoint": 26
+      },
+      "en": {
+        "text": "The instrument family that the English horn belongs to",
+        "choices": [
+          "Woodwind",
+          "Brass",
+          "String",
+          "Percussion"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q023",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ポテトチップスの主な原料",
+        "choices": [
+          "小麦",
+          "米",
+          "トウモロコシ",
+          "じゃがいも"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The main ingredient of potato chips",
+        "choices": [
+          "Wheat",
+          "Rice",
+          "Corn",
+          "Potato"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q283",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "アステカ帝国を滅ぼしたスペイン人",
+        "choices": [
+          "ピサロ",
+          "マゼラン",
+          "コルテス",
+          "コロンブス"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The Spanish conquistador who conquered the Aztec Empire",
+        "choices": [
+          "Pizarro",
+          "Magellan",
+          "Cortés",
+          "Columbus"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q086",
+    "answerIndex": 3,
+    "category": "sports",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "バレーボールでネットの上を越す攻撃",
+        "choices": [
+          "ドリブル",
+          "バント",
+          "フリーキック",
+          "スパイク"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "An overhead attacking shot over the net in volleyball",
+        "choices": [
+          "Dribble",
+          "Bunt",
+          "Free kick",
+          "Spike"
+        ],
+        "decisionPoint": 53
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q182",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "マチュピチュ遺跡がある国",
+        "choices": [
+          "ボリビア",
+          "チリ",
+          "ペルー",
+          "コロンビア"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The country where Machu Picchu is located",
+        "choices": [
+          "Bolivia",
+          "Chile",
+          "Peru",
+          "Colombia"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q067",
+    "answerIndex": 1,
+    "category": "body",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "人体で血液を濾過する臓器",
+        "choices": [
+          "肝臓",
+          "腎臓",
+          "胃",
+          "肺"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The organ that filters blood in the human body",
+        "choices": [
+          "Liver",
+          "Kidney",
+          "Stomach",
+          "Lung"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q016",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "メコン川が注ぐ海",
+        "choices": [
+          "南シナ海",
+          "インド洋",
+          "東シナ海",
+          "アラビア海"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The sea into which the Mekong River flows",
+        "choices": [
+          "South China Sea",
+          "Indian Ocean",
+          "East China Sea",
+          "Arabian Sea"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q255",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『徒然草』の作者",
+        "choices": [
+          "西行",
+          "鴨長明",
+          "松尾芭蕉",
+          "兼好法師"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The author of Tsurezuregusa (Essays in Idleness)",
+        "choices": [
+          "Saigyo",
+          "Kamo no Chomei",
+          "Matsuo Basho",
+          "Yoshida Kenko"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q082",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "土星の最大の衛星",
+        "choices": [
+          "エウロパ",
+          "タイタン",
+          "ガニメデ",
+          "トリトン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The largest moon of Saturn",
+        "choices": [
+          "Europa",
+          "Titan",
+          "Ganymede",
+          "Triton"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q158",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ガラパゴス諸島が属する国",
+        "choices": [
+          "エクアドル",
+          "コロンビア",
+          "ペルー",
+          "チリ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The country the Galápagos Islands belong to",
+        "choices": [
+          "Ecuador",
+          "Colombia",
+          "Peru",
+          "Chile"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q210",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ウサギの耳が長い主な理由",
+        "choices": [
+          "体温調節",
+          "仲間への合図",
+          "エサを探すため",
+          "敵を威嚇するため"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The main reason rabbits have long ears",
+        "choices": [
+          "Body temperature regulation",
+          "Signaling to others",
+          "Finding food",
+          "Intimidating predators"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q044",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "太陽系で地球のすぐ外側の惑星",
+        "choices": [
+          "金星",
+          "火星",
+          "木星",
+          "土星"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The planet in our solar system just outside Earth's orbit",
+        "choices": [
+          "Venus",
+          "Mars",
+          "Jupiter",
+          "Saturn"
+        ],
+        "decisionPoint": 57
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q003",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "パンをふくらませるために使う菌",
+        "choices": [
+          "乳酸菌",
+          "納豆菌",
+          "麹菌",
+          "酵母菌"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The microorganism used to make bread rise",
+        "choices": [
+          "Lactic acid bacteria",
+          "Bacillus subtilis",
+          "Koji mold",
+          "Yeast"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q140",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「ツァラトゥストラはかく語りき」の作曲家",
+        "choices": [
+          "ブラームス",
+          "マーラー",
+          "リヒャルト・シュトラウス",
+          "ブルックナー"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The composer of 'Thus Spoke Zarathustra'",
+        "choices": [
+          "Brahms",
+          "Mahler",
+          "Richard Strauss",
+          "Bruckner"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q102",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "紅茶の原料になる植物",
+        "choices": [
+          "コーヒーノキ",
+          "カカオ",
+          "チャノキ",
+          "サトウキビ"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The plant from which black tea is made",
+        "choices": [
+          "Coffee plant",
+          "Cacao",
+          "Tea plant",
+          "Sugarcane"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q090",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "円の直径と円周の比を何という？",
+        "choices": [
+          "黄金比",
+          "自然対数",
+          "円周率",
+          "ネイピア数"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The ratio of a circle's circumference to its diameter",
+        "choices": [
+          "Golden ratio",
+          "Natural logarithm",
+          "Pi",
+          "Euler's number"
+        ],
+        "decisionPoint": 53
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q161",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "四角形の内角の和",
+        "choices": [
+          "180度",
+          "360度",
+          "540度",
+          "720度"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The sum of interior angles of a quadrilateral",
+        "choices": [
+          "180 degrees",
+          "360 degrees",
+          "540 degrees",
+          "720 degrees"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q173",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「W」が表す元素は？",
+        "choices": [
+          "亜鉛",
+          "マンガン",
+          "タングステン",
+          "チタン"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The element represented by the symbol W",
+        "choices": [
+          "Zinc",
+          "Manganese",
+          "Tungsten",
+          "Titanium"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q037",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『三国志演義』で知略に優れた軍師",
+        "choices": [
+          "曹操",
+          "関羽",
+          "劉備",
+          "諸葛亮"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The brilliant strategist in Romance of the Three Kingdoms",
+        "choices": [
+          "Cao Cao",
+          "Guan Yu",
+          "Liu Bei",
+          "Zhuge Liang"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q137",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『異邦人』の作者",
+        "choices": [
+          "サルトル",
+          "ボーヴォワール",
+          "カミュ",
+          "サガン"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The author of 'The Stranger'",
+        "choices": [
+          "Sartre",
+          "Beauvoir",
+          "Camus",
+          "Sagan"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q018",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "平安京に都を移した天皇",
+        "choices": [
+          "天智天皇",
+          "聖武天皇",
+          "桓武天皇",
+          "後醍醐天皇"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The emperor who moved the capital to Heian-kyō",
+        "choices": [
+          "Emperor Tenji",
+          "Emperor Shōmu",
+          "Emperor Kanmu",
+          "Emperor Go-Daigo"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q029",
+    "answerIndex": 3,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "味噌汁のだしに使う鰹の加工品",
+        "choices": [
+          "煮干し",
+          "塩鮭",
+          "干しエビ",
+          "鰹節"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "Dried and smoked bonito used for Japanese soup stock",
+        "choices": [
+          "Dried sardines",
+          "Salted salmon",
+          "Dried shrimp",
+          "Katsuobushi"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q187",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ローマ帝国が東西に分裂した世紀",
+        "choices": [
+          "2世紀",
+          "3世紀",
+          "4世紀",
+          "5世紀"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The century in which the Roman Empire was divided into East and West",
+        "choices": [
+          "2nd century",
+          "3rd century",
+          "4th century",
+          "5th century"
+        ],
+        "decisionPoint": 68
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q200",
+    "answerIndex": 3,
+    "category": "sports",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "オリンピックのマラソンの距離",
+        "choices": [
+          "40.195km",
+          "41.195km",
+          "43.195km",
+          "42.195km"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The distance of an Olympic marathon",
+        "choices": [
+          "40.195 km",
+          "41.195 km",
+          "43.195 km",
+          "42.195 km"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q176",
+    "answerIndex": 1,
+    "category": "body",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "人間の血液型でABO式は何種類？",
+        "choices": [
+          "3種類",
+          "4種類",
+          "5種類",
+          "6種類"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The number of blood types in the ABO system",
+        "choices": [
+          "3",
+          "4",
+          "5",
+          "6"
+        ],
+        "decisionPoint": 43
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q214",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "アンコール・ワットがある国",
+        "choices": [
+          "タイ",
+          "ベトナム",
+          "カンボジア",
+          "ラオス"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The country where Angkor Wat is located",
+        "choices": [
+          "Thailand",
+          "Vietnam",
+          "Cambodia",
+          "Laos"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q141",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "虹の中で一番外側の色",
+        "choices": [
+          "青",
+          "黄",
+          "赤",
+          "緑"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The outermost color of a rainbow",
+        "choices": [
+          "Blue",
+          "Yellow",
+          "Red",
+          "Green"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q078",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ロゼッタ・ストーンを解読した人物",
+        "choices": [
+          "ニュートン",
+          "ナポレオン",
+          "シャンポリオン",
+          "ハワード・カーター"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The person who deciphered the Rosetta Stone",
+        "choices": [
+          "Newton",
+          "Napoleon",
+          "Champollion",
+          "Howard Carter"
+        ],
+        "decisionPoint": 43
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q240",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "『ドン・キホーテ』の作者",
+        "choices": [
+          "ユゴー",
+          "ダンテ",
+          "セルバンテス",
+          "ドストエフスキー"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The author of Don Quixote",
+        "choices": [
+          "Hugo",
+          "Dante",
+          "Cervantes",
+          "Dostoevsky"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q185",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『デカメロン』の作者",
+        "choices": [
+          "ペトラルカ",
+          "ボッカッチョ",
+          "ダンテ",
+          "マキャヴェッリ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of the Decameron",
+        "choices": [
+          "Petrarch",
+          "Boccaccio",
+          "Dante",
+          "Machiavelli"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q157",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "飛べない鳥で世界最大のもの",
+        "choices": [
+          "ダチョウ",
+          "ペンギン",
+          "エミュー",
+          "キーウィ"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The largest flightless bird in the world",
+        "choices": [
+          "Ostrich",
+          "Penguin",
+          "Emu",
+          "Kiwi"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q199",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『百年の孤独』の作者",
+        "choices": [
+          "ボルヘス",
+          "バルガス＝リョサ",
+          "ガルシア＝マルケス",
+          "コルタサル"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of One Hundred Years of Solitude",
+        "choices": [
+          "Borges",
+          "Vargas Llosa",
+          "García Márquez",
+          "Cortázar"
+        ],
+        "decisionPoint": 43
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q019",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ホタルが光らせる体の部位",
+        "choices": [
+          "頭",
+          "腹",
+          "背中",
+          "羽"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The body part a firefly uses to produce light",
+        "choices": [
+          "Head",
+          "Abdomen",
+          "Back",
+          "Wings"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q104",
+    "answerIndex": 0,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "2の8乗はいくつ？",
+        "choices": [
+          "256",
+          "128",
+          "512",
+          "64"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "2 to the power of 8",
+        "choices": [
+          "256",
+          "128",
+          "512",
+          "64"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q261",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ロシア革命が起きた年は？",
+        "choices": [
+          "1905年",
+          "1914年",
+          "1917年",
+          "1922年"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The year the Russian Revolution took place",
+        "choices": [
+          "1905",
+          "1914",
+          "1917",
+          "1922"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q133",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番小さい大陸",
+        "choices": [
+          "南極大陸",
+          "ヨーロッパ大陸",
+          "オーストラリア大陸",
+          "南アメリカ大陸"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The smallest continent in the world",
+        "choices": [
+          "Antarctica",
+          "Europe",
+          "Australia",
+          "South America"
+        ],
+        "decisionPoint": 22
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q264",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "豆板醤の主な原料となる豆",
+        "choices": [
+          "大豆",
+          "小豆",
+          "ソラマメ",
+          "ひよこ豆"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The main bean used to make doubanjiang",
+        "choices": [
+          "Soybean",
+          "Adzuki bean",
+          "Fava bean",
+          "Chickpea"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q002",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "近代オリンピックの提唱者",
+        "choices": [
+          "ジョン・ロック",
+          "アンリ・デュナン",
+          "クーベルタン",
+          "ノーベル"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The founder of the modern Olympic Games",
+        "choices": [
+          "John Locke",
+          "Henri Dunant",
+          "Coubertin",
+          "Nobel"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q142",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "人体で最も小さい骨がある部位",
+        "choices": [
+          "耳",
+          "指",
+          "足",
+          "鼻"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The part of the human body that contains the smallest bone",
+        "choices": [
+          "Ear",
+          "Finger",
+          "Foot",
+          "Nose"
+        ],
+        "decisionPoint": 58
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q268",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "正十二面体の辺の数",
+        "choices": [
+          "20本",
+          "24本",
+          "30本",
+          "36本"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The number of edges on a regular dodecahedron",
+        "choices": [
+          "20",
+          "24",
+          "30",
+          "36"
+        ],
+        "decisionPoint": 45
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q198",
+    "answerIndex": 1,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「接吻」で知られるウィーンの画家",
+        "choices": [
+          "エゴン・シーレ",
+          "グスタフ・クリムト",
+          "オスカー・ココシュカ",
+          "フリーデンスライヒ・フンデルトヴァッサー"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The Viennese painter known for The Kiss",
+        "choices": [
+          "Egon Schiele",
+          "Gustav Klimt",
+          "Oskar Kokoschka",
+          "Friedensreich Hundertwasser"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q025",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "組曲「惑星」で省かれた太陽系の天体",
+        "choices": [
+          "水星",
+          "海王星",
+          "地球",
+          "火星"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The solar system body omitted from the suite The Planets",
+        "choices": [
+          "Mercury",
+          "Neptune",
+          "Earth",
+          "Mars"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q232",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "キリンの首の骨の数",
+        "choices": [
+          "14個",
+          "5個",
+          "7個",
+          "10個"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The number of bones in a giraffe's neck",
+        "choices": [
+          "14",
+          "5",
+          "7",
+          "10"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q091",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "フェンシングの3種目で最も重い剣",
+        "choices": [
+          "フルーレ",
+          "エペ",
+          "サーブル",
+          "レイピア"
+        ],
+        "decisionPoint": 16
+      },
+      "en": {
+        "text": "The heaviest sword among the three fencing disciplines",
+        "choices": [
+          "Foil",
+          "Épée",
+          "Sabre",
+          "Rapier"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q274",
+    "answerIndex": 2,
+    "category": "language",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ラテン語で「星」は？",
+        "choices": [
+          "ルナ",
+          "ソル",
+          "ステラ",
+          "テラ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The Latin word for star",
+        "choices": [
+          "Luna",
+          "Sol",
+          "Stella",
+          "Terra"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q040",
+    "answerIndex": 2,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「真珠の耳飾りの少女」の画家",
+        "choices": [
+          "ルーベンス",
+          "ハルス",
+          "フェルメール",
+          "レンブラント"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The painter of 'Girl with a Pearl Earring'",
+        "choices": [
+          "Rubens",
+          "Hals",
+          "Vermeer",
+          "Rembrandt"
+        ],
+        "decisionPoint": 42
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q070",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "大化の改新が起きた世紀",
+        "choices": [
+          "6世紀",
+          "7世紀",
+          "8世紀",
+          "5世紀"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The century in which the Taika Reform took place",
+        "choices": [
+          "6th century",
+          "7th century",
+          "8th century",
+          "5th century"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q024",
+    "answerIndex": 3,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "コアラが主食にしている葉",
+        "choices": [
+          "竹の葉",
+          "桑の葉",
+          "松の葉",
+          "ユーカリの葉"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The leaves that koalas primarily eat",
+        "choices": [
+          "Bamboo leaves",
+          "Mulberry leaves",
+          "Pine needles",
+          "Eucalyptus leaves"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q233",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Pb」が表す元素は？",
+        "choices": [
+          "白金",
+          "リン",
+          "鉛",
+          "ホウ素"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Pb",
+        "choices": [
+          "Platinum",
+          "Phosphorus",
+          "Lead",
+          "Boron"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q009",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オリンピック競泳の自由形で最長の距離は？",
+        "choices": [
+          "200m",
+          "800m",
+          "1500m",
+          "3000m"
+        ],
+        "decisionPoint": 18
+      },
+      "en": {
+        "text": "The longest freestyle distance in Olympic pool swimming",
+        "choices": [
+          "200 m",
+          "800 m",
+          "1500 m",
+          "3000 m"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q166",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『レ・ミゼラブル』の作者",
+        "choices": [
+          "バルザック",
+          "デュマ",
+          "ユーゴー",
+          "ゾラ"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The author of Les Misérables",
+        "choices": [
+          "Balzac",
+          "Dumas",
+          "Hugo",
+          "Zola"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q094",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "正八角形の内角の和",
+        "choices": [
+          "900度",
+          "1080度",
+          "1260度",
+          "1440度"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The sum of interior angles of a regular octagon",
+        "choices": [
+          "900°",
+          "1080°",
+          "1260°",
+          "1440°"
+        ],
+        "decisionPoint": 47
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q026",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "フィギュアスケートで3回転半のジャンプを何という？",
+        "choices": [
+          "ルッツ",
+          "トリプルアクセル",
+          "サルコウ",
+          "トウループ"
+        ],
+        "decisionPoint": 18
+      },
+      "en": {
+        "text": "The figure skating jump with three and a half rotations",
+        "choices": [
+          "Lutz",
+          "Triple axel",
+          "Salchow",
+          "Toe loop"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q089",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "真空中で光が1年間に進む距離の単位",
+        "choices": [
+          "天文単位",
+          "パーセク",
+          "光年",
+          "海里"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The unit of distance that light travels in one year in a vacuum",
+        "choices": [
+          "Astronomical unit",
+          "Parsec",
+          "Light-year",
+          "Nautical mile"
+        ],
+        "decisionPoint": 51
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q122",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『ガリバー旅行記』の作者",
+        "choices": [
+          "デフォー",
+          "ディケンズ",
+          "スティーブンソン",
+          "スウィフト"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The author of 'Gulliver's Travels'",
+        "choices": [
+          "Defoe",
+          "Dickens",
+          "Stevenson",
+          "Swift"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q271",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "クリケットで打者が守る三柱門を何という？",
+        "choices": [
+          "ゴールポスト",
+          "ベース",
+          "ウィケット",
+          "フープ"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The three-stump gate that a batsman defends in cricket",
+        "choices": [
+          "Goalpost",
+          "Base",
+          "Wicket",
+          "Hoop"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q034",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "江戸幕府を開いた人物",
+        "choices": [
+          "豊臣秀吉",
+          "織田信長",
+          "徳川家康",
+          "武田信玄"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The person who founded the Edo shogunate",
+        "choices": [
+          "Toyotomi Hideyoshi",
+          "Oda Nobunaga",
+          "Tokugawa Ieyasu",
+          "Takeda Shingen"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q217",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "円についてπ（パイ）が表す比率",
+        "choices": [
+          "面積と半径の比",
+          "円周と直径の比",
+          "直径と半径の比",
+          "弧と弦の比"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The ratio that π (pi) represents for a circle",
+        "choices": [
+          "The ratio of area to radius",
+          "The ratio of circumference to diameter",
+          "The ratio of diameter to radius",
+          "The ratio of arc to chord"
+        ],
+        "decisionPoint": 21
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q038",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "地球が太陽のまわりを1周する時間",
+        "choices": [
+          "約365日",
+          "約30日",
+          "約7日",
+          "約100日"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "Time it takes Earth to orbit the Sun once",
+        "choices": [
+          "About 365 days",
+          "About 30 days",
+          "About 7 days",
+          "About 100 days"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q218",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "パスタの主な原料となる穀物",
+        "choices": [
+          "小麦",
+          "米",
+          "トウモロコシ",
+          "大麦"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The grain that is the main ingredient of pasta",
+        "choices": [
+          "Wheat",
+          "Rice",
+          "Corn",
+          "Barley"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q193",
+    "answerIndex": 3,
+    "category": "animals",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "クモの脚の数",
+        "choices": [
+          "4本",
+          "6本",
+          "10本",
+          "8本"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The number of legs on a spider",
+        "choices": [
+          "4",
+          "6",
+          "10",
+          "8"
+        ],
+        "decisionPoint": 29
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q164",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "交響曲「未完成」の作曲家",
+        "choices": [
+          "ハイドン",
+          "シューベルト",
+          "ブラームス",
+          "メンデルスゾーン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The composer of the Unfinished Symphony",
+        "choices": [
+          "Haydn",
+          "Schubert",
+          "Brahms",
+          "Mendelssohn"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q284",
+    "answerIndex": 3,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きいげっ歯類",
+        "choices": [
+          "ビーバー",
+          "ヤマアラシ",
+          "マーラ",
+          "カピバラ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The largest living rodent in the world",
+        "choices": [
+          "Beaver",
+          "Porcupine",
+          "Mara",
+          "Capybara"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q013",
+    "answerIndex": 3,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "卓球の別名",
+        "choices": [
+          "バドミントン",
+          "スカッシュ",
+          "テニス",
+          "ピンポン"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "Another common name for table tennis",
+        "choices": [
+          "Badminton",
+          "Squash",
+          "Tennis",
+          "Ping-pong"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q039",
+    "answerIndex": 2,
+    "category": "nature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "植物が水を根から吸い上げる管を何という？",
+        "choices": [
+          "師管",
+          "形成層",
+          "道管",
+          "表皮"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The vessel in plants that transports water upward from the roots",
+        "choices": [
+          "Phloem",
+          "Cambium",
+          "Xylem",
+          "Epidermis"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q154",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "フラミンゴが片足で立つ主な理由",
+        "choices": [
+          "バランスの訓練",
+          "体温の保持",
+          "敵への威嚇",
+          "足の疲れを取る"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The main reason flamingos stand on one leg",
+        "choices": [
+          "Balance training",
+          "Heat conservation",
+          "Intimidating predators",
+          "Resting their legs"
+        ],
+        "decisionPoint": 42
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q031",
+    "answerIndex": 0,
+    "category": "science",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "音が伝わる速さを何という？",
+        "choices": [
+          "音速",
+          "光速",
+          "風速",
+          "流速"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The term for the speed at which sound travels",
+        "choices": [
+          "Speed of sound",
+          "Speed of light",
+          "Wind speed",
+          "Flow speed"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q088",
+    "answerIndex": 0,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "地球が自転を1回するのにかかる時間",
+        "choices": [
+          "約24時間",
+          "約12時間",
+          "約48時間",
+          "約36時間"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The time it takes for the Earth to complete one rotation on its axis",
+        "choices": [
+          "About 24 hours",
+          "About 12 hours",
+          "About 48 hours",
+          "About 36 hours"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q004",
+    "answerIndex": 0,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『伊豆の踊子』の作者",
+        "choices": [
+          "川端康成",
+          "三島由紀夫",
+          "志賀直哉",
+          "谷崎潤一郎"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The author of 'The Izu Dancer'",
+        "choices": [
+          "Yasunari Kawabata",
+          "Yukio Mishima",
+          "Naoya Shiga",
+          "Junichiro Tanizaki"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q177",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "世界で一番面積が大きい湖",
+        "choices": [
+          "スペリオル湖",
+          "ヴィクトリア湖",
+          "カスピ海",
+          "バイカル湖"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The lake with the largest surface area in the world",
+        "choices": [
+          "Lake Superior",
+          "Lake Victoria",
+          "Caspian Sea",
+          "Lake Baikal"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q242",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "古代エジプト文明が栄えた川",
+        "choices": [
+          "チグリス川",
+          "ナイル川",
+          "ガンジス川",
+          "黄河"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The river along which ancient Egyptian civilization flourished",
+        "choices": [
+          "Tigris",
+          "Nile",
+          "Ganges",
+          "Yellow River"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q134",
+    "answerIndex": 2,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きいサメ",
+        "choices": [
+          "ホホジロザメ",
+          "メガマウスザメ",
+          "ジンベエザメ",
+          "シュモクザメ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The largest species of shark in the world",
+        "choices": [
+          "Great white shark",
+          "Megamouth shark",
+          "Whale shark",
+          "Hammerhead shark"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q107",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ルネサンス発祥の都市",
+        "choices": [
+          "ヴェネツィア",
+          "フィレンツェ",
+          "ミラノ",
+          "ナポリ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The city where the Renaissance originated",
+        "choices": [
+          "Venice",
+          "Florence",
+          "Milan",
+          "Naples"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q065",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "万有引力の法則を発見した人物",
+        "choices": [
+          "ガリレオ",
+          "ケプラー",
+          "コペルニクス",
+          "ニュートン"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The person who discovered the law of universal gravitation",
+        "choices": [
+          "Galileo",
+          "Kepler",
+          "Copernicus",
+          "Newton"
+        ],
+        "decisionPoint": 58
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q092",
+    "answerIndex": 1,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "5×6はいくつ？",
+        "choices": [
+          "24",
+          "30",
+          "36",
+          "42"
+        ],
+        "decisionPoint": 3
+      },
+      "en": {
+        "text": "What is 5 × 6",
+        "choices": [
+          "24",
+          "30",
+          "36",
+          "42"
+        ],
+        "decisionPoint": 13
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q152",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "大相撲の最高位の称号",
+        "choices": [
+          "大関",
+          "関脇",
+          "横綱",
+          "小結"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The highest rank in professional sumo wrestling",
+        "choices": [
+          "Ozeki",
+          "Sekiwake",
+          "Yokozuna",
+          "Komusubi"
+        ],
+        "decisionPoint": 47
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q260",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "フォボスと並ぶ火星のもう1つの衛星",
+        "choices": [
+          "カリスト",
+          "エウロパ",
+          "ダイモス",
+          "イオ"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The other moon of Mars besides Phobos",
+        "choices": [
+          "Callisto",
+          "Europa",
+          "Deimos",
+          "Io"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q178",
+    "answerIndex": 0,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "天の川銀河の中心にあるとされる天体",
+        "choices": [
+          "ブラックホール",
+          "中性子星",
+          "白色矮星",
+          "赤色巨星"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The type of object believed to be at the center of the Milky Way",
+        "choices": [
+          "Black hole",
+          "Neutron star",
+          "White dwarf",
+          "Red giant"
+        ],
+        "decisionPoint": 64
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q110",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「ワルキューレの騎行」の作曲家",
+        "choices": [
+          "ブラームス",
+          "ワーグナー",
+          "リスト",
+          "シベリウス"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The composer of Ride of the Valkyries",
+        "choices": [
+          "Brahms",
+          "Wagner",
+          "Liszt",
+          "Sibelius"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q106",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "たくあんの主な原料となる野菜",
+        "choices": [
+          "ニンジン",
+          "キュウリ",
+          "ダイコン",
+          "ゴボウ"
+        ],
+        "decisionPoint": 14
+      },
+      "en": {
+        "text": "The main vegetable used to make takuan (Japanese pickled radish)",
+        "choices": [
+          "Carrot",
+          "Cucumber",
+          "Daikon radish",
+          "Burdock root"
+        ],
+        "decisionPoint": 64
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q127",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "卵を産む哺乳類",
+        "choices": [
+          "コウモリ",
+          "コアラ",
+          "カモノハシ",
+          "アルマジロ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "A mammal that lays eggs",
+        "choices": [
+          "Bat",
+          "Koala",
+          "Platypus",
+          "Armadillo"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q208",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "「白鳥の湖」の作曲家",
+        "choices": [
+          "ドビュッシー",
+          "チャイコフスキー",
+          "シューベルト",
+          "ショパン"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The composer of Swan Lake",
+        "choices": [
+          "Debussy",
+          "Tchaikovsky",
+          "Schubert",
+          "Chopin"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q191",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "正八面体の頂点の数",
+        "choices": [
+          "4個",
+          "5個",
+          "6個",
+          "8個"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The number of vertices on a regular octahedron",
+        "choices": [
+          "4",
+          "5",
+          "6",
+          "8"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q270",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "太陽系で唯一の矮小惑星に降格された天体",
+        "choices": [
+          "エリス",
+          "冥王星",
+          "ケレス",
+          "セドナ"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The celestial body famously reclassified from planet to dwarf planet in 2006",
+        "choices": [
+          "Eris",
+          "Pluto",
+          "Ceres",
+          "Sedna"
+        ],
+        "decisionPoint": 76
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q219",
+    "answerIndex": 2,
+    "category": "space",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "木星の最大の衛星",
+        "choices": [
+          "イオ",
+          "エウロパ",
+          "ガニメデ",
+          "カリスト"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The largest moon of Jupiter",
+        "choices": [
+          "Io",
+          "Europa",
+          "Ganymede",
+          "Callisto"
+        ],
+        "decisionPoint": 27
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q079",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "心臓を3つ持つ海の生き物",
+        "choices": [
+          "クラゲ",
+          "タコ",
+          "ウニ",
+          "エビ"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "A sea creature that has three hearts",
+        "choices": [
+          "Jellyfish",
+          "Octopus",
+          "Sea urchin",
+          "Shrimp"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q064",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ジブラルタル海峡が隔てる2つの大陸",
+        "choices": [
+          "南北アメリカ",
+          "ヨーロッパとアフリカ",
+          "アジアとヨーロッパ",
+          "アジアとアフリカ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The two continents separated by the Strait of Gibraltar",
+        "choices": [
+          "North and South America",
+          "Europe and Africa",
+          "Asia and Europe",
+          "Asia and Africa"
+        ],
+        "decisionPoint": 55
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q119",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ナイアガラの滝がまたがる2つの国",
+        "choices": [
+          "アメリカとカナダ",
+          "アメリカとメキシコ",
+          "カナダとイギリス",
+          "アメリカとブラジル"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The two countries Niagara Falls straddles",
+        "choices": [
+          "The US and Canada",
+          "The US and Mexico",
+          "Canada and the UK",
+          "The US and Brazil"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q068",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "人体で最も大きい筋肉がある部位",
+        "choices": [
+          "腕",
+          "腹",
+          "太もも",
+          "背中"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The body part containing the largest muscle in the human body",
+        "choices": [
+          "Arm",
+          "Abdomen",
+          "Thigh",
+          "Back"
+        ],
+        "decisionPoint": 61
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q125",
+    "answerIndex": 3,
+    "category": "history",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "コロッセオが建てられた都市",
+        "choices": [
+          "アテネ",
+          "カイロ",
+          "パリ",
+          "ローマ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The city where the Colosseum was built",
+        "choices": [
+          "Athens",
+          "Cairo",
+          "Paris",
+          "Rome"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q160",
+    "answerIndex": 1,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番深い海溝",
+        "choices": [
+          "トンガ海溝",
+          "マリアナ海溝",
+          "フィリピン海溝",
+          "日本海溝"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The deepest ocean trench in the world",
+        "choices": [
+          "Tonga Trench",
+          "Mariana Trench",
+          "Philippine Trench",
+          "Japan Trench"
+        ],
+        "decisionPoint": 24
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q188",
+    "answerIndex": 3,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "2の12乗はいくつ？",
+        "choices": [
+          "2048",
+          "8192",
+          "2096",
+          "4096"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The value of 2 to the power of 12",
+        "choices": [
+          "2048",
+          "8192",
+          "2096",
+          "4096"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q131",
+    "answerIndex": 0,
+    "category": "animals",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ペンギンの主な生息地域",
+        "choices": [
+          "南半球",
+          "北半球",
+          "赤道付近",
+          "北極"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The region where penguins mainly live in the wild",
+        "choices": [
+          "Southern Hemisphere",
+          "Northern Hemisphere",
+          "Near the equator",
+          "The Arctic"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q100",
+    "answerIndex": 0,
+    "category": "math",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "正六角形の内角の和",
+        "choices": [
+          "720度",
+          "540度",
+          "360度",
+          "900度"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The sum of interior angles of a regular hexagon",
+        "choices": [
+          "720 degrees",
+          "540 degrees",
+          "360 degrees",
+          "900 degrees"
+        ],
+        "decisionPoint": 47
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q136",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "ヨーグルトを作るのに必要な微生物",
+        "choices": [
+          "酵母",
+          "乳酸菌",
+          "麹菌",
+          "納豆菌"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The microorganism needed to make yogurt",
+        "choices": [
+          "Yeast",
+          "Lactic acid bacteria",
+          "Koji mold",
+          "Bacillus subtilis"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q099",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "古代ローマの共和政が帝政に変わった世紀",
+        "choices": [
+          "紀元前1世紀",
+          "紀元前3世紀",
+          "紀元1世紀",
+          "紀元2世紀"
+        ],
+        "decisionPoint": 17
+      },
+      "en": {
+        "text": "The century in which the Roman Republic became an empire",
+        "choices": [
+          "1st century BC",
+          "3rd century BC",
+          "1st century AD",
+          "2nd century AD"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q069",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "人間の体に骨はおよそ何個？",
+        "choices": [
+          "約200個",
+          "約50個",
+          "約500個",
+          "約1000個"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "Approximate number of bones in the adult human body",
+        "choices": [
+          "About 200",
+          "About 50",
+          "About 500",
+          "About 1000"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q256",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "太陽系で最も遠い惑星",
+        "choices": [
+          "天王星",
+          "海王星",
+          "土星",
+          "木星"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The farthest planet from the Sun in our solar system",
+        "choices": [
+          "Uranus",
+          "Neptune",
+          "Saturn",
+          "Jupiter"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q072",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "相撲で勝敗を判定する役割を何という？",
+        "choices": [
+          "物言い",
+          "呼出",
+          "行司",
+          "親方"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The role that judges wins and losses in sumo wrestling",
+        "choices": [
+          "Mono-ii",
+          "Yobidashi",
+          "Gyōji",
+          "Oyakata"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q020",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "オリンピック競技で素足で戦う格闘技",
+        "choices": [
+          "レスリング",
+          "ボクシング",
+          "柔道",
+          "フェンシング"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The Olympic combat sport in which competitors fight barefoot",
+        "choices": [
+          "Wrestling",
+          "Boxing",
+          "Judo",
+          "Fencing"
+        ],
+        "decisionPoint": 56
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q007",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "ナイル川がある大陸",
+        "choices": [
+          "南アメリカ大陸",
+          "ヨーロッパ大陸",
+          "アフリカ大陸",
+          "オーストラリア大陸"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The continent where the Nile River is located",
+        "choices": [
+          "South America",
+          "Europe",
+          "Africa",
+          "Australia"
+        ],
+        "decisionPoint": 34
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q066",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "インカ帝国を滅ぼしたスペイン人",
+        "choices": [
+          "コルテス",
+          "ピサロ",
+          "マゼラン",
+          "バルボア"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The Spanish conquistador who conquered the Inca Empire",
+        "choices": [
+          "Cortés",
+          "Pizarro",
+          "Magellan",
+          "Balboa"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q174",
+    "answerIndex": 2,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ペニシリンを発見した科学者",
+        "choices": [
+          "パスツール",
+          "コッホ",
+          "フレミング",
+          "ジェンナー"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The scientist who discovered penicillin",
+        "choices": [
+          "Pasteur",
+          "Koch",
+          "Fleming",
+          "Jenner"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q251",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "正二十面体の頂点の数",
+        "choices": [
+          "10個",
+          "15個",
+          "12個",
+          "20個"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The number of vertices of a regular icosahedron",
+        "choices": [
+          "10",
+          "15",
+          "12",
+          "20"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q167",
+    "answerIndex": 0,
+    "category": "history",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "十字軍の遠征が始まった世紀",
+        "choices": [
+          "11世紀",
+          "9世紀",
+          "13世紀",
+          "15世紀"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The century in which the Crusades began",
+        "choices": [
+          "11th century",
+          "9th century",
+          "13th century",
+          "15th century"
+        ],
+        "decisionPoint": 39
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q098",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ピアノの黒鍵は1オクターブに何個？",
+        "choices": [
+          "4個",
+          "6個",
+          "5個",
+          "7個"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The number of black keys in one octave on a piano",
+        "choices": [
+          "4",
+          "6",
+          "5",
+          "7"
+        ],
+        "decisionPoint": 37
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q058",
+    "answerIndex": 0,
+    "category": "body",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "血液中で酸素を運ぶ細胞",
+        "choices": [
+          "赤血球",
+          "白血球",
+          "血小板",
+          "リンパ球"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The blood cells that carry oxygen",
+        "choices": [
+          "Red blood cells",
+          "White blood cells",
+          "Platelets",
+          "Lymphocytes"
+        ],
+        "decisionPoint": 16
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q190",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "虹の中で一番内側の色",
+        "choices": [
+          "赤",
+          "黄",
+          "紫",
+          "緑"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The color on the innermost edge of a rainbow",
+        "choices": [
+          "Red",
+          "Yellow",
+          "Violet",
+          "Green"
+        ],
+        "decisionPoint": 44
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q195",
+    "answerIndex": 2,
+    "category": "food",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "サフランの色",
+        "choices": [
+          "赤",
+          "紫",
+          "黄色",
+          "緑"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The color of saffron when used as a spice",
+        "choices": [
+          "Red",
+          "Purple",
+          "Yellow",
+          "Green"
+        ],
+        "decisionPoint": 13
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q103",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ミツバチの巣で女王バチは何匹？",
+        "choices": [
+          "0匹",
+          "1匹",
+          "2匹",
+          "3匹"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The number of queen bees in a honeybee colony",
+        "choices": [
+          "Zero",
+          "One",
+          "Two",
+          "Three"
+        ],
+        "decisionPoint": 19
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q049",
+    "answerIndex": 3,
+    "category": "sports",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "野球で1チームの打順は何人？",
+        "choices": [
+          "7人",
+          "8人",
+          "10人",
+          "9人"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "The number of batters in a baseball team's lineup",
+        "choices": [
+          "7",
+          "8",
+          "10",
+          "9"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q147",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "ダイヤモンドのモース硬度",
+        "choices": [
+          "7",
+          "8",
+          "10",
+          "15"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The Mohs hardness of diamond",
+        "choices": [
+          "7",
+          "8",
+          "10",
+          "15"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q032",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Pt」が表す元素は？",
+        "choices": [
+          "パラジウム",
+          "チタン",
+          "白金",
+          "リン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Pt",
+        "choices": [
+          "Palladium",
+          "Titanium",
+          "Platinum",
+          "Phosphorus"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q246",
+    "answerIndex": 1,
+    "category": "animals",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きいペンギン",
+        "choices": [
+          "マゼランペンギン",
+          "コウテイペンギン",
+          "アデリーペンギン",
+          "フンボルトペンギン"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The largest species of penguin in the world",
+        "choices": [
+          "Magellanic penguin",
+          "Emperor penguin",
+          "Adélie penguin",
+          "Humboldt penguin"
+        ],
+        "decisionPoint": 31
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q165",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "電気の抵抗の単位",
+        "choices": [
+          "ワット",
+          "アンペア",
+          "オーム",
+          "ボルト"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The unit of electrical resistance",
+        "choices": [
+          "Watt",
+          "Ampere",
+          "Ohm",
+          "Volt"
+        ],
+        "decisionPoint": 33
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q012",
+    "answerIndex": 1,
+    "category": "nature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "急降下の速度が世界最速の鳥",
+        "choices": [
+          "イヌワシ",
+          "ハヤブサ",
+          "ツバメ",
+          "アマツバメ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The bird with the fastest diving speed in the world",
+        "choices": [
+          "Golden eagle",
+          "Peregrine falcon",
+          "Barn swallow",
+          "Common swift"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q017",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "サグラダ・ファミリアがある都市",
+        "choices": [
+          "リスボン",
+          "ローマ",
+          "バルセロナ",
+          "アテネ"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The city where the Sagrada Família is located",
+        "choices": [
+          "Lisbon",
+          "Rome",
+          "Barcelona",
+          "Athens"
+        ],
+        "decisionPoint": 35
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q277",
+    "answerIndex": 2,
+    "category": "animals",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ラッコがお気に入りの石をしまう場所",
+        "choices": [
+          "口の中",
+          "巣穴",
+          "脇の下のたるみ",
+          "尾の裏側"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "Where sea otters store their favorite rock",
+        "choices": [
+          "In their mouth",
+          "In their den",
+          "In a pouch under their arm",
+          "Under their tail"
+        ],
+        "decisionPoint": 42
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q112",
+    "answerIndex": 2,
+    "category": "geography",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "アフリカ大陸にある世界最大の砂漠",
+        "choices": [
+          "ゴビ砂漠",
+          "カラハリ砂漠",
+          "サハラ砂漠",
+          "タクラマカン砂漠"
+        ],
+        "decisionPoint": 6
+      },
+      "en": {
+        "text": "The largest desert in Africa",
+        "choices": [
+          "Gobi Desert",
+          "Kalahari Desert",
+          "Sahara Desert",
+          "Taklamakan Desert"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q076",
+    "answerIndex": 0,
+    "category": "food",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "こんにゃくの主な原料となる植物",
+        "choices": [
+          "コンニャクイモ",
+          "サトイモ",
+          "ヤマイモ",
+          "サツマイモ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The plant used as the main ingredient for konjac",
+        "choices": [
+          "Konjac potato",
+          "Taro",
+          "Yam",
+          "Sweet potato"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q209",
+    "answerIndex": 1,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『オデュッセイア』の作者とされる詩人",
+        "choices": [
+          "ソフォクレス",
+          "ホメロス",
+          "ウェルギリウス",
+          "ヘシオドス"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The poet traditionally credited as the author of the Odyssey",
+        "choices": [
+          "Sophocles",
+          "Homer",
+          "Virgil",
+          "Hesiod"
+        ],
+        "decisionPoint": 60
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q249",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "明治維新が始まった年",
+        "choices": [
+          "1848年",
+          "1868年",
+          "1888年",
+          "1912年"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The year the Meiji Restoration began",
+        "choices": [
+          "1848",
+          "1868",
+          "1888",
+          "1912"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q235",
+    "answerIndex": 2,
+    "category": "math",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "正八面体の面の数",
+        "choices": [
+          "6つ",
+          "7つ",
+          "8つ",
+          "10つ"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The number of faces of a regular octahedron",
+        "choices": [
+          "6",
+          "7",
+          "8",
+          "10"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q226",
+    "answerIndex": 2,
+    "category": "body",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "食べたものを胃液で溶かす臓器",
+        "choices": [
+          "肝臓",
+          "小腸",
+          "胃",
+          "腎臓"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The organ that breaks down food using gastric acid",
+        "choices": [
+          "Liver",
+          "Small intestine",
+          "Stomach",
+          "Kidney"
+        ],
+        "decisionPoint": 46
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q180",
+    "answerIndex": 0,
+    "category": "geography",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "モアイ像がある島の名前は？",
+        "choices": [
+          "イースター島",
+          "タスマニア島",
+          "シチリア島",
+          "マダガスカル島"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The island famous for its Moai statues",
+        "choices": [
+          "Easter Island",
+          "Tasmania",
+          "Sicily",
+          "Madagascar"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q075",
+    "answerIndex": 1,
+    "category": "space",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "ハッブル宇宙望遠鏡の主鏡の直径",
+        "choices": [
+          "1.5m",
+          "2.4m",
+          "3.6m",
+          "4.2m"
+        ],
+        "decisionPoint": 15
+      },
+      "en": {
+        "text": "The diameter of the Hubble Space Telescope's primary mirror",
+        "choices": [
+          "1.5 m",
+          "2.4 m",
+          "3.6 m",
+          "4.2 m"
+        ],
+        "decisionPoint": 59
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q056",
+    "answerIndex": 3,
+    "category": "science",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "電力の単位を何という？",
+        "choices": [
+          "アンペア",
+          "ボルト",
+          "ジュール",
+          "ワット"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The unit of electric power",
+        "choices": [
+          "Ampere",
+          "Volt",
+          "Joule",
+          "Watt"
+        ],
+        "decisionPoint": 26
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q254",
+    "answerIndex": 0,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "マラソンの語源となった戦場がある国",
+        "choices": [
+          "ギリシャ",
+          "イタリア",
+          "トルコ",
+          "エジプト"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The country where the battlefield that gave marathon its name is located",
+        "choices": [
+          "Greece",
+          "Italy",
+          "Turkey",
+          "Egypt"
+        ],
+        "decisionPoint": 72
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q186",
+    "answerIndex": 1,
+    "category": "history",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "万里の長城がある国",
+        "choices": [
+          "インド",
+          "中国",
+          "モンゴル",
+          "韓国"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The country where the Great Wall is located",
+        "choices": [
+          "India",
+          "China",
+          "Mongolia",
+          "South Korea"
+        ],
+        "decisionPoint": 28
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q183",
+    "answerIndex": 3,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "『白鯨』の作者",
+        "choices": [
+          "マーク・トウェイン",
+          "ジャック・ロンドン",
+          "ジョセフ・コンラッド",
+          "ハーマン・メルヴィル"
+        ],
+        "decisionPoint": 4
+      },
+      "en": {
+        "text": "The author of Moby-Dick",
+        "choices": [
+          "Mark Twain",
+          "Jack London",
+          "Joseph Conrad",
+          "Herman Melville"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q181",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "元素記号「Sb」が表す元素は？",
+        "choices": [
+          "硫黄",
+          "アンチモン",
+          "ストロンチウム",
+          "セレン"
+        ],
+        "decisionPoint": 8
+      },
+      "en": {
+        "text": "The element represented by the symbol Sb",
+        "choices": [
+          "Sulfur",
+          "Antimony",
+          "Strontium",
+          "Selenium"
+        ],
+        "decisionPoint": 40
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q216",
+    "answerIndex": 2,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「ペール・ギュント」の作曲家",
+        "choices": [
+          "シベリウス",
+          "ニールセン",
+          "グリーグ",
+          "スヴェンセン"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The composer of Peer Gynt",
+        "choices": [
+          "Sibelius",
+          "Nielsen",
+          "Grieg",
+          "Svendsen"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q120",
+    "answerIndex": 3,
+    "category": "geography",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "世界で一番大きい珊瑚礁",
+        "choices": [
+          "メソアメリカン・リーフ",
+          "紅海サンゴ礁",
+          "ニューカレドニア・バリアリーフ",
+          "グレート・バリア・リーフ"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The largest coral reef in the world",
+        "choices": [
+          "Mesoamerican Reef",
+          "Red Sea Coral Reef",
+          "New Caledonia Barrier Reef",
+          "Great Barrier Reef"
+        ],
+        "decisionPoint": 23
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q213",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "『グレート・ギャツビー』の作者",
+        "choices": [
+          "ヘミングウェイ",
+          "スタインベック",
+          "フィッツジェラルド",
+          "フォークナー"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The author of The Great Gatsby",
+        "choices": [
+          "Hemingway",
+          "Steinbeck",
+          "F. Scott Fitzgerald",
+          "Faulkner"
+        ],
+        "decisionPoint": 30
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q144",
+    "answerIndex": 1,
+    "category": "nature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "地震の揺れの大きさを表す尺度を何という？",
+        "choices": [
+          "マグニチュード",
+          "震度",
+          "震源",
+          "震幅"
+        ],
+        "decisionPoint": 20
+      },
+      "en": {
+        "text": "The scale that expresses the intensity of shaking felt at a location during an earthquake",
+        "choices": [
+          "Magnitude",
+          "Seismic intensity",
+          "Epicenter",
+          "Amplitude"
+        ],
+        "decisionPoint": 89
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q194",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "『赤毛のアン』の舞台となった国",
+        "choices": [
+          "イギリス",
+          "アメリカ",
+          "カナダ",
+          "オーストラリア"
+        ],
+        "decisionPoint": 11
+      },
+      "en": {
+        "text": "The country where Anne of Green Gables is set",
+        "choices": [
+          "England",
+          "United States",
+          "Canada",
+          "Australia"
+        ],
+        "decisionPoint": 38
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q250",
+    "answerIndex": 0,
+    "category": "math",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "3の4乗はいくつ？",
+        "choices": [
+          "81",
+          "64",
+          "27",
+          "72"
+        ],
+        "decisionPoint": 5
+      },
+      "en": {
+        "text": "The value of 3 to the power of 4",
+        "choices": [
+          "81",
+          "64",
+          "27",
+          "72"
+        ],
+        "decisionPoint": 32
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q231",
+    "answerIndex": 2,
+    "category": "literature",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "17世紀の叙事詩『失楽園』の作者",
+        "choices": [
+          "ダンテ",
+          "ワーズワース",
+          "ミルトン",
+          "シェリー"
+        ],
+        "decisionPoint": 13
+      },
+      "en": {
+        "text": "Author of the 17th-century epic poem 'Paradise Lost'",
+        "choices": [
+          "Dante",
+          "Wordsworth",
+          "Milton",
+          "Shelley"
+        ],
+        "decisionPoint": 52
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q022",
+    "answerIndex": 1,
+    "category": "sports",
+    "difficulty": "intermediate",
+    "locales": {
+      "ja": {
+        "text": "オリンピックの近代五種に含まれる水の競技",
+        "choices": [
+          "水球",
+          "水泳",
+          "飛び込み",
+          "ボート"
+        ],
+        "decisionPoint": 19
+      },
+      "en": {
+        "text": "The water-based event in the Olympic modern pentathlon",
+        "choices": [
+          "Water polo",
+          "Swimming",
+          "Diving",
+          "Rowing"
+        ],
+        "decisionPoint": 36
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q074",
+    "answerIndex": 1,
+    "category": "science",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "人体で最も大きい白血球は？",
+        "choices": [
+          "好中球",
+          "単球",
+          "リンパ球",
+          "好酸球"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The largest type of white blood cell in the human body",
+        "choices": [
+          "Neutrophil",
+          "Monocyte",
+          "Lymphocyte",
+          "Eosinophil"
+        ],
+        "decisionPoint": 41
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q220",
+    "answerIndex": 2,
+    "category": "science",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "音の高さを決めるものは？",
+        "choices": [
+          "振幅",
+          "波長",
+          "振動数",
+          "音量"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The property of a sound wave that determines its pitch",
+        "choices": [
+          "Amplitude",
+          "Wavelength",
+          "Frequency",
+          "Volume"
+        ],
+        "decisionPoint": 54
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q262",
+    "answerIndex": 0,
+    "category": "arts",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「睡蓮」の連作で知られる画家",
+        "choices": [
+          "モネ",
+          "ルノワール",
+          "セザンヌ",
+          "ドガ"
+        ],
+        "decisionPoint": 12
+      },
+      "en": {
+        "text": "The painter famous for a series of Water Lilies paintings",
+        "choices": [
+          "Monet",
+          "Renoir",
+          "Cézanne",
+          "Degas"
+        ],
+        "decisionPoint": 48
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q115",
+    "answerIndex": 2,
+    "category": "sports",
+    "difficulty": "beginner",
+    "locales": {
+      "ja": {
+        "text": "バドミントンで使う羽根つきの球の名前",
+        "choices": [
+          "ボール",
+          "バーディー",
+          "シャトルコック",
+          "パック"
+        ],
+        "decisionPoint": 7
+      },
+      "en": {
+        "text": "The feathered projectile hit back and forth in badminton",
+        "choices": [
+          "Ball",
+          "Birdie",
+          "Shuttlecock",
+          "Puck"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q143",
+    "answerIndex": 1,
+    "category": "music",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "「フィンランディア」の作曲家",
+        "choices": [
+          "グリーグ",
+          "シベリウス",
+          "ニールセン",
+          "スメタナ"
+        ],
+        "decisionPoint": 10
+      },
+      "en": {
+        "text": "The composer of Finlandia",
+        "choices": [
+          "Grieg",
+          "Sibelius",
+          "Nielsen",
+          "Smetana"
+        ],
+        "decisionPoint": 25
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q202",
+    "answerIndex": 1,
+    "category": "food",
+    "difficulty": "beginner0",
+    "locales": {
+      "ja": {
+        "text": "カレーライスにふつう添えられる赤い漬物",
+        "choices": [
+          "たくあん",
+          "福神漬け",
+          "梅干し",
+          "しば漬け"
+        ],
+        "decisionPoint": 19
+      },
+      "en": {
+        "text": "The red pickled condiment typically served with Japanese curry rice",
+        "choices": [
+          "Takuan",
+          "Fukujinzuke",
+          "Umeboshi",
+          "Shibazuke"
+        ],
+        "decisionPoint": 63
+      }
+    }
+  },
+  {
+    "id": "exhibition-2026-10_q006",
+    "answerIndex": 1,
+    "category": "body",
+    "difficulty": "advanced",
+    "locales": {
+      "ja": {
+        "text": "人体で最も長い神経",
+        "choices": [
+          "三叉神経",
+          "坐骨神経",
+          "迷走神経",
+          "視神経"
+        ],
+        "decisionPoint": 9
+      },
+      "en": {
+        "text": "The longest nerve in the human body",
+        "choices": [
+          "Trigeminal nerve",
+          "Sciatic nerve",
+          "Vagus nerve",
+          "Optic nerve"
+        ],
+        "decisionPoint": 18
+      }
+    }
+  }
+]

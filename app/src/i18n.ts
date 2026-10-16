@@ -1,4 +1,5 @@
 import type { Locale } from '@core';
+import type { ExhibitionLevel } from './data';
 import type { IconName } from './components/PixelIcon';
 import type { SoundName } from './platform/sound';
 
@@ -18,6 +19,17 @@ export interface Strings {
   /** 表示速度の行を選んでいるときに出す注意 */
   speedNote: string;
   start: string;
+  /** タイトルのメニュー：週の100問で順位を競う */
+  official: string;
+  /** タイトルのメニュー：終わったピリオドの問題で、記録に残さず遊ぶ */
+  exhibition: string;
+  exhibitionNote: string;
+  /** エキシビジョンの難易度の名前 */
+  levelNames: Record<ExhibitionLevel, string>;
+  exhibitionPool: (n: number) => string;
+  /** その難易度の問題が無いとき */
+  exhibitionEmpty: string;
+  questionCount: (n: number) => string;
   records: string;
   best: string;
   paceLongest: (seconds: string) => string;
@@ -107,6 +119,13 @@ export const STRINGS: Record<Locale, Strings> = {
     speedUnit: 'ミリ秒／文字',
     speedNote: 'ランキングの走行には効きません（サーバーの速さで走ります）',
     start: 'スタート',
+    official: '公式戦',
+    exhibition: 'エキシビジョン',
+    exhibitionNote: '今月の問題と、終わったピリオドの問題で遊ぶ。記録に残らず、ランキングにも載らない',
+    levelNames: { beginner: '初級', intermediate: '中級', advanced: '上級', hell: '激ムズ' },
+    exhibitionPool: (n) => `${n}問から出題`,
+    exhibitionEmpty: 'この難易度の問題はまだありません',
+    questionCount: (n) => `${n}問`,
     records: '記録',
     best: 'ベスト',
     paceLongest: (s) => `一番長い問題文の表示 ${s}秒`,
@@ -211,6 +230,13 @@ export const STRINGS: Record<Locale, Strings> = {
     speedUnit: 'ms / char',
     speedNote: 'Not used in ranked runs (the server sets the speed)',
     start: 'Start',
+    official: 'Official match',
+    exhibition: 'Exhibition',
+    exhibitionNote: "This month's set plus questions from past periods. Not recorded or ranked",
+    levelNames: { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced', hell: 'Hell' },
+    exhibitionPool: (n) => `Drawn from ${n} questions`,
+    exhibitionEmpty: 'No questions at this level yet',
+    questionCount: (n) => `${n} questions`,
     records: 'Records',
     best: 'Best',
     paceLongest: (s) => `Longest question takes ${s} s to show`,

@@ -7,11 +7,14 @@ import {
   median,
   resolveSettings,
   RunEngine,
+  mulberry32,
   scoreToPoints,
+  shuffled,
 } from '@core';
 import type { Locale, Period, Question, RunRecord, RunResult } from '@core';
 import { Screen, StageView } from './components/Screen';
-import { IS_TEMP_DATA, loadData } from './data';
+import { IS_TEMP_DATA, loadData, loadExhibition } from './data';
+import type { ExhibitionLevel } from './data';
 import { createDemoBot } from './demo';
 import type { DemoBot } from './demo';
 import { DEV_PARAMS } from './devParams';
@@ -28,24 +31,29 @@ import { appendRun, getPlayerId, loadRuns, loadSettings, newRunId, saveSettings 
 import type { StoredSettings } from './platform/storage';
 import { GameScreen } from './screens/Game';
 import { RankingScreen } from './screens/Ranking';
+import { ExhibitionScreen } from './screens/Exhibition';
 import { RecordsScreen } from './screens/Records';
 import { ResultScreen } from './screens/Result';
 import type { ServerResult } from './screens/Result';
 import { SettingsScreen } from './screens/Settings';
 import { TitleScreen } from './screens/Title';
-import { COLORS, FONTS } from './theme';
+import { COLORS, FONTS, setInverted } from './theme';
 
-// ブラウザ版の web/src/App.tsx と同じ構造。違いは次の4つ。
+// ブラウザ版の web/src/App.tsx と同じ構造。違いは次の5つ。
 //   - URL パラメータの代わりに devParams.ts の定数を使う
 //   - 保存と効果音の読み込みが非同期なので、読み終えるまで画面を出さない（§7）
 //   - 消灯を防ぐ wakeLock と、ページの言語の切り替えは無い
 //   - ランキングのサーバーに走行の開始と終了を申告する（Vega 版だけ。platform/api.ts）
+//   - エキシビジョン（終わったピリオドの問題で、記録に残さず遊ぶ）がある
 
 /** 自動再生で結果画面を出しておく時間 */
 const DEMO_RESULT_MS = 8000;
 
 /** 最後の問題の判定の音が鳴り終わってから、結果の音を鳴らす */
 const RESULT_SOUND_DELAY_MS = 500;
+
+/** エキシビジョンの激ムズの回答の猶予。激ムズウィーク（設計書 §6）と同じ */
+const HELL_ANSWER_WINDOW_SEC = 10;
 
 /** 走り出す前に「READY」を出す時間。タイムには含めない。0 にすると出さない */
 const READY_MS = 1200;
@@ -56,11 +64,20 @@ interface OnlineRun {
   attemptNumber: number;
 }
 
+/**
+ * 公式戦：今週の100問。記録に残し、サーバーに申告してランキングに載せる。
+ * エキシビジョン：今月の問題と終わったピリオドの問題から、選んだ難易度・数だけ。記録にもランキングにも残さない。
+ */
+type Mode = { kind: 'official' } | { kind: 'exhibition'; level: ExhibitionLevel; count: number };
+const OFFICIAL: Mode = { kind: 'official' };
+
 type Screen =
   | { name: 'title' }
+  | { name: 'exhibition' }
   | {
       name: 'game';
       runKey: number;
+      mode: Mode;
       engine: RunEngine;
       bot: DemoBot | null;
       startedAtIso: string;
@@ -68,7 +85,7 @@ type Screen =
       /** 申告しようとして断られた理由。申告しない走行では null */
       offlineReason: string | null;
     }
-  | { name: 'result'; runKey: number; result: RunResult; attemptNumber: number | null; isNewBest: boolean }
+  | { name: 'result'; runKey: number; mode: Mode; result: RunResult; attemptNumber: number | null; isNewBest: boolean }
   | { name: 'ranking' }
   | { name: 'records' }
   | { name: 'settings' };
@@ -178,6 +195,29 @@ function Main({ questions, period, params, boot }: MainProps) {
     [questions, params.questionLimit],
   );
   const pace = useMemo(() => estimatePace(playable, locale, runSettings), [playable, locale, runSettings]);
+  // エキシビジョンの問題（今月の既定の問題と、起動した時点で終わっているピリオドの問題）
+  const pools = useMemo(() => loadExhibition(Date.now()), []);
+  const poolSizes = useMemo(
+    () => ({
+      beginner: pools.beginner.length,
+      intermediate: pools.intermediate.length,
+      advanced: pools.advanced.length,
+      hell: pools.hell.length,
+    }),
+    [pools],
+  );
+  // 問題数の画面から戻ってきたときに、前に選んだ難易度に合わせておく
+  const [exhibitionLevel, setExhibitionLevel] = useState<ExhibitionLevel | null>(null);
+  // エキシビジョンはピリオドに属さないので標準の設定で走る。激ムズだけは激ムズウィークと同じ猶予にする
+  const exhibitionSettings = useCallback(
+    (level: ExhibitionLevel) =>
+      resolveSettings(DEFAULT_CONFIG, null, locale, {
+        msPerChar,
+        ...(level === 'hell' ? { answerWindowMs: HELL_ANSWER_WINDOW_SEC * 1000 } : {}),
+        ...(params.answerWindowSec !== null ? { answerWindowMs: params.answerWindowSec * 1000 } : {}),
+      }),
+    [locale, msPerChar, params.answerWindowSec],
+  );
 
   const periodRuns = useMemo(
     () => runs.filter((run) => run.periodId === period.id && run.locale === locale),
@@ -196,15 +236,18 @@ function Main({ questions, period, params, boot }: MainProps) {
   // 直近の走行のサーバーの扱い（結果画面に出す）
   const [server, setServer] = useState<ServerResult>({ status: 'none' });
 
-  const startRun = useCallback((): void => {
+  const startRun = useCallback((mode: Mode): void => {
     if (starting.current) return;
     starting.current = true;
     void (async () => {
       let seed = params.seed ?? randomSeed();
-      let engineSettings = runSettings;
+      let engineSettings = mode.kind === 'official' ? runSettings : exhibitionSettings(mode.level);
+      // エキシビジョンは、その難易度の問題から毎回選び直す（並びは RunEngine がさらに混ぜる）
+      const runQuestions =
+        mode.kind === 'official' ? playable : shuffled(pools[mode.level], mulberry32(seed + 1)).slice(0, mode.count);
       let online: OnlineRun | null = null;
       let offlineReason: string | null = null;
-      if (reportable) {
+      if (mode.kind === 'official' && reportable) {
         setBusy(true);
         try {
           const started = await reportStart({ playerId: boot.playerId, periodId: period.id, locale, seed: params.seed });
@@ -223,20 +266,21 @@ function Main({ questions, period, params, boot }: MainProps) {
       setScreen({
         name: 'game',
         runKey: runCounter.current,
+        mode,
         // 開始を少し先の時刻にしておくと、その間は RunEngine が待ってくれる
-        engine: new RunEngine({ questions: playable, locale, settings: engineSettings, seed, now: now() + READY_MS }),
+        engine: new RunEngine({ questions: runQuestions, locale, settings: engineSettings, seed, now: now() + READY_MS }),
         bot: params.demo ? createDemoBot(seed) : null,
         startedAtIso: new Date(Date.now() + READY_MS).toISOString(),
         online,
         offlineReason,
       });
     })();
-  }, [params.seed, params.demo, reportable, boot.playerId, period.id, playable, locale, runSettings]);
+  }, [params.seed, params.demo, reportable, boot.playerId, period.id, playable, pools, locale, runSettings, exhibitionSettings]);
 
   const finishRun = (result: RunResult, runKey: number, game: Extract<Screen, { name: 'game' }>): void => {
     let attemptNumber: number | null = null;
     let isNewBest = false;
-    if (recordable) {
+    if (recordable && game.mode.kind === 'official') {
       attemptNumber = periodRuns.reduce((max, run) => Math.max(max, run.attemptNumber), 0) + 1;
       isNewBest = entry !== null && result.score > entry.bestScore;
       setRuns(
@@ -260,6 +304,7 @@ function Main({ questions, period, params, boot }: MainProps) {
     setScreen({
       name: 'result',
       runKey,
+      mode: game.mode,
       result,
       // 申告した走行は、サーバーが数えた回数を出す（入れ直しても続きから数えられる）
       attemptNumber: game.online?.attemptNumber ?? attemptNumber,
@@ -302,7 +347,7 @@ function Main({ questions, period, params, boot }: MainProps) {
   useEffect(() => {
     if (!params.demo || autoStarted.current) return;
     autoStarted.current = true;
-    startRun();
+    startRun(OFFICIAL);
   }, [params.demo, startRun]);
 
   const periodLabel = `${period.id}　${formatPeriodRange(period.startsAt, period.endsAt)}`;
@@ -313,6 +358,14 @@ function Main({ questions, period, params, boot }: MainProps) {
     ...(params.demo ? [strings.demo] : []),
   ];
 
+  // 激ムズの画面は色を反転する（オーナー希望 2026-10-16）。激ムズウィークの間はアプリ全体、
+  // エキシビジョンの激ムズは走行と結果の画面。各画面は出したときに色を読むので、ここで先に切り替える
+  setInverted(
+    (screen.name === 'game' || screen.name === 'result') && screen.mode.kind === 'exhibition'
+      ? screen.mode.level === 'hell'
+      : period.isHardWeek,
+  );
+
   if (screen.name === 'game') {
     const game = screen;
     return (
@@ -320,8 +373,16 @@ function Main({ questions, period, params, boot }: MainProps) {
         key={game.runKey}
         engine={game.engine}
         strings={strings}
-        periodLabel={period.id}
-        tags={[...tags, ...(game.offlineReason !== null ? [strings.offline] : [])]}
+        periodLabel={game.mode.kind === 'official' ? period.id : strings.exhibition}
+        tags={
+          game.mode.kind === 'official'
+            ? [...tags, ...(game.offlineReason !== null ? [strings.offline] : [])]
+            : [
+                strings.levelNames[game.mode.level],
+                strings.questionCount(game.mode.count),
+                ...(params.demo ? [strings.demo] : []),
+              ]
+        }
         bot={game.bot}
         onFinish={(result) => finishRun(result, game.runKey, game)}
         onAbort={() => setScreen({ name: 'title' })}
@@ -339,8 +400,23 @@ function Main({ questions, period, params, boot }: MainProps) {
         isNewBest={screen.isNewBest}
         server={server}
         autoContinueMs={params.demo ? DEMO_RESULT_MS : null}
-        onRetry={startRun}
+        onRetry={() => startRun(screen.mode)}
         onTitle={() => setScreen({ name: 'title' })}
+      />
+    );
+  }
+
+  if (screen.name === 'exhibition') {
+    return (
+      <ExhibitionScreen
+        strings={strings}
+        poolSizes={poolSizes}
+        initialLevel={exhibitionLevel}
+        onStart={(level, count) => {
+          setExhibitionLevel(level);
+          startRun({ kind: 'exhibition', level, count });
+        }}
+        onBack={() => setScreen({ name: 'title' })}
       />
     );
   }
@@ -400,7 +476,8 @@ function Main({ questions, period, params, boot }: MainProps) {
       tags={tags}
       bestPoints={entry ? scoreToPoints(entry.bestScore) : null}
       busy={busy}
-      onStart={startRun}
+      onStart={() => startRun(OFFICIAL)}
+      onExhibition={() => setScreen({ name: 'exhibition' })}
       onRanking={() => setScreen({ name: 'ranking' })}
       onRecords={() => setScreen({ name: 'records' })}
       onSettings={() => setScreen({ name: 'settings' })}

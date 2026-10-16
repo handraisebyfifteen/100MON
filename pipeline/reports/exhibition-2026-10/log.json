@@ -1,0 +1,26 @@
+{
+ "period_id": "exhibition-2026-10",
+ "started_at": "2026-10-16T10:16:13+00:00",
+ "generator": "us.anthropic.claude-opus-4-6-v1",
+ "verifier1": "mistral.mistral-large-3-675b-instruct",
+ "verifier2": "qwen.qwen3-235b-a22b-2507-v1:0",
+ "decision_point_model": "mistral.mistral-large-3-675b-instruct",
+ "allocation": {
+  "beginner0": 50,
+  "beginner": 50,
+  "intermediate": 100,
+  "advanced": 100
+ },
+ "reused": [],
+ "events": [],
+ "finished_at": "2026-10-16T10:20:57+00:00",
+ "cost": [
+  {
+   "model": "mistral.mistral-large-3-675b-instruct",
+   "calls": 570,
+   "in": 297807,
+   "out": 46558,
+   "usd": null
+  }
+ ]
+}

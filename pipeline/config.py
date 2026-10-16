@@ -28,7 +28,7 @@ REGION = "us-east-2"
 # 5系・GPT-6系は 10/16 時点でもアカウント未開放（Claude Opus 4.7/4.8、GPT-5.5/5.6/6 系も同じ）。
 # 試作（reports/trial_2026-10-16_opus46/）で Opus 4.6 の一発合格率 70%（Sonnet 4.6 は 60%）を確認し、
 # 通常週は Opus 4.6 で本番生成することにした。検証は Anthropic 以外の2社に分ける。
-# 激ムズウィークの生成役は未定（Opus 4.6 は上級に寄る癖があり、別途判断。第12ピリオドまでに決める）。
+# 激ムズウィークの生成役は下の「激ムズウィーク用の構成」を参照（オーナー決定 2026-10-16）。
 # 5系が開放されたら PROD_GENERATOR を GENERATOR（下の5系ID）に戻すだけでよい。
 PROD_GENERATOR = "us.anthropic.claude-opus-4-6-v1"
 PROD_VERIFIER_1 = "mistral.mistral-large-3-675b-instruct"   # 9月の比較で Opus に次ぐ成績
@@ -37,6 +37,16 @@ PROD_DECISION_POINT_MODEL = "mistral.mistral-large-3-675b-instruct"
 
 # 通常週の難易度配分（設計書 §8。合計100）と、修正の上限回数
 PROD_ALLOCATION = {"beginner0": 25, "beginner": 30, "intermediate": 20, "advanced": 25}
+
+# エキシビジョン（記録に残らないモード）の既定の問題（毎月作り直す。オーナー決定 2026-10-16）。
+# アプリの「初級」は最初級＋初級、「中級」「上級」はそのまま。各100問あれば 100/50/25/10 問のどれでも選べる。
+# 「激ムズ」は Bedrock では作らず、Claude Code の Claude が書く（激ムズウィークと同じ扱い）
+EXHIBITION_ALLOCATION = {"beginner0": 50, "beginner": 50, "intermediate": 100, "advanced": 100}
+
+# 通常週の100問のうち、過去の通常週の問題を使い回す割合（オーナー決定 2026-10-16：「一ヶ月の25%くらいは使い回してよい」）。
+# 難易度ごとに目標数×割合を選ぶ。直前の REUSE_SKIP_RECENT ピリオドの問題は使わない（続けて同じ問題が出ないように）
+PROD_REUSE_RATIO = 0.25
+REUSE_SKIP_RECENT = 1
 PROD_FIX_ROUNDS = 3
 
 # ---- 生成・修正役（手順3の5系再テストで確定させる）----
@@ -77,6 +87,9 @@ VERIFIER_2_CANDIDATES = {
 }
 
 # ---- 激ムズウィーク用の構成（オーナー希望 2026-09-29: 最新Opus + GPT-6 Sol + Astra）----
+# オーナー決定（2026-10-16）: 最初の2回（第12ピリオド 2027-01-04〜、第24ピリオド 2027-03-29〜）は
+# Bedrock を使わず、Claude Code のセッションの Claude があらかじめ生成する。
+# 第36ピリオド（2027-06-21〜）以降は、その時点の Bedrock の開放状況で決める（開放済みなら下の HELL_*）。
 # 契約受諾済み。fixtures での検証成績は verifiers.md の再テスト結果を参照。
 # 激ムズ相当の「生成」品質テストはまだ行っていない（通常週テストの後の課題）。
 # 注意: 検証1・検証2が同じ OpenAI 社になる構成。設計書の「3社分散」からは外れる。

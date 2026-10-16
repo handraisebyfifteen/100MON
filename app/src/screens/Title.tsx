@@ -12,8 +12,8 @@ import type { Stage } from '../platform/layout';
 import { playSound } from '../platform/sound';
 import { COLORS, FONTS } from '../theme';
 
-type Row = 'start' | 'ranking' | 'records' | 'settings';
-const ROWS: readonly Row[] = ['start', 'ranking', 'records', 'settings'];
+type Row = 'official' | 'exhibition' | 'ranking' | 'records' | 'settings';
+const ROWS: readonly Row[] = ['official', 'exhibition', 'ranking', 'records', 'settings'];
 
 interface TitleProps {
   strings: Strings;
@@ -22,7 +22,10 @@ interface TitleProps {
   bestPoints: number | null;
   /** サーバーに走行開始を申告している間。案内を出し、入力を受け付けない */
   busy: boolean;
+  /** 公式戦を走り出す */
   onStart: () => void;
+  /** エキシビジョンの問題数を選ぶ画面へ */
+  onExhibition: () => void;
   onRanking: () => void;
   onRecords: () => void;
   onSettings: () => void;
@@ -46,7 +49,8 @@ const makeStyles = ({ px }: Stage) => ({
   periodText: { fontFamily: FONTS.text, fontSize: px(32), color: COLORS.white },
   best: { fontFamily: FONTS.text, fontSize: px(32), color: COLORS.gold },
   menu: { width: px(1056), marginTop: px(32) },
-  menuRow: { height: px(100), marginBottom: px(20) },
+  // 5行が案内の行に重ならないよう、4行のときより少し詰めている
+  menuRow: { height: px(92), marginBottom: px(16) },
   menuRowInner: { alignItems: 'center' as const, justifyContent: 'center' as const },
   menuLabel: { fontFamily: FONTS.text, fontSize: px(48), lineHeight: px(56) },
   hint: {
@@ -62,10 +66,10 @@ const makeStyles = ({ px }: Stage) => ({
 });
 
 export function TitleScreen(props: TitleProps) {
-  const { strings, busy, onStart, onRanking, onRecords, onSettings } = props;
+  const { strings, busy, onStart, onExhibition, onRanking, onRecords, onSettings } = props;
   const s = useStyles(makeStyles);
-  // 中央ボタン1回で走り出せるよう、最初は「スタート」に合わせておく
-  const [focus, setFocus] = useState(ROWS.indexOf('start'));
+  // 中央ボタン1回で走り出せるよう、最初は「公式戦」に合わせておく
+  const [focus, setFocus] = useState(ROWS.indexOf('official'));
   // 選んでいる行の外枠は白と金で点滅する（styles.css の frame-blink）
   const blinkOn = useBlink(400, true);
 
@@ -77,9 +81,10 @@ export function TitleScreen(props: TitleProps) {
   };
 
   const activate = (row: Row): void => {
-    // スタートは、走り出す前の合図がこのあと鳴る
-    if (row !== 'start') playSound('decide');
-    if (row === 'start') onStart();
+    // 公式戦は、走り出す前の合図がこのあと鳴る
+    if (row !== 'official') playSound('decide');
+    if (row === 'official') onStart();
+    if (row === 'exhibition') onExhibition();
     if (row === 'ranking') onRanking();
     if (row === 'records') onRecords();
     if (row === 'settings') onSettings();
@@ -95,7 +100,8 @@ export function TitleScreen(props: TitleProps) {
   });
 
   const labels: Record<Row, string> = {
-    start: strings.start,
+    official: strings.official,
+    exhibition: strings.exhibition,
     ranking: strings.ranking,
     records: strings.records,
     settings: strings.settings,

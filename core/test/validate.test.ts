@@ -1,6 +1,6 @@
-import { readFileSync } from 'node:fs';
+import { readdirSync, readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { parseQuestionSet } from '../src';
+import { parseQuestionList, parseQuestionSet } from '../src';
 import { makeQuestion } from './helpers';
 
 const period = (ids: string[]) => ({
@@ -67,6 +67,40 @@ describe('問題セットの読み込み', () => {
     expect(errorsOf(null, period(['a'])).join('\n')).toMatch(/questions: must be an array/);
     expect(errorsOf([makeQuestion('a', 5)], null).join('\n')).toMatch(/period: must be an object/);
     expect(errorsOf([makeQuestion('a', 5)], { ...period(['a']), startsAt: 'nope' }).join('\n')).toMatch(/startsAt/);
+  });
+});
+
+describe('ピリオドに属さない問題の一覧（エキシビジョン）', () => {
+  it('形の正しい問題をそのままの順で返す', () => {
+    const result = parseQuestionList([makeQuestion('b', 5), makeQuestion('a', 5)]);
+    expect(result.ok && result.questions.map((q) => q.id)).toEqual(['b', 'a']);
+  });
+
+  it('1問でもおかしければ全体を不合格にする', () => {
+    const a = makeQuestion('a', 5);
+    const bad = (raw: unknown): string => {
+      const result = parseQuestionList(raw);
+      return result.ok ? '' : result.errors.join('\n');
+    };
+    expect(bad([a, { ...a, id: 'b', answerIndex: 9 }])).toMatch(/answerIndex/);
+    expect(bad([a, a])).toMatch(/duplicate id/);
+    expect(bad({})).toMatch(/must be an array/);
+  });
+});
+
+describe('data/ のエキシビジョンの問題', () => {
+  const dir = new URL('../../data/', import.meta.url);
+  const files = readdirSync(dir).filter((name) => /^questions\.exhibition-.+\.json$/.test(name));
+
+  it('ファイルがある', () => {
+    expect(files.length).toBeGreaterThan(0);
+  });
+
+  // アプリは読めないファイルを黙って飛ばすので、ここで壊れていないことを確かめる
+  it.each(files)('%s がそのまま読み込める', (name) => {
+    const result = parseQuestionList(JSON.parse(readFileSync(new URL(name, dir), 'utf8')));
+    expect(result.ok ? [] : result.errors).toEqual([]);
+    expect(result.ok && result.questions.length).toBeGreaterThan(0);
   });
 });
 

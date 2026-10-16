@@ -38,6 +38,8 @@ const makeScreenStyles = ({ px }: Stage) => ({
     paddingVertical: px(54),
     paddingHorizontal: px(96),
     alignItems: 'center' as const,
+    // 画面ごとに背景を塗る。激ムズの画面は色を反転するので、外側の StageView の色に頼らない
+    backgroundColor: COLORS.panel,
   },
 });
 

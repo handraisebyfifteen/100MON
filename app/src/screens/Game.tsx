@@ -108,7 +108,8 @@ const BUMP_STEPS = [240, 480] as const;
 const STREAK_STEPS = [163] as const;
 /** 節目：大きく出して数回点滅（streak-milestone 1200ms：白1.5 → 金1.25 → 白1.1 → 金1 → 白1 → 金1） */
 const MILESTONE_STEPS = [180, 360, 540, 720, 900] as const;
-const MILESTONE_COLOR = [COLORS.white, COLORS.gold, COLORS.white, COLORS.gold, COLORS.white, COLORS.gold] as const;
+/** 白・金を交互に。激ムズは色を反転するので、読み込み時でなく描くときに COLORS から取る */
+const MILESTONE_COLOR = ['white', 'gold', 'white', 'gold', 'white', 'gold'] as const;
 const MILESTONE_SCALE = [1.5, 1.25, 1.1, 1, 1, 1] as const;
 
 const makeStyles = ({ px }: Stage) => ({
@@ -384,7 +385,7 @@ export function GameScreen({ engine, strings, periodLabel, tags, bot, onFinish, 
   const bumping = view.correctCount > 0 && bumpPhase < BUMP_STEPS.length;
   const streakStyle = milestone
     ? {
-        color: MILESTONE_COLOR[milestonePhase] ?? COLORS.gold,
+        color: COLORS[MILESTONE_COLOR[milestonePhase] ?? 'gold'],
         transform: [{ scale: MILESTONE_SCALE[milestonePhase] ?? 1 }],
       }
     : { transform: [{ scale: streakPhase === 0 ? 1.3 : 1 }] };
