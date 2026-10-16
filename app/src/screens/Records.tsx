@@ -34,6 +34,9 @@ interface RecordsProps {
 
 const makeStyles = ({ px }: Stage) => ({
   h2: {
+    // 箱を枠いっぱいに広げて中央ぞろえ（Android で最後の1文字が次の行に落ちるのを防ぐ。Game.tsx の ready と同じ）
+    alignSelf: 'stretch' as const,
+    textAlign: 'center' as const,
     marginTop: px(6),
     fontFamily: FONTS.text,
     fontSize: px(64),

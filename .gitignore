@@ -26,3 +26,6 @@ app/buildinfo.json
 # バックエンド（Lambda のバンドルと SAM の作業ファイル）
 backend/dist/
 backend/.aws-sam/
+
+# Vega の ESLint の道具が残す状態ファイル
+app/generated/

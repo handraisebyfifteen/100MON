@@ -9,5 +9,6 @@
       "@core": ["../core/src/index.ts"]
     }
   },
-  "include": ["src", "test", "index.js"]
+  "include": ["src", "test", "index.js"],
+  "exclude": ["src/**/*.android.ts", "src/**/*.android.tsx"]
 }

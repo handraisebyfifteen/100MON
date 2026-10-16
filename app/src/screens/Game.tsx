@@ -160,14 +160,18 @@ const makeStyles = ({ px }: Stage) => ({
   },
 
   flash: { position: 'absolute' as const, top: 0, right: 0, bottom: 0, left: 0 },
+  // 文字の箱は枠いっぱいに広げて中央ぞろえにする。箱を文字の幅ぴったりにすると、Android（Fire OS 版）で
+  // 測った幅の丸めのせいで最後の1文字だけ次の行に落ちることがある（READY が READ / Y に割れた）
   ready: {
+    alignSelf: 'stretch' as const,
+    textAlign: 'center' as const,
     fontFamily: FONTS.digits,
     fontSize: px(96),
     lineHeight: px(104),
     letterSpacing: px(8),
     color: COLORS.white,
   },
-  qText: { fontFamily: FONTS.question, color: COLORS.white, textAlign: 'center' as const },
+  qText: { alignSelf: 'stretch' as const, fontFamily: FONTS.question, color: COLORS.white, textAlign: 'center' as const },
   // まだ出ていない文字も場所だけ取っておき、表示の途中で行が動かないようにする
   pending: { color: 'transparent' },
 

@@ -54,6 +54,9 @@ interface SettingsProps {
 
 const makeStyles = ({ px }: Stage) => ({
   h2: {
+    // 箱を枠いっぱいに広げて中央ぞろえ（Android で最後の1文字が次の行に落ちるのを防ぐ。Game.tsx の ready と同じ）
+    alignSelf: 'stretch' as const,
+    textAlign: 'center' as const,
     marginTop: px(6),
     fontFamily: FONTS.text,
     fontSize: px(64),
@@ -80,8 +83,20 @@ const makeStyles = ({ px }: Stage) => ({
   menuArrow: { padding: px(12) },
   menuCurrent: { minWidth: px(400), textAlign: 'center' as const, fontFamily: FONTS.text, fontSize: px(48), lineHeight: px(56) },
   pace: { marginTop: px(4), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.dim },
-  speedNote: { marginTop: px(8), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.sky },
-  paceWarning: { marginTop: px(8), fontFamily: FONTS.text, fontSize: px(32), lineHeight: px(40), color: COLORS.timeout },
+  // 注意書きと警告は、下のキー案内のすぐ上に固定で置く。行の流れの中に置くと、7行＋目安の行の下ではキー案内と重なる
+  // （Fire OS 版のエミュレータで見つけた。配置の計算上は Vega 版でも同じ）
+  bottomNote: {
+    position: 'absolute' as const,
+    left: 0,
+    right: 0,
+    bottom: px(98),
+    textAlign: 'center' as const,
+    fontFamily: FONTS.text,
+    fontSize: px(32),
+    lineHeight: px(40),
+  },
+  speedNote: { color: COLORS.sky },
+  paceWarning: { color: COLORS.timeout },
   hint: {
     position: 'absolute' as const,
     left: 0,
@@ -248,9 +263,11 @@ export function SettingsScreen(props: SettingsProps) {
         {'　・　'}
         {strings.paceAllTimeout((pace.allTimeoutMs / 60_000).toFixed(1))}
       </Text>
-      {overCount > 0 && <Text style={s.paceWarning}>！ {strings.paceOver(overCount)}</Text>}
-      {/* 下のキー案内に重ならないよう、警告と同じ位置に出す。警告が出ているときは警告を優先する */}
-      {overCount === 0 && rows[focus]?.key === 'speed' && <Text style={s.speedNote}>{strings.speedNote}</Text>}
+      {overCount > 0 && <Text style={[s.bottomNote, s.paceWarning]}>！ {strings.paceOver(overCount)}</Text>}
+      {/* 警告と同じ位置に出す。警告が出ているときは警告を優先する */}
+      {overCount === 0 && rows[focus]?.key === 'speed' && (
+        <Text style={[s.bottomNote, s.speedNote]}>{strings.speedNote}</Text>
+      )}
 
       <View style={s.hint}>
         <KeyHint keys={['up', 'down']} label={strings.hintMove} />

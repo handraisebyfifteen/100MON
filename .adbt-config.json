@@ -3,6 +3,9 @@
     "identifier": "q-the-hundred"
   },
   "platform": {
-    "default": "vega_os"
+    "default": "vega_os",
+    "paths": {
+      "fos/": "fire_os"
+    }
   }
 }

@@ -11,6 +11,8 @@ import {
 import type { AudioPlaybackStream } from '@amazon-devices/keplerscript-audio-lib';
 import { DEV_PARAMS } from '../devParams';
 import { SFX_PCM, SFX_SAMPLE_RATE } from '../generated/sfxData';
+import { DEFAULT_GAP_MS, defaultSoundSettings, MIN_GAP_MS, SOUND_NAMES, VOLUME } from './soundNames';
+import type { SoundName, SoundSettings } from './soundNames';
 
 // 効果音。ブラウザ版の web/src/sound.ts と同じ関数名・同じ SOUND_NAMES。
 //
@@ -24,44 +26,9 @@ import { SFX_PCM, SFX_SAMPLE_RATE } from '../generated/sfxData';
 //   - w3cmedia の AudioPlayer：動画用の重いプレイヤー。鳴らし直すたびに 1〜7 秒止まり、強制終了された
 //   - WebView の Web Audio：動くが、メモリが約150MB増え、起動直後に OS の描画部分で落ちることがあった
 
-/** 効果音の種類。ファイル名と同じ（tools/make-sfx.mjs の SOUNDS と揃える） */
-export const SOUND_NAMES = [
-  'cursor',
-  'change',
-  'decide',
-  'back',
-  'ready',
-  'type',
-  'select',
-  'urgent',
-  'correct',
-  'streak',
-  'wrong',
-  'timeout',
-  'finish',
-  'newBest',
-] as const;
-
-export type SoundName = (typeof SOUND_NAMES)[number];
-
-export interface SoundSettings {
-  /** 全体のオン・オフ。オフなら events に関係なく鳴らさない */
-  enabled: boolean;
-  events: Record<SoundName, boolean>;
-}
-
-export function defaultSoundSettings(): SoundSettings {
-  const events = {} as Record<SoundName, boolean>;
-  for (const name of SOUND_NAMES) events[name] = true;
-  return { enabled: true, events };
-}
-
-/** ブラウザ版と同じ音量 */
-const VOLUME = 0.5;
-
-/** 同じ音を続けて鳴らすときの最短の間隔。文字送りは速い設定だと毎フレーム呼ばれる */
-const MIN_GAP_MS: Partial<Record<SoundName, number>> = { type: 70 };
-const DEFAULT_GAP_MS = 30;
+// 効果音の名前・設定の型・音量・最短間隔は soundNames.ts にある（Fire OS 版 fos/src/platform/sound.ts と共有）
+export { SOUND_NAMES, defaultSoundSettings };
+export type { SoundName, SoundSettings };
 
 /** 1回に流し込む長さ（フレーム数）。512 / 44100 ≒ 11.6ms */
 const FRAMES_PER_CHUNK = 512;

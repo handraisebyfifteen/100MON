@@ -1,0 +1,20 @@
+{
+  "extends": "@react-native/typescript-config",
+  "compilerOptions": {
+    "types": ["react-native"],
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "moduleSuffixes": [".android", ""],
+    "paths": {
+      "@core": ["../core/src/index.ts"]
+    }
+  },
+  "include": ["src", "index.js", "../app/src"],
+  "exclude": [
+    "node_modules",
+    "../app/src/platform/input.ts",
+    "../app/src/platform/sound.ts",
+    "../app/src/generated"
+  ]
+}
