@@ -94,7 +94,16 @@
 | LEADERBOARD_TABLE | q-the-hundred-backend-LeaderboardTable-1VY6S71BJOOO |
 | CONFIG_TABLE | q-the-hundred-backend-ConfigTable-GKT3R3IVJ3DZ |
 
-入っている問題セット：`temp-P00`（2026-10-19〜10-26 UTC、仮データ100問）。本番の100問ができたら同じ `backend:seed` で差し替える。
+入っている問題セット：
+- `2026-P01`（2026-10-19〜10-26 UTC、本番の100問）— 2026-10-16 投入。アプリはこれを読む
+- `temp-P00`（2026-10-19〜10-26 UTC、仮データ100問）— 動作確認用に残してある
+
+投入は `trivia-pipeline` ユーザーで行う（`iam/pipeline-seed-policy.json` をインラインポリシー `pipeline-seed` として付けてある）。
+
+```sh
+RUNS_TABLE=… LEADERBOARD_TABLE=… CONFIG_TABLE=… \
+  npm run backend:seed -- data/questions.2026-P01.json data/period.2026-P01.json
+```
 
 動作確認済み（2026-10-16）：走行開始 → 100問を RunEngine で走る → 走行終了 → ランキング → 個人成績 → 週の集計 Lambda の手動実行。確認用データは削除済み。
 
