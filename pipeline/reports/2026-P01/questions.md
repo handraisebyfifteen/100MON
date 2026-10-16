@@ -1,6 +1,6 @@
 # ピリオド 2026-P01 の100問（人の確認用）
 
-凡例: ★＝検証で一度落ちて修正したもの（重点的に見る）。確定位置＝何文字目で答えが分かるか（文字数）
+凡例: ★＝検証で一度落ちて修正したもの（重点的に見る）。✎＝人の確認で直したもの（理由は revisions.md）。確定位置＝何文字目で答えが分かるか（文字数）
 
 ## 最初級
 
@@ -16,8 +16,8 @@
   - The number of letters in the English alphabet → 26　[24 / 25 / 26 / 28] 確定 45/45
 - **陸上で最も速い動物** → チーター　［ライオン / ガゼル / チーター / ウマ］ 確定 7/9  (2026-P01_q022, animals)
   - The fastest land animal → Cheetah　[Lion / Gazelle / Cheetah / Horse] 確定 17/23
-- **地球の衛星の名前** → 月　［月 / 火星 / 金星 / 土星］ 確定 5/8  (2026-P01_q026, science)
-  - The name of Earth's natural satellite → The Moon　[The Moon / Mars / Venus / Saturn] 確定 20/37
+- ✎**地球にただ一つある衛星** → 月　［月 / 火星 / 金星 / 土星］ 確定 11/11  (2026-P01_q026, science)
+  - Earth's only natural satellite → The Moon　[The Moon / Mars / Venus / Saturn] 確定 21/30
 - **パンダの体の色** → 白と黒　［茶色と白 / 黒一色 / 白と黒 / 白一色］ 確定 6/7  (2026-P01_q033, animals)
   - The colors of a giant panda → Black and white　[Brown and white / All black / Black and white / All white] 確定 21/27
 - **水の化学式** → H₂O　［H₂O / CO₂ / NaCl / O₂］ 確定 5/5  (2026-P01_q036, science)
@@ -26,16 +26,16 @@
   - The direction in which the sun sets → West　[North / South / East / West] 確定 35/35
 - **三角形の内角の和** → 180度　［90度 / 180度 / 270度 / 360度］ 確定 8/8  (2026-P01_q050, math)
   - The sum of interior angles of a triangle → 180°　[90° / 180° / 270° / 360°] 確定 40/40
-- **日本語の五十音の最初の文字** → あ　［か / う / あ / い］ 確定 12/13  (2026-P01_q051, language)
-  - The first character in the Japanese kana chart → A　[Ka / U / A / I] 確定 46/46
+- ✎**五十音の最初の文字** → あ　［か / う / あ / い］ 確定 6/9  (2026-P01_q051, language)
+  - The first character in the Japanese kana chart → A　[Ka / U / A / I] 確定 33/46
 - **桜の花びらの色** → ピンク　［青 / 黄 / 赤 / ピンク］ 確定 7/7  (2026-P01_q058, nature)
   - The typical color of cherry blossoms → Pink　[Blue / Yellow / Red / Pink] 確定 25/36
 - ★**1週間の日数** → 7日　［5日 / 6日 / 7日 / 10日］ 確定 6/6  (2026-P01_q060, daily)
   - The number of days in a week → 7　[5 / 6 / 7 / 10] 確定 28/28
 - **人体で一番硬い組織** → 歯のエナメル質　［骨 / 歯のエナメル質 / 爪 / 軟骨］ 確定 7/9  (2026-P01_q061, body)
   - The hardest tissue in the human body → Tooth enamel　[Bone / Tooth enamel / Nail / Cartilage] 確定 16/36
-- **1ダースの数** → 12　［10 / 12 / 24 / 6］ 確定 4/6  (2026-P01_q064, math)
-  - The number in one dozen → 12　[10 / 12 / 24 / 6] 確定 17/23
+- ✎**1ダースはいくつ？** → 12　［10 / 12 / 24 / 6］ 確定 5/9  (2026-P01_q064, math)
+  - The number of items in one dozen → 12　[10 / 12 / 24 / 6] 確定 26/32
 - **日本で一番大きい島** → 本州　［本州 / 北海道 / 九州 / 四国］ 確定 9/9  (2026-P01_q065, geography)
   - The largest island of Japan → Honshu　[Honshu / Hokkaido / Kyushu / Shikoku] 確定 27/27
 - **太陽系で一番大きい惑星** → 木星　［土星 / 天王星 / 火星 / 木星］ 確定 11/11  (2026-P01_q075, space)
@@ -44,25 +44,25 @@
   - The fish used in unaju (eel rice box) → Eel　[Pacific saury / Eel / Salmon / Sea bream] 確定 37/37
 - **オリンピックの五輪の輪の数** → 5つ　［5つ / 4つ / 6つ / 7つ］ 確定 13/13  (2026-P01_q081, sports)
   - The number of rings in the Olympic symbol → 5　[5 / 4 / 6 / 7] 確定 41/41
-- **サッカーの1チームの人数** → 11人　［9人 / 5人 / 15人 / 11人］ 確定 10/12  (2026-P01_q082, sports)
-  - Number of players per team in soccer → 11　[9 / 5 / 15 / 11] 確定 36/36
+- ✎**サッカーで1チームがフィールドに出る人数** → 11人　［9人 / 5人 / 15人 / 11人］ 確定 18/20  (2026-P01_q082, sports)
+  - Number of players per team on the field in soccer → 11　[9 / 5 / 15 / 11] 確定 49/49
 - **ピアノの鍵盤の数** → 88　［88 / 76 / 102 / 64］ 確定 8/8  (2026-P01_q086, music)
   - The number of keys on a standard piano → 88　[88 / 76 / 102 / 64] 確定 38/38
-- **味噌汁の主な原料となる豆** → 大豆　［小豆 / えんどう豆 / ひよこ豆 / 大豆］ 確定 9/12  (2026-P01_q090, food)
-  - The bean used as the main ingredient in miso soup → Soybean　[Azuki bean / Pea / Chickpea / Soybean] 確定 49/49
+- ✎**味噌の主な原料となる豆** → 大豆　［小豆 / えんどう豆 / ひよこ豆 / 大豆］ 確定 9/11  (2026-P01_q090, food)
+  - The bean that is the main ingredient of miso → Soybean　[Azuki bean / Pea / Chickpea / Soybean] 確定 44/44
 - **日本の首都** → 東京　［大阪 / 京都 / 東京 / 名古屋］ 確定 4/5  (2026-P01_q096, geography)
   - The capital of Japan → Tokyo　[Osaka / Kyoto / Tokyo / Nagoya] 確定 20/20
-- **1から10まで足した合計** → 55　［45 / 55 / 50 / 60］ 確定 10/12  (2026-P01_q099, math)
+- ✎**1から10まで全部足すといくつ？** → 55　［45 / 55 / 50 / 60］ 確定 15/16  (2026-P01_q099, math)
   - The sum of all numbers from 1 to 10 → 55　[45 / 55 / 50 / 60] 確定 35/35
 
 ## 初級
 
 - **『源氏物語』の作者** → 紫式部　［清少納言 / 小野小町 / 紫式部 / 和泉式部］ 確定 9/9  (2026-P01_q001, literature)
   - The author of 'The Tale of Genji' → Murasaki Shikibu　[Sei Shōnagon / Ono no Komachi / Murasaki Shikibu / Izumi Shikibu] 確定 33/33
-- **地球の表面で海が占める割合の目安** → 約7割　［約7割 / 約5割 / 約6割 / 約8割］ 確定 13/16  (2026-P01_q002, nature)
-  - The approximate percentage of Earth's surface covered by ocean → About 70%　[About 70% / About 50% / About 60% / About 80%] 確定 29/62
-- ★**英語で「猫」を意味する単語** → Cat　［Dog / Bird / Cat / Fish］ 確定 10/13  (2026-P01_q004, language)
-  - The English word for 'neko' (猫) → Cat　[Dog / Bird / Cat / Fish] 確定 31/31
+- ✎**地球の表面のおよそ何割が海？** → 約7割　［約7割 / 約5割 / 約6割 / 約8割］ 確定 14/14  (2026-P01_q002, nature)
+  - The approximate percentage of Earth's surface covered by ocean → About 70%　[About 70% / About 50% / About 60% / About 80%] 確定 62/62
+- ✎**「パン」の語源になった言語** → ポルトガル語　［英語 / フランス語 / ポルトガル語 / ドイツ語］ 確定 9/13  (2026-P01_q004, language)
+  - The language that the Japanese word 'pan' (bread) comes from → Portuguese　[English / French / Portuguese / German] 確定 49/60
 - **五線譜に引かれている線の数** → 5本　［5本 / 4本 / 6本 / 3本］ 確定 3/13  (2026-P01_q007, music)
   - The number of lines on a musical staff → 5　[5 / 4 / 6 / 3] 確定 38/38
 - **エジプトにあるピラミッドの形** → 四角錐　［円柱 / 立方体 / 四角錐 / 円錐］ 確定 14/14  (2026-P01_q013, history)
@@ -81,56 +81,56 @@
   - Number of sides of a square → 4　[3 / 4 / 5 / 6] 確定 27/27
 - **ドレミファソラシの最初の音** → ド　［ラ / ド / ソ / ミ］ 確定 13/13  (2026-P01_q040, music)
   - The first note of Do-Re-Mi-Fa-Sol-La-Ti → Do　[La / Do / Sol / Mi] 確定 24/39
-- **植物が光で栄養を作ること** → 光合成　［光合成 / 発酵 / 蒸散 / 呼吸］ 確定 10/12  (2026-P01_q043, science)
+- ✎**植物が光で栄養を作るはたらきを何という？** → 光合成　［光合成 / 発酵 / 蒸散 / 呼吸］ 確定 14/20  (2026-P01_q043, science)
   - The process by which plants make food using light → Photosynthesis　[Photosynthesis / Fermentation / Transpiration / Respiration] 確定 49/49
-- **人間の大人の永久歯の本数** → 32本　［32本 / 24本 / 28本 / 36本］ 確定 12/12  (2026-P01_q044, body)
-  - Number of permanent teeth in an adult human → 32　[32 / 24 / 28 / 36] 確定 26/43
+- ✎**人間の大人の永久歯の本数** → 32本　［32本 / 24本 / 20本 / 36本］ 確定 12/12  (2026-P01_q044, body)
+  - Number of permanent teeth in an adult human → 32　[32 / 24 / 20 / 36] 確定 26/43
 - **地球の大気で最も多い気体** → 窒素　［酸素 / 二酸化炭素 / 窒素 / 水素］ 確定 10/12  (2026-P01_q045, science)
   - The most abundant gas in Earth's atmosphere → Nitrogen　[Oxygen / Carbon dioxide / Nitrogen / Hydrogen] 確定 30/43
-- **オタマジャクシが成長した姿** → カエル　［メダカ / ヘビ / カメ / カエル］ 確定 13/13  (2026-P01_q048, animals)
+- ✎**オタマジャクシが育つと何になる？** → カエル　［メダカ / ヘビ / カメ / カエル］ 確定 10/16  (2026-P01_q048, animals)
   - What a tadpole grows into → Frog　[Killifish / Snake / Turtle / Frog] 確定 25/25
 - **六角形の辺の数** → 6本　［5本 / 7本 / 8本 / 6本］ 確定 7/7  (2026-P01_q049, math)
   - The number of sides of a hexagon → 6　[5 / 7 / 8 / 6] 確定 30/32
-- **氷が溶けてできるもの** → 水　［水蒸気 / 霜 / 水 / 雪］ 確定 10/10  (2026-P01_q055, science)
-  - What ice turns into when it melts → Water　[Steam / Frost / Water / Snow] 確定 33/33
+- ✎**氷が溶けると何になる？** → 水　［水蒸気 / 霜 / 水 / 雪］ 確定 6/11  (2026-P01_q055, science)
+  - What ice turns into when it melts → Water　[Steam / Frost / Water / Snow] 確定 25/33
 - **人体で最も長い骨** → 大腿骨　［上腕骨 / 脛骨 / 大腿骨 / 鎖骨］ 確定 8/8  (2026-P01_q056, body)
   - The longest bone in the human body → Femur　[Humerus / Tibia / Femur / Clavicle] 確定 29/34
-- **四本の弦を弓で弾く最小の楽器** → バイオリン　［チェロ / ビオラ / コントラバス / バイオリン］ 確定 14/14  (2026-P01_q059, music)
-  - The smallest bowed string instrument with four strings → Violin　[Cello / Viola / Double bass / Violin] 確定 36/54
-- **英語で「ありがとう」の意味の言葉** → Thank you　［Good morning / Goodbye / Thank you / Please］ 確定 10/16  (2026-P01_q062, language)
-  - The English phrase meaning 'arigatou' in Japanese → Thank you　[Good morning / Goodbye / Thank you / Please] 確定 37/49
-- **火星が赤く見える主な原因の物質** → 酸化鉄　［酸化鉄 / 硫黄 / 銅 / マンガン］ 確定 15/15  (2026-P01_q067, space)
-  - The substance that mainly makes Mars appear red → Iron oxide　[Iron oxide / Sulfur / Copper / Manganese] 確定 47/47
+- ✎**オーケストラの弦楽器で一番小さいもの** → バイオリン　［チェロ / ビオラ / コントラバス / バイオリン］ 確定 18/18  (2026-P01_q059, music)
+  - The smallest string instrument in an orchestra → Violin　[Cello / Viola / Double bass / Violin] 確定 29/46
+- ✎**「山」「川」のように物の形からできた漢字** → 象形文字　［形声文字 / 象形文字 / 会意文字 / 指事文字］ 確定 18/20  (2026-P01_q062, language)
+  - Kanji such as 山 (mountain) and 川 (river) that were made from the shapes of things → Pictograms　[Phono-semantic compounds / Pictograms / Compound ideographs / Indicatives] 確定 70/81
+- ✎**火星の表面を赤くしている物質** → 酸化鉄　［酸化鉄 / 硫黄 / 銅 / マンガン］ 確定 12/14  (2026-P01_q067, space)
+  - The substance that makes the surface of Mars red → Iron oxide　[Iron oxide / Sulfur / Copper / Manganese] 確定 48/48
 - **『枕草子』の作者** → 清少納言　［清少納言 / 紫式部 / 和泉式部 / 小野小町］ 確定 5/8  (2026-P01_q071, literature)
   - The author of 'The Pillow Book' → Sei Shōnagon　[Sei Shōnagon / Murasaki Shikibu / Izumi Shikibu / Ono no Komachi] 確定 31/31
-- **虹の色の数（一般的な数え方）** → 7色　［7色 / 5色 / 6色 / 10色］ 確定 10/14  (2026-P01_q072, nature)
-  - Number of colors in a rainbow (commonly counted) → 7　[7 / 5 / 6 / 10] 確定 29/48
-- ★**太陽系で「赤い惑星」と呼ばれる星** → 火星　［金星 / 火星 / 土星 / 海王星］ 確定 10/16  (2026-P01_q076, space)
-  - The planet in our solar system known as the "Red Planet" → Mars　[Venus / Mars / Saturn / Neptune] 確定 56/56
+- ✎**日本で虹は一般に何色とされる？** → 7色　［7色 / 5色 / 6色 / 10色］ 確定 14/15  (2026-P01_q072, nature)
+  - The number of colors a rainbow is usually said to have in Japan → 7　[7 / 5 / 6 / 10] 確定 63/63
+- ✎**満ち欠けで月が見えなくなる時を何という？** → 新月　［満月 / 三日月 / 新月 / 半月］ 確定 13/20  (2026-P01_q076, space)
+  - The phase of the moon when it cannot be seen → New moon　[Full moon / Crescent moon / New moon / Half moon] 確定 44/44
 - ★**世界で面積が一番小さい国** → バチカン市国　［モナコ / サンマリノ / バチカン市国 / リヒテンシュタイン］ 確定 12/12  (2026-P01_q077, geography)
   - The country with the smallest area in the world → Vatican City　[Monaco / San Marino / Vatican City / Liechtenstein] 確定 47/47
-- **英語で「犬」を意味する単語** → Dog　［Cat / Bear / Fox / Dog］ 確定 10/13  (2026-P01_q087, language)
+- ✎**英語で「犬」は？** → Dog　［Cat / Bear / Fox / Dog］ 確定 6/8  (2026-P01_q087, language)
   - The English word meaning 'inu' in Japanese → Dog　[Cat / Bear / Fox / Dog] 確定 30/42
 - **日本初の女性天皇** → 推古天皇　［持統天皇 / 推古天皇 / 皇極天皇 / 元明天皇］ 確定 6/8  (2026-P01_q088, history)
   - The first empress regnant of Japan → Empress Suiko　[Empress Jitō / Empress Suiko / Empress Kōgyoku / Empress Genmei] 確定 34/34
-- **人体で一番大きい臓器** → 肝臓　［腎臓 / 肝臓 / 胃 / 肺］ 確定 8/10  (2026-P01_q094, body)
+- ✎**人体で一番大きい内臓** → 肝臓　［腎臓 / 肝臓 / 胃 / 肺］ 確定 9/10  (2026-P01_q094, body)
   - The largest internal organ in the human body → Liver　[Kidney / Liver / Stomach / Lung] 確定 27/44
-- **水が沸騰する温度（1気圧）** → 100℃　［50℃ / 75℃ / 100℃ / 120℃］ 確定 13/13  (2026-P01_q100, science)
-  - Boiling point of water at 1 atm → 100°C　[50°C / 75°C / 100°C / 120°C] 確定 26/31
+- ✎**1気圧で水が沸騰する温度** → 100℃　［50℃ / 75℃ / 100℃ / 120℃］ 確定 9/12  (2026-P01_q100, science)
+  - Boiling point of water at 1 atm → 100°C　[50°C / 75°C / 100°C / 120°C] 確定 31/31
 
 ## 中級
 
-- **1キロメートルは何メートル** → 1000　［1000 / 100 / 10000 / 500］ 確定 7/13  (2026-P01_q003, math)
-  - How many meters in one kilometer → 1000　[1000 / 100 / 10000 / 500] 確定 26/32
+- ✎**1キロメートルは何メートル？** → 1000　［1000 / 100 / 10000 / 500］ 確定 7/14  (2026-P01_q003, math)
+  - How many meters in one kilometer → 1000　[1000 / 100 / 10000 / 500] 確定 23/32
 - **世界で一番深い湖** → バイカル湖　［チチカカ湖 / カスピ海 / バイカル湖 / スペリオル湖］ 確定 8/8  (2026-P01_q006, geography)
   - The deepest lake in the world → Lake Baikal　[Lake Titicaca / Caspian Sea / Lake Baikal / Lake Superior] 確定 29/29
 - **ダイヤモンドの主成分の元素** → 炭素　［炭素 / ケイ素 / アルミニウム / ホウ素］ 確定 10/13  (2026-P01_q017, nature)
   - The element that makes up diamond → Carbon　[Carbon / Silicon / Aluminum / Boron] 確定 33/33
-- **元素記号「Au」の元素** → 金　［銀 / 銅 / アルミニウム / 金］ 確定 8/11  (2026-P01_q019, science)
+- ✎**元素記号「Au」が表す元素** → 金　［銀 / 銅 / アルミニウム / 金］ 確定 8/13  (2026-P01_q019, science)
   - The element with the symbol 'Au' → Gold　[Silver / Copper / Aluminium / Gold] 確定 32/32
-- **「羅生門」の作者** → 芥川龍之介　［太宰治 / 川端康成 / 芥川龍之介 / 三島由紀夫］ 確定 5/8  (2026-P01_q020, literature)
-  - The author of 'Rashōmon' → Ryūnosuke Akutagawa　[Osamu Dazai / Yasunari Kawabata / Ryūnosuke Akutagawa / Yukio Mishima] 確定 20/24
-- **「四季」を作曲した作曲家** → ヴィヴァルディ　［バッハ / ヴィヴァルディ / モーツァルト / ヘンデル］ 確定 9/12  (2026-P01_q025, music)
+- ✎**『羅生門』の作者** → 芥川龍之介　［太宰治 / 川端康成 / 芥川龍之介 / 三島由紀夫］ 確定 8/8  (2026-P01_q020, literature)
+  - The author of 'Rashōmon' → Ryūnosuke Akutagawa　[Osamu Dazai / Yasunari Kawabata / Ryūnosuke Akutagawa / Yukio Mishima] 確定 24/24
+- ✎**「四季」の作曲家** → ヴィヴァルディ　［バッハ / ヴィヴァルディ / モーツァルト / ヘンデル］ 確定 8/8  (2026-P01_q025, music)
   - The composer of The Four Seasons → Vivaldi　[Bach / Vivaldi / Mozart / Handel] 確定 32/32
 - **本能寺の変を起こした武将** → 明智光秀　［明智光秀 / 柴田勝家 / 豊臣秀吉 / 徳川家康］ 確定 9/12  (2026-P01_q027, history)
   - The warlord who launched the Honnō-ji Incident → Akechi Mitsuhide　[Akechi Mitsuhide / Shibata Katsuie / Toyotomi Hideyoshi / Tokugawa Ieyasu] 確定 38/46
@@ -138,11 +138,11 @@
   - The planet closest to the Sun in the solar system → Mercury　[Venus / Mercury / Mars / Earth] 確定 26/49
 - **チーズの主な原料** → 牛乳　［牛乳 / 小麦粉 / 卵 / 大豆］ 確定 6/8  (2026-P01_q041, food)
   - The main ingredient of cheese → Milk　[Milk / Wheat flour / Eggs / Soybeans] 確定 23/29
-- **バスケットボールの1チームの人数** → 5人　［6人 / 7人 / 4人 / 5人］ 確定 16/16  (2026-P01_q046, sports)
-  - Number of players per team in basketball → 5　[6 / 7 / 4 / 5] 確定 39/40
+- ✎**バスケットボールで1チームがコートに出る人数** → 5人　［6人 / 7人 / 4人 / 5人］ 確定 22/22  (2026-P01_q046, sports)
+  - Number of players per team on the court in basketball → 5　[6 / 7 / 4 / 5] 確定 53/53
 - ★**交響曲第9番「新世界より」の作曲家** → ドヴォルザーク　［チャイコフスキー / ブラームス / ドヴォルザーク / シベリウス］ 確定 13/17  (2026-P01_q047, music)
   - The composer of Symphony No. 9 'From the New World' → Dvořák　[Tchaikovsky / Brahms / Dvořák / Sibelius] 確定 51/51
-- **元素記号「Fe」の元素** → 鉄　［フッ素 / フランシウム / フェルミウム / 鉄］ 確定 8/11  (2026-P01_q052, science)
+- ✎**元素記号「Fe」が表す元素** → 鉄　［フッ素 / フランシウム / フェルミウム / 鉄］ 確定 8/13  (2026-P01_q052, science)
   - The element with the symbol Fe → Iron　[Fluorine / Francium / Fermium / Iron] 確定 30/30
 - **世界で一番大きい花を咲かせる植物** → ラフレシア　［ラフレシア / ヒマワリ / タイタンアルム / ハス］ 確定 12/16  (2026-P01_q054, nature)
   - The plant that produces the world's largest single flower → Rafflesia　[Rafflesia / Sunflower / Titan arum / Lotus] 確定 57/57
@@ -150,15 +150,15 @@
   - The fruit that is the main ingredient of wine → Grape　[Apple / Peach / Grape / Plum] 確定 45/45
 - ★**鎌倉幕府を開いた人物** → 源頼朝　［足利尊氏 / 徳川家康 / 源頼朝 / 北条時宗］ 確定 7/10  (2026-P01_q068, history)
   - The person who established the Kamakura shogunate → Minamoto no Yoritomo　[Ashikaga Takauji / Tokugawa Ieyasu / Minamoto no Yoritomo / Hojo Tokimune] 確定 40/49
-- **直角三角形で最も長い辺の名前** → 斜辺　［底辺 / 対辺 / 斜辺 / 隣辺］ 確定 11/14  (2026-P01_q070, math)
+- ✎**直角三角形で最も長い辺を何という？** → 斜辺　［底辺 / 対辺 / 斜辺 / 隣辺］ 確定 11/17  (2026-P01_q070, math)
   - The name of the longest side of a right triangle → Hypotenuse　[Base / Opposite / Hypotenuse / Adjacent] 確定 48/48
-- **「吾輩は猫である」の作者** → 夏目漱石　［芥川龍之介 / 太宰治 / 夏目漱石 / 森鷗外］ 確定 9/12  (2026-P01_q079, literature)
+- ✎**『吾輩は猫である』の作者** → 夏目漱石　［芥川龍之介 / 太宰治 / 夏目漱石 / 森鷗外］ 確定 9/12  (2026-P01_q079, literature)
   - The author of I Am a Cat → Soseki Natsume　[Ryunosuke Akutagawa / Osamu Dazai / Soseki Natsume / Ogai Mori] 確定 24/24
-- **太陽系で環（リング）が最も目立つ惑星** → 土星　［木星 / 土星 / 天王星 / 海王星］ 確定 18/18  (2026-P01_q091, space)
-  - The planet in our solar system with the most prominent rings → Saturn　[Jupiter / Saturn / Uranus / Neptune] 確定 60/60
+- ✎**太陽系で環が一番目立つ惑星** → 土星　［木星 / 土星 / 天王星 / 海王星］ 確定 12/13  (2026-P01_q091, space)
+  - The planet in our solar system with the most prominent rings → Saturn　[Jupiter / Saturn / Uranus / Neptune] 確定 59/60
 - ★**世界で一番大きい熱帯雨林** → アマゾン熱帯雨林　［コンゴ熱帯雨林 / 東南アジア熱帯雨林 / アマゾン熱帯雨林 / デインツリー熱帯雨林］ 確定 8/12  (2026-P01_q092, geography)
   - The largest tropical rainforest in the world → Amazon Rainforest　[Congo Rainforest / Southeast Asian Rainforest / Amazon Rainforest / Daintree Rainforest] 確定 31/44
-- **テニスで得点が0のときの呼び方** → ラブ　［ノー / ラブ / ゼロ / ニル］ 確定 15/15  (2026-P01_q097, sports)
+- ✎**テニスで0点のことを何という？** → ラブ　［ノー / ラブ / ゼロ / ニル］ 確定 10/15  (2026-P01_q097, sports)
   - The term for a score of zero in tennis → Love　[No / Love / Zero / Nil] 確定 38/38
 
 ## 上級
@@ -169,17 +169,17 @@
   - The regular polygon that forms a regular dodecahedron → Regular pentagon　[Regular pentagon / Equilateral triangle / Regular hexagon / Square] 確定 53/53
 - **世界で一番大きい島** → グリーンランド　［ボルネオ島 / マダガスカル島 / ニューギニア島 / グリーンランド］ 確定 9/9  (2026-P01_q010, geography)
   - The largest island in the world → Greenland　[Borneo / Madagascar / New Guinea / Greenland] 確定 31/31
-- **ラテン語で「水」を意味する単語** → アクア　［テラ / イグニス / アクア / ルクス］ 確定 8/15  (2026-P01_q011, language)
-  - The Latin word meaning 'water' → Aqua　[Terra / Ignis / Aqua / Lux] 確定 29/30
+- ✎**ラテン語で「水」は？** → アクア　［テラ / イグニス / アクア / ルクス］ 確定 10/10  (2026-P01_q011, language)
+  - The Latin word meaning 'water' → Aqua　[Terra / Ignis / Aqua / Lux] 確定 30/30
 - **正二十面体の面の形** → 正三角形　［正方形 / 正五角形 / 正六角形 / 正三角形］ 確定 9/9  (2026-P01_q012, math)
   - The shape of each face of a regular icosahedron → Equilateral triangle　[Square / Regular pentagon / Regular hexagon / Equilateral triangle] 確定 47/47
 - **人類が初めて月面に降り立った年** → 1969年　［1965年 / 1969年 / 1972年 / 1961年］ 確定 15/15  (2026-P01_q016, space)
   - The year humans first set foot on the Moon → 1969　[1965 / 1969 / 1972 / 1961] 確定 42/42
 - **正六面体（立方体）の頂点の数** → 8　［4 / 6 / 8 / 12］ 確定 9/14  (2026-P01_q031, math)
   - The number of vertices on a cube → 8　[4 / 6 / 8 / 12] 確定 32/32
-- **元素記号「Hg」の元素** → 水銀　［ヘリウム / 水銀 / ハフニウム / 水素］ 確定 8/11  (2026-P01_q035, science)
+- ✎**元素記号「Hg」が表す元素** → 水銀　［ヘリウム / 水銀 / ハフニウム / 水素］ 確定 8/13  (2026-P01_q035, science)
   - The element with the symbol 'Hg' → Mercury　[Helium / Mercury / Hafnium / Hydrogen] 確定 32/32
-- **元素記号「Na」の元素** → ナトリウム　［窒素 / ニッケル / ナトリウム / ネオン］ 確定 8/11  (2026-P01_q037, science)
+- ✎**元素記号「Na」が表す元素** → ナトリウム　［窒素 / ニッケル / ナトリウム / ネオン］ 確定 8/13  (2026-P01_q037, science)
   - The element with the symbol "Na" → Sodium　[Nitrogen / Nickel / Sodium / Neon] 確定 32/32
 - **マグナ・カルタが制定された世紀** → 13世紀　［11世紀 / 12世紀 / 13世紀 / 14世紀］ 確定 13/15  (2026-P01_q038, history)
   - The century in which the Magna Carta was issued → 13th century　[11th century / 12th century / 13th century / 14th century] 確定 47/47
@@ -191,18 +191,18 @@
   - The largest living reptile in the world → Saltwater crocodile　[Komodo dragon / Anaconda / Leatherback sea turtle / Saltwater crocodile] 確定 26/39
 - **「最後の晩餐」を描いた画家** → レオナルド・ダ・ヴィンチ　［ミケランジェロ / レオナルド・ダ・ヴィンチ / ラファエロ / ボッティチェリ］ 確定 7/13  (2026-P01_q063, arts)
   - The painter of 'The Last Supper' → Leonardo da Vinci　[Michelangelo / Leonardo da Vinci / Raphael / Botticelli] 確定 32/32
-- **「ボレロ」を作曲したフランスの作曲家** → ラヴェル　［ドビュッシー / ラヴェル / サン＝サーンス / フォーレ］ 確定 5/18  (2026-P01_q069, music)
+- ✎**「ボレロ」を作曲したフランス人** → ラヴェル　［ドビュッシー / ラヴェル / サン＝サーンス / フォーレ］ 確定 15/15  (2026-P01_q069, music)
   - The French composer of "Boléro" → Ravel　[Debussy / Ravel / Saint-Saëns / Fauré] 確定 31/31
-- **「変身」で虫になる男を描いた作家** → カフカ　［ドストエフスキー / ヘミングウェイ / カフカ / カミュ］ 確定 14/16  (2026-P01_q073, literature)
-  - Author of 'The Metamorphosis' about a man who turns into a bug → Kafka　[Dostoevsky / Hemingway / Kafka / Camus] 確定 57/62
+- ✎**『変身』で虫になる男を描いた作家** → カフカ　［ドストエフスキー / ヘミングウェイ / カフカ / カミュ］ 確定 16/16  (2026-P01_q073, literature)
+  - Author of 'The Metamorphosis' about a man who turns into a bug → Kafka　[Dostoevsky / Hemingway / Kafka / Camus] 確定 29/62
 - **世界で一番高い滝** → エンジェルフォール　［ナイアガラの滝 / ヴィクトリアの滝 / イグアスの滝 / エンジェルフォール］ 確定 8/8  (2026-P01_q074, geography)
   - The world's tallest waterfall → Angel Falls　[Niagara Falls / Victoria Falls / Iguazu Falls / Angel Falls] 確定 25/29
 - **世界で一番大きい動物** → シロナガスクジラ　［シロナガスクジラ / アフリカゾウ / ジンベエザメ / マッコウクジラ］ 確定 8/10  (2026-P01_q078, nature)
   - The largest animal in the world → Blue whale　[Blue whale / African elephant / Whale shark / Sperm whale] 確定 18/31
 - **「ゲルニカ」を描いた画家** → ピカソ　［ダリ / ピカソ / ゴッホ / ミロ］ 確定 6/12  (2026-P01_q083, arts)
   - The painter who created 'Guernica' → Picasso　[Dalí / Picasso / Van Gogh / Miró] 確定 34/34
-- **「人間失格」の作者** → 太宰治　［太宰治 / 三島由紀夫 / 川端康成 / 志賀直哉］ 確定 6/9  (2026-P01_q084, literature)
-  - The author of 'No Longer Human' → Osamu Dazai　[Osamu Dazai / Yukio Mishima / Yasunari Kawabata / Naoya Shiga] 確定 29/31
+- ✎**『人間失格』の作者** → 太宰治　［太宰治 / 三島由紀夫 / 川端康成 / 志賀直哉］ 確定 6/9  (2026-P01_q084, literature)
+  - The author of 'No Longer Human' → Osamu Dazai　[Osamu Dazai / Yukio Mishima / Yasunari Kawabata / Naoya Shiga] 確定 31/31
 - **フランス革命が始まった年** → 1789年　［1789年 / 1776年 / 1804年 / 1815年］ 確定 12/12  (2026-P01_q085, history)
   - The year the French Revolution began → 1789　[1789 / 1776 / 1804 / 1815] 確定 36/36
 - **オペラ「魔笛」の作曲家** → モーツァルト　［ワーグナー / ヴェルディ / モーツァルト / プッチーニ］ 確定 7/11  (2026-P01_q089, music)
@@ -211,5 +211,5 @@
   - The country where judo originated → Japan　[China / South Korea / Japan / Brazil] 確定 22/33
 - **元素の周期表を考案したロシアの化学者** → メンデレーエフ　［ラボアジエ / メンデレーエフ / ドルトン / アボガドロ］ 確定 15/18  (2026-P01_q095, science)
   - Russian chemist who devised the periodic table of elements → Mendeleev　[Lavoisier / Mendeleev / Dalton / Avogadro] 確定 58/58
-- ★**ピアノの鍵盤の数（標準的なもの）** → 88鍵　［76鍵 / 81鍵 / 88鍵 / 92鍵］ 確定 16/16  (2026-P01_q098, music)
-  - Number of keys on a standard piano → 88　[76 / 81 / 88 / 92] 確定 27/34
+- ✎**「月光」ソナタの作曲家** → ベートーヴェン　［ショパン / シューベルト / ベートーヴェン / リスト］ 確定 4/11  (2026-P01_q098, music)
+  - The composer of the "Moonlight" Sonata → Beethoven　[Chopin / Schubert / Beethoven / Liszt] 確定 31/38

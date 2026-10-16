@@ -104,8 +104,14 @@ class CostMeter:
 
 STYLE_RULES = [
     "## 書き方",
-    "- 日本語の問題文は10〜25文字の目安で、短く素直に。体言止めで、句点や疑問符を付けない（例:「日本で一番高い山」）",
-    "- 「〜は何ですか」「〜でしょう」のような疑問文にしない",
+    "- 日本語の問題文は10〜25文字の目安で、短く素直に。句点は付けない",
+    "- 見出しとして読める問題は名詞で終える（例:「日本で一番高い山」「『源氏物語』の作者」）",
+    "- 「何」「いくつ」で尋ねる問題と、名前・呼び方を問う問題は全角の「？」で終える"
+    "（例:「1ダースはいくつ？」「直角三角形で最も長い辺を何という？」「『猫』を英語で言うと？」）",
+    "- 「〜は何ですか」「〜でしょう」のような丁寧な疑問文にしない",
+    "- 英語の直訳のような日本語にしない（「〜の名前」「〜の目安」「〜を意味する単語」など）。"
+    "かっこで断り書きを足さず（「（一般的な数え方）」など）、言い方そのもので意味を1つに絞る",
+    "- 本・小説の題名は『』、曲・絵・映画の題名は「」で囲む",
     "- 英語版は日本語版と意味と正解が完全に一致するように作る（直訳でなく自然な英語で。疑問符は付けない）",
     "- 選択肢は単語か短い語句。日英で answerIndex（正解の位置、0始まり）は共通。正解の位置は問題ごとにばらけさせる",
     "- 正解以外の3つは、確実に不正解だが同じ種類のもので揃える（例: すべて山の名前）",
@@ -114,7 +120,7 @@ STYLE_RULES = [
 ]
 
 
-def build_prompt(difficulty, n, avoid, feedback=None):
+def build_prompt(difficulty, n, avoid, feedback=None, category=None):
     lines = [
         "あなたはTV向け4択速読クイズの問題作成者です。以下の条件で問題を"
         f"{n}問、日本語版と英語版を同時に作ってください。",
@@ -136,7 +142,11 @@ def build_prompt(difficulty, n, avoid, feedback=None):
         *STYLE_RULES,
         "",
         f"- {n}問の分野は偏らないように散らす。同じ題材を2回使わない",
+        "- 使用済みの題材と同じ型の問題を増やさない（例: 元素記号から元素を答える問題や、"
+        "日本語の単語を英語で答える問題がすでにあれば、正解が違っても作らない）",
     ]
+    if category:
+        lines.append(f"- 分野は {category} にする（同じ分野の問題の差し替え）")
     if avoid:
         lines += ["", "## 使用済みの題材（これらと同じ題材・同じ正解の問題は作らない）"]
         lines += [f"- {a}" for a in avoid]
@@ -163,8 +173,9 @@ def build_fix_prompt(q, reasons, avoid):
         *STYLE_RULES,
     ]
     if avoid:
+        # 一部だけ渡すと、渡さなかった題材と同じ問題に直してしまう（2026-P01 のピアノの重複）
         lines += ["", "## 使用済みの題材（差し替えるときも、これらと同じ題材・正解にしない）"]
-        lines += [f"- {a}" for a in avoid[-60:]]
+        lines += [f"- {a}" for a in avoid]
     lines += ["", "必ず submit_questions ツールを1回だけ呼んで1問だけ提出する。ツール呼び出し以外の出力はしない。"]
     return "\n".join(lines)
 
@@ -188,14 +199,35 @@ def call_generator(runtime, meter, prompt, n):
 
 # ---------------------------------------------------------------- 形式チェック（モデルを呼ばずに弾く）
 
+ASKING_WORDS = re.compile(r"何|いくつ|いくら|どこ|どれ|どの|だれ|誰|いつ")
+
+
+def text_keys(q):
+    """同じ問題かを見るための問題文の正規化。かっこの断り書き・冠詞・記号の違いは無視する
+    （2026-P01 で「ピアノの鍵盤の数」と「ピアノの鍵盤の数（標準的なもの）」がすり抜けた）"""
+    ja = re.sub(r"[（(][^）)]*[）)]", "", q["ja"]["text"])
+    ja = re.sub(r"[\s？?。、・「」『』]", "", ja)
+    en = re.sub(r"[^a-z0-9 ]", " ", q["en"]["text"].lower())
+    en = " ".join(w for w in en.split() if w not in ("the", "a", "an"))
+    return {"ja:" + ja, "en:" + en}
+
+
 def local_check(q, used_answers, used_texts):
     ja, en = q["ja"], q["en"]
     problems = []
     jt = ja["text"]
     if not (4 <= len(jt) <= JA_TEXT_MAX):
         problems.append(f"日本語の問題文が{len(jt)}文字（4〜{JA_TEXT_MAX}文字にする）")
-    if re.search(r"[。？?]$", jt) or re.search(r"(ですか|でしょう|ましょう|か|何になる|何)$", jt):
-        problems.append("日本語の問題文は体言止めにし、句点・疑問符・疑問文にしない")
+    if jt.endswith("。") or jt.endswith("?"):
+        problems.append("日本語の問題文に句点や半角の「?」を付けない（尋ねる形は全角の「？」で終える）")
+    if re.search(r"(ですか|でしょう|ましょう)？?$", jt):
+        problems.append("日本語の問題文を丁寧な疑問文にしない")
+    if ASKING_WORDS.search(jt) and not jt.endswith("？"):
+        problems.append("「何」「いくつ」などで尋ねる問題文は「？」で終える")
+    if jt.endswith("？") and not (ASKING_WORDS.search(jt) or re.search(r"[はと]？$", jt)):
+        problems.append("見出しとして読める問題文は名詞で終え、「？」を付けない")
+    if re.search(r"[（(][^）)]*[）)]$", jt):
+        problems.append("かっこの断り書きで終えない（言い方そのもので意味を絞る）")
     if not (4 <= len(en["text"]) <= EN_TEXT_MAX):
         problems.append(f"英語の問題文が{len(en['text'])}文字（{EN_TEXT_MAX}文字以内にする）")
     if en["text"].rstrip().endswith("?"):
@@ -205,8 +237,8 @@ def local_check(q, used_answers, used_texts):
     answer = ja["choices"][q["answerIndex"]]
     if answer in used_answers:
         problems.append(f"正解「{answer}」は使用済みの題材")
-    if jt in used_texts:
-        problems.append("同じ問題文が使用済み")
+    if text_keys(q) & used_texts:
+        problems.append("同じ問題文（言い回し違いを含む）が使用済み")
     return problems
 
 
@@ -290,7 +322,7 @@ def measure_decision_point(runtime, meter, tool, text, choices, answer_index, lo
 # ---------------------------------------------------------------- 使用済みの題材
 
 def load_used_from_data(exclude_period_id):
-    """data/ にある過去ピリオドの問題から、正解と問題文を集める（仮データ *.temp.json は除く）"""
+    """data/ にある過去ピリオドの問題から、正解と問題文（text_keys で正規化）を集める（仮データ *.temp.json は除く）"""
     answers, texts, avoid = set(), set(), []
     for path in sorted(DATA_DIR.glob("questions.*.json")):
         if ".temp." in path.name or path.name == f"questions.{exclude_period_id}.json":
@@ -299,7 +331,7 @@ def load_used_from_data(exclude_period_id):
             for q in json.loads(path.read_text(encoding="utf-8")):
                 ja = q["locales"]["ja"]
                 answers.add(ja["choices"][q["answerIndex"]])
-                texts.add(ja["text"])
+                texts |= text_keys(q["locales"])
                 avoid.append(f"{ja['text']} → {ja['choices'][q['answerIndex']]}")
         except (OSError, ValueError, KeyError):
             continue
@@ -349,7 +381,7 @@ def main():
         print(f"再開: 採用済み {len(accepted)} 問を読み込んだ")
     for q in accepted:
         used_answers.add(q["ja"]["choices"][q["answerIndex"]])
-        used_texts.add(q["ja"]["text"])
+        used_texts |= text_keys(q)
         avoid.append(f"{q['ja']['text']} → {q['ja']['choices'][q['answerIndex']]}")
 
     def save_progress():
@@ -362,7 +394,7 @@ def main():
     def mark_used(q):
         answer = q["ja"]["choices"][q["answerIndex"]]
         used_answers.add(answer)
-        used_texts.add(q["ja"]["text"])
+        used_texts |= text_keys(q)
         avoid.append(f"{q['ja']['text']} → {answer}")
 
     def process(q, difficulty):

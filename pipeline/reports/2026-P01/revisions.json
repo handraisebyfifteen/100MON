@@ -1,0 +1,3095 @@
+{
+ "period_id": "2026-P01",
+ "started_at": "2026-10-16T02:33:54+00:00",
+ "edits": {
+  "2026-P01_q003": {
+   "note": "「何」で尋ねる形なのに「？」が無い",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.22,
+     "input_tokens": 1287,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.54,
+     "input_tokens": 1288,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q064": {
+   "note": "「1ダースの数」は不自然",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.43,
+     "input_tokens": 1272,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.59,
+     "input_tokens": 1268,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q099": {
+   "note": "計算は尋ねる形の方が自然",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.37,
+     "input_tokens": 1284,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.94,
+     "input_tokens": 1280,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q002": {
+   "note": "「目安」は英語の直訳調",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.04,
+     "input_tokens": 1295,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.14,
+     "input_tokens": 1289,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q072": {
+   "note": "かっこの断り書きをやめ、「日本で」「一般に」で数え方の違いを絞る",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.05,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.33,
+     "input_tokens": 1278,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q043": {
+   "note": "名前を問う問題",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.98,
+     "input_tokens": 1292,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.09,
+     "input_tokens": 1281,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q070": {
+   "note": "名前を問う問題（「〜の名前」は直訳調）",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.2,
+     "input_tokens": 1295,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.72,
+     "input_tokens": 1285,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q097": {
+   "note": "呼び方を問う問題",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.84,
+     "input_tokens": 1276,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.96,
+     "input_tokens": 1271,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q048": {
+   "note": "尋ねる形の方が自然",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1281,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.06,
+     "input_tokens": 1275,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q055": {
+   "note": "尋ねる形の方が自然",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.0,
+     "input_tokens": 1276,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.9,
+     "input_tokens": 1267,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q026": {
+   "note": "「〜の名前」は直訳調（「まわりを回る天体」は人工衛星も入るので検証で不合格）",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.04,
+     "input_tokens": 1271,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.76,
+     "input_tokens": 1266,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q011": {
+   "note": "「〜を意味する単語」は直訳調（q004・q062 と同じ形にそろえる）",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.06,
+     "input_tokens": 1278,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.81,
+     "input_tokens": 1273,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q051": {
+   "note": "「日本語の」は英語版からの直訳",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.51,
+     "input_tokens": 1267,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.99,
+     "input_tokens": 1263,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q059": {
+   "note": "言い回しが不自然",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.19,
+     "input_tokens": 1286,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.19,
+     "input_tokens": 1280,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q067": {
+   "note": "言い回しが直訳調",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.11,
+     "input_tokens": 1286,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.8,
+     "input_tokens": 1277,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q025": {
+   "note": "「作曲した作曲家」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.92,
+     "input_tokens": 1280,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.06,
+     "input_tokens": 1280,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q069": {
+   "note": "「作曲した作曲家」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.96,
+     "input_tokens": 1289,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.92,
+     "input_tokens": 1288,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q090": {
+   "note": "大豆は味噌汁ではなく味噌の原料",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.94,
+     "input_tokens": 1292,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.98,
+     "input_tokens": 1281,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q100": {
+   "note": "かっこの断り書きをやめる",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.77,
+     "input_tokens": 1295,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.05,
+     "input_tokens": 1288,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q091": {
+   "note": "かっこの言い換えをやめる",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.09,
+     "input_tokens": 1289,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.83,
+     "input_tokens": 1282,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q019": {
+   "note": "「元素記号…の元素」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.86,
+     "input_tokens": 1280,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.99,
+     "input_tokens": 1271,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q035": {
+   "note": "「元素記号…の元素」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.18,
+     "input_tokens": 1288,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.66,
+     "input_tokens": 1283,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q037": {
+   "note": "「元素記号…の元素」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.01,
+     "input_tokens": 1285,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.74,
+     "input_tokens": 1277,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q052": {
+   "note": "「元素記号…の元素」の重複",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.89,
+     "input_tokens": 1284,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.73,
+     "input_tokens": 1281,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q020": {
+   "note": "本の題名は『』",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.1,
+     "input_tokens": 1303,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.11,
+     "input_tokens": 1298,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q079": {
+   "note": "本の題名は『』",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.1,
+     "input_tokens": 1303,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.03,
+     "input_tokens": 1295,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q084": {
+   "note": "本の題名は『』",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.95,
+     "input_tokens": 1298,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.1,
+     "input_tokens": 1293,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q073": {
+   "note": "本の題名は『』",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.02,
+     "input_tokens": 1301,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.79,
+     "input_tokens": 1297,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q044": {
+   "note": "親知らずを数えない28本も正しいと言えるので、選択肢の28本を20本に",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.98,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.77,
+     "input_tokens": 1279,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q094": {
+   "note": "皮膚を臓器に数える考え方があるので「内臓」に（英語版はもともと internal organ）",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.36,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.0,
+     "input_tokens": 1272,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q046": {
+   "note": "控えを含めると人数が変わるので、コートに出る人数に",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.16,
+     "input_tokens": 1280,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.2,
+     "input_tokens": 1274,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q082": {
+   "note": "控えを含めると人数が変わるので、フィールドに出る人数に",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 0.84,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.15,
+     "input_tokens": 1279,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q087": {
+   "note": "「〜を意味する単語」は直訳調（q062 と同じ形にそろえる）",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.28,
+     "input_tokens": 1271,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.94,
+     "input_tokens": 1266,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q098": {
+   "note": "q086「ピアノの鍵盤の数」と重複。差し替えは生成役（Opus 4.6）の案",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.83,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.8,
+     "input_tokens": 1285,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q076": {
+   "note": "q067（火星が赤い）と題材が重なる。生成役の案「音の速さより速い速度を何という？」は選択肢の「光速」も当てはまるので、人が書いた",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.56,
+     "input_tokens": 1290,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.26,
+     "input_tokens": 1284,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q004": {
+   "note": "q087（英語で「犬」）とほぼ同じ型。書き換え案は検証2で3回不合格、生成役の案も英単語を答える型だったので、人が書いた",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.55,
+     "input_tokens": 1283,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 2.3,
+     "input_tokens": 1281,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  },
+  "2026-P01_q062": {
+   "note": "q087（英語で「犬」）と同じ型。生成役の案も英単語を答える型だったので、人が書いた",
+   "ok": true,
+   "reasons": [],
+   "verification": {
+    "verifier1": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.57,
+     "input_tokens": 1309,
+     "output_tokens": 108,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    },
+    "verifier2": {
+     "mechanism": "tool_forced",
+     "latency_s": 1.46,
+     "input_tokens": 1304,
+     "output_tokens": 114,
+     "stop_reason": "tool_use",
+     "checks": {
+      "answer_correct": {
+       "pass": true,
+       "reason": ""
+      },
+      "single_answer": {
+       "pass": true,
+       "reason": ""
+      },
+      "unambiguous": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_time_sensitive": {
+       "pass": true,
+       "reason": ""
+      },
+      "locale_match": {
+       "pass": true,
+       "reason": ""
+      },
+      "not_trick": {
+       "pass": true,
+       "reason": ""
+      },
+      "fair": {
+       "pass": true,
+       "reason": ""
+      }
+     },
+     "verdict": true
+    }
+   }
+  }
+ },
+ "replaces": {},
+ "finished_at": "2026-10-16T02:34:32+00:00",
+ "cost": [
+  {
+   "model": "mistral.mistral-large-3-675b-instruct",
+   "calls": 78,
+   "in": 43439,
+   "out": 6345,
+   "usd": null
+  },
+  {
+   "model": "qwen.qwen3-235b-a22b-2507-v1:0",
+   "calls": 4,
+   "in": 5154,
+   "out": 456,
+   "usd": 0.0015
+  }
+ ]
+}

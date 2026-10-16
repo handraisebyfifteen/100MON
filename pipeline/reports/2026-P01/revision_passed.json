@@ -1,0 +1,2888 @@
+{
+ "{\"answerIndex\": 0, \"category\": \"math\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"1000\", \"100\", \"10000\", \"500\"], \"text\": \"How many meters in one kilometer\"}, \"ja\": {\"choices\": [\"1000\", \"100\", \"10000\", \"500\"], \"text\": \"1キロメートルは何メートル？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.22,
+   "input_tokens": 1287,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.54,
+   "input_tokens": 1288,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"math\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"10\", \"12\", \"24\", \"6\"], \"text\": \"The number of items in one dozen\"}, \"ja\": {\"choices\": [\"10\", \"12\", \"24\", \"6\"], \"text\": \"1ダースはいくつ？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.43,
+   "input_tokens": 1272,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.59,
+   "input_tokens": 1268,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"math\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"45\", \"55\", \"50\", \"60\"], \"text\": \"The sum of all numbers from 1 to 10\"}, \"ja\": {\"choices\": [\"45\", \"55\", \"50\", \"60\"], \"text\": \"1から10まで全部足すといくつ？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.37,
+   "input_tokens": 1284,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.94,
+   "input_tokens": 1280,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"nature\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"About 70%\", \"About 50%\", \"About 60%\", \"About 80%\"], \"text\": \"The approximate percentage of Earth's surface covered by ocean\"}, \"ja\": {\"choices\": [\"約7割\", \"約5割\", \"約6割\", \"約8割\"], \"text\": \"地球の表面のおよそ何割が海？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.04,
+   "input_tokens": 1295,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.14,
+   "input_tokens": 1289,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"nature\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"7\", \"5\", \"6\", \"10\"], \"text\": \"The number of colors a rainbow is usually said to have in Japan\"}, \"ja\": {\"choices\": [\"7色\", \"5色\", \"6色\", \"10色\"], \"text\": \"日本で虹は一般に何色とされる？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.05,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.33,
+   "input_tokens": 1278,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"science\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Photosynthesis\", \"Fermentation\", \"Transpiration\", \"Respiration\"], \"text\": \"The process by which plants make food using light\"}, \"ja\": {\"choices\": [\"光合成\", \"発酵\", \"蒸散\", \"呼吸\"], \"text\": \"植物が光で栄養を作るはたらきを何という？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.98,
+   "input_tokens": 1292,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.09,
+   "input_tokens": 1281,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"math\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Base\", \"Opposite\", \"Hypotenuse\", \"Adjacent\"], \"text\": \"The name of the longest side of a right triangle\"}, \"ja\": {\"choices\": [\"底辺\", \"対辺\", \"斜辺\", \"隣辺\"], \"text\": \"直角三角形で最も長い辺を何という？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.2,
+   "input_tokens": 1295,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.72,
+   "input_tokens": 1285,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"sports\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"No\", \"Love\", \"Zero\", \"Nil\"], \"text\": \"The term for a score of zero in tennis\"}, \"ja\": {\"choices\": [\"ノー\", \"ラブ\", \"ゼロ\", \"ニル\"], \"text\": \"テニスで0点のことを何という？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.84,
+   "input_tokens": 1276,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.96,
+   "input_tokens": 1271,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"animals\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Killifish\", \"Snake\", \"Turtle\", \"Frog\"], \"text\": \"What a tadpole grows into\"}, \"ja\": {\"choices\": [\"メダカ\", \"ヘビ\", \"カメ\", \"カエル\"], \"text\": \"オタマジャクシが育つと何になる？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.89,
+   "input_tokens": 1281,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.06,
+   "input_tokens": 1275,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"science\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Steam\", \"Frost\", \"Water\", \"Snow\"], \"text\": \"What ice turns into when it melts\"}, \"ja\": {\"choices\": [\"水蒸気\", \"霜\", \"水\", \"雪\"], \"text\": \"氷が溶けると何になる？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.0,
+   "input_tokens": 1276,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.9,
+   "input_tokens": 1267,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"science\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"The Moon\", \"Mars\", \"Venus\", \"Saturn\"], \"text\": \"Earth's only natural satellite\"}, \"ja\": {\"choices\": [\"月\", \"火星\", \"金星\", \"土星\"], \"text\": \"地球にただ一つある衛星\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.04,
+   "input_tokens": 1271,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.76,
+   "input_tokens": 1266,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"language\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Terra\", \"Ignis\", \"Aqua\", \"Lux\"], \"text\": \"The Latin word meaning 'water'\"}, \"ja\": {\"choices\": [\"テラ\", \"イグニス\", \"アクア\", \"ルクス\"], \"text\": \"ラテン語で「水」は？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.06,
+   "input_tokens": 1278,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.81,
+   "input_tokens": 1273,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"music\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Cello\", \"Viola\", \"Double bass\", \"Violin\"], \"text\": \"The smallest string instrument in an orchestra\"}, \"ja\": {\"choices\": [\"チェロ\", \"ビオラ\", \"コントラバス\", \"バイオリン\"], \"text\": \"オーケストラの弦楽器で一番小さいもの\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.19,
+   "input_tokens": 1286,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.19,
+   "input_tokens": 1280,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"space\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Iron oxide\", \"Sulfur\", \"Copper\", \"Manganese\"], \"text\": \"The substance that makes the surface of Mars red\"}, \"ja\": {\"choices\": [\"酸化鉄\", \"硫黄\", \"銅\", \"マンガン\"], \"text\": \"火星の表面を赤くしている物質\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.11,
+   "input_tokens": 1286,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.8,
+   "input_tokens": 1277,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"music\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Bach\", \"Vivaldi\", \"Mozart\", \"Handel\"], \"text\": \"The composer of The Four Seasons\"}, \"ja\": {\"choices\": [\"バッハ\", \"ヴィヴァルディ\", \"モーツァルト\", \"ヘンデル\"], \"text\": \"「四季」の作曲家\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.92,
+   "input_tokens": 1280,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.06,
+   "input_tokens": 1280,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"music\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Debussy\", \"Ravel\", \"Saint-Saëns\", \"Fauré\"], \"text\": \"The French composer of \\\"Boléro\\\"\"}, \"ja\": {\"choices\": [\"ドビュッシー\", \"ラヴェル\", \"サン＝サーンス\", \"フォーレ\"], \"text\": \"「ボレロ」を作曲したフランス人\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.96,
+   "input_tokens": 1289,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.92,
+   "input_tokens": 1288,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"food\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"Azuki bean\", \"Pea\", \"Chickpea\", \"Soybean\"], \"text\": \"The bean that is the main ingredient of miso\"}, \"ja\": {\"choices\": [\"小豆\", \"えんどう豆\", \"ひよこ豆\", \"大豆\"], \"text\": \"味噌の主な原料となる豆\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.94,
+   "input_tokens": 1292,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.98,
+   "input_tokens": 1281,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"science\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"50°C\", \"75°C\", \"100°C\", \"120°C\"], \"text\": \"Boiling point of water at 1 atm\"}, \"ja\": {\"choices\": [\"50℃\", \"75℃\", \"100℃\", \"120℃\"], \"text\": \"1気圧で水が沸騰する温度\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.77,
+   "input_tokens": 1295,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.05,
+   "input_tokens": 1288,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"space\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Jupiter\", \"Saturn\", \"Uranus\", \"Neptune\"], \"text\": \"The planet in our solar system with the most prominent rings\"}, \"ja\": {\"choices\": [\"木星\", \"土星\", \"天王星\", \"海王星\"], \"text\": \"太陽系で環が一番目立つ惑星\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.09,
+   "input_tokens": 1289,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.83,
+   "input_tokens": 1282,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"science\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Silver\", \"Copper\", \"Aluminium\", \"Gold\"], \"text\": \"The element with the symbol 'Au'\"}, \"ja\": {\"choices\": [\"銀\", \"銅\", \"アルミニウム\", \"金\"], \"text\": \"元素記号「Au」が表す元素\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.86,
+   "input_tokens": 1280,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.99,
+   "input_tokens": 1271,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"science\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Helium\", \"Mercury\", \"Hafnium\", \"Hydrogen\"], \"text\": \"The element with the symbol 'Hg'\"}, \"ja\": {\"choices\": [\"ヘリウム\", \"水銀\", \"ハフニウム\", \"水素\"], \"text\": \"元素記号「Hg」が表す元素\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.18,
+   "input_tokens": 1288,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.66,
+   "input_tokens": 1283,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"science\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Nitrogen\", \"Nickel\", \"Sodium\", \"Neon\"], \"text\": \"The element with the symbol \\\"Na\\\"\"}, \"ja\": {\"choices\": [\"窒素\", \"ニッケル\", \"ナトリウム\", \"ネオン\"], \"text\": \"元素記号「Na」が表す元素\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.01,
+   "input_tokens": 1285,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.74,
+   "input_tokens": 1277,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"science\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Fluorine\", \"Francium\", \"Fermium\", \"Iron\"], \"text\": \"The element with the symbol Fe\"}, \"ja\": {\"choices\": [\"フッ素\", \"フランシウム\", \"フェルミウム\", \"鉄\"], \"text\": \"元素記号「Fe」が表す元素\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.89,
+   "input_tokens": 1284,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.73,
+   "input_tokens": 1281,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"literature\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Osamu Dazai\", \"Yasunari Kawabata\", \"Ryūnosuke Akutagawa\", \"Yukio Mishima\"], \"text\": \"The author of 'Rashōmon'\"}, \"ja\": {\"choices\": [\"太宰治\", \"川端康成\", \"芥川龍之介\", \"三島由紀夫\"], \"text\": \"『羅生門』の作者\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.1,
+   "input_tokens": 1303,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.11,
+   "input_tokens": 1298,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"literature\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"Ryunosuke Akutagawa\", \"Osamu Dazai\", \"Soseki Natsume\", \"Ogai Mori\"], \"text\": \"The author of I Am a Cat\"}, \"ja\": {\"choices\": [\"芥川龍之介\", \"太宰治\", \"夏目漱石\", \"森鷗外\"], \"text\": \"『吾輩は猫である』の作者\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.1,
+   "input_tokens": 1303,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.03,
+   "input_tokens": 1295,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"literature\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Osamu Dazai\", \"Yukio Mishima\", \"Yasunari Kawabata\", \"Naoya Shiga\"], \"text\": \"The author of 'No Longer Human'\"}, \"ja\": {\"choices\": [\"太宰治\", \"三島由紀夫\", \"川端康成\", \"志賀直哉\"], \"text\": \"『人間失格』の作者\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.95,
+   "input_tokens": 1298,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.1,
+   "input_tokens": 1293,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"literature\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Dostoevsky\", \"Hemingway\", \"Kafka\", \"Camus\"], \"text\": \"Author of 'The Metamorphosis' about a man who turns into a bug\"}, \"ja\": {\"choices\": [\"ドストエフスキー\", \"ヘミングウェイ\", \"カフカ\", \"カミュ\"], \"text\": \"『変身』で虫になる男を描いた作家\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.02,
+   "input_tokens": 1301,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.79,
+   "input_tokens": 1297,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 0, \"category\": \"body\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"32\", \"24\", \"20\", \"36\"], \"text\": \"Number of permanent teeth in an adult human\"}, \"ja\": {\"choices\": [\"32本\", \"24本\", \"20本\", \"36本\"], \"text\": \"人間の大人の永久歯の本数\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.98,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.77,
+   "input_tokens": 1279,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"body\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Kidney\", \"Liver\", \"Stomach\", \"Lung\"], \"text\": \"The largest internal organ in the human body\"}, \"ja\": {\"choices\": [\"腎臓\", \"肝臓\", \"胃\", \"肺\"], \"text\": \"人体で一番大きい内臓\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.36,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.0,
+   "input_tokens": 1272,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"sports\", \"difficulty\": \"intermediate\", \"en\": {\"choices\": [\"6\", \"7\", \"4\", \"5\"], \"text\": \"Number of players per team on the court in basketball\"}, \"ja\": {\"choices\": [\"6人\", \"7人\", \"4人\", \"5人\"], \"text\": \"バスケットボールで1チームがコートに出る人数\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.16,
+   "input_tokens": 1280,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.2,
+   "input_tokens": 1274,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"sports\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"9\", \"5\", \"15\", \"11\"], \"text\": \"Number of players per team on the field in soccer\"}, \"ja\": {\"choices\": [\"9人\", \"5人\", \"15人\", \"11人\"], \"text\": \"サッカーで1チームがフィールドに出る人数\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 0.84,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.15,
+   "input_tokens": 1279,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 3, \"category\": \"language\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Cat\", \"Bear\", \"Fox\", \"Dog\"], \"text\": \"The English word meaning 'inu' in Japanese\"}, \"ja\": {\"choices\": [\"Cat\", \"Bear\", \"Fox\", \"Dog\"], \"text\": \"英語で「犬」は？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.28,
+   "input_tokens": 1271,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.94,
+   "input_tokens": 1266,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"language\", \"difficulty\": \"beginner0\", \"en\": {\"choices\": [\"Ka\", \"U\", \"A\", \"I\"], \"text\": \"The first character in the Japanese kana chart\"}, \"ja\": {\"choices\": [\"か\", \"う\", \"あ\", \"い\"], \"text\": \"五十音の最初の文字\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.51,
+   "input_tokens": 1267,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.99,
+   "input_tokens": 1263,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"music\", \"difficulty\": \"advanced\", \"en\": {\"choices\": [\"Chopin\", \"Schubert\", \"Beethoven\", \"Liszt\"], \"text\": \"The composer of the \\\"Moonlight\\\" Sonata\"}, \"ja\": {\"choices\": [\"ショパン\", \"シューベルト\", \"ベートーヴェン\", \"リスト\"], \"text\": \"「月光」ソナタの作曲家\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.83,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.8,
+   "input_tokens": 1285,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"space\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Full moon\", \"Crescent moon\", \"New moon\", \"Half moon\"], \"text\": \"The phase of the moon when it cannot be seen\"}, \"ja\": {\"choices\": [\"満月\", \"三日月\", \"新月\", \"半月\"], \"text\": \"満ち欠けで月が見えなくなる時を何という？\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.56,
+   "input_tokens": 1290,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.26,
+   "input_tokens": 1284,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 2, \"category\": \"language\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"English\", \"French\", \"Portuguese\", \"German\"], \"text\": \"The language that the Japanese word 'pan' (bread) comes from\"}, \"ja\": {\"choices\": [\"英語\", \"フランス語\", \"ポルトガル語\", \"ドイツ語\"], \"text\": \"「パン」の語源になった言語\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.55,
+   "input_tokens": 1283,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.3,
+   "input_tokens": 1281,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ },
+ "{\"answerIndex\": 1, \"category\": \"language\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"Phono-semantic compounds\", \"Pictograms\", \"Compound ideographs\", \"Indicatives\"], \"text\": \"Kanji such as 山 (mountain) and 川 (river) that were made from the shapes of things\"}, \"ja\": {\"choices\": [\"形声文字\", \"象形文字\", \"会意文字\", \"指事文字\"], \"text\": \"「山」「川」のように物の形からできた漢字\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.57,
+   "input_tokens": 1309,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 1.46,
+   "input_tokens": 1304,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
+ }
+}

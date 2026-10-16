@@ -34,14 +34,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "地球の表面で海が占める割合の目安",
+        "text": "地球の表面のおよそ何割が海？",
         "choices": [
           "約7割",
           "約5割",
           "約6割",
           "約8割"
         ],
-        "decisionPoint": 13
+        "decisionPoint": 14
       },
       "en": {
         "text": "The approximate percentage of Earth's surface covered by ocean",
@@ -51,7 +51,7 @@
           "About 60%",
           "About 80%"
         ],
-        "decisionPoint": 29
+        "decisionPoint": 62
       }
     }
   },
@@ -62,7 +62,7 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "1キロメートルは何メートル",
+        "text": "1キロメートルは何メートル？",
         "choices": [
           "1000",
           "100",
@@ -79,7 +79,7 @@
           "10000",
           "500"
         ],
-        "decisionPoint": 26
+        "decisionPoint": 23
       }
     }
   },
@@ -90,24 +90,24 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "英語で「猫」を意味する単語",
+        "text": "「パン」の語源になった言語",
         "choices": [
-          "Dog",
-          "Bird",
-          "Cat",
-          "Fish"
+          "英語",
+          "フランス語",
+          "ポルトガル語",
+          "ドイツ語"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 9
       },
       "en": {
-        "text": "The English word for 'neko' (猫)",
+        "text": "The language that the Japanese word 'pan' (bread) comes from",
         "choices": [
-          "Dog",
-          "Bird",
-          "Cat",
-          "Fish"
+          "English",
+          "French",
+          "Portuguese",
+          "German"
         ],
-        "decisionPoint": 31
+        "decisionPoint": 49
       }
     }
   },
@@ -286,14 +286,14 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "ラテン語で「水」を意味する単語",
+        "text": "ラテン語で「水」は？",
         "choices": [
           "テラ",
           "イグニス",
           "アクア",
           "ルクス"
         ],
-        "decisionPoint": 8
+        "decisionPoint": 10
       },
       "en": {
         "text": "The Latin word meaning 'water'",
@@ -303,7 +303,7 @@
           "Aqua",
           "Lux"
         ],
-        "decisionPoint": 29
+        "decisionPoint": 30
       }
     }
   },
@@ -510,7 +510,7 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "元素記号「Au」の元素",
+        "text": "元素記号「Au」が表す元素",
         "choices": [
           "銀",
           "銅",
@@ -538,14 +538,14 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "「羅生門」の作者",
+        "text": "『羅生門』の作者",
         "choices": [
           "太宰治",
           "川端康成",
           "芥川龍之介",
           "三島由紀夫"
         ],
-        "decisionPoint": 5
+        "decisionPoint": 8
       },
       "en": {
         "text": "The author of 'Rashōmon'",
@@ -555,7 +555,7 @@
           "Ryūnosuke Akutagawa",
           "Yukio Mishima"
         ],
-        "decisionPoint": 20
+        "decisionPoint": 24
       }
     }
   },
@@ -678,14 +678,14 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "「四季」を作曲した作曲家",
+        "text": "「四季」の作曲家",
         "choices": [
           "バッハ",
           "ヴィヴァルディ",
           "モーツァルト",
           "ヘンデル"
         ],
-        "decisionPoint": 9
+        "decisionPoint": 8
       },
       "en": {
         "text": "The composer of The Four Seasons",
@@ -706,24 +706,24 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "地球の衛星の名前",
+        "text": "地球にただ一つある衛星",
         "choices": [
           "月",
           "火星",
           "金星",
           "土星"
         ],
-        "decisionPoint": 5
+        "decisionPoint": 11
       },
       "en": {
-        "text": "The name of Earth's natural satellite",
+        "text": "Earth's only natural satellite",
         "choices": [
           "The Moon",
           "Mars",
           "Venus",
           "Saturn"
         ],
-        "decisionPoint": 20
+        "decisionPoint": 21
       }
     }
   },
@@ -958,7 +958,7 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "元素記号「Hg」の元素",
+        "text": "元素記号「Hg」が表す元素",
         "choices": [
           "ヘリウム",
           "水銀",
@@ -1014,7 +1014,7 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "元素記号「Na」の元素",
+        "text": "元素記号「Na」が表す元素",
         "choices": [
           "窒素",
           "ニッケル",
@@ -1182,14 +1182,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "植物が光で栄養を作ること",
+        "text": "植物が光で栄養を作るはたらきを何という？",
         "choices": [
           "光合成",
           "発酵",
           "蒸散",
           "呼吸"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 14
       },
       "en": {
         "text": "The process by which plants make food using light",
@@ -1214,7 +1214,7 @@
         "choices": [
           "32本",
           "24本",
-          "28本",
+          "20本",
           "36本"
         ],
         "decisionPoint": 12
@@ -1224,7 +1224,7 @@
         "choices": [
           "32",
           "24",
-          "28",
+          "20",
           "36"
         ],
         "decisionPoint": 26
@@ -1266,24 +1266,24 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "バスケットボールの1チームの人数",
+        "text": "バスケットボールで1チームがコートに出る人数",
         "choices": [
           "6人",
           "7人",
           "4人",
           "5人"
         ],
-        "decisionPoint": 16
+        "decisionPoint": 22
       },
       "en": {
-        "text": "Number of players per team in basketball",
+        "text": "Number of players per team on the court in basketball",
         "choices": [
           "6",
           "7",
           "4",
           "5"
         ],
-        "decisionPoint": 39
+        "decisionPoint": 53
       }
     }
   },
@@ -1322,14 +1322,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "オタマジャクシが成長した姿",
+        "text": "オタマジャクシが育つと何になる？",
         "choices": [
           "メダカ",
           "ヘビ",
           "カメ",
           "カエル"
         ],
-        "decisionPoint": 13
+        "decisionPoint": 10
       },
       "en": {
         "text": "What a tadpole grows into",
@@ -1406,14 +1406,14 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "日本語の五十音の最初の文字",
+        "text": "五十音の最初の文字",
         "choices": [
           "か",
           "う",
           "あ",
           "い"
         ],
-        "decisionPoint": 12
+        "decisionPoint": 6
       },
       "en": {
         "text": "The first character in the Japanese kana chart",
@@ -1423,7 +1423,7 @@
           "A",
           "I"
         ],
-        "decisionPoint": 46
+        "decisionPoint": 33
       }
     }
   },
@@ -1434,7 +1434,7 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "元素記号「Fe」の元素",
+        "text": "元素記号「Fe」が表す元素",
         "choices": [
           "フッ素",
           "フランシウム",
@@ -1518,14 +1518,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "氷が溶けてできるもの",
+        "text": "氷が溶けると何になる？",
         "choices": [
           "水蒸気",
           "霜",
           "水",
           "雪"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 6
       },
       "en": {
         "text": "What ice turns into when it melts",
@@ -1535,7 +1535,7 @@
           "Water",
           "Snow"
         ],
-        "decisionPoint": 33
+        "decisionPoint": 25
       }
     }
   },
@@ -1630,24 +1630,24 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "四本の弦を弓で弾く最小の楽器",
+        "text": "オーケストラの弦楽器で一番小さいもの",
         "choices": [
           "チェロ",
           "ビオラ",
           "コントラバス",
           "バイオリン"
         ],
-        "decisionPoint": 14
+        "decisionPoint": 18
       },
       "en": {
-        "text": "The smallest bowed string instrument with four strings",
+        "text": "The smallest string instrument in an orchestra",
         "choices": [
           "Cello",
           "Viola",
           "Double bass",
           "Violin"
         ],
-        "decisionPoint": 36
+        "decisionPoint": 29
       }
     }
   },
@@ -1709,29 +1709,29 @@
   },
   {
     "id": "2026-P01_q062",
-    "answerIndex": 2,
+    "answerIndex": 1,
     "category": "language",
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "英語で「ありがとう」の意味の言葉",
+        "text": "「山」「川」のように物の形からできた漢字",
         "choices": [
-          "Good morning",
-          "Goodbye",
-          "Thank you",
-          "Please"
+          "形声文字",
+          "象形文字",
+          "会意文字",
+          "指事文字"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 18
       },
       "en": {
-        "text": "The English phrase meaning 'arigatou' in Japanese",
+        "text": "Kanji such as 山 (mountain) and 川 (river) that were made from the shapes of things",
         "choices": [
-          "Good morning",
-          "Goodbye",
-          "Thank you",
-          "Please"
+          "Phono-semantic compounds",
+          "Pictograms",
+          "Compound ideographs",
+          "Indicatives"
         ],
-        "decisionPoint": 37
+        "decisionPoint": 70
       }
     }
   },
@@ -1770,24 +1770,24 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "1ダースの数",
+        "text": "1ダースはいくつ？",
         "choices": [
           "10",
           "12",
           "24",
           "6"
         ],
-        "decisionPoint": 4
+        "decisionPoint": 5
       },
       "en": {
-        "text": "The number in one dozen",
+        "text": "The number of items in one dozen",
         "choices": [
           "10",
           "12",
           "24",
           "6"
         ],
-        "decisionPoint": 17
+        "decisionPoint": 26
       }
     }
   },
@@ -1854,24 +1854,24 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "火星が赤く見える主な原因の物質",
+        "text": "火星の表面を赤くしている物質",
         "choices": [
           "酸化鉄",
           "硫黄",
           "銅",
           "マンガン"
         ],
-        "decisionPoint": 15
+        "decisionPoint": 12
       },
       "en": {
-        "text": "The substance that mainly makes Mars appear red",
+        "text": "The substance that makes the surface of Mars red",
         "choices": [
           "Iron oxide",
           "Sulfur",
           "Copper",
           "Manganese"
         ],
-        "decisionPoint": 47
+        "decisionPoint": 48
       }
     }
   },
@@ -1910,14 +1910,14 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "「ボレロ」を作曲したフランスの作曲家",
+        "text": "「ボレロ」を作曲したフランス人",
         "choices": [
           "ドビュッシー",
           "ラヴェル",
           "サン＝サーンス",
           "フォーレ"
         ],
-        "decisionPoint": 5
+        "decisionPoint": 15
       },
       "en": {
         "text": "The French composer of \"Boléro\"",
@@ -1938,7 +1938,7 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "直角三角形で最も長い辺の名前",
+        "text": "直角三角形で最も長い辺を何という？",
         "choices": [
           "底辺",
           "対辺",
@@ -1994,24 +1994,24 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "虹の色の数（一般的な数え方）",
+        "text": "日本で虹は一般に何色とされる？",
         "choices": [
           "7色",
           "5色",
           "6色",
           "10色"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 14
       },
       "en": {
-        "text": "Number of colors in a rainbow (commonly counted)",
+        "text": "The number of colors a rainbow is usually said to have in Japan",
         "choices": [
           "7",
           "5",
           "6",
           "10"
         ],
-        "decisionPoint": 29
+        "decisionPoint": 63
       }
     }
   },
@@ -2022,14 +2022,14 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "「変身」で虫になる男を描いた作家",
+        "text": "『変身』で虫になる男を描いた作家",
         "choices": [
           "ドストエフスキー",
           "ヘミングウェイ",
           "カフカ",
           "カミュ"
         ],
-        "decisionPoint": 14
+        "decisionPoint": 16
       },
       "en": {
         "text": "Author of 'The Metamorphosis' about a man who turns into a bug",
@@ -2039,7 +2039,7 @@
           "Kafka",
           "Camus"
         ],
-        "decisionPoint": 57
+        "decisionPoint": 29
       }
     }
   },
@@ -2101,29 +2101,29 @@
   },
   {
     "id": "2026-P01_q076",
-    "answerIndex": 1,
+    "answerIndex": 2,
     "category": "space",
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "太陽系で「赤い惑星」と呼ばれる星",
+        "text": "満ち欠けで月が見えなくなる時を何という？",
         "choices": [
-          "金星",
-          "火星",
-          "土星",
-          "海王星"
+          "満月",
+          "三日月",
+          "新月",
+          "半月"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 13
       },
       "en": {
-        "text": "The planet in our solar system known as the \"Red Planet\"",
+        "text": "The phase of the moon when it cannot be seen",
         "choices": [
-          "Venus",
-          "Mars",
-          "Saturn",
-          "Neptune"
+          "Full moon",
+          "Crescent moon",
+          "New moon",
+          "Half moon"
         ],
-        "decisionPoint": 56
+        "decisionPoint": 44
       }
     }
   },
@@ -2190,7 +2190,7 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "「吾輩は猫である」の作者",
+        "text": "『吾輩は猫である』の作者",
         "choices": [
           "芥川龍之介",
           "太宰治",
@@ -2274,24 +2274,24 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "サッカーの1チームの人数",
+        "text": "サッカーで1チームがフィールドに出る人数",
         "choices": [
           "9人",
           "5人",
           "15人",
           "11人"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 18
       },
       "en": {
-        "text": "Number of players per team in soccer",
+        "text": "Number of players per team on the field in soccer",
         "choices": [
           "9",
           "5",
           "15",
           "11"
         ],
-        "decisionPoint": 36
+        "decisionPoint": 49
       }
     }
   },
@@ -2330,7 +2330,7 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "「人間失格」の作者",
+        "text": "『人間失格』の作者",
         "choices": [
           "太宰治",
           "三島由紀夫",
@@ -2347,7 +2347,7 @@
           "Yasunari Kawabata",
           "Naoya Shiga"
         ],
-        "decisionPoint": 29
+        "decisionPoint": 31
       }
     }
   },
@@ -2414,14 +2414,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "英語で「犬」を意味する単語",
+        "text": "英語で「犬」は？",
         "choices": [
           "Cat",
           "Bear",
           "Fox",
           "Dog"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 6
       },
       "en": {
         "text": "The English word meaning 'inu' in Japanese",
@@ -2498,7 +2498,7 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "味噌汁の主な原料となる豆",
+        "text": "味噌の主な原料となる豆",
         "choices": [
           "小豆",
           "えんどう豆",
@@ -2508,14 +2508,14 @@
         "decisionPoint": 9
       },
       "en": {
-        "text": "The bean used as the main ingredient in miso soup",
+        "text": "The bean that is the main ingredient of miso",
         "choices": [
           "Azuki bean",
           "Pea",
           "Chickpea",
           "Soybean"
         ],
-        "decisionPoint": 49
+        "decisionPoint": 44
       }
     }
   },
@@ -2526,14 +2526,14 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "太陽系で環（リング）が最も目立つ惑星",
+        "text": "太陽系で環が一番目立つ惑星",
         "choices": [
           "木星",
           "土星",
           "天王星",
           "海王星"
         ],
-        "decisionPoint": 18
+        "decisionPoint": 12
       },
       "en": {
         "text": "The planet in our solar system with the most prominent rings",
@@ -2543,7 +2543,7 @@
           "Uranus",
           "Neptune"
         ],
-        "decisionPoint": 60
+        "decisionPoint": 59
       }
     }
   },
@@ -2610,14 +2610,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "人体で一番大きい臓器",
+        "text": "人体で一番大きい内臓",
         "choices": [
           "腎臓",
           "肝臓",
           "胃",
           "肺"
         ],
-        "decisionPoint": 8
+        "decisionPoint": 9
       },
       "en": {
         "text": "The largest internal organ in the human body",
@@ -2694,14 +2694,14 @@
     "difficulty": "intermediate",
     "locales": {
       "ja": {
-        "text": "テニスで得点が0のときの呼び方",
+        "text": "テニスで0点のことを何という？",
         "choices": [
           "ノー",
           "ラブ",
           "ゼロ",
           "ニル"
         ],
-        "decisionPoint": 15
+        "decisionPoint": 10
       },
       "en": {
         "text": "The term for a score of zero in tennis",
@@ -2722,24 +2722,24 @@
     "difficulty": "advanced",
     "locales": {
       "ja": {
-        "text": "ピアノの鍵盤の数（標準的なもの）",
+        "text": "「月光」ソナタの作曲家",
         "choices": [
-          "76鍵",
-          "81鍵",
-          "88鍵",
-          "92鍵"
+          "ショパン",
+          "シューベルト",
+          "ベートーヴェン",
+          "リスト"
         ],
-        "decisionPoint": 16
+        "decisionPoint": 4
       },
       "en": {
-        "text": "Number of keys on a standard piano",
+        "text": "The composer of the \"Moonlight\" Sonata",
         "choices": [
-          "76",
-          "81",
-          "88",
-          "92"
+          "Chopin",
+          "Schubert",
+          "Beethoven",
+          "Liszt"
         ],
-        "decisionPoint": 27
+        "decisionPoint": 31
       }
     }
   },
@@ -2750,14 +2750,14 @@
     "difficulty": "beginner0",
     "locales": {
       "ja": {
-        "text": "1から10まで足した合計",
+        "text": "1から10まで全部足すといくつ？",
         "choices": [
           "45",
           "55",
           "50",
           "60"
         ],
-        "decisionPoint": 10
+        "decisionPoint": 15
       },
       "en": {
         "text": "The sum of all numbers from 1 to 10",
@@ -2778,14 +2778,14 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "水が沸騰する温度（1気圧）",
+        "text": "1気圧で水が沸騰する温度",
         "choices": [
           "50℃",
           "75℃",
           "100℃",
           "120℃"
         ],
-        "decisionPoint": 13
+        "decisionPoint": 9
       },
       "en": {
         "text": "Boiling point of water at 1 atm",
@@ -2795,7 +2795,7 @@
           "100°C",
           "120°C"
         ],
-        "decisionPoint": 26
+        "decisionPoint": 31
       }
     }
   }
