@@ -109,8 +109,8 @@
   - The phase of the moon when it cannot be seen → New moon　[Full moon / Crescent moon / New moon / Half moon] 確定 44/44
 - ★**世界で面積が一番小さい国** → バチカン市国　［モナコ / サンマリノ / バチカン市国 / リヒテンシュタイン］ 確定 12/12  (2026-P01_q077, geography)
   - The country with the smallest area in the world → Vatican City　[Monaco / San Marino / Vatican City / Liechtenstein] 確定 47/47
-- ✎**英語で「犬」は？** → Dog　［Cat / Bear / Fox / Dog］ 確定 6/8  (2026-P01_q087, language)
-  - The English word meaning 'inu' in Japanese → Dog　[Cat / Bear / Fox / Dog] 確定 30/42
+- ✎**オーストリアの公用語** → ドイツ語　［フランス語 / イタリア語 / オランダ語 / ドイツ語］ 確定 6/10  (2026-P01_q087, language)
+  - The official language of Austria → German　[French / Italian / Dutch / German] 確定 32/32
 - **日本初の女性天皇** → 推古天皇　［持統天皇 / 推古天皇 / 皇極天皇 / 元明天皇］ 確定 6/8  (2026-P01_q088, history)
   - The first empress regnant of Japan → Empress Suiko　[Empress Jitō / Empress Suiko / Empress Kōgyoku / Empress Genmei] 確定 34/34
 - ✎**人体で一番大きい内臓** → 肝臓　［腎臓 / 肝臓 / 胃 / 肺］ 確定 9/10  (2026-P01_q094, body)

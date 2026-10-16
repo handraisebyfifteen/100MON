@@ -2414,24 +2414,24 @@
     "difficulty": "beginner",
     "locales": {
       "ja": {
-        "text": "英語で「犬」は？",
+        "text": "オーストリアの公用語",
         "choices": [
-          "Cat",
-          "Bear",
-          "Fox",
-          "Dog"
+          "フランス語",
+          "イタリア語",
+          "オランダ語",
+          "ドイツ語"
         ],
         "decisionPoint": 6
       },
       "en": {
-        "text": "The English word meaning 'inu' in Japanese",
+        "text": "The official language of Austria",
         "choices": [
-          "Cat",
-          "Bear",
-          "Fox",
-          "Dog"
+          "French",
+          "Italian",
+          "Dutch",
+          "German"
         ],
-        "decisionPoint": 30
+        "decisionPoint": 32
       }
     }
   },

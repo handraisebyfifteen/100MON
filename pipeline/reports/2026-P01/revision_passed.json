@@ -2884,5 +2884,83 @@
    },
    "verdict": true
   }
+ },
+ "{\"answerIndex\": 3, \"category\": \"language\", \"difficulty\": \"beginner\", \"en\": {\"choices\": [\"French\", \"Italian\", \"Dutch\", \"German\"], \"text\": \"The official language of Austria\"}, \"ja\": {\"choices\": [\"フランス語\", \"イタリア語\", \"オランダ語\", \"ドイツ語\"], \"text\": \"オーストリアの公用語\"}}": {
+  "verifier1": {
+   "mechanism": "tool_forced",
+   "latency_s": 4.71,
+   "input_tokens": 1270,
+   "output_tokens": 108,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  },
+  "verifier2": {
+   "mechanism": "tool_forced",
+   "latency_s": 2.48,
+   "input_tokens": 1269,
+   "output_tokens": 114,
+   "stop_reason": "tool_use",
+   "checks": {
+    "answer_correct": {
+     "pass": true,
+     "reason": ""
+    },
+    "single_answer": {
+     "pass": true,
+     "reason": ""
+    },
+    "unambiguous": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_time_sensitive": {
+     "pass": true,
+     "reason": ""
+    },
+    "locale_match": {
+     "pass": true,
+     "reason": ""
+    },
+    "not_trick": {
+     "pass": true,
+     "reason": ""
+    },
+    "fair": {
+     "pass": true,
+     "reason": ""
+    }
+   },
+   "verdict": true
+  }
  }
 }

@@ -3091,5 +3091,115 @@
    "out": 456,
    "usd": 0.0015
   }
+ ],
+ "later_runs": [
+  {
+   "period_id": "2026-P01",
+   "started_at": "2026-10-16T09:05:11+00:00",
+   "edits": {
+    "2026-P01_q087": {
+     "note": "英語の単語を答える問題は、英語版では「日本語の inu はどれか」になり、日本語の知識が要る。どちらの言語でも同じ知識を問う問題に差し替える（同じ初級・language）",
+     "ok": true,
+     "reasons": [],
+     "verification": {
+      "verifier1": {
+       "mechanism": "tool_forced",
+       "latency_s": 4.71,
+       "input_tokens": 1270,
+       "output_tokens": 108,
+       "stop_reason": "tool_use",
+       "checks": {
+        "answer_correct": {
+         "pass": true,
+         "reason": ""
+        },
+        "single_answer": {
+         "pass": true,
+         "reason": ""
+        },
+        "unambiguous": {
+         "pass": true,
+         "reason": ""
+        },
+        "not_time_sensitive": {
+         "pass": true,
+         "reason": ""
+        },
+        "locale_match": {
+         "pass": true,
+         "reason": ""
+        },
+        "not_trick": {
+         "pass": true,
+         "reason": ""
+        },
+        "fair": {
+         "pass": true,
+         "reason": ""
+        }
+       },
+       "verdict": true
+      },
+      "verifier2": {
+       "mechanism": "tool_forced",
+       "latency_s": 2.48,
+       "input_tokens": 1269,
+       "output_tokens": 114,
+       "stop_reason": "tool_use",
+       "checks": {
+        "answer_correct": {
+         "pass": true,
+         "reason": ""
+        },
+        "single_answer": {
+         "pass": true,
+         "reason": ""
+        },
+        "unambiguous": {
+         "pass": true,
+         "reason": ""
+        },
+        "not_time_sensitive": {
+         "pass": true,
+         "reason": ""
+        },
+        "locale_match": {
+         "pass": true,
+         "reason": ""
+        },
+        "not_trick": {
+         "pass": true,
+         "reason": ""
+        },
+        "fair": {
+         "pass": true,
+         "reason": ""
+        }
+       },
+       "verdict": true
+      }
+     }
+    }
+   },
+   "replaces": {},
+   "finished_at": "2026-10-16T09:05:21+00:00",
+   "cost": [
+    {
+     "model": "mistral.mistral-large-3-675b-instruct",
+     "calls": 5,
+     "in": 3261,
+     "out": 408,
+     "usd": null
+    },
+    {
+     "model": "qwen.qwen3-235b-a22b-2507-v1:0",
+     "calls": 1,
+     "in": 1269,
+     "out": 114,
+     "usd": 0.0004
+    }
+   ],
+   "note": "q087 の差し替え（英語の単語を答える問題を、どちらの言語でも成り立つ問題に）。q044 は流し直しで拾われただけなので記録から外し、確定位置も元の値に戻した"
+  }
  ]
 }

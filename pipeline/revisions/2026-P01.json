@@ -403,5 +403,31 @@
     "Indicatives"
    ]
   }
+ },
+ {
+  "id": "2026-P01_q087",
+  "note": "英語の単語を答える問題は、英語版では「日本語の inu はどれか」になり、日本語の知識が要る。どちらの言語でも同じ知識を問う問題に差し替える（同じ初級・language）",
+  "was": "英語で「犬」は？",
+  "replace": true,
+  "answerIndex": 3,
+  "category": "language",
+  "ja": {
+   "text": "オーストリアの公用語",
+   "choices": [
+    "フランス語",
+    "イタリア語",
+    "オランダ語",
+    "ドイツ語"
+   ]
+  },
+  "en": {
+   "text": "The official language of Austria",
+   "choices": [
+    "French",
+    "Italian",
+    "Dutch",
+    "German"
+   ]
+  }
  }
 ]
