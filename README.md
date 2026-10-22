@@ -20,3 +20,7 @@ npm test                               # core のテスト
 cd app && npm run sim                  # Vega 版をシミュレータで動かす
 cd fos && TV=<Fire TV の IP> npm run tv  # Fire OS 版を手元の Fire TV で動かす
 ```
+
+## ライセンス
+
+[MIT](LICENSE)
